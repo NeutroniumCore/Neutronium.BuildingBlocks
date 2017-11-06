@@ -35,8 +35,7 @@ namespace Vm.Tools.Async
 
         public IObservable<CommandResult<TResult>> Results { get; }
 
-        private bool _CanExecute;
-        public bool CanExecute => _CanExecute;
+        public bool CanExecute { get; private set; }
 
         private event EventHandler<CommandResult<TResult>> _OnResult;
         public event EventHandler CanExecuteChanged;
@@ -54,10 +53,10 @@ namespace Vm.Tools.Async
         private void UpdateCommandStatus()
         {
             var newValue = !_Computing && CanBeExecuted;
-            if (_CanExecute == newValue)
+            if (CanExecute == newValue)
                 return;
 
-            _CanExecute = newValue;
+            CanExecute = newValue;
             CanExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
 

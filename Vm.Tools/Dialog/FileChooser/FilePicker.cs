@@ -1,10 +1,10 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 
-namespace Vm.Tools.Dialog
+namespace Vm.Tools.Dialog.FileChooser
 {
     public class FilePicker : IFilePicker
     {

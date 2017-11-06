@@ -10,7 +10,7 @@ namespace Vm.Tools.Dialog
 
         IObservable<string> IChooserCommand<T>.Results => Results.Select(cr => cr.Result);
 
-        public ChooserCommand(T picker):base(() => picker.Choose())
+        public ChooserCommand(T picker):base(picker.Choose)
         {
             Picker = picker;
         }
