@@ -4,15 +4,17 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Vm.Tools.WPFHelper
+namespace Vm.Tools.Dialog
 {
     public class FilePicker : IFilePicker
     {
+        public string Title { get; set; }
+
         public string Directory { get; set; }
         public string ExtensionDescription { get; set; }
         public string[] Extensions { get; set; }
 
-        public Task<string> ChooseFile()
+        public Task<string> Choose()
         {
             var tcs = new TaskCompletionSource<string>();
             Task.Run(() => ShowDialog(tcs));
@@ -23,7 +25,8 @@ namespace Vm.Tools.WPFHelper
         {
             var fileDialog = new OpenFileDialog
             {
-                InitialDirectory = Directory
+                InitialDirectory = Directory,
+                Title = Title
             };
 
             if (Extensions?.Length > 0)

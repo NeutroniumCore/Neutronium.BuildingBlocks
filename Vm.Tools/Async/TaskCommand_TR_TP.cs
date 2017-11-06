@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Vm.Tools.Async
 {
-    public sealed class TaskCommand<TResult, TProgress> : TaskCommandBase<TResult>
+    public sealed class TaskCommand<TResult, TProgress> : TaskCancellableCommandBase<TResult>
     {
         public IObservable<TProgress> Progress { get; }
 

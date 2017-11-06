@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Vm.Tools.Async
 {
-    public sealed class TaskCommand<TResult> : TaskCommandBase<TResult>
+    public sealed class TaskCommand<TResult> : TaskCancellableCommandBase<TResult>
     {
         private readonly Func<CancellationToken, TResult> _Process;
 
