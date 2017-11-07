@@ -1,9 +1,9 @@
-﻿using Microsoft.Win32;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
-namespace Vm.Tools.Dialog 
+namespace Vm.Tools.Dialog.FolderChooser 
 {
     public class FolderPicker : IFolderPicker
     {

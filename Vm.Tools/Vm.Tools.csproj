@@ -97,8 +97,8 @@
     <Compile Include="Async\TaskCancellableCommandBase.cs" />
     <Compile Include="Async\TaskCommand_TR.cs" />
     <Compile Include="Async\TaskCommand_TR_TP.cs" />
-    <Compile Include="Dialog\FileChooser\FileChooser.cs" />
-    <Compile Include="Dialog\FolderChooser\FileChooser.cs" />
+    <Compile Include="Dialog\FileChooser\FileChooserCommand.cs" />
+    <Compile Include="Dialog\FolderChooser\FolderChooserCommand.cs" />
     <Compile Include="Dialog\FolderChooser\FolderPicker.cs" />
     <Compile Include="Dialog\FolderChooser\IFolderPicker.cs" />
     <Compile Include="Dialog\IIODialog.cs" />
