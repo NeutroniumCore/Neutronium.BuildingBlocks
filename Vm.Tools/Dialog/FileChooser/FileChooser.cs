@@ -2,7 +2,11 @@
 {
     public class FileChooserCommand : ChooserCommand<IFilePicker> 
     {
-        public FileChooserCommand() : base(new FilePicker())
+        public FileChooserCommand() : this(new FilePicker())
+        {
+        }
+
+        public FileChooserCommand(IFilePicker filePicker) : base(filePicker) 
         {
         }
     }

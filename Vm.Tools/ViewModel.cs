@@ -19,12 +19,12 @@ namespace Vm.Tools
             return true;
         }
 
-        private void PropertyHasChanged(string propertyName)
+        protected void PropertyHasChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private void PropertyIsChanging(string propertyName)
+        protected void PropertyIsChanging(string propertyName)
         {
             PropertyChanging?.Invoke(this, new PropertyChangingEventArgs(propertyName));
         }

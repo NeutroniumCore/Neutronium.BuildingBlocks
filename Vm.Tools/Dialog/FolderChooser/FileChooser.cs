@@ -2,7 +2,11 @@
 {
     public class FolderChooserCommand : ChooserCommand<IFolderPicker> 
     {
-        public FolderChooserCommand() : base(new FolderPicker())
+        public FolderChooserCommand() : this(new FolderPicker())
+        {
+        }
+
+        public FolderChooserCommand(IFolderPicker folderPicker) : base(folderPicker) 
         {
         }
     }
