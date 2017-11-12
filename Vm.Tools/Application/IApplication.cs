@@ -9,6 +9,8 @@ namespace Vm.Tools.Application
 
         void TryClose();
 
+        void Restart(string commandLineOptions = "");
+
         event EventHandler<CancelEventArgs> MainWindowClosing;
 
         event EventHandler<CancelEventArgs> SessionEnding;

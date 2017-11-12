@@ -35,6 +35,12 @@ namespace Vm.Tools.Application
             _Window.Close();
         }
 
+        public void Restart(string commandLineOptions="")
+        {
+            System.Windows.Forms.Application.Restart();
+            System.Windows.Application.Current.Shutdown();
+        }
+
         public event EventHandler<CancelEventArgs> MainWindowClosing;
         public event EventHandler<CancelEventArgs> SessionEnding;
     }
