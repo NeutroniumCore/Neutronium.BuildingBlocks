@@ -12,6 +12,7 @@ namespace Vm.Tools.Application
         {
             _Window = window;
             _Window.Closing += _Window_Closing;
+            _Window.Closed += _Window_Closed;
             System.Windows.Application.Current.SessionEnding += Current_SessionEnding;
         }
 
@@ -23,6 +24,11 @@ namespace Vm.Tools.Application
         private void _Window_Closing(object sender, CancelEventArgs e)
         {
             MainWindowClosing?.Invoke(this, e);
+        }
+
+        private void _Window_Closed(object sender, EventArgs e)
+        {
+            Closed?.Invoke(this, EventArgs.Empty);
         }
 
         public void ForceClose()
@@ -42,6 +48,7 @@ namespace Vm.Tools.Application
         }
 
         public event EventHandler<CancelEventArgs> MainWindowClosing;
+        public event EventHandler Closed;
         public event EventHandler<CancelEventArgs> SessionEnding;
     }
 }

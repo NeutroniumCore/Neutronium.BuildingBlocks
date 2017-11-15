@@ -13,6 +13,8 @@ namespace Vm.Tools.Application
 
         event EventHandler<CancelEventArgs> MainWindowClosing;
 
+        event EventHandler Closed;
+
         event EventHandler<CancelEventArgs> SessionEnding;
     }
 }
