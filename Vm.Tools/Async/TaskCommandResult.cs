@@ -62,11 +62,11 @@ namespace Vm.Tools.Async
 
         public async void Execute()
         {
+            if (Computing)
+                return;
+
             try
             {
-                if (Computing)
-                    return;
-
                 Computing = true;
                 var result = await _Compute();             
                 _OnResult?.Invoke(this, new CommandResult<TResult>(result));

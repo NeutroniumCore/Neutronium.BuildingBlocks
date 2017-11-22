@@ -3,12 +3,14 @@ using Neutronium.MVVMComponents;
 
 namespace Vm.Tools.Dialog
 {
-    public interface IChooserCommand<out T>: ICommandWithoutParameter where T : IIODialog
+    public interface IChooserCommand<out T> where T : IIODialog
     {
-        IObservable<string> Results { get; }
-
         bool CanBeExecuted { get; set; }
 
         T Picker { get; }
+
+        IObservable<string> Results { get; }
+
+        ICommandWithoutParameter Choose { get; }
     }
 }

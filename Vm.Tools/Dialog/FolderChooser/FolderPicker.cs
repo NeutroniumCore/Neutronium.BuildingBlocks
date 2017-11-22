@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-using System.Threading.Tasks;
-using Microsoft.Win32;
+﻿using System.Windows;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace Vm.Tools.Dialog.FolderChooser 
@@ -11,14 +9,13 @@ namespace Vm.Tools.Dialog.FolderChooser
         public string Directory { get; set; }
         public bool Multiselect { get; set; }
 
-        public Task<string> Choose()
+        public string Choose()
         {
-            var tcs = new TaskCompletionSource<string>();
-            Task.Run(() => ShowDialog(tcs));
-            return tcs.Task;
+            var owner = System.Windows.Application.Current.MainWindow;
+            return ShowDialog(owner);
         }
 
-        private void ShowDialog(TaskCompletionSource<string> tcs)
+        private string ShowDialog(Window owner)
         {
             var directoryDialog = new CommonOpenFileDialog 
             {
@@ -30,17 +27,9 @@ namespace Vm.Tools.Dialog.FolderChooser
                 EnsureFileExists = true,
                 EnsurePathExists = true
             };
-
-            CancelEventHandler eventHandler = (o, e) => FileOk(o as OpenFileDialog, e, tcs);
-            directoryDialog.FileOk += eventHandler;
-            directoryDialog.ShowDialog();
-            directoryDialog.FileOk -= eventHandler;
-            tcs.TrySetResult(null);
-        }
-
-        private void FileOk(OpenFileDialog dia, CancelEventArgs e, TaskCompletionSource<string> tcs)
-        {
-            tcs.TrySetResult(dia.FileName);
+           
+            var res = directoryDialog.ShowDialog(owner);
+            return (res == CommonFileDialogResult.Ok) ? directoryDialog.FileName : null;
         }
     }
 }
