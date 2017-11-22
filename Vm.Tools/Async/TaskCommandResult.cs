@@ -64,14 +64,16 @@ namespace Vm.Tools.Async
         {
             try
             {
+                if (Computing)
+                    return;
+
                 Computing = true;
-                var result = await _Compute();
-                Computing = false;
-                _OnResult(this, new CommandResult<TResult>(result));
+                var result = await _Compute();             
+                _OnResult?.Invoke(this, new CommandResult<TResult>(result));
             }
             catch (Exception exception)
             {
-                _OnResult(this, new CommandResult<TResult>(exception));
+                _OnResult?.Invoke(this, new CommandResult<TResult>(exception));
             }
             finally
             {
