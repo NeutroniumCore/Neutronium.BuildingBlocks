@@ -74,21 +74,25 @@ namespace Vm.Tools.Async
                 Computing = true;
                 var result = await Process(cancellationToken);
                 Computing = false;
-                _OnResult(this, cancellationToken.IsCancellationRequested ?
-                                new CommandResult<TResult>() : new CommandResult<TResult>(result) );
+                Publish(cancellationToken.IsCancellationRequested ? new CommandResult<TResult>() : new CommandResult<TResult>(result) );
             }
             catch (TaskCanceledException)
             {
-                _OnResult(this, new CommandResult<TResult>());
+                Publish(new CommandResult<TResult>());
             }
             catch (Exception exception)
             {
-                _OnResult(this, new CommandResult<TResult>(exception));
+                Publish(new CommandResult<TResult>(exception));
             }
             finally
             {
                 Computing = false;
             }
+        }
+
+        private void Publish(CommandResult<TResult> result)
+        {
+            _OnResult?.Invoke(this, result);
         }
     }
 }

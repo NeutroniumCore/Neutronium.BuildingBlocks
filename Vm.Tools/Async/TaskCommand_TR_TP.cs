@@ -30,7 +30,7 @@ namespace Vm.Tools.Async
 
         private void OnProgress(TProgress progress)
         {
-            _OnProgress.Invoke(this, progress);
+            _OnProgress?.Invoke(this, progress);
         }
     }
 }
