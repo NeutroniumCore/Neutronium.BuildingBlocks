@@ -12,12 +12,14 @@ namespace Vm.Tools.Async
         private event EventHandler<TProgress> _OnProgress;
         private readonly Func<CancellationToken, IProgress<TProgress>, TResult> _Process;
 
-        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process)
+        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process, TimeSpan? throttleProgess=null)
         {
             _Process = process;
-  
-            Progress = Observable.FromEventPattern<TProgress>(evt => _OnProgress += evt, evt => _OnProgress -= evt)
+
+            var progess = Observable.FromEventPattern<TProgress>(evt => _OnProgress += evt, evt => _OnProgress -= evt)
                     .Select(evtArg => evtArg.EventArgs);
+
+            Progress = throttleProgess.HasValue ? progess.Sample(throttleProgess.Value) : progess;
         }
 
         protected override async Task<TResult> Process(CancellationToken cancellationToken)

@@ -41,7 +41,7 @@ namespace Vm.Tools.Async
 
         public void Dispose()
         {
-            _CancellationTokenSource.Cancel();
+            Stop();
         }
     }
 }
