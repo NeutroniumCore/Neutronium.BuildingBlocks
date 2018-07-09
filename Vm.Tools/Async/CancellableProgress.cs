@@ -4,12 +4,14 @@ using System.Windows.Threading;
 
 namespace Vm.Tools.Async
 {
-    public class CancellableProgress<T> : IProgress<T> , IDisposable
+    public class CancellableProgress<T> : IDisposableProgress<T>
     {
         private readonly Action<T> _Action;
         private readonly Dispatcher _Dispatcher;
         private readonly CancellationTokenSource _CancellationTokenSource;
         private readonly DispatcherPriority _DispatcherPriority;
+
+        public bool Cancelled => _CancellationTokenSource.IsCancellationRequested;
 
         public CancellableProgress(Action<T> action, CancellationToken cancellationToken, DispatcherPriority priority = DispatcherPriority.Normal,
             Dispatcher dispatcher = null)
@@ -35,7 +37,7 @@ namespace Vm.Tools.Async
 
         public void Report(T value)
         {
-            if (!_CancellationTokenSource.IsCancellationRequested)
+            if (!Cancelled)
                 _Dispatcher.BeginInvoke(_Action, _DispatcherPriority, value);
         }
 
@@ -45,3 +47,4 @@ namespace Vm.Tools.Async
         }
     }
 }
+

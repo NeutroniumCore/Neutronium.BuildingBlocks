@@ -86,6 +86,7 @@ namespace Vm.Tools.Async
             }
             finally
             {
+                _CancellationTokenSource.Cancel();
                 Computing = false;
             }
         }

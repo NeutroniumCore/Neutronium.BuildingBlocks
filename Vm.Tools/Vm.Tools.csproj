@@ -96,8 +96,10 @@
   <ItemGroup>
     <Compile Include="Application\IApplication.cs" />
     <Compile Include="Application\WpfApplication.cs" />
+    <Compile Include="Async\CancellableProgressNoDispatch.cs" />
     <Compile Include="Async\CancellableProgress.cs" />
     <Compile Include="Async\CommandResult.cs" />
+    <Compile Include="Async\IDisposableProgress.cs" />
     <Compile Include="Async\TaskCommandResult.cs" />
     <Compile Include="Async\TaskCancellableCommandBase.cs" />
     <Compile Include="Async\TaskCommand_TR.cs" />

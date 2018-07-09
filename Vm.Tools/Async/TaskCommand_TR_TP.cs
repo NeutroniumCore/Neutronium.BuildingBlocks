@@ -11,28 +11,40 @@ namespace Vm.Tools.Async
 
         private event EventHandler<TProgress> _OnProgress;
         private readonly Func<CancellationToken, IProgress<TProgress>, TResult> _Process;
+        private readonly TimeSpan? _ThrottleProgess;
+        private CancellationToken _CancellationToken;
 
-        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process, TimeSpan? throttleProgess=null)
+        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process, TimeSpan? throttleProgess = null)
         {
             _Process = process;
+            _ThrottleProgess = throttleProgess;
 
             var progess = Observable.FromEventPattern<TProgress>(evt => _OnProgress += evt, evt => _OnProgress -= evt)
                     .Select(evtArg => evtArg.EventArgs);
 
-            Progress = throttleProgess.HasValue ? progess.Sample(throttleProgess.Value) : progess;
+            Progress = _ThrottleProgess.HasValue ? progess.Sample(_ThrottleProgess.Value).ObserveOn(SynchronizationContext.Current).Where(_ => !_CancellationToken.IsCancellationRequested) : progess;
         }
 
         protected override async Task<TResult> Process(CancellationToken cancellationToken)
         {
-            using (var progress = new CancellableProgress<TProgress>(OnProgress, cancellationToken))
+            _CancellationToken = cancellationToken;
+            using (var progress = GetProgress(cancellationToken))
             {
                 return await Task.Run(() => _Process(cancellationToken, progress), cancellationToken);
             }
         }
 
-        private void OnProgress(TProgress progress)
+        private IDisposableProgress<TProgress> GetProgress(CancellationToken cancellationToken)
         {
-            _OnProgress?.Invoke(this, progress);
+            void OnProgress(TProgress progress)
+            {
+                if (cancellationToken.IsCancellationRequested)
+                    return;
+
+                _OnProgress?.Invoke(this, progress);
+            }
+
+            return _ThrottleProgess.HasValue ? (IDisposableProgress<TProgress>)new CancellableProgressNoDispatch<TProgress>(OnProgress, cancellationToken) : new CancellableProgress<TProgress>(OnProgress, cancellationToken);
         }
     }
 }
