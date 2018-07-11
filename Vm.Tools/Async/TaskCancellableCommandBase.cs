@@ -8,7 +8,7 @@ using Neutronium.MVVMComponents.Relay;
 
 namespace Vm.Tools.Async
 {
-    public abstract class TaskCancellableCommandBase<TResult> : ViewModel
+    public abstract class TaskCancellableCommand<TResult> : ViewModel, ITaskCancellableCommand<TResult>
     {
         private bool _Computing;
         public bool Computing 
@@ -44,7 +44,7 @@ namespace Vm.Tools.Async
         private event EventHandler<CommandResult<TResult>> _OnResult;
         private CancellationTokenSource _CancellationTokenSource;
 
-        protected TaskCancellableCommandBase()
+        protected TaskCancellableCommand()
         {
             Results = Observable.FromEventPattern<CommandResult<TResult>>(evt => _OnResult += evt, evt => _OnResult -= evt) 
                                 .Select(evtArg => evtArg.EventArgs);

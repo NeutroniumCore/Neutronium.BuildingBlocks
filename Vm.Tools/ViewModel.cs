@@ -8,7 +8,7 @@ namespace Vm.Tools
         public event PropertyChangedEventHandler PropertyChanged;
         public event PropertyChangingEventHandler PropertyChanging;
 
-        public bool Set<T>(ref T property, T value, [CallerMemberName] string propertyName = null)
+        protected bool Set<T>(ref T property, T value, [CallerMemberName] string propertyName = null)
         {
             if (Equals(property, value))
                 return false;
