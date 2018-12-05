@@ -9,8 +9,8 @@ namespace Vm.Tools.Dialog
     {
         public bool CanBeExecuted
         {
-            get { return Choose.CanExecute; }
-            set { _ChooseCommand.ShouldExecute = value; }
+            get => Choose.CanExecute;
+            set => _ChooseCommand.ShouldExecute = value;
         }
 
         public T Picker { get; }

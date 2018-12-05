@@ -110,3 +110,4 @@ UpgradeLog*.XML
 /CodeDependencyScaner/View/MainView/semantic
 /performance test
 /xcopy
+/.vs/Vm.Tools/v15/Server/sqlite3
