@@ -56,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LifeCycleHook\IApplicationLifeCycle.cs" />
+    <Compile Include="LifeCycleHook\LifeCycleEventsRegistror.cs" />
     <Compile Include="Navigation\BeforeRouterResult.cs" />
     <Compile Include="Navigation\ConventionRouter.cs" />
     <Compile Include="Navigation\INavigator.cs" />

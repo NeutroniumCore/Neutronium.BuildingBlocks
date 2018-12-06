@@ -4,7 +4,7 @@ using MoreCollection.Extensions;
 
 namespace Vm.Tools.Application.Navigation
 {
-    internal class Router : IRouterBuilder, IRouterSolver
+    public class Router : IRouterBuilder, IRouterSolver
     {
         private readonly Dictionary<string, Type> _RouteToType = new Dictionary<string, Type>();
         private readonly Dictionary<Type, string> _TypeToRoute = new Dictionary<Type, string>();
