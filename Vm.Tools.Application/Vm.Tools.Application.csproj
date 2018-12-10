@@ -34,19 +34,20 @@
     <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net47\CommonServiceLocator.dll</HintPath>
     </Reference>
-    <Reference Include="MoreCollection, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MoreCollection.1.2.2\lib\net45\MoreCollection.dll</HintPath>
+    <Reference Include="MoreCollection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoreCollection.2.0.0\lib\net45\MoreCollection.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.Core, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.Core.1.3.1\lib\Neutronium.Core.dll</HintPath>
+    <Reference Include="Neutronium.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.Core.1.4.0\lib\net45\Neutronium.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.MVVMComponents, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.MVVMComponents.1.2.0\lib\Neutronium.MVVMComponents.dll</HintPath>
+    <Reference Include="Neutronium.MVVMComponents, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.MVVMComponents.1.4.0\lib\net45\Neutronium.MVVMComponents.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.WPF, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.WPF.1.3.1\lib\Neutronium.WPF.dll</HintPath>
+    <Reference Include="Neutronium.WPF, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.WPF.1.4.0\lib\net472\Neutronium.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
