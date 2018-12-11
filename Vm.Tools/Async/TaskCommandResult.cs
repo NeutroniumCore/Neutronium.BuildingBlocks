@@ -10,7 +10,7 @@ namespace Vm.Tools.Async
         private bool _Computing;
         public bool Computing 
         {
-            get { return _Computing; }
+            get => _Computing;
             private set
             {
                 if (Set(ref _Computing, value))
@@ -23,7 +23,7 @@ namespace Vm.Tools.Async
         private bool _CanBeRun = true;
         public bool CanBeExecuted
         {
-            get { return _CanBeRun; }
+            get => _CanBeRun;
             set
             {
                 if (Set(ref _CanBeRun, value))

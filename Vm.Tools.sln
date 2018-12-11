@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vm.Tools", "Vm.Tools\Vm.Too
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vm.Tools.Tests", "Vm.Tools.Tests\Vm.Tools.Tests.csproj", "{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vm.Tools.Application", "Vm.Tools.Application\Vm.Tools.Application.csproj", "{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|x86.ActiveCfg = Release|x86
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|x86.Build.0 = Release|x86
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Debug|x86.Build.0 = Debug|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Release|x86.ActiveCfg = Release|Any CPU
+		{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
