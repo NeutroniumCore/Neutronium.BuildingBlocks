@@ -14,7 +14,6 @@ namespace Vm.Tools.Async
         IObservable<CommandResult<TResult>> Results { get; }
     }
 
-
     public interface ITaskCancellableCommand<TResult, out TProgress> : ITaskCancellableCommand<TResult>
     {
         IObservable<TProgress> Progress { get; }
