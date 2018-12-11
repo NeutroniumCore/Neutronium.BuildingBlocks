@@ -5,7 +5,7 @@
 
 [![Build status](https://img.shields.io/appveyor/ci/David-Desmaisons/viewmodel-tools.svg)](https://ci.appveyor.com/project/David-Desmaisons/viewmodel-tools)
 [![NuGet Badge](https://buildstats.info/nuget/Vm.Tools)](https://www.nuget.org/packages/Vm.Tools/)
-[![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tool.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tools.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
 
 # ViewModel.Tools
 
