@@ -6,9 +6,9 @@ using Vm.Tools.Application.WindowServices;
 
 namespace Vm.Tools.Application.ViewModel
 {
-    public class ApplicationViewModel : Vm.Tools.ViewModel, IMessageBox, INotificationSender
+    public class ApplicationViewModel<T> : Vm.Tools.ViewModel, IMessageBox, INotificationSender
     {
-        public ApplicationInformation ApplicationInformation { get; } = new ApplicationInformation();
+        public T ApplicationInformation { get; }
         public IWindowViewModel Window { get; }
         public NavigationViewModel Router { get; }
 
@@ -28,10 +28,11 @@ namespace Vm.Tools.Application.ViewModel
             set => Set(ref _Notification, value);
         }
 
-        public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router)
+        public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router, T applicationInformation)
         {
             Window = window;
             Router = router;
+            ApplicationInformation = applicationInformation;
         }
 
         public Task<bool> ShowMessage(ConfirmationMessage confirmationMessage)
