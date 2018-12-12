@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using CommonServiceLocator;
 using Neutronium.MVVMComponents;
@@ -78,7 +79,7 @@ namespace Vm.Tools.Application.Navigation
             var context = _CurrentNavigations.Peek();
             if (context.Route != routeName)
             {
-                Console.WriteLine($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}");
+                OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}");
                 return null;
             }
 
@@ -108,7 +109,7 @@ namespace Vm.Tools.Application.Navigation
             var context = _CurrentNavigations.Dequeue();
             if (context.Route != routeName)
             {
-                Console.WriteLine($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}. Maybe rerouted?");
+                OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}. Maybe rerouted?");
             }
             context.Complete();
 
@@ -119,6 +120,12 @@ namespace Vm.Tools.Application.Navigation
         public Task Navigate(object viewModel, string routeName)
         {
             var route = routeName ?? _RouterSolver.SolveRoute(viewModel);
+
+            if (route == null)
+            {
+                OnError($"Route not found for {viewModel}");
+                return Task.CompletedTask;
+            }
 
             if (Route == route)
             {
@@ -144,6 +151,11 @@ namespace Vm.Tools.Application.Navigation
 
         public async Task Navigate(Type type, NavigationContext context = null)
         {
+            if (type == null)
+            {
+                OnError("Navigate to null type!");
+                return;
+            }
             var resolutionKey = context?.ResolutionKey;
             var vm = (resolutionKey == null) ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, resolutionKey);
             await Navigate(vm, context?.RouteName);
@@ -157,6 +169,11 @@ namespace Vm.Tools.Application.Navigation
             var ctx = CreateRouteContext(routeName);
             Route = routeName;
             return ctx.Task;
+        }
+
+        private static void OnError(string message)
+        {
+            Trace.Fail(message);
         }
     }
 }
