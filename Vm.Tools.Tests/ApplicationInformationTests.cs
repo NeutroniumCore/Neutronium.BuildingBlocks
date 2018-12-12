@@ -7,7 +7,7 @@ namespace Vm.Tools.Tests {
         [Fact]
         public void Version_returns_call_assembly_version() {
             var res = new ApplicationInformation(string.Empty, string.Empty);
-            res.Version.Should().Be("13.10.3");
+            res.Version.Should().Be("12.10.3.0");
         }
     }
 }
