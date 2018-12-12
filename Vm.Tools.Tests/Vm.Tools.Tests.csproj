@@ -120,10 +120,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationInformationTests.cs" />
     <Compile Include="ViewModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Vm.Tools.Application\Vm.Tools.Application.csproj">
+      <Project>{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}</Project>
+      <Name>Vm.Tools.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vm.Tools\Vm.Tools.csproj">
       <Project>{17472ec0-9abf-449a-85d8-fb9e9a60c9b9}</Project>
       <Name>Vm.Tools</Name>

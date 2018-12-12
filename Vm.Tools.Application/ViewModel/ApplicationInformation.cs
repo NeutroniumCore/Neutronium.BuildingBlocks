@@ -1,15 +1,23 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 
 namespace Vm.Tools.Application.ViewModel 
 {
     public class ApplicationInformation
     {
-        public string Name => "Neutronium Vuetify SPA";
+        public ApplicationInformation(string name, string madeBy) {
+            Name = name;
+            MadeBy = madeBy;
+            Year = DateTime.Now.Year;
+            Version = Assembly.GetCallingAssembly().GetName().Version.ToString();
+        }
 
-        public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        public string Name { get; }
 
-        public string MadeBy => "David Desmaisons";
+        public string Version { get; }
 
-        public int Year => 2017;
+        public string MadeBy { get; }
+
+        public int Year { get; }
     }
 }
