@@ -123,17 +123,18 @@ namespace Vm.Tools.Application.Navigation
 
             if (route == null)
             {
-                OnError($"Route not found for {viewModel}");
+                OnError($"Route not found for vm: {viewModel}");
                 return Task.CompletedTask;
             }
 
             if (Route == route)
             {
+                OnInformation($"Route unchanged: ${routeName}");
                 if (!ReferenceEquals(_ViewModel, viewModel))
                     OnNavigated?.Invoke(this, new RoutedEventArgs(viewModel, route));
 
                 _ViewModel = viewModel;
-                return Task.FromResult(0);
+                return Task.CompletedTask;
             }
 
             var routeContext = CreateRouteContext(viewModel, route);
@@ -162,18 +163,25 @@ namespace Vm.Tools.Application.Navigation
         }
 
         public Task Navigate(string routeName)
-        {
-            if (Route==routeName)
-                return Task.FromResult(0);
+        {       
+            if (Route == routeName) {
+                OnInformation($"Route unchanged: ${routeName}");
+                return Task.CompletedTask;
+            }            
 
             var ctx = CreateRouteContext(routeName);
             Route = routeName;
             return ctx.Task;
         }
 
+        private static void OnInformation(string message)
+        {
+            Trace.TraceInformation(message);
+        }
+
         private static void OnError(string message)
         {
-            Trace.Fail(message);
+            Trace.TraceError(message);
         }
     }
 }

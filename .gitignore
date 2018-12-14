@@ -111,3 +111,4 @@ UpgradeLog*.XML
 /performance test
 /xcopy
 /.vs/Vm.Tools/v15/Server/sqlite3
+/.vs/Vm.Tools/DesignTimeBuild
