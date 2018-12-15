@@ -21,21 +21,10 @@ namespace Vm.Tools.Application.Navigation
             Cancel = From.RouteName == newRouteName;
             RedirectedTo = newRouteName;
         }
-    }
 
-    public struct RouteInfo
-    {
-        public object ViewModel { get; }
-        public string RouteName { get; }
-
-        public RouteInfo(RouteContext routeContext) : this(routeContext.ViewModel, routeContext.Route)
+        public override string ToString()
         {
-        }
-
-        public RouteInfo(object viewModel, string routeName)
-        {
-            ViewModel = viewModel;
-            RouteName = routeName;
+            return $"From: {From} To: {To} RedirectedTo: {RedirectedTo}";
         }
     }
 }

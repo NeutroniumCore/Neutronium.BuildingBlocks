@@ -68,6 +68,7 @@
     <Compile Include="Navigation\NavigationViewModel.cs" />
     <Compile Include="Navigation\RouteContext.cs" />
     <Compile Include="Navigation\RoutedEventArgs.cs" />
+    <Compile Include="Navigation\RouteInfo.cs" />
     <Compile Include="Navigation\Router.cs" />
     <Compile Include="Navigation\RouterBuilderExtensions.cs" />
     <Compile Include="Navigation\RoutingEventArgs.cs" />

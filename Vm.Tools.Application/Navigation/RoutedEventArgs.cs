@@ -4,6 +4,8 @@ namespace Vm.Tools.Application.Navigation
 {
     public class RoutedEventArgs : EventArgs
     {
+        public RouteInfo NewRoute { get; }
+
         public RoutedEventArgs(RouteContext routeContext): this(new RouteInfo(routeContext))
         {
         }
@@ -18,6 +20,9 @@ namespace Vm.Tools.Application.Navigation
             NewRoute = route;
         }
 
-        public RouteInfo NewRoute { get; }
+        public override string ToString()
+        {
+            return $"NewRoute: {NewRoute}";
+        }
     }
 }
