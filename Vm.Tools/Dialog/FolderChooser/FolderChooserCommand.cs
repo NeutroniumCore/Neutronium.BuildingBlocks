@@ -1,4 +1,6 @@
-﻿namespace Vm.Tools.Dialog.FolderChooser 
+﻿using Vm.Tools.Standard;
+
+namespace Vm.Tools.Dialog.FolderChooser 
 {
     public class FolderChooserCommand : ChooserCommand<IFolderPicker> 
     {

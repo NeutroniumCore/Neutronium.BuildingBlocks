@@ -2,6 +2,7 @@
 using System.Reactive.Linq;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Dialog 
 {

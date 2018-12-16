@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Application
 {

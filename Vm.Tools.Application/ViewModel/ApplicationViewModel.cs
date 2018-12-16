@@ -1,12 +1,12 @@
-﻿using System.Threading.Tasks;
-using Neutronium.WPF.ViewModel;
+﻿using Neutronium.WPF.ViewModel;
+using System.Threading.Tasks;
 using Vm.Tools.Application.Navigation;
 using Vm.Tools.Application.ViewModel.Modal;
 using Vm.Tools.Application.WindowServices;
 
 namespace Vm.Tools.Application.ViewModel
 {
-    public class ApplicationViewModel<T> : Vm.Tools.ViewModel, IMessageBox, INotificationSender
+    public class ApplicationViewModel<T> : Standard.ViewModel, IMessageBox, INotificationSender
     {
         public T ApplicationInformation { get; }
         public IWindowViewModel Window { get; }

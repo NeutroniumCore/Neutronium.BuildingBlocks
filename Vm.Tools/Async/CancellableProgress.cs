@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Windows.Threading;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Async
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Vm.Tools.Application
+namespace Vm.Tools.Standard
 {
     public interface IApplication
     {

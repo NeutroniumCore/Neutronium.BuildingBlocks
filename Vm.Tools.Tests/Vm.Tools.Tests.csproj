@@ -129,6 +129,10 @@
       <Project>{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}</Project>
       <Name>Vm.Tools.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Vm.Tools.Standard\Vm.Tools.Standard.csproj">
+      <Project>{59F5DBF2-0B6E-4FE4-B51E-EB508DE59FBB}</Project>
+      <Name>Vm.Tools.Standard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vm.Tools\Vm.Tools.csproj">
       <Project>{17472ec0-9abf-449a-85d8-fb9e9a60c9b9}</Project>
       <Name>Vm.Tools</Name>

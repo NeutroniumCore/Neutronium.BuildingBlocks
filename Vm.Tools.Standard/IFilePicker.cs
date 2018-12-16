@@ -1,4 +1,6 @@
-﻿namespace Vm.Tools.Dialog.FileChooser 
+﻿using Vm.Tools.Standard;
+
+namespace Vm.Tools.Dialog.FileChooser 
 {
     public interface IFilePicker : IIODialog
     {

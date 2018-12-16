@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vm.Tools.Async
+namespace Vm.Tools.Standard
 {
     public class CommandResult<TResult>
     {

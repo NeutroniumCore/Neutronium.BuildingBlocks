@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Dialog.Message
 {

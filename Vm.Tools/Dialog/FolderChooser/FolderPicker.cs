@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Dialog.FolderChooser 
 {

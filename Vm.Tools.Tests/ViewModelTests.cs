@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using FluentAssertions;
 using Ploeh.AutoFixture.Xunit2;
+using Vm.Tools.Standard;
 using Xunit;
 
 namespace Vm.Tools.Tests
@@ -88,8 +89,8 @@ namespace Vm.Tools.Tests
 
             public string Property
             {
-                set { LastSetValue = Set(ref _Property, value); }
-                get { return _Property; }
+                set => LastSetValue = Set(ref _Property, value);
+                get => _Property;
             }
         }
     }

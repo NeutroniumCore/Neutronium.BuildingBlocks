@@ -1,4 +1,4 @@
-﻿namespace Vm.Tools.Dialog.FolderChooser 
+﻿namespace Vm.Tools.Standard 
 {
     public interface IFolderPicker : IIODialog
     {

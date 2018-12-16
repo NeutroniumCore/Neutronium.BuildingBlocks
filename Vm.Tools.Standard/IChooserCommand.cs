@@ -1,7 +1,7 @@
 ﻿using System;
 using Neutronium.MVVMComponents;
 
-namespace Vm.Tools.Dialog
+namespace Vm.Tools.Standard
 {
     public interface IChooserCommand<out T> where T : IIODialog
     {

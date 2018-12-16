@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Vm.Tools
+namespace Vm.Tools.Standard
 {
     public abstract class ViewModel : INotifyPropertyChanged, INotifyPropertyChanging
     {

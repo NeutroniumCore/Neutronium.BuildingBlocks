@@ -1,4 +1,4 @@
-﻿namespace Vm.Tools.Dialog 
+﻿namespace Vm.Tools.Standard 
 {
     public interface IIODialog 
     {

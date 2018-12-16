@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Neutronium.MVVMComponents;
 
-namespace Vm.Tools.Async
+namespace Vm.Tools.Standard
 {
     public interface ITaskCancellableCommand<TResult> : INotifyPropertyChanged, INotifyPropertyChanging
     {

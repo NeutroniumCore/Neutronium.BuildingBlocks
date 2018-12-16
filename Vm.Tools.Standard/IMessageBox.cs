@@ -1,4 +1,4 @@
-﻿namespace Vm.Tools.Dialog.Message
+﻿namespace Vm.Tools.Standard
 {
     public enum WindowType
     {

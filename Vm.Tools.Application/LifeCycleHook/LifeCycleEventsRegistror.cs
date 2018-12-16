@@ -1,4 +1,5 @@
 ﻿using Vm.Tools.Application.Navigation;
+using Vm.Tools.Standard;
 
 namespace Vm.Tools.Application.LifeCycleHook
 {

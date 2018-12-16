@@ -85,6 +85,10 @@
     <Compile Include="WindowServices\NotificationType.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Vm.Tools.Standard\Vm.Tools.Standard.csproj">
+      <Project>{59f5dbf2-0b6e-4fe4-b51e-eb508de59fbb}</Project>
+      <Name>Vm.Tools.Standard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vm.Tools\Vm.Tools.csproj">
       <Project>{17472ec0-9abf-449a-85d8-fb9e9a60c9b9}</Project>
       <Name>Vm.Tools</Name>
