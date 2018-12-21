@@ -1,6 +1,6 @@
-﻿using System.ComponentModel;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Ploeh.AutoFixture.Xunit2;
+using System.ComponentModel;
 using Vm.Tools.Standard;
 using Xunit;
 
@@ -30,9 +30,11 @@ namespace Vm.Tools.Tests
         {
             _ViewModel.Property = from;
 
-            _ViewModel.MonitorEvents();
-            _ViewModel.Property = to;
-            _ViewModel.ShouldRaisePropertyChangeFor(vm => vm.Property);
+            using (var monitor = _ViewModel.Monitor())
+            {
+                _ViewModel.Property = to;
+                monitor.Should().RaisePropertyChangeFor(vm => vm.Property);
+            }
         }
 
         [Theory]
@@ -42,9 +44,11 @@ namespace Vm.Tools.Tests
         {
             _ViewModel.Property = from;
 
-            _ViewModel.MonitorEvents();
-            _ViewModel.Property = to;
-            _ViewModel.ShouldRaise("PropertyChanging").WithArgs<PropertyChangingEventArgs>(evt => evt.PropertyName == nameof(ViewModelTest.Property));
+            using (var monitor = _ViewModel.Monitor())
+            {
+                _ViewModel.Property = to;
+                monitor.Should().Raise("PropertyChanging").WithArgs<PropertyChangingEventArgs>(evt => evt.PropertyName == nameof(ViewModelTest.Property));
+            }
         }
 
         [Theory, AutoData]
@@ -52,9 +56,11 @@ namespace Vm.Tools.Tests
         {
             _ViewModel.Property = value;
 
-            _ViewModel.MonitorEvents();
-            _ViewModel.Property = value;
-            _ViewModel.ShouldNotRaisePropertyChangeFor(vm => vm.Property);
+            using (var monitor = _ViewModel.Monitor())
+            {
+                _ViewModel.Property = value;
+                monitor.Should().NotRaisePropertyChangeFor(vm => vm.Property);
+            }
         }
 
         [Theory, AutoData]
@@ -62,10 +68,11 @@ namespace Vm.Tools.Tests
         {
             _ViewModel.Property = value;
 
-            _ViewModel.MonitorEvents();
-            _ViewModel.Property = value;
-            _ViewModel.ShouldNotRaise("PropertyChanging");
-
+            using (var monitor = _ViewModel.Monitor())
+            {
+                _ViewModel.Property = value;
+                monitor.Should().NotRaise("PropertyChanging");
+            }
         }
 
         [Theory]
