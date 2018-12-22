@@ -34,6 +34,7 @@ namespace Application.SetUp.Tests
             yield return new object[] { new[] { "-mode=dev" }, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
             yield return new object[] { new[] { "-mode=live" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri()) };
             yield return new object[] { new[] { "-mode=live", "-port=90" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(90)) };
+            yield return new object[] { new[] { "-mode=live", "-port=oo" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri()) };
             yield return new object[] { new[] { "-mode=prod" }, new ApplicationSetUp(ApplicationMode.Production, GetDummyUri()) };
             yield return new object[] { new[] { "-mode=prod", "-port=90" }, new ApplicationSetUp(ApplicationMode.Production, GetDummyUri()) };
             yield return new object[] { new[] { "-mode=live", "-url=http://www.google.com" }, new ApplicationSetUp(ApplicationMode.Live, new Uri("http://www.google.com")) };
@@ -62,8 +63,16 @@ namespace Application.SetUp.Tests
         public void Parse_uses_default_mode(ApplicationMode mode)
         {
             var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, @default: mode);
-            var res = applicationSetUpBuilder.BuildFromApplicationArguments(new String [] { });
+            var res = applicationSetUpBuilder.BuildFromApplicationArguments(new string [] { });
             res.Mode.Should().Be(mode);
+        }
+
+        [Fact]
+        public void BuildForProduction_creates_a_production_set_up()
+        {
+            var expected = new ApplicationSetUp(ApplicationMode.Production, _ProductionUri);
+            var res = _ApplicationSetUpBuilder.BuildForProduction();
+            res.Should().BeEquivalentTo(expected);
         }
     }
 }

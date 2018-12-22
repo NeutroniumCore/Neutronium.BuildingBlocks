@@ -65,9 +65,9 @@ namespace Application.SetUp
             if (mode != ApplicationMode.Live)
                 return _ProductionUri;
 
-            var port = _DefaultPort;
-            if (argumentsDictionary.TryGetValue(Port, out var portString))
-                int.TryParse(portString, out port);
+            if (!argumentsDictionary.TryGetValue(Port, out var portString) ||
+                !int.TryParse(portString, out var port))
+                port = _DefaultPort;
 
             return new Uri($"http://localhost:{port}/index.html");
         }
