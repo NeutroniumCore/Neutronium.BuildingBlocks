@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
-using Ploeh.AutoFixture.Xunit2;
 using System.ComponentModel;
+using AutoFixture.Xunit2;
 using Vm.Tools.Standard;
 using Xunit;
 
