@@ -106,6 +106,10 @@ namespace Vm.Tools.Application.Navigation
 
         private void AfterResolve(string routeName)
         {
+            //Possible on hot-reload or after crash
+            if ((routeName == Route) && (_CurrentNavigations.Count == 0))
+                return;
+
             var context = _CurrentNavigations.Dequeue();
             if (context.Route != routeName)
             {
