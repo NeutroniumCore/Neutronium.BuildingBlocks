@@ -106,7 +106,7 @@ namespace Vm.Tools.Application.Navigation
 
         private void AfterResolve(string routeName)
         {
-            //Possible on hot-reload or after crash
+            //Possible on hot-reload or after crash recovery
             if ((routeName == Route) && (_CurrentNavigations.Count == 0))
                 return;
 

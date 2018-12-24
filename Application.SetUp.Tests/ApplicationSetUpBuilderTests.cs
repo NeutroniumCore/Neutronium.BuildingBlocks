@@ -44,14 +44,14 @@ namespace Application.SetUp.Tests
 
         [Theory]
         [MemberData(nameof(GetParameters))]
-        public void Parse_parses_arguments(string[] parameters, ApplicationSetUp expectedApplicationSetUp)
+        public void BuildFromApplicationArguments_parses_arguments(string[] parameters, ApplicationSetUp expectedApplicationSetUp)
         {
             var res = _ApplicationSetUpBuilder.BuildFromApplicationArguments(parameters);
             res.Should().BeEquivalentTo(expectedApplicationSetUp);
         }
 
         [Theory, AutoData]
-        public void Parse_uses_default_port_in_live_mode(int port)
+        public void BuildFromApplicationArguments_uses_default_port_in_live_mode(int port)
         {
             var expectedString = GetLiveUri(port);
             var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, defaultPort: port);
@@ -60,11 +60,19 @@ namespace Application.SetUp.Tests
         }
 
         [Theory, AutoData]
-        public void Parse_uses_default_mode(ApplicationMode mode)
+        public void BuildFromApplicationArguments_uses_default_mode(ApplicationMode mode)
         {
             var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, @default: mode);
             var res = applicationSetUpBuilder.BuildFromApplicationArguments(new string [] { });
             res.Mode.Should().Be(mode);
+        }
+
+        [Theory, AutoData]
+        public void BuildFromMode_uses_mode(ApplicationMode mode)
+        {
+            var expected = new ApplicationSetUp(mode, GetDummyUri());
+            var res = _ApplicationSetUpBuilder.BuildFromMode(mode);
+            res.Should().BeEquivalentTo(expected);
         }
 
         [Fact]

@@ -30,6 +30,11 @@ namespace Application.SetUp
             _Default = @default;
         }
 
+        public ApplicationSetUp BuildFromMode(ApplicationMode mode)
+        {
+            return new ApplicationSetUp(mode, _ProductionUri);
+        }
+
         public ApplicationSetUp BuildForProduction()
         {
             return new ApplicationSetUp(ApplicationMode.Production, _ProductionUri);
