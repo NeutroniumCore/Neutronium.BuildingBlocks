@@ -1,20 +1,22 @@
-﻿using System;
+﻿using Application.SetUp.Script;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Application.SetUp
 {
-    public class ApplicationSetUpBuilder
+    public class ApplicationSetUpBuilder : IDisposable
     {
         private const string Mode = "mode";
         private const string Live = "live";
         private const string Dev = "dev";
         private const string Prod = "prod";
-        private const string Port = "port";
         private const string Url = "url";
 
-        private readonly Uri _ProductionUri;
+        public Uri Uri { get; set; }
+
         private readonly ApplicationMode _Default;
-        private readonly int _DefaultPort;
+        private readonly INpmRunner _NpmRunner;
 
         private static readonly Dictionary<string, ApplicationMode> _Modes = new Dictionary<string, ApplicationMode>
         {
@@ -23,33 +25,42 @@ namespace Application.SetUp
             [Prod] = ApplicationMode.Production
         };
 
-        public ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default = ApplicationMode.Dev, int defaultPort = 8080)
+        public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode @default = ApplicationMode.Dev,
+            string liveScript = "live") :
+            this(new Uri($"pack://application:,,,/{viewDirectory.Replace(@"\","/")}/dist/index.html"),
+                @default,
+                new NpmRunner(viewDirectory, liveScript))
         {
-            _ProductionUri = productionUri;
-            _DefaultPort = defaultPort;
-            _Default = @default;
         }
 
-        public ApplicationSetUp BuildFromMode(ApplicationMode mode)
+        internal ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default, INpmRunner npmRunner)
         {
-            return new ApplicationSetUp(mode, _ProductionUri);
+            Uri = productionUri;
+            _Default = @default;
+            _NpmRunner = npmRunner;
+        }
+
+        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode)
+        {
+            var uri =  await BuildUri(mode).ConfigureAwait(false);
+            return new ApplicationSetUp(mode, uri);
         }
 
         public ApplicationSetUp BuildForProduction()
         {
-            return new ApplicationSetUp(ApplicationMode.Production, _ProductionUri);
+            return new ApplicationSetUp(ApplicationMode.Production, Uri);
         }
 
-        public ApplicationSetUp BuildFromApplicationArguments(string[] arguments)
+        public Task<ApplicationSetUp> BuildFromApplicationArguments(string[] arguments)
         {
             var argument = ArgumentParser.Parse(arguments);
             return BuildFromArgument(argument);
         }
 
-        private ApplicationSetUp BuildFromArgument(IDictionary<string, string> argumentsDictionary)
+        private async Task<ApplicationSetUp> BuildFromArgument(IDictionary<string, string> argumentsDictionary)
         {
             var mode = GetApplicationMode(argumentsDictionary);
-            var uri = BuildDevUri(mode, argumentsDictionary);
+            var uri = await BuildDevUri(mode, argumentsDictionary).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
@@ -62,19 +73,26 @@ namespace Application.SetUp
             return _Default;
         }
 
-        private Uri BuildDevUri(ApplicationMode mode, IDictionary<string, string> argumentsDictionary)
+        private async Task<Uri> BuildDevUri(ApplicationMode mode, IDictionary<string, string> argumentsDictionary)
         {
             if (argumentsDictionary.TryGetValue(Url, out var uri))
                 return new Uri(uri);
 
+            return await BuildUri(mode).ConfigureAwait(false);
+        }
+
+        private async Task<Uri> BuildUri(ApplicationMode mode)
+        {
             if (mode != ApplicationMode.Live)
-                return _ProductionUri;
+                return Uri;
 
-            if (!argumentsDictionary.TryGetValue(Port, out var portString) ||
-                !int.TryParse(portString, out var port))
-                port = _DefaultPort;
-
+            var port = await _NpmRunner.GetPortAsync().ConfigureAwait(false);
             return new Uri($"http://localhost:{port}/index.html");
+        }
+
+        public void Dispose()
+        {
+            _NpmRunner?.Dispose();
         }
     }
 }
