@@ -6,7 +6,7 @@
         YesNo
     }
 
-    public interface IMessageBox
+    public interface INativeMessageBox
     {
         /// <summary>
         /// Show a message to end user and wait for an answer

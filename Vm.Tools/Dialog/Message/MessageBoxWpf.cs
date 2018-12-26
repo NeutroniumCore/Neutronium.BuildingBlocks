@@ -3,7 +3,7 @@ using Vm.Tools.Standard;
 
 namespace Vm.Tools.Dialog.Message
 {
-    public class MessageBoxWpf: IMessageBox
+    public class MessageBoxWpf: INativeMessageBox
     {
         private readonly Window _Window;
 
