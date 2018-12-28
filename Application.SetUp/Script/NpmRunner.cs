@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -73,7 +72,7 @@ namespace Application.SetUp.Script
 
         public async Task<bool> Cancel()
         {
-            if (_State == State.Closed)
+            if ((_State == State.Closed) || (_State == State.NotStarted))
                 return false;
 
             _State = State.Closing;
