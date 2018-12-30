@@ -3,7 +3,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Application.SetUp.Script
+namespace Application.SetUp.NpmHelper
 {
     public class NpmRunner : INpmRunner
     {

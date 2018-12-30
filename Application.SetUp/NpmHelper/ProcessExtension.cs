@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace Application.SetUp.Script
+namespace Application.SetUp.NpmHelper
 {
     public static class ProcessExtension
     {

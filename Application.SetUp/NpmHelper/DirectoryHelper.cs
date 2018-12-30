@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace Application.SetUp.Script
+namespace Application.SetUp.NpmHelper
 {
     public static class DirectoryHelper
     {

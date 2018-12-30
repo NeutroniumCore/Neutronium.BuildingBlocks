@@ -1,8 +1,8 @@
-﻿using Application.SetUp.Script;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Application.SetUp.NpmHelper;
 
 namespace Application.SetUp
 {
