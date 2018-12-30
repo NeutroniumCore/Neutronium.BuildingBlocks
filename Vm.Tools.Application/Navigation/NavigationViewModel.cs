@@ -1,10 +1,10 @@
-﻿using System;
+﻿using CommonServiceLocator;
+using Neutronium.MVVMComponents;
+using Neutronium.MVVMComponents.Relay;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using CommonServiceLocator;
-using Neutronium.MVVMComponents;
-using Neutronium.MVVMComponents.Relay;
 
 namespace Vm.Tools.Application.Navigation
 {
@@ -67,7 +67,14 @@ namespace Vm.Tools.Application.Navigation
                 return BeforeRouterResult.Ok(_ViewModel);
             }
 
-            to.Redirect(redirect, GetViewModelFromRoute(redirect));
+            var nextViewModel = GetViewModelFromRoute(redirect);
+            if (nextViewModel == null)
+            {
+                OnError($"Redirect route not found: {redirect}, navigation will be cancelled.");
+                return BeforeRouterResult.Cancel();
+            }
+
+            to.Redirect(redirect, nextViewModel);
             return BeforeRouterResult.CreateRedirect(redirect);
         }
 
@@ -88,13 +95,14 @@ namespace Vm.Tools.Application.Navigation
 
         private RouteContext CreateRouteContext(string routeName)
         {
-            return CreateRouteContext(GetViewModelFromRoute(routeName), routeName);
+            var viewModel = GetViewModelFromRoute(routeName);
+            return viewModel == null ? null : CreateRouteContext(viewModel, routeName);
         }
 
         private object GetViewModelFromRoute(string routeName)
         {
             var type = _RouterSolver.SolveType(routeName);
-            return _ServiceLocator.Value.GetInstance(type);
+            return type == null ? null : _ServiceLocator.Value.GetInstance(type);
         }
 
         private RouteContext CreateRouteContext(object viewModel, string routeName)
@@ -117,7 +125,7 @@ namespace Vm.Tools.Application.Navigation
             }
             context.Complete();
 
-            Route = routeName;          
+            Route = routeName;
             OnNavigated?.Invoke(this, new RoutedEventArgs(context));
         }
 
@@ -167,13 +175,20 @@ namespace Vm.Tools.Application.Navigation
         }
 
         public Task Navigate(string routeName)
-        {       
-            if (Route == routeName) {
+        {
+            if (Route == routeName)
+            {
                 OnInformation($"Route unchanged: ${routeName}");
                 return Task.CompletedTask;
-            }            
+            }
 
             var ctx = CreateRouteContext(routeName);
+            if (ctx == null)
+            {
+                OnError($"Route not registered: {routeName}.");
+                return Task.FromException(new NotImplementedException($"Route not found: {routeName}"));
+            }
+
             Route = routeName;
             return ctx.Task;
         }
