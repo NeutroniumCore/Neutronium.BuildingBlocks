@@ -8,7 +8,6 @@ namespace Vm.Tools.Dialog.FileChooser
     public class FilePicker : IFilePicker
     {
         public string Title { get; set; }
-
         public string Directory { get; set; }
         public string ExtensionDescription { get; set; }
         public string[] Extensions { get; set; }
