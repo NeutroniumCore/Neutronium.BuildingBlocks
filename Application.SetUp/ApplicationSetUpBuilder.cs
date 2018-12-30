@@ -1,6 +1,7 @@
 ﻿using Application.SetUp.Script;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace Application.SetUp
@@ -40,9 +41,9 @@ namespace Application.SetUp
             _NpmRunner = npmRunner;
         }
 
-        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode)
+        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, Action<string> onNpmLog = null)
         {
-            var uri =  await BuildUri(mode).ConfigureAwait(false);
+            var uri =  await BuildUri(mode, onNpmLog).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
@@ -81,12 +82,19 @@ namespace Application.SetUp
             return await BuildUri(mode).ConfigureAwait(false);
         }
 
-        private async Task<Uri> BuildUri(ApplicationMode mode)
+        private async Task<Uri> BuildUri(ApplicationMode mode, Action<string> onNpmLog = null)
         {
             if (mode != ApplicationMode.Live)
                 return Uri;
 
+            void OnDataReceived(object _, DataReceivedEventArgs dataReceived)
+            {
+                onNpmLog?.Invoke(dataReceived.Data);
+            }
+
+            _NpmRunner.OutputDataReceived += OnDataReceived;
             var port = await _NpmRunner.GetPortAsync().ConfigureAwait(false);
+            _NpmRunner.OutputDataReceived -= OnDataReceived;
             return new Uri($"http://localhost:{port}/index.html");
         }
 

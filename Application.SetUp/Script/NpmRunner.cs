@@ -17,6 +17,8 @@ namespace Application.SetUp.Script
         private Task<string> StopKeyAsync => _StopKeyCompletionSource.Task;
         private State _State = State.NotStarted;
 
+        public event DataReceivedEventHandler OutputDataReceived;
+
         private enum State
         {
             NotStarted,
@@ -67,7 +69,6 @@ namespace Application.SetUp.Script
             _Process.BeginErrorReadLine();
             _Process.BeginOutputReadLine();
             _State = State.Initializing;
-
         }
 
         public async Task<bool> Cancel()
@@ -93,19 +94,17 @@ namespace Application.SetUp.Script
         {
             var data = e.Data;
             Trace.WriteLine($"npm console: {data}");
+            OutputDataReceived?.Invoke(this, e);
 
             switch (_State)
             {
                 case State.Initializing:
                     TryParsePort(data);
-                    return;
+                    break;
 
                 case State.Closing:
                     TryParseKey(data);
-                    return;
-
-                default:
-                    return;
+                    break;
             };
         }
 
