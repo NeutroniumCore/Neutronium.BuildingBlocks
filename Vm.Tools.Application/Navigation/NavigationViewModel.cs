@@ -44,6 +44,7 @@ namespace Vm.Tools.Application.Navigation
 
         private BeforeRouterResult BeforeResolve(string routeName)
         {
+            OnInformation($"Navigating to: ${routeName}");
             var context = GetRouteContext(routeName);
             return (context == null) ? BeforeRouterResult.Cancel() : Navigate(context);
         }
@@ -81,7 +82,12 @@ namespace Vm.Tools.Application.Navigation
         private RouteContext GetRouteContext(string routeName)
         {
             if (_CurrentNavigations.Count == 0)
-                return CreateRouteContext(routeName);
+            {
+                var newContext = CreateRouteContext(routeName);
+                if (newContext == null)
+                    OnError($"Route not found {routeName}. Cancelling navigation.");
+                return newContext;
+            }
 
             var context = _CurrentNavigations.Peek();
             if (context.Route != routeName)
