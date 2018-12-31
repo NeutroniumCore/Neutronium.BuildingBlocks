@@ -29,12 +29,13 @@ namespace Vm.Tools.Application.Navigation
 
         private object _ViewModel;
 
-        public NavigationViewModel(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver)
+        public NavigationViewModel(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver, string initialRoute = null)
         {
             _ServiceLocator = serviceLocator;
             _RouterSolver = routerSolver;
             AfterResolveCommand = new RelaySimpleCommand<string>(AfterResolve);
             BeforeResolveCommand = RelayResultCommand.Create<string, BeforeRouterResult>(BeforeResolve);
+            Route = initialRoute;
         }
 
         private BeforeRouterResult BeforeResolve(string routeName)
