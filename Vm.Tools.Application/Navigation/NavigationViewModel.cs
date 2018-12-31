@@ -4,6 +4,7 @@ using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 
 namespace Vm.Tools.Application.Navigation
@@ -103,8 +104,25 @@ namespace Vm.Tools.Application.Navigation
 
         private object GetViewModelFromRoute(string routeName)
         {
-            var type = _RouterSolver.SolveType(routeName);
-            return type == null ? null : _ServiceLocator.Value.GetInstance(type);
+            var paths = routeName.Split('/');
+            var type = _RouterSolver.SolveType(paths[0]);
+            if (type == null)
+                return null;
+
+            var root = _ServiceLocator.Value.GetInstance(type);
+            CreateChildren(root, paths);
+            return root;
+        }
+
+        private void CreateChildren(object root, string[] paths)
+        {
+            if (paths.Length < 2 || !(root is ISubNavigator subNavigator))
+                return;
+
+            for (var i = 1; i < paths.Length; i++)
+            {
+                subNavigator = subNavigator.NavigateTo(paths[i]);
+            }
         }
 
         private RouteContext CreateRouteContext(object viewModel, string routeName)

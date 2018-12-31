@@ -4,6 +4,7 @@ using FluentAssertions;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Vm.Tools.Application.Navigation;
 using Xunit;
@@ -227,6 +228,34 @@ namespace Vm.Tools.Application.Tests
                 _NavigationViewModel.AfterResolveCommand.Execute(redirectRoute);
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedRedirectViewModel && arg.NewRoute.RouteName == redirectRoute);
+            }
+        }
+
+        [Fact]
+        public async Task AfterResolveCommand_construct_subNavigator_for_complex_path()
+        {
+            var expected = new FakeSubNavigator("path1")
+            {
+                SubNavigator = new FakeSubNavigator("path2")
+                {
+                    SubNavigator = new FakeSubNavigator("path3")
+                }
+            };
+            var type = typeof(FakeSubNavigator);
+            const string route = "path1/path2/path3";
+            _RouterSolver.SolveType("path1").Returns(type);
+            _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigator("path1"));
+
+            await _NavigationViewModel.BeforeResolveCommand.Execute(route);
+
+            using (var monitor = _NavigationViewModel.Monitor())
+            {
+                _NavigationViewModel.AfterResolveCommand.Execute(route);
+                monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
+                    arg.NewRoute.RouteName == route);
+
+                var eventRaised = (RoutedEventArgs)monitor.OccurredEvents.First(ev => ev.EventName == "OnNavigated").Parameters[1];
+                eventRaised.NewRoute.ViewModel.Should().BeEquivalentTo(expected);
             }
         }
 
