@@ -37,11 +37,6 @@ namespace Vm.Tools.Application.Navigation
             BeforeResolveCommand = RelayResultCommand.Create<string, BeforeRouterResult>(BeforeResolve);
         }
 
-        public static NavigationViewModel Create(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver)
-        {
-            return new NavigationViewModel(serviceLocator, routerSolver);
-        }
-
         private BeforeRouterResult BeforeResolve(string routeName)
         {
             OnInformation($"Navigating to: ${routeName}");
