@@ -64,6 +64,7 @@
     <Compile Include="Navigation\INavigator.cs" />
     <Compile Include="Navigation\IRouterBuilder.cs" />
     <Compile Include="Navigation\IRouterSolver.cs" />
+    <Compile Include="Navigation\ISubNavigator.cs" />
     <Compile Include="Navigation\NavigationContext.cs" />
     <Compile Include="Navigation\NavigationViewModel.cs" />
     <Compile Include="Navigation\RouteContext.cs" />
