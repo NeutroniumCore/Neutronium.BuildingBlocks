@@ -64,6 +64,22 @@ namespace Vm.Tools.Application.Tests
             res.Should().BeEquivalentTo(expected);
         }
 
+        [Theory]
+        [InlineAutoData(true)]
+        [InlineAutoData(false)]
+        public async Task BeforeResolveCommand_cancels_when_other_navigation_is_happening(bool sameRouteNavigation, string route)
+        {
+            var originalRoute = sameRouteNavigation ? route : $"different_{route}";
+            var expected = sameRouteNavigation ? BeforeRouterResult.Ok(_ExpectedNewViewModel) : BeforeRouterResult.Cancel();
+            SetupRoute(originalRoute);
+            SetupRoute(route);
+            var task = _NavigationViewModel.Navigate(originalRoute);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
+
+            res.Should().BeEquivalentTo(expected);
+        }
+
         [Theory, AutoData]
         public async Task BeforeResolveCommand_sends_event(string route)
         {
@@ -127,6 +143,22 @@ namespace Vm.Tools.Application.Tests
             res.Should().BeEquivalentTo(expected);
         }
 
+        [Theory, AutoData]
+        public void BeforeResolveCommand_solves_navigate_task_when_cancelled(string route)
+        {
+            SetupRoute(route);
+            var task = _NavigationViewModel.Navigate(route);
+            void OnNavigating(object _, RoutingEventArgs e)
+            {
+                e.Cancel = true;
+            }
+            _NavigationViewModel.OnNavigating += OnNavigating;
+
+            _NavigationViewModel.BeforeResolveCommand.Execute(route);
+
+            task.IsCompleted.Should().BeTrue();
+        }
+
         [Fact]
         public void AfterResolveCommand_does_not_throw_when_initializing_on_same_route()
         {
@@ -135,7 +167,7 @@ namespace Vm.Tools.Application.Tests
         }
 
         [Theory, AutoData]
-        public async Task AfterResolveCommand_update_route(string route)
+        public async Task AfterResolveCommand_updates_route(string route)
         {
             SetupRoute(route);
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
@@ -146,7 +178,7 @@ namespace Vm.Tools.Application.Tests
         }
 
         [Theory, AutoData]
-        public void AfterResolveCommand_solve_navigate_task(string route)
+        public void AfterResolveCommand_solves_navigate_task(string route)
         {
             SetupRoute(route);
             var task = _NavigationViewModel.Navigate(route);
@@ -242,15 +274,35 @@ namespace Vm.Tools.Application.Tests
         [Theory, AutoData]
         public void Navigate_type_context_updates_route(string route)
         {
-            SetupRoutefromType(route);
+            SetupRouteFromType(route);
             var task = _NavigationViewModel.Navigate(_FakeType, null);
+            _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_type_context_updates_route_with_context_route_when_provided(string route, string contextRoute)
+        {
+            SetupRouteFromType(route);
+            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext{ RouteName = contextRoute });
+            _NavigationViewModel.Route.Should().Be(contextRoute);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_type_context_uses_resolution_key_from_context_route_when_provided(string route, string routeWithoutKey, string resolutionKey)
+        {
+            var newViewModel = new FakeClass();
+            _ServiceLocator.GetInstance(_FakeType, resolutionKey).Returns(newViewModel);
+            _RouterSolver.SolveRoute(newViewModel).Returns(route);
+            SetupRouteFromType(routeWithoutKey);
+
+            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext { ResolutionKey = resolutionKey });
             _NavigationViewModel.Route.Should().Be(route);
         }
 
         [Theory, AutoData]
         public void Navigate_type_context_is_not_synchronous(string route)
         {
-            SetupRoutefromType(route);
+            SetupRouteFromType(route);
             var task = _NavigationViewModel.Navigate(_FakeType, null);
             task.IsCompleted.Should().BeFalse();
         }
@@ -266,7 +318,7 @@ namespace Vm.Tools.Application.Tests
         [Fact]
         public void Navigate_type_context_is_synchronous_when_route_is_the_same()
         {
-            SetupRoutefromType(_OriginalRoute);
+            SetupRouteFromType(_OriginalRoute);
             var task = _NavigationViewModel.Navigate(_FakeType, null);
             _NavigationViewModel.Route.Should().Be(_OriginalRoute);
             task.IsCompleted.Should().BeTrue();
@@ -275,7 +327,7 @@ namespace Vm.Tools.Application.Tests
         [Fact]
         public void Navigate_type_context_send_event_when_route_is_the_same()
         {
-            SetupRoutefromType(_OriginalRoute);
+            SetupRouteFromType(_OriginalRoute);
 
             using (var monitor = _NavigationViewModel.Monitor())
             {
@@ -305,7 +357,7 @@ namespace Vm.Tools.Application.Tests
             _RouterSolver.SolveType(route).Returns(_FakeType);
         }
 
-        private void SetupRoutefromType(string route)
+        private void SetupRouteFromType(string route)
         {
             _RouterSolver.SolveRoute(_ExpectedNewViewModel).Returns(route);
         }
