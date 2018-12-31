@@ -156,12 +156,12 @@ namespace Vm.Tools.Application.Navigation
             return routeContext.Task;
         }
 
-        public async Task Navigate<T>(NavigationContext<T> context = null)
+        public Task Navigate<T>(NavigationContext<T> context = null)
         {
             var resolutionKey = context?.ResolutionKey;
             var vm = (resolutionKey == null) ? _ServiceLocator.Value.GetInstance<T>() : _ServiceLocator.Value.GetInstance<T>(resolutionKey);
-            context?.BeforeNavigate(vm);
-            await Navigate(vm, context?.RouteName);
+            context?.BeforeNavigate?.Invoke(vm);
+            return Navigate(vm, context?.RouteName);
         }
 
         public async Task Navigate(Type type, NavigationContext context = null)

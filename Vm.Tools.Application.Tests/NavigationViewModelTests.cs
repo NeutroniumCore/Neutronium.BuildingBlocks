@@ -21,11 +21,11 @@ namespace Vm.Tools.Application.Tests
         private static readonly Type _FakeType = typeof(FakeClass);
         private static readonly Type _FakeTypeRedirect = typeof(SecondFakeClass);
 
-        private class FakeClass
+        public class FakeClass
         {
         }
 
-        private class SecondFakeClass
+        public class SecondFakeClass
         {
         }
 
@@ -35,6 +35,7 @@ namespace Vm.Tools.Application.Tests
             _ExpectedRedirectViewModel = new SecondFakeClass();
             _ServiceLocator = Substitute.For<IServiceLocator>();
             _ServiceLocator.GetInstance(_FakeType).Returns(_ExpectedNewViewModel);
+            _ServiceLocator.GetInstance<FakeClass>().Returns(_ExpectedNewViewModel);
             _ServiceLocator.GetInstance(_FakeTypeRedirect).Returns(_ExpectedRedirectViewModel);
             _ServiceLocator.GetInstance(null).Throws(new ArgumentNullException("serviceType"));
             _RouterSolver = Substitute.For<IRouterSolver>();
@@ -332,6 +333,82 @@ namespace Vm.Tools.Application.Tests
             using (var monitor = _NavigationViewModel.Monitor())
             {
                 var task = _NavigationViewModel.Navigate(_FakeType, null);
+                monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
+                    arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
+            }
+        }
+
+        [Theory, AutoData]
+        public void Navigate_generic_context_updates_route(string route)
+        {
+            SetupRouteFromType(route);
+            var task = _NavigationViewModel.Navigate<FakeClass>(null);
+            _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_generic_context_updates_route_with_context_route_when_provided(string route, string contextRoute)
+        {
+            SetupRouteFromType(route);
+            var task = _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { RouteName = contextRoute });
+            _NavigationViewModel.Route.Should().Be(contextRoute);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_generic_context_uses_resolution_key_from_context_route_when_provided(string route, string routeWithoutKey, string resolutionKey)
+        {
+            var newViewModel = new FakeClass();
+            _ServiceLocator.GetInstance<FakeClass>(resolutionKey).Returns(newViewModel);
+            _RouterSolver.SolveRoute(newViewModel).Returns(route);
+            SetupRouteFromType(routeWithoutKey);
+
+            var task = _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { ResolutionKey = resolutionKey });
+            _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_generic_context_call_cb_on_vm_route_when_provided(string route, string contextRoute)
+        {
+            SetupRouteFromType(route);
+            var context = new NavigationContext<FakeClass> {BeforeNavigate = Substitute.For<Action<FakeClass>>()};
+            var task = _NavigationViewModel.Navigate(context);
+            context.BeforeNavigate.Received(1).Invoke(Arg.Any<FakeClass>());
+            context.BeforeNavigate.Received().Invoke(_ExpectedNewViewModel);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_generic_context_is_not_synchronous(string route)
+        {
+            SetupRouteFromType(route);
+            var task = _NavigationViewModel.Navigate<FakeClass>(null);
+            task.IsCompleted.Should().BeFalse();
+        }
+
+        [Fact]
+        public void Navigate_generic_context_does_not_update_route_when_not_found()
+        {
+            var task = _NavigationViewModel.Navigate<FakeClass>(null);
+            _NavigationViewModel.Route.Should().Be(_OriginalRoute);
+            task.IsCompleted.Should().BeTrue();
+        }
+
+        [Fact]
+        public void Navigate_generic_context_is_synchronous_when_route_is_the_same()
+        {
+            SetupRouteFromType(_OriginalRoute);
+            var task = _NavigationViewModel.Navigate<FakeClass>(null);
+            _NavigationViewModel.Route.Should().Be(_OriginalRoute);
+            task.IsCompleted.Should().BeTrue();
+        }
+
+        [Fact]
+        public void Navigate_generic_context_send_event_when_route_is_the_same()
+        {
+            SetupRouteFromType(_OriginalRoute);
+
+            using (var monitor = _NavigationViewModel.Monitor())
+            {
+                var task = _NavigationViewModel.Navigate<FakeClass>(null);
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
