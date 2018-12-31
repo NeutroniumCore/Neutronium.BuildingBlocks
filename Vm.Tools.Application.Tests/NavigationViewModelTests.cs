@@ -38,6 +38,7 @@ namespace Vm.Tools.Application.Tests
             _ServiceLocator.GetInstance(_FakeTypeRedirect).Returns(_ExpectedRedirectViewModel);
             _ServiceLocator.GetInstance(null).Throws(new ArgumentNullException("serviceType"));
             _RouterSolver = Substitute.For<IRouterSolver>();
+            _RouterSolver.SolveRoute(Arg.Any<object>()).Returns(default(string));
             _NavigationViewModel = new NavigationViewModel(new Lazy<IServiceLocator>(() => _ServiceLocator),
                 _RouterSolver, _OriginalRoute);
         }
@@ -229,6 +230,61 @@ namespace Vm.Tools.Application.Tests
             exception.WithMessage(expectedMessage);
         }
 
+        [Fact]
+        public async Task Navigate_type_context_throws_on_type_null()
+        {
+            var expectedMessage = new ArgumentNullException("type").Message;
+            Func<Task> navigate = () => _NavigationViewModel.Navigate(null, null);
+            var exception = await navigate.Should().ThrowAsync<ArgumentNullException>();
+            exception.WithMessage(expectedMessage);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_type_context_updates_route(string route)
+        {
+            SetupRoutefromType(route);
+            var task = _NavigationViewModel.Navigate(_FakeType, null);
+            _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Theory, AutoData]
+        public void Navigate_type_context_is_not_synchronous(string route)
+        {
+            SetupRoutefromType(route);
+            var task = _NavigationViewModel.Navigate(_FakeType, null);
+            task.IsCompleted.Should().BeFalse();
+        }
+
+        [Fact]
+        public void Navigate_type_context_does_not_update_route_when_not_found()
+        {
+            var task = _NavigationViewModel.Navigate(_FakeType, null);
+            _NavigationViewModel.Route.Should().Be(_OriginalRoute);
+            task.IsCompleted.Should().BeTrue();
+        }
+
+        [Fact]
+        public void Navigate_type_context_is_synchronous_when_route_is_the_same()
+        {
+            SetupRoutefromType(_OriginalRoute);
+            var task = _NavigationViewModel.Navigate(_FakeType, null);
+            _NavigationViewModel.Route.Should().Be(_OriginalRoute);
+            task.IsCompleted.Should().BeTrue();
+        }
+
+        [Fact]
+        public void Navigate_type_context_send_event_when_route_is_the_same()
+        {
+            SetupRoutefromType(_OriginalRoute);
+
+            using (var monitor = _NavigationViewModel.Monitor())
+            {
+                var task = _NavigationViewModel.Navigate(_FakeType, null);
+                monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
+                    arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
+            }
+        }
+
         private void SetupRedirect(string route, string redirectRoute)
         {
             SetupRoute(route);
@@ -247,6 +303,11 @@ namespace Vm.Tools.Application.Tests
         private void SetupRoute(string route)
         {
             _RouterSolver.SolveType(route).Returns(_FakeType);
+        }
+
+        private void SetupRoutefromType(string route)
+        {
+            _RouterSolver.SolveRoute(_ExpectedNewViewModel).Returns(route);
         }
     }
 }
