@@ -135,7 +135,7 @@ namespace Vm.Tools.Application.Navigation
 
             if (route == null)
             {
-                OnError($"Route not found for vm: {viewModel}");
+                OnError($"Route not found for vm: {viewModel} of type {viewModel?.GetType()}");
                 return Task.CompletedTask;
             }
 
@@ -176,6 +176,8 @@ namespace Vm.Tools.Application.Navigation
 
         public Task Navigate(string routeName)
         {
+            OnInformation($"Navigating to: ${routeName}");
+
             if (Route == routeName)
             {
                 OnInformation($"Route unchanged: ${routeName}");
