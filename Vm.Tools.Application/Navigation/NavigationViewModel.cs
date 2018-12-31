@@ -168,8 +168,8 @@ namespace Vm.Tools.Application.Navigation
         {
             if (type == null)
             {
-                OnError("Navigate to null type!");
-                return;
+                OnError("Navigate to null type is not allowed");
+                throw new ArgumentNullException(nameof(type));
             }
             var resolutionKey = context?.ResolutionKey;
             var vm = (resolutionKey == null) ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, resolutionKey);

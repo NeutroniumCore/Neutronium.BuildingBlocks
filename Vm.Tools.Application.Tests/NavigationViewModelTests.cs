@@ -5,7 +5,6 @@ using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 using System;
 using System.Threading.Tasks;
-using NSubstitute.Routing;
 using Vm.Tools.Application.Navigation;
 using Xunit;
 
@@ -22,8 +21,13 @@ namespace Vm.Tools.Application.Tests
         private static readonly Type _FakeType = typeof(FakeClass);
         private static readonly Type _FakeTypeRedirect = typeof(SecondFakeClass);
 
-        private class FakeClass { }
-        private class SecondFakeClass { }
+        private class FakeClass
+        {
+        }
+
+        private class SecondFakeClass
+        {
+        }
 
         public NavigationViewModelTests()
         {
@@ -34,7 +38,8 @@ namespace Vm.Tools.Application.Tests
             _ServiceLocator.GetInstance(_FakeTypeRedirect).Returns(_ExpectedRedirectViewModel);
             _ServiceLocator.GetInstance(null).Throws(new ArgumentNullException("serviceType"));
             _RouterSolver = Substitute.For<IRouterSolver>();
-            _NavigationViewModel = new NavigationViewModel(new Lazy<IServiceLocator>(() => _ServiceLocator), _RouterSolver, _OriginalRoute);
+            _NavigationViewModel = new NavigationViewModel(new Lazy<IServiceLocator>(() => _ServiceLocator),
+                _RouterSolver, _OriginalRoute);
         }
 
         [Fact]
@@ -51,7 +56,7 @@ namespace Vm.Tools.Application.Tests
         public async Task BeforeResolveCommand_continues_navigation_when_route_found(string route)
         {
             var expected = BeforeRouterResult.Ok(_ExpectedNewViewModel);
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
@@ -61,7 +66,7 @@ namespace Vm.Tools.Application.Tests
         [Theory, AutoData]
         public async Task BeforeResolveCommand_sends_event(string route)
         {
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
             using (var monitor = _NavigationViewModel.Monitor())
             {
                 await _NavigationViewModel.BeforeResolveCommand.Execute(route);
@@ -74,13 +79,15 @@ namespace Vm.Tools.Application.Tests
         public async Task BeforeResolveCommand_can_be_cancelled(string route)
         {
             var expected = BeforeRouterResult.Cancel();
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
+
             void OnNavigating(object _, RoutingEventArgs e)
             {
                 _NavigationViewModel.OnNavigating -= OnNavigating;
                 if (e.To.ViewModel == _ExpectedNewViewModel)
                     e.Cancel = true;
             }
+
             _NavigationViewModel.OnNavigating += OnNavigating;
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
@@ -103,13 +110,15 @@ namespace Vm.Tools.Application.Tests
         public async Task BeforeResolveCommand_cancels_when_redirect_route_not_found(string route)
         {
             var expected = BeforeRouterResult.Cancel();
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
+
             void OnNavigating(object _, RoutingEventArgs e)
             {
                 _NavigationViewModel.OnNavigating -= OnNavigating;
                 if (e.To.ViewModel == _ExpectedNewViewModel)
                     e.RedirectToRoute("route 2");
             }
+
             _NavigationViewModel.OnNavigating += OnNavigating;
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
@@ -127,7 +136,7 @@ namespace Vm.Tools.Application.Tests
         [Theory, AutoData]
         public async Task AfterResolveCommand_update_route(string route)
         {
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
             _NavigationViewModel.AfterResolveCommand.Execute(route);
@@ -136,10 +145,21 @@ namespace Vm.Tools.Application.Tests
         }
 
         [Theory, AutoData]
+        public void AfterResolveCommand_solve_navigate_task(string route)
+        {
+            SetupRoute(route);
+            var task = _NavigationViewModel.Navigate(route);
+
+            _NavigationViewModel.AfterResolveCommand.Execute(route);
+
+            task.IsCompleted.Should().BeTrue();
+        }
+
+        [Theory, AutoData]
         public async Task AfterResolveCommand_update_route_on_mismatch(string route)
         {
             var newRoute = $"new_{route}";
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
             _NavigationViewModel.AfterResolveCommand.Execute(newRoute);
@@ -150,7 +170,7 @@ namespace Vm.Tools.Application.Tests
         [Theory, AutoData]
         public async Task AfterResolveCommand_send_event(string route)
         {
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
             using (var monitor = _NavigationViewModel.Monitor())
@@ -166,7 +186,7 @@ namespace Vm.Tools.Application.Tests
         {
             SetupRedirect(route, redirectRoute);
 
-           await _NavigationViewModel.BeforeResolveCommand.Execute(route);
+            await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
             using (var monitor = _NavigationViewModel.Monitor())
             {
@@ -176,17 +196,57 @@ namespace Vm.Tools.Application.Tests
             }
         }
 
+        [Fact]
+        public void Navigate_string_returns_immediately_when_route_not_changed()
+        {
+            var res = _NavigationViewModel.Navigate(_OriginalRoute);
+            res.IsCompleted.Should().BeTrue();
+        }
+
+        [Theory, AutoData]
+        public void Navigate_string_update_route(string route)
+        {
+            SetupRoute(route);
+            _NavigationViewModel.Navigate(route);
+            _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Theory, AutoData]
+        public async Task Navigate_string_returns_an_uncompleted_task(string route)
+        {
+            SetupRoute(route);
+            var task = _NavigationViewModel.Navigate(route);
+            await Task.Delay(30);
+            task.IsCompleted.Should().BeFalse();
+        }
+
+        [Theory, AutoData]
+        public async Task Navigate_string_returns_throws_when_route_not_found(string route)
+        {
+            var expectedMessage = $"Route not found: {route}";
+            Func<Task> navigate = () => _NavigationViewModel.Navigate(route);
+            var exception = await navigate.Should().ThrowAsync<NotImplementedException>();
+            exception.WithMessage(expectedMessage);
+        }
+
         private void SetupRedirect(string route, string redirectRoute)
         {
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            SetupRoute(route);
             _RouterSolver.SolveType(redirectRoute).Returns(_FakeTypeRedirect);
+
             void OnNavigating(object _, RoutingEventArgs e)
             {
                 _NavigationViewModel.OnNavigating -= OnNavigating;
                 if (e.To.ViewModel == _ExpectedNewViewModel)
                     e.RedirectToRoute(redirectRoute);
             }
+
             _NavigationViewModel.OnNavigating += OnNavigating;
+        }
+
+        private void SetupRoute(string route)
+        {
+            _RouterSolver.SolveType(route).Returns(_FakeType);
         }
     }
 }
