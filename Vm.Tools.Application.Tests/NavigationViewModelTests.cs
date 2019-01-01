@@ -21,6 +21,7 @@ namespace Vm.Tools.Application.Tests
         private readonly string _OriginalRoute = "FirstRoute";
         private static readonly Type _FakeType = typeof(FakeClass);
         private static readonly Type _FakeTypeRedirect = typeof(SecondFakeClass);
+        private static readonly Type _FakeSubNavigatorType = typeof(FakeSubNavigator); 
 
         public class FakeClass
         {
@@ -105,9 +106,7 @@ namespace Vm.Tools.Application.Tests
         public async Task BeforeResolveCommand_calls_sub_navigator_to_resolve_view_model()
         {
             var expectedViewModel = SetupForSuccessfulNavigation("root");
-            var expected = BeforeRouterResult.Ok(expectedViewModel);
-
-            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
+            await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
 
             expectedViewModel.Received(3).NavigateTo(Arg.Any<string>());
 
@@ -286,13 +285,7 @@ namespace Vm.Tools.Application.Tests
         [Fact]
         public async Task AfterResolveCommand_construct_subNavigator_for_complex_path()
         {
-            var expected = new FakeSubNavigator("path1")
-            {
-                SubNavigator = new FakeSubNavigator("path2")
-                {
-                    SubNavigator = new FakeSubNavigator("path3")
-                }
-            };
+            var expected = GetFakeSubNavigator();
             var type = typeof(FakeSubNavigator);
             const string route = "path1/path2/path3";
             _RouterSolver.SolveType("path1").Returns(type);
@@ -359,6 +352,18 @@ namespace Vm.Tools.Application.Tests
             SetupRouteFromType(route);
             var task = _NavigationViewModel.Navigate(_FakeType, null);
             _NavigationViewModel.Route.Should().Be(route);
+        }
+
+        [Fact]
+        public void Navigate_type_context_resolves_complex_route()
+        {
+            var viewModel = GetFakeSubNavigator();
+            _ServiceLocator.GetInstance(_FakeSubNavigatorType).Returns(viewModel);
+            _RouterSolver.SolveRoute(viewModel).Returns("root");
+           
+
+            var task = _NavigationViewModel.Navigate(_FakeSubNavigatorType);
+            _NavigationViewModel.Route.Should().Be("root/path2/path3");
         }
 
         [Theory, AutoData]
@@ -448,7 +453,7 @@ namespace Vm.Tools.Application.Tests
         }
 
         [Theory, AutoData]
-        public void Navigate_generic_context_call_cb_on_vm_route_when_provided(string route, string contextRoute)
+        public void Navigate_generic_context_call_cb_on_vm_route_when_provided(string route)
         {
             SetupRouteFromType(route);
             var context = new NavigationContext<FakeClass> {BeforeNavigate = Substitute.For<Action<FakeClass>>()};
@@ -493,6 +498,28 @@ namespace Vm.Tools.Application.Tests
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
+        }
+
+        [Fact]
+        public void Navigate_object_route_resolves_complex_route()
+        {
+            var viewModel = GetFakeSubNavigator();
+            _RouterSolver.SolveRoute(viewModel).Returns("root");
+
+            var task = _NavigationViewModel.Navigate(viewModel, null);
+
+            _NavigationViewModel.Route.Should().Be("root/path2/path3");
+        }
+
+        private FakeSubNavigator GetFakeSubNavigator()
+        {
+            return new FakeSubNavigator("path1")
+            {
+                SubNavigator = new FakeSubNavigator("path2")
+                {
+                    SubNavigator = new FakeSubNavigator("path3")
+                }
+            };
         }
 
         private ISubNavigator SetupForSuccessfulNavigation(string root)

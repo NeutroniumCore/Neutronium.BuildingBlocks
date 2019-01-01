@@ -4,6 +4,7 @@ using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Vm.Tools.Application.Navigation
@@ -161,7 +162,7 @@ namespace Vm.Tools.Application.Navigation
 
         public Task Navigate(object viewModel, string routeName)
         {
-            var route = routeName ?? _RouterSolver.SolveRoute(viewModel);
+            var route = routeName ?? GetRouteForViewModel(viewModel);
 
             if (route == null)
             {
@@ -182,6 +183,23 @@ namespace Vm.Tools.Application.Navigation
             var routeContext = CreateRouteContext(viewModel, route);
             Route = route;
             return routeContext.Task;
+        }
+
+        private string GetRouteForViewModel(object viewModel)
+        {
+            var root = _RouterSolver.SolveRoute(viewModel);
+            if ((root == null) || !(viewModel is ISubNavigator subNavigator))
+                return root;
+
+            var builder = new StringBuilder(root);
+            var child = subNavigator.Child;
+            while (child != null)
+            {
+                builder.Append('/');
+                builder.Append(child.RelativeName);
+                child = child.Child;
+            }
+            return builder.ToString();
         }
 
         public Task Navigate<T>(NavigationContext<T> context = null)
