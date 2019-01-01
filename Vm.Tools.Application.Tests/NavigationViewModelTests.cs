@@ -56,6 +56,30 @@ namespace Vm.Tools.Application.Tests
         }
 
         [Theory, AutoData]
+        public async Task BeforeResolveCommand_cancels_navigation_when_sub_route_not_found(string route)
+        {
+            var expected = BeforeRouterResult.Cancel();
+            SetupRoute(route);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute($"{route}/path1");
+
+            res.Should().BeEquivalentTo(expected);
+        }
+
+        [Theory, AutoData]
+        public async Task BeforeResolveCommand_cancels_navigation_when_nested_sub_route_not_found(string route)
+        {
+            var expected = BeforeRouterResult.Cancel();
+            var subNavigator = Substitute.For<ISubNavigator>();
+            subNavigator.NavigateTo("path1").Returns(default(ISubNavigator));
+            SetupSubNavigation(subNavigator, route);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute($"{route}/path1");
+
+            res.Should().BeEquivalentTo(expected);
+        }
+
+        [Theory, AutoData]
         public async Task BeforeResolveCommand_continues_navigation_when_route_found(string route)
         {
             var expected = BeforeRouterResult.Ok(_ExpectedNewViewModel);
@@ -64,6 +88,34 @@ namespace Vm.Tools.Application.Tests
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
             res.Should().BeEquivalentTo(expected);
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_continues_navigation_when_route_with_sub_path_is_found()
+        {
+            var expectedViewModel = SetupForSuccessfulNavigation("root");
+            var expected = BeforeRouterResult.Ok(expectedViewModel);         
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
+
+            res.Should().BeEquivalentTo(expected);
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_calls_sub_navigator_to_resolve_view_model()
+        {
+            var expectedViewModel = SetupForSuccessfulNavigation("root");
+            var expected = BeforeRouterResult.Ok(expectedViewModel);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
+
+            expectedViewModel.Received(3).NavigateTo(Arg.Any<string>());
+
+            Received.InOrder(() => {
+                expectedViewModel.NavigateTo("path1");
+                expectedViewModel.NavigateTo("path2");
+                expectedViewModel.NavigateTo("path3");
+            });
         }
 
         [Theory]
@@ -441,6 +493,21 @@ namespace Vm.Tools.Application.Tests
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
+        }
+
+        private ISubNavigator SetupForSuccessfulNavigation(string root)
+        {
+            var subNavigator = Substitute.For<ISubNavigator>();
+            subNavigator.NavigateTo(Arg.Any<string>()).Returns(subNavigator);
+            SetupSubNavigation(subNavigator, root);
+            return subNavigator;
+        }
+
+        private void SetupSubNavigation(object rootViewModel, string root)
+        {
+            var typeForSubNavigation = rootViewModel.GetType();
+            _RouterSolver.SolveType(root).Returns(typeForSubNavigation);
+            _ServiceLocator.GetInstance(typeForSubNavigation).Returns(rootViewModel);
         }
 
         private void SetupRedirect(string route, string redirectRoute)

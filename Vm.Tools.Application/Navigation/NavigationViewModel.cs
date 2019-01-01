@@ -4,7 +4,6 @@ using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 
 namespace Vm.Tools.Application.Navigation
@@ -110,19 +109,30 @@ namespace Vm.Tools.Application.Navigation
                 return null;
 
             var root = _ServiceLocator.Value.GetInstance(type);
-            CreateChildren(root, paths);
-            return root;
+            return CreateChildren(root, paths, routeName) ? root : null;
         }
 
-        private void CreateChildren(object root, string[] paths)
+        private bool CreateChildren(object root, string[] paths, string route)
         {
-            if (paths.Length < 2 || !(root is ISubNavigator subNavigator))
-                return;
+            if (paths.Length < 2)
+                return true;
+
+            if (!(root is ISubNavigator subNavigator))
+            {
+                OnError($"Problem when solving {route}. Sub-path not found: {paths[1]}, root viewModel {root} does not implement ISubNavigator");
+                return false;
+            }
 
             for (var i = 1; i < paths.Length; i++)
             {
                 subNavigator = subNavigator.NavigateTo(paths[i]);
+                if (subNavigator == null)
+                {
+                    OnError($"Problem when solving {route}. Sub-path not found: {paths[i]}, path index: {i}");
+                    return false;
+                }            
             }
+            return true;
         }
 
         private RouteContext CreateRouteContext(object viewModel, string routeName)
