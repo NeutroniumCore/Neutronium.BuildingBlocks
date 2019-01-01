@@ -41,7 +41,7 @@ namespace Vm.Tools.Application.Navigation
 
         private BeforeRouterResult BeforeResolve(string routeName)
         {
-            OnInformation($"Navigating to: ${routeName}");
+            OnInformation($"Navigating to: {routeName}");
             var context = GetRouteContext(routeName);
             return (context == null) ? BeforeRouterResult.Cancel() : Navigate(context);
         }
@@ -172,7 +172,7 @@ namespace Vm.Tools.Application.Navigation
 
             if (Route == route)
             {
-                OnInformation($"Route unchanged: ${routeName}");
+                OnInformation($"Route unchanged: {routeName}");
                 if (!ReferenceEquals(_ViewModel, viewModel))
                     OnNavigated?.Invoke(this, new RoutedEventArgs(viewModel, route));
 
@@ -224,11 +224,11 @@ namespace Vm.Tools.Application.Navigation
 
         public Task Navigate(string routeName)
         {
-            OnInformation($"Navigating to: ${routeName}");
+            OnInformation($"Navigating to: {routeName}");
 
             if (Route == routeName)
             {
-                OnInformation($"Route unchanged: ${routeName}");
+                OnInformation($"Route unchanged: {routeName}");
                 return Task.CompletedTask;
             }
 
