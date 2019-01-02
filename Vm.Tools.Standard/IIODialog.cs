@@ -4,7 +4,6 @@
     {
         string Title { get; set; }
         string Directory { get; set; }
-
         string Choose();
     }
 }
