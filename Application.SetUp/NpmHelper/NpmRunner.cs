@@ -1,10 +1,9 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Application.SetUp.Script
+namespace Application.SetUp.NpmHelper
 {
     public class NpmRunner : INpmRunner
     {
@@ -17,6 +16,8 @@ namespace Application.SetUp.Script
         private readonly TaskCompletionSource<string> _StopKeyCompletionSource = new TaskCompletionSource<string>();
         private Task<string> StopKeyAsync => _StopKeyCompletionSource.Task;
         private State _State = State.NotStarted;
+
+        public event DataReceivedEventHandler OutputDataReceived;
 
         private enum State
         {
@@ -68,12 +69,11 @@ namespace Application.SetUp.Script
             _Process.BeginErrorReadLine();
             _Process.BeginOutputReadLine();
             _State = State.Initializing;
-
         }
 
         public async Task<bool> Cancel()
         {
-            if (_State == State.Closed)
+            if ((_State == State.Closed) || (_State == State.NotStarted))
                 return false;
 
             _State = State.Closing;
@@ -94,19 +94,17 @@ namespace Application.SetUp.Script
         {
             var data = e.Data;
             Trace.WriteLine($"npm console: {data}");
+            OutputDataReceived?.Invoke(this, e);
 
             switch (_State)
             {
                 case State.Initializing:
                     TryParsePort(data);
-                    return;
+                    break;
 
                 case State.Closing:
                     TryParseKey(data);
-                    return;
-
-                default:
-                    return;
+                    break;
             };
         }
 

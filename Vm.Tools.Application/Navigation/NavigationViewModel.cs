@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using CommonServiceLocator;
+﻿using CommonServiceLocator;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Vm.Tools.Application.Navigation
 {
@@ -29,21 +30,18 @@ namespace Vm.Tools.Application.Navigation
 
         private object _ViewModel;
 
-        public NavigationViewModel(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver)
+        public NavigationViewModel(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver, string initialRoute = null)
         {
             _ServiceLocator = serviceLocator;
             _RouterSolver = routerSolver;
             AfterResolveCommand = new RelaySimpleCommand<string>(AfterResolve);
             BeforeResolveCommand = RelayResultCommand.Create<string, BeforeRouterResult>(BeforeResolve);
-        }
-
-        public static NavigationViewModel Create(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver)
-        {
-            return new NavigationViewModel(serviceLocator, routerSolver);
+            Route = initialRoute;
         }
 
         private BeforeRouterResult BeforeResolve(string routeName)
         {
+            OnInformation($"Navigating to: {routeName}");
             var context = GetRouteContext(routeName);
             return (context == null) ? BeforeRouterResult.Cancel() : Navigate(context);
         }
@@ -67,14 +65,26 @@ namespace Vm.Tools.Application.Navigation
                 return BeforeRouterResult.Ok(_ViewModel);
             }
 
-            to.Redirect(redirect, GetViewModelFromRoute(redirect));
+            var nextViewModel = GetViewModelFromRoute(redirect);
+            if (nextViewModel == null)
+            {
+                OnError($"Redirect route not found: {redirect}, navigation will be cancelled.");
+                return BeforeRouterResult.Cancel();
+            }
+
+            to.Redirect(redirect, nextViewModel);
             return BeforeRouterResult.CreateRedirect(redirect);
         }
 
         private RouteContext GetRouteContext(string routeName)
         {
             if (_CurrentNavigations.Count == 0)
-                return CreateRouteContext(routeName);
+            {
+                var newContext = CreateRouteContext(routeName);
+                if (newContext == null)
+                    OnError($"Route not found {routeName}. Cancelling navigation.");
+                return newContext;
+            }
 
             var context = _CurrentNavigations.Peek();
             if (context.Route != routeName)
@@ -88,13 +98,42 @@ namespace Vm.Tools.Application.Navigation
 
         private RouteContext CreateRouteContext(string routeName)
         {
-            return CreateRouteContext(GetViewModelFromRoute(routeName), routeName);
+            var viewModel = GetViewModelFromRoute(routeName);
+            return viewModel == null ? null : CreateRouteContext(viewModel, routeName);
         }
 
         private object GetViewModelFromRoute(string routeName)
         {
-            var type = _RouterSolver.SolveType(routeName);
-            return _ServiceLocator.Value.GetInstance(type);
+            var paths = routeName.Split('/');
+            var type = _RouterSolver.SolveType(paths[0]);
+            if (type == null)
+                return null;
+
+            var root = _ServiceLocator.Value.GetInstance(type);
+            return CreateChildren(root, paths, routeName) ? root : null;
+        }
+
+        private bool CreateChildren(object root, string[] paths, string route)
+        {
+            if (paths.Length < 2)
+                return true;
+
+            if (!(root is ISubNavigator subNavigator))
+            {
+                OnError($"Problem when solving {route}. Sub-path not found: {paths[1]}, root viewModel {root} does not implement ISubNavigator");
+                return false;
+            }
+
+            for (var i = 1; i < paths.Length; i++)
+            {
+                subNavigator = subNavigator.NavigateTo(paths[i]);
+                if (subNavigator == null)
+                {
+                    OnError($"Problem when solving {route}. Sub-path not found: {paths[i]}, path index: {i}");
+                    return false;
+                }            
+            }
+            return true;
         }
 
         private RouteContext CreateRouteContext(object viewModel, string routeName)
@@ -117,23 +156,23 @@ namespace Vm.Tools.Application.Navigation
             }
             context.Complete();
 
-            Route = routeName;          
+            Route = routeName;
             OnNavigated?.Invoke(this, new RoutedEventArgs(context));
         }
 
         public Task Navigate(object viewModel, string routeName)
         {
-            var route = routeName ?? _RouterSolver.SolveRoute(viewModel);
+            var route = routeName ?? GetRouteForViewModel(viewModel);
 
             if (route == null)
             {
-                OnError($"Route not found for vm: {viewModel}");
+                OnError($"Route not found for vm: {viewModel} of type {viewModel?.GetType()}");
                 return Task.CompletedTask;
             }
 
             if (Route == route)
             {
-                OnInformation($"Route unchanged: ${routeName}");
+                OnInformation($"Route unchanged: {routeName}");
                 if (!ReferenceEquals(_ViewModel, viewModel))
                     OnNavigated?.Invoke(this, new RoutedEventArgs(viewModel, route));
 
@@ -146,20 +185,37 @@ namespace Vm.Tools.Application.Navigation
             return routeContext.Task;
         }
 
-        public async Task Navigate<T>(NavigationContext<T> context = null)
+        private string GetRouteForViewModel(object viewModel)
+        {
+            var root = _RouterSolver.SolveRoute(viewModel);
+            if ((root == null) || !(viewModel is ISubNavigator subNavigator))
+                return root;
+
+            var builder = new StringBuilder(root);
+            var child = subNavigator.Child;
+            while (child != null)
+            {
+                builder.Append('/');
+                builder.Append(child.RelativeName);
+                child = child.Child;
+            }
+            return builder.ToString();
+        }
+
+        public Task Navigate<T>(NavigationContext<T> context = null)
         {
             var resolutionKey = context?.ResolutionKey;
             var vm = (resolutionKey == null) ? _ServiceLocator.Value.GetInstance<T>() : _ServiceLocator.Value.GetInstance<T>(resolutionKey);
-            context?.BeforeNavigate(vm);
-            await Navigate(vm, context?.RouteName);
+            context?.BeforeNavigate?.Invoke(vm);
+            return Navigate(vm, context?.RouteName);
         }
 
         public async Task Navigate(Type type, NavigationContext context = null)
         {
             if (type == null)
             {
-                OnError("Navigate to null type!");
-                return;
+                OnError("Navigate to null type is not allowed");
+                throw new ArgumentNullException(nameof(type));
             }
             var resolutionKey = context?.ResolutionKey;
             var vm = (resolutionKey == null) ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, resolutionKey);
@@ -167,13 +223,22 @@ namespace Vm.Tools.Application.Navigation
         }
 
         public Task Navigate(string routeName)
-        {       
-            if (Route == routeName) {
-                OnInformation($"Route unchanged: ${routeName}");
+        {
+            OnInformation($"Navigating to: {routeName}");
+
+            if (Route == routeName)
+            {
+                OnInformation($"Route unchanged: {routeName}");
                 return Task.CompletedTask;
-            }            
+            }
 
             var ctx = CreateRouteContext(routeName);
+            if (ctx == null)
+            {
+                OnError($"Route not registered: {routeName}.");
+                return Task.FromException(new NotImplementedException($"Route not found: {routeName}"));
+            }
+
             Route = routeName;
             return ctx.Task;
         }

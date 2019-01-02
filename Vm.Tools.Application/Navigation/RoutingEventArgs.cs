@@ -14,7 +14,7 @@ namespace Vm.Tools.Application.Navigation
         public RouteInfo From { get; }
         public string RedirectedTo { get; private set; }
 
-        public void RedirectToroute(string newRouteName)
+        public void RedirectToRoute(string newRouteName)
         {
             if (To.RouteName == newRouteName)
                 return;

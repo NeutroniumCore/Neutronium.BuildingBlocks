@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.SetUp.Script;
+using Application.SetUp.NpmHelper;
 using Xunit;
 using AutoFixture.Xunit2;
 using NSubstitute;
