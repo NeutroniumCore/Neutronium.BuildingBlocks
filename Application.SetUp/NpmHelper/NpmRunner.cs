@@ -18,6 +18,7 @@ namespace Application.SetUp.NpmHelper
         private State _State = State.NotStarted;
 
         public event DataReceivedEventHandler OutputDataReceived;
+        public event DataReceivedEventHandler ErrorDataReceived;
 
         private enum State
         {
@@ -93,7 +94,6 @@ namespace Application.SetUp.NpmHelper
         private void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             var data = e.Data;
-            Trace.WriteLine($"npm console: {data}");
             OutputDataReceived?.Invoke(this, e);
 
             switch (_State)
@@ -133,7 +133,7 @@ namespace Application.SetUp.NpmHelper
 
         private void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e)
         {
-            Trace.WriteLine($"npm console error: {e.Data}");
+            ErrorDataReceived?.Invoke(this, e);
         }
 
         public void Dispose()
