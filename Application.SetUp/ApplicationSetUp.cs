@@ -13,5 +13,10 @@ namespace Application.SetUp
             Mode = mode;
             Uri = uri;
         }
+
+        public override string ToString()
+        {
+            return $"Mode: {Mode}, Uri: {Uri}, Debug: {Debug}";
+        }
     }
 }
