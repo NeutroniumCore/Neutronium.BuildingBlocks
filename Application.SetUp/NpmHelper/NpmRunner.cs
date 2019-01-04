@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -17,8 +18,8 @@ namespace Application.SetUp.NpmHelper
         private Task<string> StopKeyAsync => _StopKeyCompletionSource.Task;
         private State _State = State.NotStarted;
 
-        public event DataReceivedEventHandler OutputDataReceived;
-        public event DataReceivedEventHandler ErrorDataReceived;
+        public event EventHandler<RunnerMessageEventArgs> OnMessageReceived;
+        public event EventHandler<RunnerMessageEventArgs> OnErrorReceived;
 
         private enum State
         {
@@ -94,7 +95,7 @@ namespace Application.SetUp.NpmHelper
         private void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             var data = e.Data;
-            OutputDataReceived?.Invoke(this, e);
+            OnMessageReceived?.Invoke(this, new RunnerMessageEventArgs(e.Data));
 
             switch (_State)
             {
@@ -133,7 +134,7 @@ namespace Application.SetUp.NpmHelper
 
         private void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e)
         {
-            ErrorDataReceived?.Invoke(this, e);
+            OnErrorReceived?.Invoke(this, new RunnerMessageEventArgs(e.Data));
         }
 
         public void Dispose()

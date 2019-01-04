@@ -16,5 +16,7 @@ namespace Vm.Tools.Application.Navigation
         event EventHandler<RoutingEventArgs> OnNavigating;
 
         event EventHandler<RoutedEventArgs> OnNavigated;
+
+        event EventHandler<RoutingMessageArgs> OnRoutingMessage;
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Application.SetUp.NpmHelper;
 
@@ -18,6 +17,18 @@ namespace Application.SetUp
 
         private readonly ApplicationMode _Default;
         private readonly INpmRunner _NpmRunner;
+
+        public event EventHandler<RunnerMessageEventArgs> OnRunnerMessageReceived
+        {
+            add => _NpmRunner.OnMessageReceived += value;
+            remove => _NpmRunner.OnMessageReceived -= value;
+        }
+
+        public event EventHandler<RunnerMessageEventArgs> OnRunnerErrorReceived
+        {
+            add => _NpmRunner.OnErrorReceived += value;
+            remove => _NpmRunner.OnErrorReceived -= value;
+        }
 
         private static readonly Dictionary<string, ApplicationMode> _Modes = new Dictionary<string, ApplicationMode>
         {
@@ -39,6 +50,8 @@ namespace Application.SetUp
             Uri = productionUri;
             _Default = @default;
             _NpmRunner = npmRunner;
+            if (_NpmRunner == null)
+                throw new ArgumentNullException(nameof(npmRunner));
         }
 
         public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, Action<string> onNpmLog = null)
@@ -87,14 +100,14 @@ namespace Application.SetUp
             if (mode != ApplicationMode.Live)
                 return Uri;
 
-            void OnDataReceived(object _, DataReceivedEventArgs dataReceived)
+            void OnDataReceived(object _, RunnerMessageEventArgs dataReceived)
             {
-                onNpmLog?.Invoke(dataReceived.Data);
+                onNpmLog?.Invoke(dataReceived.Message);
             }
 
-            _NpmRunner.OutputDataReceived += OnDataReceived;
+            OnRunnerMessageReceived += OnDataReceived;
             var port = await _NpmRunner.GetPortAsync().ConfigureAwait(false);
-            _NpmRunner.OutputDataReceived -= OnDataReceived;
+            OnRunnerMessageReceived -= OnDataReceived;
             return new Uri($"http://localhost:{port}/index.html");
         }
 

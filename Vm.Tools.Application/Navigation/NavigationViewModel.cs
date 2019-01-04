@@ -3,7 +3,6 @@ using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,6 +22,7 @@ namespace Vm.Tools.Application.Navigation
 
         public event EventHandler<RoutingEventArgs> OnNavigating;
         public event EventHandler<RoutedEventArgs> OnNavigated;
+        public event EventHandler<RoutingMessageArgs> OnRoutingMessage;
 
         private readonly Lazy<IServiceLocator> _ServiceLocator;
         private readonly IRouterSolver _RouterSolver;
@@ -243,14 +243,14 @@ namespace Vm.Tools.Application.Navigation
             return ctx.Task;
         }
 
-        private static void OnInformation(string message)
+        private void OnInformation(string message)
         {
-            Trace.TraceInformation(message);
+            OnRoutingMessage?.Invoke(this, new RoutingMessageArgs(message, MessageType.Information));
         }
 
-        private static void OnError(string message)
+        private void OnError(string message)
         {
-            Trace.TraceError(message);
+            OnRoutingMessage?.Invoke(this, new RoutingMessageArgs(message, MessageType.Error));
         }
     }
 }

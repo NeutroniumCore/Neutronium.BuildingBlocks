@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace Application.SetUp.NpmHelper
@@ -8,6 +7,8 @@ namespace Application.SetUp.NpmHelper
     {
         Task<int> GetPortAsync();
 
-        event DataReceivedEventHandler OutputDataReceived;
+        event EventHandler<RunnerMessageEventArgs> OnMessageReceived;
+
+        event EventHandler<RunnerMessageEventArgs> OnErrorReceived;
     }
 }
