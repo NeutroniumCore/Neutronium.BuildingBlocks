@@ -89,7 +89,7 @@ namespace Application.SetUp.Tests
         [Theory, AutoData]
         public async Task BuildFromApplicationArguments_uses_default_mode(ApplicationMode mode)
         {
-            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, null);
+            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, _NpmRunner);
             var res = await applicationSetUpBuilder.BuildFromApplicationArguments(new string [] { });
             res.Mode.Should().Be(mode);
         }
