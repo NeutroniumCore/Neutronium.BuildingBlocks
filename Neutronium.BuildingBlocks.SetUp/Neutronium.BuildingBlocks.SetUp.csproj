@@ -4,4 +4,16 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <Version>4.1.0</Version>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="script\loading.js" />
+    <None Remove="script\update.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="script\loading.js" />
+    <EmbeddedResource Include="script\update.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Neutronium.Core" Version="1.5.0" />
+    <PackageReference Include="Neutronium.MVVMComponents" Version="1.5.0" />
+  </ItemGroup>
 </Project>
