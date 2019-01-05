@@ -1,5 +1,5 @@
-﻿using Neutronium.WPF.ViewModel;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Neutronium.MVVMComponents;
 using Vm.Tools.Application.Navigation;
 using Vm.Tools.Application.ViewModel.Modal;
 using Vm.Tools.Application.WindowServices;

@@ -37,14 +37,11 @@
     <Reference Include="MoreCollection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MoreCollection.2.0.0\lib\net45\MoreCollection.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.Core.1.4.0\lib\net45\Neutronium.Core.dll</HintPath>
+    <Reference Include="Neutronium.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.Core.1.5.0\lib\net472\Neutronium.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.MVVMComponents, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.MVVMComponents.1.4.0\lib\net45\Neutronium.MVVMComponents.dll</HintPath>
-    </Reference>
-    <Reference Include="Neutronium.WPF, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.WPF.1.4.0\lib\net472\Neutronium.WPF.dll</HintPath>
+    <Reference Include="Neutronium.MVVMComponents, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.MVVMComponents.1.5.0\lib\net472\Neutronium.MVVMComponents.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
