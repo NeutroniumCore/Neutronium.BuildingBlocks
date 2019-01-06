@@ -2,7 +2,7 @@
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 
-namespace Neutronium.BuildingBlocks.Application.ViewModel.Modal 
+namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal 
 {
     public class MessageModalViewModel
     {

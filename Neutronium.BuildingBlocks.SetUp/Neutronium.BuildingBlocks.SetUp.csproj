@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-    <Version>4.1.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="script\loading.js" />

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Neutronium.BuildingBlocks.Application.ViewModel 
+namespace Neutronium.BuildingBlocks.Application.ViewModels 
 {
     public class ApplicationInformation
     {

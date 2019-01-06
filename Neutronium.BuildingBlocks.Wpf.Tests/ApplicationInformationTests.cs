@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using Neutronium.BuildingBlocks.Application.ViewModel;
+using Neutronium.BuildingBlocks.Application.ViewModels;
 using Xunit;
 
 namespace Neutronium.BuildingBlocks.Wpf.Tests

@@ -79,7 +79,7 @@ namespace Neutronium.BuildingBlocks.SetUp
 
         public override string ToString()
         {
-            return _ApplicationSetUp?.ToString();
+            return _ApplicationSetUp?.ToString()?? "Not initialized";
         }
     }
 }

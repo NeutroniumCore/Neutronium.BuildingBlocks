@@ -1,12 +1,12 @@
 ﻿using System.Threading.Tasks;
 using Neutronium.BuildingBlocks.Application.Navigation;
-using Neutronium.BuildingBlocks.Application.ViewModel.Modal;
+using Neutronium.BuildingBlocks.Application.ViewModels.Modal;
 using Neutronium.BuildingBlocks.Application.WindowServices;
 using Neutronium.MVVMComponents;
 
-namespace Neutronium.BuildingBlocks.Application.ViewModel
+namespace Neutronium.BuildingBlocks.Application.ViewModels
 {
-    public class ApplicationViewModel<T> : Neutronium.BuildingBlocks.ApplicationTools.ViewModel, IMessageBox, INotificationSender
+    public class ApplicationViewModel<T> : ViewModel, IMessageBox, INotificationSender
     {
         public T ApplicationInformation { get; }
         public IWindowViewModel Window { get; }

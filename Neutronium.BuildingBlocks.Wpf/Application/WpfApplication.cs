@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows;
 using Neutronium.BuildingBlocks.ApplicationTools;
 
-namespace Vm.Tools.Application
+namespace Neutronium.BuildingBlocks.Wpf.Application
 {
     public class WpfApplication : IApplication
     {

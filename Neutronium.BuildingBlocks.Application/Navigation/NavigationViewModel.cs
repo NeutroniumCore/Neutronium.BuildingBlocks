@@ -8,7 +8,7 @@ using Neutronium.MVVMComponents.Relay;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
-    public class NavigationViewModel : Neutronium.BuildingBlocks.ApplicationTools.ViewModel, INavigator
+    public class NavigationViewModel : ViewModel, INavigator
     {
         public IResultCommand<string, BeforeRouterResult> BeforeResolveCommand { get; }
         public ISimpleCommand<string> AfterResolveCommand { get; }

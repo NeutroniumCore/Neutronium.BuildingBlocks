@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Neutronium.BuildingBlocks.ApplicationTools
+namespace Neutronium.BuildingBlocks
 {
     public abstract class ViewModel : INotifyPropertyChanged, INotifyPropertyChanging
     {
