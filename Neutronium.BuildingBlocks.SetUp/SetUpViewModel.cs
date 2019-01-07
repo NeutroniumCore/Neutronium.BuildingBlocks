@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Neutronium.Core.Infra;
 using Neutronium.Core.Navigation;
@@ -46,7 +47,16 @@ namespace Neutronium.BuildingBlocks.SetUp
                 viewControl.ExecuteJavascript(code);
             }
 
-            UpdateSetUp(await _Builder.BuildFromMode(ApplicationMode.Live, OnNpmLog));
+            var cancellationTokenSource = new CancellationTokenSource();
+
+            DebugCommands.Clear();
+            DebugCommands["Cancel to live"] = new RelayToogleCommand<ICompleteWebViewComponent>(_ =>
+            {
+                cancellationTokenSource.Cancel();
+                UpdateCommands();
+            });
+            
+            UpdateSetUp(await _Builder.BuildFromMode(ApplicationMode.Live, cancellationTokenSource.Token, OnNpmLog));
             await viewControl.SwitchViewAsync(Uri);
         }
 
@@ -64,6 +74,11 @@ namespace Neutronium.BuildingBlocks.SetUp
         private void UpdateSetUp(ApplicationSetUp applicationSetUp)
         {
             _ApplicationSetUp = applicationSetUp;
+            UpdateCommands();
+        }
+
+        private void UpdateCommands()
+        {
             DebugCommands.Clear();
             switch (Mode)
             {

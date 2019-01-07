@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture.Xunit2;
 using FluentAssertions;
@@ -22,7 +23,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
             RegisterPackScheme();
             _ProductionUri = GetDummyUri();
             _NpmRunner = Substitute.For<INpmRunner>();
-            _NpmRunner.GetPortAsync().Returns(Task.FromResult(Port));
+            _NpmRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(Port));
             _ApplicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, _Default, _NpmRunner);
         }
 
@@ -80,7 +81,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         public async Task BuildFromApplicationArguments_uses_port_from_runner(int port)
         {
             var expected = new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(port));
-            _NpmRunner.GetPortAsync().Returns(Task.FromResult(port));
+            _NpmRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(port));
 
             var res = await _ApplicationSetUpBuilder.BuildFromApplicationArguments(new [] { "-mode=live"});
             res.Should().BeEquivalentTo(expected);
@@ -98,7 +99,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         public async Task BuildFromMode_uses_mode(ApplicationMode mode)
         {
             var expected = new ApplicationSetUp(mode, GetDummyUri());
-            var res = await _ApplicationSetUpBuilder.BuildFromMode(mode);
+            var res = await _ApplicationSetUpBuilder.BuildFromMode(mode, CancellationToken.None);
             res.Should().BeEquivalentTo(expected);
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Neutronium.BuildingBlocks.SetUp.NpmHelper;
 
@@ -54,9 +55,9 @@ namespace Neutronium.BuildingBlocks.SetUp
                 throw new ArgumentNullException(nameof(npmRunner));
         }
 
-        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, Action<string> onNpmLog = null)
+        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
         {
-            var uri =  await BuildUri(mode, onNpmLog).ConfigureAwait(false);
+            var uri =  await BuildUri(mode, cancellationToken, onNpmLog).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
@@ -92,10 +93,10 @@ namespace Neutronium.BuildingBlocks.SetUp
             if (argumentsDictionary.TryGetValue(Url, out var uri))
                 return new Uri(uri);
 
-            return await BuildUri(mode).ConfigureAwait(false);
+            return await BuildUri(mode, CancellationToken.None).ConfigureAwait(false);
         }
 
-        private async Task<Uri> BuildUri(ApplicationMode mode, Action<string> onNpmLog = null)
+        private async Task<Uri> BuildUri(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
         {
             if (mode != ApplicationMode.Live)
                 return Uri;
@@ -106,7 +107,7 @@ namespace Neutronium.BuildingBlocks.SetUp
             }
 
             OnRunnerMessageReceived += OnDataReceived;
-            var port = await _NpmRunner.GetPortAsync().ConfigureAwait(false);
+            var port = await _NpmRunner.GetPortAsync(cancellationToken).ConfigureAwait(false);
             OnRunnerMessageReceived -= OnDataReceived;
             return new Uri($"http://localhost:{port}/index.html");
         }

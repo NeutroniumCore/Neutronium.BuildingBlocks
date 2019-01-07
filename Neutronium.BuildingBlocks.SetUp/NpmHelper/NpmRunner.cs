@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -13,10 +14,11 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
 
         private Process _Process;
         private readonly string _Script;
-        private readonly TaskCompletionSource<int> _PortFinderCompletionSource = new TaskCompletionSource<int>();
+        private TaskCompletionSource<int> _PortFinderCompletionSource = new TaskCompletionSource<int>();
         private readonly TaskCompletionSource<string> _StopKeyCompletionSource = new TaskCompletionSource<string>();
         private Task<string> StopKeyAsync => _StopKeyCompletionSource.Task;
         private State _State = State.NotStarted;
+        private readonly string _WorkingDirectory;
 
         public event EventHandler<RunnerMessageEventArgs> OnMessageReceived;
         public event EventHandler<RunnerMessageEventArgs> OnErrorReceived;
@@ -26,6 +28,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
             NotStarted,
             Initializing,
             Running,
+            Cancelling,
             Closing,
             Closed
         };
@@ -34,15 +37,20 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
         {
             _Script = script;
             var root = DirectoryHelper.GetCurrentDirectory();
-            var workingDirectory = Path.Combine(root, directory);
+            _WorkingDirectory = Path.Combine(root, directory);
 
-            _Process = new Process
+            _Process = CreateProcess();
+        }
+
+        private Process CreateProcess()
+        {
+            var process = new Process
             {
                 StartInfo =
                 {
                     FileName = "cmd",
                     RedirectStandardInput = true,
-                    WorkingDirectory = workingDirectory,
+                    WorkingDirectory = _WorkingDirectory,
                     CreateNoWindow = true,
                     ErrorDialog = false,
                     RedirectStandardError = true,
@@ -51,18 +59,22 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
                 }
             };
 
-            _Process.ErrorDataReceived += Process_ErrorDataReceived;
-            _Process.OutputDataReceived += Process_OutputDataReceived;
+            process.ErrorDataReceived += Process_ErrorDataReceived;
+            process.OutputDataReceived += Process_OutputDataReceived;
+
+            return process;
         }
 
-        public Task<int> GetPortAsync()
+        public Task<int> GetPortAsync(CancellationToken cancellationToken)
         {
-            Start();
+            Start(cancellationToken);
             return _PortFinderCompletionSource.Task;
         }
 
-        private void Start()
+        private void Start(CancellationToken cancellationToken)
         {
+            cancellationToken.Register(() => StopIfNeed(cancellationToken));
+
             if (_State != State.NotStarted)
                 return;
 
@@ -73,22 +85,47 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
             _State = State.Initializing;
         }
 
+        private async void StopIfNeed(CancellationToken cancellationToken)
+        {
+            if (!_PortFinderCompletionSource.TrySetCanceled(cancellationToken))
+                return;
+
+            var stopped = await Stop(State.Cancelling, State.NotStarted).ConfigureAwait(false);
+            if (!stopped)
+                return;
+
+            _Process = CreateProcess();
+            _PortFinderCompletionSource = new TaskCompletionSource<int>();
+        }
+
         public async Task<bool> Cancel()
         {
-            if ((_State == State.Closed) || (_State == State.NotStarted))
+            var closed = await Stop(State.Closing, State.Closed).ConfigureAwait(false);
+            if (!closed)
                 return false;
 
-            _State = State.Closing;
+            _Process.Dispose();
+            _Process = null;
+            return true;
+        }
 
+        private async Task<bool> Stop(State transitionState, State finalState)
+        {
+            if ((_State == State.Closed) || (_State == State.NotStarted) || (_State == State.Cancelling))
+                return false;
+
+            var currentState = _State;
+            _State = transitionState;
             if (!_Process.SendControlC())
+            {
+                _State = currentState;
                 return false;
+            }
 
             var standardInput = _Process.StandardInput;
             standardInput.WriteLine();
             standardInput.WriteLine(await StopKeyAsync.ConfigureAwait(false));
-            _Process.Dispose();
-            _Process = null;
-            _State = State.Closed;
+            _State = finalState;
             return true;
         }
 
@@ -141,5 +178,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
         {
             Cancel().Wait();
         }
+
+        public override string ToString() => _State.ToString();
     }
 }
