@@ -61,12 +61,15 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         {
             yield return new object[] { null, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
             yield return new object[] { new string[] { }, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
-            yield return new object[] { new[] { "-mode=dev" }, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
-            yield return new object[] { new[] { "-mode=live" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(Port)) };
-            yield return new object[] { new[] { "-mode=prod" }, new ApplicationSetUp(ApplicationMode.Production, GetDummyUri()) };
-            yield return new object[] { new[] { "-mode=live", "-url=http://www.google.com" }, new ApplicationSetUp(ApplicationMode.Live, new Uri("http://www.google.com")) };
-            yield return new object[] { new[] { "-mode=dev", "-url=http://www.duck.com" }, new ApplicationSetUp(ApplicationMode.Dev, new Uri("http://www.duck.com")) };
-            yield return new object[] { new[] { "-mode=prod", "-url=http://www.github.com" }, new ApplicationSetUp(ApplicationMode.Production, new Uri("http://www.github.com")) };
+            yield return new object[] { new[] { "--mode=dev" }, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
+            yield return new object[] { new[] { "--mode=live" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(Port)) };
+            yield return new object[] { new[] { "--mode=prod" }, new ApplicationSetUp(ApplicationMode.Production, GetDummyUri()) };
+            yield return new object[] { new[] { "-m=dev" }, new ApplicationSetUp(ApplicationMode.Dev, GetDummyUri()) };
+            yield return new object[] { new[] { "-m=live" }, new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(Port)) };
+            yield return new object[] { new[] { "-m=prod" }, new ApplicationSetUp(ApplicationMode.Production, GetDummyUri()) };
+            yield return new object[] { new[] { "--mode=live", "--url=http://www.google.com" }, new ApplicationSetUp(ApplicationMode.Live, new Uri("http://www.google.com")) };
+            yield return new object[] { new[] { "--mode=dev", "--url=http://www.duck.com" }, new ApplicationSetUp(ApplicationMode.Dev, new Uri("http://www.duck.com")) };
+            yield return new object[] { new[] { "--mode=prod", "--url=http://www.github.com" }, new ApplicationSetUp(ApplicationMode.Production, new Uri("http://www.github.com")) };
         }
 
         [Theory]
@@ -83,7 +86,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
             var expected = new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(port));
             _NpmRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(port));
 
-            var res = await _ApplicationSetUpBuilder.BuildFromApplicationArguments(new [] { "-mode=live"});
+            var res = await _ApplicationSetUpBuilder.BuildFromApplicationArguments(new [] { "--mode=live"});
             res.Should().BeEquivalentTo(expected);
         }
 

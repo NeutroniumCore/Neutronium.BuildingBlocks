@@ -6,8 +6,9 @@ namespace Neutronium.BuildingBlocks.SetUp
 {
     public static class ArgumentParser
     {
-        private static readonly Regex _Switch = new Regex("^-", RegexOptions.Compiled);
-        private static readonly Regex _SwitchWithValue = new Regex("^-(\\w+)=(.*)$", RegexOptions.Compiled);
+        private static readonly Regex _Switch = new Regex("^--?", RegexOptions.Compiled);
+        private static readonly Regex _SwitchWithValue = new Regex(@"^--(\w+)=(.*)$", RegexOptions.Compiled);
+        private static readonly Regex _SimpleSwitchWithValue = new Regex(@"^-(\w)=(.*)$", RegexOptions.Compiled);
 
         public static Dictionary<string, string> Parse(IEnumerable<string> arguments)
         {
@@ -19,6 +20,7 @@ namespace Neutronium.BuildingBlocks.SetUp
             {
                 var argument = rawArgument.ToLower();
                 var match = _SwitchWithValue.Match(argument);
+                match = match.Success ? match : _SimpleSwitchWithValue.Match(argument);
                 var switchValue = default(string);
                 if (!match.Success)
                 {
