@@ -6,8 +6,7 @@ namespace Neutronium.BuildingBlocks.SetUp
 {
     public static class ArgumentParser
     {
-        private static readonly Regex _Switch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))$", RegexOptions.Compiled);
-        private static readonly Regex _ValueSwitch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))=(?<value>.*)$", RegexOptions.Compiled);
+        private static readonly Regex _Switch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))(?:=(?<value>.*))?$", RegexOptions.Compiled);
 
         public static Dictionary<string, string> Parse(IEnumerable<string> arguments, Action<string> onUnexpected = null)
         {
@@ -18,8 +17,7 @@ namespace Neutronium.BuildingBlocks.SetUp
             foreach (var rawArgument in arguments)
             {
                 var argument = rawArgument.ToLower();
-                var match = _ValueSwitch.Match(argument);
-                match = match.Success ? match : _Switch.Match(argument);
+                var match = _Switch.Match(argument);
                 if (!match.Success)
                 {
                     onUnexpected?.Invoke(rawArgument);
