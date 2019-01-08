@@ -6,11 +6,10 @@ namespace Neutronium.BuildingBlocks.SetUp
 {
     public static class ArgumentParser
     {
-        private static readonly Regex _Switch = new Regex("^--?", RegexOptions.Compiled);
-        private static readonly Regex _SwitchWithValue = new Regex(@"^--(\w+)=(.*)$", RegexOptions.Compiled);
-        private static readonly Regex _SimpleSwitchWithValue = new Regex(@"^-(\w)=(.*)$", RegexOptions.Compiled);
+        private static readonly Regex _Switch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))$", RegexOptions.Compiled);
+        private static readonly Regex _ValueSwitch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))=(?<value>.*)$", RegexOptions.Compiled);
 
-        public static Dictionary<string, string> Parse(IEnumerable<string> arguments)
+        public static Dictionary<string, string> Parse(IEnumerable<string> arguments, Action<string> onUnexpected = null)
         {
             var arg = new Dictionary<string, string>();
             if (arguments == null)
@@ -19,18 +18,18 @@ namespace Neutronium.BuildingBlocks.SetUp
             foreach (var rawArgument in arguments)
             {
                 var argument = rawArgument.ToLower();
-                var match = _SwitchWithValue.Match(argument);
-                match = match.Success ? match : _SimpleSwitchWithValue.Match(argument);
-                var switchValue = default(string);
+                var match = _ValueSwitch.Match(argument);
+                match = match.Success ? match : _Switch.Match(argument);
                 if (!match.Success)
                 {
-                    switchValue = _Switch.Replace(argument, String.Empty);
-                    arg[switchValue] = "true";
+                    onUnexpected?.Invoke(rawArgument);
                     continue;
                 }
 
-                switchValue = match.Groups[1].Value;
-                arg[switchValue] = match.Groups[2].Value; ;
+                var groups = match.Groups;
+                var option = groups["option"].Value;
+                var groupValue = groups["value"];
+                arg[option] = groupValue.Success ? groupValue.Value : "true";
             }
             return arg;
         }

@@ -8,8 +8,6 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
     {
         Task<int> GetPortAsync(CancellationToken cancellationToken);
 
-        event EventHandler<RunnerMessageEventArgs> OnMessageReceived;
-
-        event EventHandler<RunnerMessageEventArgs> OnErrorReceived;
+        event EventHandler<MessageEventArgs> OnMessageReceived;
     }
 }

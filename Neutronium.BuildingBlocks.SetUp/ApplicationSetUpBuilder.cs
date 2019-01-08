@@ -1,58 +1,59 @@
-﻿using System;
+﻿using Neutronium.BuildingBlocks.SetUp.NpmHelper;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Neutronium.BuildingBlocks.SetUp.NpmHelper;
 
-namespace Neutronium.BuildingBlocks.SetUp {
-    public class ApplicationSetUpBuilder : IDisposable {
-        private const string Mode = "mode";
-        private const string ShortMode = "m";
+namespace Neutronium.BuildingBlocks.SetUp
+{
+    public class ApplicationSetUpBuilder : IDisposable
+    {
         private const string Live = "live";
         private const string Dev = "dev";
         private const string Prod = "prod";
-        private const string Url = "url";
-        private const string ShortUrl = "u";
 
         public Uri Uri { get; set; }
 
         private readonly ApplicationMode _Default;
         private readonly INpmRunner _NpmRunner;
 
-        public event EventHandler<RunnerMessageEventArgs> OnRunnerMessageReceived {
+        public event EventHandler<MessageEventArgs> OnRunnerMessageReceived
+        {
             add => _NpmRunner.OnMessageReceived += value;
             remove => _NpmRunner.OnMessageReceived -= value;
         }
 
-        public event EventHandler<RunnerMessageEventArgs> OnRunnerErrorReceived {
-            add => _NpmRunner.OnErrorReceived += value;
-            remove => _NpmRunner.OnErrorReceived -= value;
-        }
-
-        private static readonly Dictionary<string, ApplicationMode> _Modes = new Dictionary<string, ApplicationMode> {
+        public event EventHandler<MessageEventArgs> OnArgumentParsingError;
+  
+        private static readonly Dictionary<string, ApplicationMode> _Modes = new Dictionary<string, ApplicationMode>
+        {
             [Live] = ApplicationMode.Live,
             [Dev] = ApplicationMode.Dev,
             [Prod] = ApplicationMode.Production
         };
 
-        private enum Flag {
+        private enum Option
+        {
             Mode,
             Url,
         }
 
-        private static readonly Dictionary<Flag, Tuple<string, string>> _Flags = new Dictionary<Flag, Tuple<string, string>> {
-            [Flag.Mode] = Tuple.Create("mode", "m"),
-            [Flag.Url] = Tuple.Create("url", "u"),
+        private static readonly Dictionary<Option, Tuple<string, string>> _Options = new Dictionary<Option, Tuple<string, string>>
+        {
+            [Option.Mode] = Tuple.Create("mode", "m"),
+            [Option.Url] = Tuple.Create("url", "u"),
         };
 
         public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode @default = ApplicationMode.Dev,
             string liveScript = "live") :
             this(new Uri($"pack://application:,,,/{viewDirectory.Replace(@"\", "/")}/dist/index.html"),
                 @default,
-                new NpmRunner(viewDirectory, liveScript)) {
+                new NpmRunner(viewDirectory, liveScript))
+        {
         }
 
-        internal ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default, INpmRunner npmRunner) {
+        internal ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default, INpmRunner npmRunner)
+        {
             Uri = productionUri;
             _Default = @default;
             _NpmRunner = npmRunner;
@@ -60,52 +61,66 @@ namespace Neutronium.BuildingBlocks.SetUp {
                 throw new ArgumentNullException(nameof(npmRunner));
         }
 
-        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null) {
+        public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
+        {
             var uri = await BuildUri(mode, cancellationToken, onNpmLog).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
-        public ApplicationSetUp BuildForProduction() {
+        public ApplicationSetUp BuildForProduction()
+        {
             return new ApplicationSetUp(ApplicationMode.Production, Uri);
         }
 
-        public Task<ApplicationSetUp> BuildFromApplicationArguments(string[] arguments) {
-            var argument = ArgumentParser.Parse(arguments);
+        public Task<ApplicationSetUp> BuildFromApplicationArguments(string[] arguments)
+        {
+            var argument = ArgumentParser.Parse(arguments, FireError);
             return BuildFromArgument(argument);
         }
 
-        private async Task<ApplicationSetUp> BuildFromArgument(IDictionary<string, string> argumentsDictionary) {
+        private void FireError(string error)
+        {
+            OnArgumentParsingError?.Invoke(this, new MessageEventArgs(error, true));
+        }
+
+        private async Task<ApplicationSetUp> BuildFromArgument(IDictionary<string, string> argumentsDictionary)
+        {
             var mode = GetApplicationMode(argumentsDictionary);
             var uri = await BuildDevUri(mode, argumentsDictionary).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
-        private ApplicationMode GetApplicationMode(IDictionary<string, string> argumentsDictionary) {
-            if (TryGetValue(argumentsDictionary, Flag.Mode, out var explicitMode) &&
+        private ApplicationMode GetApplicationMode(IDictionary<string, string> argumentsDictionary)
+        {
+            if (TryGetValue(argumentsDictionary, Option.Mode, out var explicitMode) &&
                 _Modes.TryGetValue(explicitMode, out var mode))
                 return mode;
 
             return _Default;
         }
 
-        private static bool TryGetValue(IDictionary<string, string> argumentsDictionary, Flag flag, out string explicitMode) {
-            (var fullName, var shortName) = _Flags[flag];
+        private static bool TryGetValue(IDictionary<string, string> argumentsDictionary, Option option, out string explicitMode)
+        {
+            var (fullName, shortName) = _Options[option];
             return (argumentsDictionary.TryGetValue(fullName, out explicitMode) ||
                 argumentsDictionary.TryGetValue(shortName, out explicitMode));
         }
 
-        private async Task<Uri> BuildDevUri(ApplicationMode mode, IDictionary<string, string> argumentsDictionary) {
-            if (argumentsDictionary.TryGetValue(Url, out var uri))
+        private async Task<Uri> BuildDevUri(ApplicationMode mode, IDictionary<string, string> argumentsDictionary)
+        {
+            if (TryGetValue(argumentsDictionary, Option.Url, out var uri))
                 return new Uri(uri);
 
             return await BuildUri(mode, CancellationToken.None).ConfigureAwait(false);
         }
 
-        private async Task<Uri> BuildUri(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null) {
+        private async Task<Uri> BuildUri(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
+        {
             if (mode != ApplicationMode.Live)
                 return Uri;
 
-            void OnDataReceived(object _, RunnerMessageEventArgs dataReceived) {
+            void OnDataReceived(object _, MessageEventArgs dataReceived)
+            {
                 onNpmLog?.Invoke(dataReceived.Message);
             }
 
@@ -115,7 +130,8 @@ namespace Neutronium.BuildingBlocks.SetUp {
             return new Uri($"http://localhost:{port}/index.html");
         }
 
-        public void Dispose() {
+        public void Dispose()
+        {
             _NpmRunner?.Dispose();
         }
     }

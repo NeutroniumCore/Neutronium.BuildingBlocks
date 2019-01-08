@@ -70,6 +70,9 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
             yield return new object[] { new[] { "--mode=live", "--url=http://www.google.com" }, new ApplicationSetUp(ApplicationMode.Live, new Uri("http://www.google.com")) };
             yield return new object[] { new[] { "--mode=dev", "--url=http://www.duck.com" }, new ApplicationSetUp(ApplicationMode.Dev, new Uri("http://www.duck.com")) };
             yield return new object[] { new[] { "--mode=prod", "--url=http://www.github.com" }, new ApplicationSetUp(ApplicationMode.Production, new Uri("http://www.github.com")) };
+            yield return new object[] { new[] { "--mode=live", "-u=http://www.google.com" }, new ApplicationSetUp(ApplicationMode.Live, new Uri("http://www.google.com")) };
+            yield return new object[] { new[] { "--mode=dev", "-u=http://www.duck.com" }, new ApplicationSetUp(ApplicationMode.Dev, new Uri("http://www.duck.com")) };
+            yield return new object[] { new[] { "-m=prod", "-u=http://www.github.com" }, new ApplicationSetUp(ApplicationMode.Production, new Uri("http://www.github.com")) };
         }
 
         [Theory]

@@ -20,8 +20,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
         private State _State = State.NotStarted;
         private readonly string _WorkingDirectory;
 
-        public event EventHandler<RunnerMessageEventArgs> OnMessageReceived;
-        public event EventHandler<RunnerMessageEventArgs> OnErrorReceived;
+        public event EventHandler<MessageEventArgs> OnMessageReceived;
 
         private enum State
         {
@@ -132,7 +131,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
         private void Process_OutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             var data = e.Data;
-            OnMessageReceived?.Invoke(this, new RunnerMessageEventArgs(e.Data));
+            OnMessageReceived?.Invoke(this, new MessageEventArgs(e.Data, false));
 
             switch (_State)
             {
@@ -171,7 +170,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
 
         private void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e)
         {
-            OnErrorReceived?.Invoke(this, new RunnerMessageEventArgs(e.Data));
+            OnMessageReceived?.Invoke(this, new MessageEventArgs(e.Data, true));
         }
 
         public void Dispose()
