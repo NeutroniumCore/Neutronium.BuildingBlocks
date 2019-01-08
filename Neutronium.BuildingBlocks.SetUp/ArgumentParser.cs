@@ -6,7 +6,7 @@ namespace Neutronium.BuildingBlocks.SetUp
 {
     public static class ArgumentParser
     {
-        private static readonly Regex _Switch = new Regex(@"^(--(?<option>\w{2,})|-(?<option>\w))(?:=(?<value>.*))?$", RegexOptions.Compiled);
+        private static readonly Regex _Switch = new Regex(@"^-(-(?<option>\w{2,})|(?<option>\w))(?:=(?<value>.*))?$", RegexOptions.Compiled);
 
         public static Dictionary<string, string> Parse(IEnumerable<string> arguments, Action<string> onUnexpected = null)
         {
