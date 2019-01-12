@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Neutronium.BuildingBlocks.SetUp.Utils;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -12,14 +13,15 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
         private static readonly Regex _LocalHost = new Regex(@"http:\/\/localhost:(\d{1,4})", RegexOptions.Compiled);
         private static readonly Regex _Key = new Regex(@"\((\w)\/\w\)\?", RegexOptions.Compiled);
 
-        private Process _Process;
-        private readonly string _Script;
-        private TaskCompletionSource<int> _PortFinderCompletionSource = new TaskCompletionSource<int>();
-        private readonly TaskCompletionSource<string> _StopKeyCompletionSource = new TaskCompletionSource<string>();
+        private Process ResolvedProcess => _Process.Value;
         private Task<string> StopKeyAsync => _StopKeyCompletionSource.Task;
-        private State _State = State.NotStarted;
-        private readonly string _WorkingDirectory;
 
+        private readonly Lazy<Process> _Process;
+        private readonly string _Script;
+        private readonly TaskCompletionSource<int> _PortFinderCompletionSource = new TaskCompletionSource<int>();
+        private readonly TaskCompletionSource<string> _StopKeyCompletionSource = new TaskCompletionSource<string>();
+        private volatile State _State = State.NotStarted;
+        private readonly string _WorkingDirectory;
         public event EventHandler<MessageEventArgs> OnMessageReceived;
 
         private enum State
@@ -37,8 +39,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
             _Script = script;
             var root = DirectoryHelper.GetCurrentDirectory();
             _WorkingDirectory = Path.Combine(root, directory);
-
-            _Process = CreateProcess();
+            _Process = new Lazy<Process>(CreateProcess);
         }
 
         private Process CreateProcess()
@@ -60,14 +61,16 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
 
             process.ErrorDataReceived += Process_ErrorDataReceived;
             process.OutputDataReceived += Process_OutputDataReceived;
-
+            process.Start();
+            process.BeginErrorReadLine();
+            process.BeginOutputReadLine();
             return process;
         }
 
         public Task<int> GetPortAsync(CancellationToken cancellationToken)
         {
             Start(cancellationToken);
-            return _PortFinderCompletionSource.Task;
+            return _PortFinderCompletionSource.Task.WithCancellation(cancellationToken);
         }
 
         private void Start(CancellationToken cancellationToken)
@@ -77,51 +80,58 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
             if (_State != State.NotStarted)
                 return;
 
-            _Process.Start();
-            _Process.StandardInput.WriteLine($"npm run {_Script}");
-            _Process.BeginErrorReadLine();
-            _Process.BeginOutputReadLine();
             _State = State.Initializing;
+            ResolvedProcess.StandardInput.WriteLine($"npm run {_Script}");
         }
 
         private async void StopIfNeed(CancellationToken cancellationToken)
         {
-            if (!_PortFinderCompletionSource.TrySetCanceled(cancellationToken))
+            if (_PortFinderCompletionSource.Task.IsCompleted)
                 return;
 
-            var stopped = await Stop(State.Cancelling, State.NotStarted).ConfigureAwait(false);
-            if (!stopped)
-                return;
-
-            _Process = CreateProcess();
-            _PortFinderCompletionSource = new TaskCompletionSource<int>();
+            await Stop(State.Cancelling, State.NotStarted);
         }
 
         public async Task<bool> Cancel()
         {
-            var closed = await Stop(State.Closing, State.Closed).ConfigureAwait(false);
-            if (!closed)
+            if (!_Process.IsValueCreated)
+            {
+                _State = State.Closed;
+                return true;
+            }
+
+            var res = await Stop(State.Closing, State.Closed).ConfigureAwait(false);
+            if (!res)
                 return false;
 
-            _Process.Dispose();
-            _Process = null;
+            ResolvedProcess.ErrorDataReceived -= Process_ErrorDataReceived;
+            ResolvedProcess.OutputDataReceived -= Process_OutputDataReceived;
+            ResolvedProcess.Dispose();
             return true;
         }
 
         private async Task<bool> Stop(State transitionState, State finalState)
         {
-            if ((_State == State.Closed) || (_State == State.NotStarted) || (_State == State.Cancelling))
-                return false;
+            switch (_State)
+            {
+                case State.Closed:
+                case State.Cancelling:
+                    return false;
+
+                case State.NotStarted:
+                    _State = finalState;
+                    return true;
+            }
 
             var currentState = _State;
             _State = transitionState;
-            if (!_Process.SendControlC())
+            if (!ResolvedProcess.SendControlC())
             {
                 _State = currentState;
                 return false;
             }
 
-            var standardInput = _Process.StandardInput;
+            var standardInput = ResolvedProcess.StandardInput;
             standardInput.WriteLine();
             standardInput.WriteLine(await StopKeyAsync.ConfigureAwait(false));
             _State = finalState;
@@ -139,6 +149,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
                     TryParsePort(data);
                     break;
 
+                case State.Cancelling:
                 case State.Closing:
                     TryParseKey(data);
                     break;
@@ -155,6 +166,7 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
             if (!int.TryParse(portString, out var port))
                 return;
 
+            _State = State.Running;
             _PortFinderCompletionSource.TrySetResult(port);
         }
 
@@ -165,7 +177,6 @@ namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
                 return;
 
             _StopKeyCompletionSource.TrySetResult(match.Groups[1].Value);
-            _State = State.Running;
         }
 
         private void Process_ErrorDataReceived(object sender, DataReceivedEventArgs e)

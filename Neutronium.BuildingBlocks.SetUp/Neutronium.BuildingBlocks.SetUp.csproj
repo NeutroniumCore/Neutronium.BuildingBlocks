@@ -11,10 +11,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="script\loading.js" />
+    <None Remove="script\removeOverlay.js" />
     <None Remove="script\update.js" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="script\loading.js" />
+    <EmbeddedResource Include="script\removeOverlay.js" />
     <EmbeddedResource Include="script\update.js" />
   </ItemGroup>
   <ItemGroup>
