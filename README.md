@@ -28,7 +28,7 @@ See also [Neutronium.SPA.Demo](https://github.com/NeutroniumCore/Neutronium.SPA.
 By provided MVVM bindings compatible with Wpf, Neutronium is an unopinionated framework that leave the users free to build its application logics.
 
 
-
+Neutronium.BuildingBlocks fills the gap between an hello-world example and a complete application by solving some common challenges such as routing, dependency injection or layer isolation.
 
 
 ## API
