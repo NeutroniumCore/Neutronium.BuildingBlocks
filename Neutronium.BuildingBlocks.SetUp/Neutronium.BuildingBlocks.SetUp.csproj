@@ -10,7 +10,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/NeutroniumCore/Neutronium.BuildingBlocks/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
-    <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.SetUp\Neutronium.BuildingBlocks.SetUp.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="script\loading.js" />

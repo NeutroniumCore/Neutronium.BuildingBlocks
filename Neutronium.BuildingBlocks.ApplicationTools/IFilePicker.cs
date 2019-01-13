@@ -1,7 +1,7 @@
 ﻿namespace Neutronium.BuildingBlocks.ApplicationTools 
 {
     /// <summary>
-    /// file picker abstraction
+    /// File picker abstraction
     /// </summary>
     public interface IFilePicker : IIODialog
     {

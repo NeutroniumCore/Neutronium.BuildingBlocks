@@ -13,7 +13,7 @@
     <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
-    <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommonServiceLocator" Version="2.0.4" />

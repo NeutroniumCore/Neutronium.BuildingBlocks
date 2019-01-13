@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
-    <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.ApplicationTools\Neutronium.BuildingBlocks.ApplicationTools.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
