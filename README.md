@@ -1,16 +1,54 @@
 
 
-<p align="center"><img <p align="center"><img width="100"src="https://raw.githubusercontent.com/NeutroniumCore/Neutronium/master/Deploy/logo.png"></p>
+<p align="center"><img <p align="center"><img width="100"src="./__doc__/logo.png"></p>
 <h1 align="center">ViewModel Tools for Neutronium</h1>
 
 [![Build status](https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-buildingblocks.svg)](https://ci.appveyor.com/project/David-Desmaisons/neutronium-buildingblocks)
 [![NuGet Badge](https://buildstats.info/nuget/Neutronium.BuildingBlocks.Standard)](https://www.nuget.org/packages/Neutronium.BuildingBlocks.Standard/)
 [![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tools.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
 
-# Neutronium.BuildingBlocks
+## Description
 
-- MVVM tools providing interface and implementation of application operation to abstract WPF specific API in MVVM
-- Application ViewModel providing standard implementation for root application viewmodel including navigation.
+Neutronium.BuildingBlocks provides opinionated solutions to build [Neutronium](https://github.com/NeutroniumCore/Neutronium) application:
+
+- `ApplicationTools` provides interfaces for common application features such as native message box, native file and directory picker...
+- `Wpf` provides an implementation for `ApplicationTools` interfaces based on Wpf framework.
+- `Application` provides solution for application architecture including:
+  - routing (integrated with vue via [vue-cli-plugin-neutronium](https://github.com/NeutroniumCore/vue-cli-plugin-neutronium)).
+  - Dependency injection for main View-models
+  - API for modal and notifications
+- `SetUp` aims at making it easy to switch between different debug modes and make the usage of `live reload` easy. It provides utility to run npm scripts and to manage application mode.
+
+Neutronium [Visual Studio templates](https://marketplace.visualstudio.com/manage/publishers/daviddes?src=DavidDes.NeutroniumApplicationTemplates) show cases usages of Neutronium.BuildingBlocks.
+
+See also [Neutronium.SPA.Demo](https://github.com/NeutroniumCore/Neutronium.SPA.Demo) and [Neutronium.Simple.Template](https://github.com/NeutroniumCore/Neutronium.Simple.Template) for corresponding sample usage.
+
+## Context
+
+By provided MVVM bindings compatible with Wpf, Neutronium is an unopinionated framework that leave the users free to build its application logics.
+
+
+
+
+
+## API
+
+### Neutronium.BuildingBlocks.ApplicationTools
+
+- Build for .Net Standard 2.0 and .Net 4.7.2
+
+### Neutronium.BuildingBlocks.Wpf
+
+- Build for .Net 4.7.2
+
+### Neutronium.BuildingBlocks.Application
+
+- Build for .Net Standard 2.0 and .Net 4.7.2
+
+
+### Neutronium.BuildingBlocks.SetUp
+
+- Build for .Net Standard 2.0
 
 
 
