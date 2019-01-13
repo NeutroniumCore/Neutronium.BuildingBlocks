@@ -9,6 +9,12 @@
     <RepositoryUrl>https://github.com/NeutroniumCore/Neutronium.BuildingBlocks</RepositoryUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/NeutroniumCore/Neutronium.BuildingBlocks/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net472|AnyCPU'">
+    <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
+    <DocumentationFile>C:\Users\David\Documents\Source\Neutronium.BuildingBlocks\Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommonServiceLocator" Version="2.0.4" />
     <PackageReference Include="MoreCollection" Version="2.0.0" />
