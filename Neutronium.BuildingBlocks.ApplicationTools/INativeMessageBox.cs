@@ -1,11 +1,17 @@
 ﻿namespace Neutronium.BuildingBlocks.ApplicationTools
 {
+    /// <summary>
+    /// Message box window type
+    /// </summary>
     public enum WindowType
     {
         OkCancel,
         YesNo
     }
 
+    /// <summary>
+    /// Native message box abstraction
+    /// </summary>
     public interface INativeMessageBox
     {
         /// <summary>
