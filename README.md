@@ -1,6 +1,6 @@
 
 
-<p align="center"><img <p align="center"><img width="100"src="./__doc__/logo.png"></p>
+<p align="center"><img <p align="center"><img width="200"src="./__doc__/logo.png"></p>
 <h1 align="center">ViewModel Tools for Neutronium</h1>
 
 [![Build status](https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-buildingblocks.svg)](https://ci.appveyor.com/project/David-Desmaisons/neutronium-buildingblocks)
