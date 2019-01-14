@@ -7,6 +7,8 @@
 [![NuGet Badge](https://buildstats.info/nuget/Neutronium.BuildingBlocks.Standard)](https://www.nuget.org/packages/Neutronium.BuildingBlocks.Standard/)
 [![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tools.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
 
+[https://neutroniumcore.github.io/Neutronium.BuildingBlocks/index.html](https://neutroniumcore.github.io/Neutronium.BuildingBlocks/index.html)
+
 ## Description
 
 Neutronium.BuildingBlocks provides opinionated solutions to build [Neutronium](https://github.com/NeutroniumCore/Neutronium) application:
@@ -29,26 +31,3 @@ By provided MVVM bindings compatible with Wpf, Neutronium is an unopinionated fr
 
 
 Neutronium.BuildingBlocks fills the gap between an hello-world example and a complete application by solving some common challenges such as routing, dependency injection or layer isolation.
-
-
-## API
-
-### Neutronium.BuildingBlocks.ApplicationTools
-
-- Build for .Net Standard 2.0 and .Net 4.7.2
-
-### Neutronium.BuildingBlocks.Wpf
-
-- Build for .Net 4.7.2
-
-### Neutronium.BuildingBlocks.Application
-
-- Build for .Net Standard 2.0 and .Net 4.7.2
-
-
-### Neutronium.BuildingBlocks.SetUp
-
-- Build for .Net Standard 2.0
-
-
-
