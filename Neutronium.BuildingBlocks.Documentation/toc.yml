@@ -2,3 +2,5 @@
   href: applicationTools/
 - name: Application Api Documentation
   href: application/
+- name: SetUp Api Documentation
+  href: setup/

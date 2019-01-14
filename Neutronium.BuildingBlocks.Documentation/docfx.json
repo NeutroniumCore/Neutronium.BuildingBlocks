@@ -28,6 +28,20 @@
       "disableDefaultFilter": false,
       "properties": { "TargetFramework": "net472" }
     },
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "src": "..\\Neutronium.BuildingBlocks.SetUp"
+        }
+      ],
+      "dest": "setup",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": { "TargetFramework": "net472" }
+    }
   ],
   "build": {
     "content": [
@@ -41,6 +55,12 @@
         "files": [
           "applicationTools/**.yml",
           "applicationTools/index.md"
+        ]
+      },
+      {
+        "files": [
+          "setup/**.yml",
+          "setup/index.md"
         ]
       },
       {

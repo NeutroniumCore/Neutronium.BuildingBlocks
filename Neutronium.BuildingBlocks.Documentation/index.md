@@ -10,7 +10,7 @@ Neutronium.BuildingBlocks provides opinionated solutions to build [Neutronium](h
   - routing (integrated with vue via [vue-cli-plugin-neutronium](https://github.com/NeutroniumCore/vue-cli-plugin-neutronium)).
   - Dependency injection for main View-models
   - API for modal and notifications
-- `SetUp` aims at making it easy to switch between different debug modes and make the usage of `live reload` easy. It provides utility to run npm scripts and to manage application mode.
+- [`SetUp`](./setup) aims at making it easy to switch between different debug modes and make the usage of `live reload` easy. It provides utility to run npm scripts and to manage application mode.
 
 Neutronium [Visual Studio templates](https://marketplace.visualstudio.com/manage/publishers/daviddes?src=DavidDes.NeutroniumApplicationTemplates) show cases usages of Neutronium.BuildingBlocks.
 
