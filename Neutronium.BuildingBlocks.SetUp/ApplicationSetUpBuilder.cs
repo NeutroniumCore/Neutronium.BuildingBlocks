@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Neutronium.BuildingBlocks.SetUp
 {
+    /// <summary>
+    /// <see cref="ApplicationSetUp"/> builder
+    /// </summary>
     public class ApplicationSetUpBuilder : IDisposable
     {
         private const string Live = "live";
@@ -17,12 +20,18 @@ namespace Neutronium.BuildingBlocks.SetUp
         private readonly ApplicationMode _Default;
         private readonly INpmRunner _NpmRunner;
 
+        /// <summary>
+        /// Send when npm runner receives log message
+        /// </summary>
         public event EventHandler<MessageEventArgs> OnRunnerMessageReceived
         {
             add => _NpmRunner.OnMessageReceived += value;
             remove => _NpmRunner.OnMessageReceived -= value;
         }
 
+        /// <summary>
+        /// Sent on command line arguments parsing error
+        /// </summary>
         public event EventHandler<MessageEventArgs> OnArgumentParsingError;
   
         private static readonly Dictionary<string, ApplicationMode> _Modes = new Dictionary<string, ApplicationMode>
@@ -44,6 +53,12 @@ namespace Neutronium.BuildingBlocks.SetUp
             [Option.Url] = Tuple.Create("url", "u"),
         };
 
+        /// <summary>
+        /// Construct a ApplicationSetUpBuilder with given view directory and default mode
+        /// </summary>
+        /// <param name="viewDirectory"></param>
+        /// <param name="default"></param>
+        /// <param name="liveScript"></param>
         public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode @default = ApplicationMode.Dev,
             string liveScript = "live") :
             this(new Uri($"pack://application:,,,/{viewDirectory.Replace(@"\", "/")}/dist/index.html"),
@@ -61,17 +76,35 @@ namespace Neutronium.BuildingBlocks.SetUp
                 throw new ArgumentNullException(nameof(npmRunner));
         }
 
+
+        /// <summary>
+        /// Build set-up from given mode
+        /// </summary>
+        /// <param name="mode"></param>
+        /// <param name="cancellationToken"></param>
+        /// <param name="onNpmLog"></param>
+        /// <returns></returns>
         public async Task<ApplicationSetUp> BuildFromMode(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
         {
             var uri = await BuildUri(mode, cancellationToken, onNpmLog).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
 
+
+        /// <summary>
+        /// Build set-up for production: no debug, local url
+        /// </summary>
+        /// <returns></returns>
         public ApplicationSetUp BuildForProduction()
         {
             return new ApplicationSetUp(ApplicationMode.Production, Uri);
         }
 
+        /// <summary>
+        /// Build set-up from application command line argument
+        /// </summary>
+        /// <param name="arguments"></param>
+        /// <returns></returns>
         public Task<ApplicationSetUp> BuildFromApplicationArguments(string[] arguments)
         {
             var argument = ArgumentParser.Parse(arguments, FireError);

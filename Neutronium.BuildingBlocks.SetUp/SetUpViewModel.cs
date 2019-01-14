@@ -10,12 +10,30 @@ using System.Threading.Tasks;
 
 namespace Neutronium.BuildingBlocks.SetUp
 {
+    /// <summary>
+    /// Set-up viewModel
+    /// </summary>
     public class SetUpViewModel
     {
+        /// <summary>
+        /// View uri
+        /// </summary>
         public Uri Uri => _ApplicationSetUp.Uri;
+
+        /// <summary>
+        /// True if debug mode
+        /// </summary>
         public bool Debug => _ApplicationSetUp.Debug;
+
+        /// <summary>
+        /// Application mode
+        /// </summary>
         public ApplicationMode Mode => _ApplicationSetUp.Mode;
 
+        /// <summary>
+        /// Commands to be injected to the Neutronium components
+        /// Including "To Live" and "Reload" commands
+        /// </summary>
         public IDictionary<string, ICommand<ICompleteWebViewComponent>> DebugCommands { get; } = new Dictionary<string, ICommand<ICompleteWebViewComponent>>();
 
         private readonly ApplicationSetUpBuilder _Builder;

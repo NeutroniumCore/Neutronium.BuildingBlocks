@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Neutronium.BuildingBlocks.SetUp.NpmHelper
 {
+    /// <summary>
+    /// Npm runner implementation
+    /// </summary>
     public class NpmRunner : INpmRunner
     {
         private static readonly Regex _LocalHost = new Regex(@"http:\/\/localhost:(\d{1,4})", RegexOptions.Compiled);
