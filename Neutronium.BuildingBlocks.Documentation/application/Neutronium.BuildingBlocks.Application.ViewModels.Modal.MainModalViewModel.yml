@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: MainModalViewModel
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
     startLine: 11
@@ -70,7 +70,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CancelMessage
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
     startLine: 13
@@ -105,7 +105,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CancelCommand
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
     startLine: 15
@@ -140,7 +140,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CompletionTask
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
     startLine: 17
@@ -187,7 +187,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Ok
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
     startLine: 28

@@ -1,0 +1,32 @@
+### YamlMime:TableOfContent
+- uid: Neutronium.BuildingBlocks.SetUp
+  name: Neutronium.BuildingBlocks.SetUp
+  items:
+  - uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+    name: ApplicationMode
+  - uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+    name: ApplicationSetUp
+  - uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
+    name: ApplicationSetUpBuilder
+  - uid: Neutronium.BuildingBlocks.SetUp.ArgumentParser
+    name: ArgumentParser
+  - uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+    name: MessageEventArgs
+  - uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+    name: SetUpViewModel
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  items:
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
+    name: DirectoryHelper
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+    name: INpmRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+    name: NpmRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
+    name: ProcessExtension
+- uid: Neutronium.BuildingBlocks.SetUp.Utils
+  name: Neutronium.BuildingBlocks.SetUp.Utils
+  items:
+  - uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+    name: TaskExtensions

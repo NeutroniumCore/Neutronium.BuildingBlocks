@@ -1,6 +1,9 @@
 - name: ApplicationTools Api Documentation
   href: applicationTools/
+  homepage: applicationTools/index.html
 - name: Application Api Documentation
   href: application/
+  homepage: application/index.html
 - name: SetUp Api Documentation
   href: setup/
+  homepage: setup/index.html

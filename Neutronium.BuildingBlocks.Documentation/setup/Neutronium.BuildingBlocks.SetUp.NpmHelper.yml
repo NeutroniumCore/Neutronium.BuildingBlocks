@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  commentId: N:Neutronium.BuildingBlocks.SetUp.NpmHelper
+  id: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  children:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  nameWithType: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+references:
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
+  name: DirectoryHelper
+  nameWithType: DirectoryHelper
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: INpmRunner
+  nameWithType: INpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+  name: NpmRunner
+  nameWithType: NpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
+  name: ProcessExtension
+  nameWithType: ProcessExtension
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  commentId: N:Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  nameWithType: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper

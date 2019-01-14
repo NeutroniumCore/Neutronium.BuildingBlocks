@@ -635,7 +635,187 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ebehUn0STsU/zbWs99+2gA=="
+          "hash": "omXywvZzhIJnCEVDsHDMyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationMode.html",
+          "hash": "qI9jhBjMX3yX1r3LeqRpQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.html",
+          "hash": "G0nnIT0h2WEiI0L0QKaKIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.html",
+          "hash": "iWIOsqnRgCGZjRmfIecWRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ArgumentParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ArgumentParser.html",
+          "hash": "iSyakd/6ky3RsrCPTakDxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.MessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.MessageEventArgs.html",
+          "hash": "TAsHqNX29/9qkvlFnrBCfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper.html",
+          "hash": "p/oFw0sCcIp0iSyGqVtcKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html",
+          "hash": "0CLi+BbCkL0uvercydjX4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html",
+          "hash": "My3Bli1RvwdkLKrn60/7vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension.html",
+          "hash": "gng4hQpJBWwI+lI6U+oZbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.html",
+          "hash": "YRsiIERMR8j2xjs6+2EWCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.html",
+          "hash": "3ScPFd8wo0B8VWXXcWDU8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.html",
+          "hash": "1PfMrjceKSKXcECgYB40yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.Utils.html",
+          "hash": "xCItBf7vDp6WJFnW4AkNGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.html",
+          "hash": "9FVzA3pFTvLAKO3/ZA6jxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "setup/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "setup/index.html",
+          "hash": "h6k4OU2CXzmfKk90W3tUzw=="
         }
       },
       "is_incremental": false,
@@ -643,11 +823,26 @@
     },
     {
       "type": "Toc",
+      "source_relative_path": "setup/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/toc.html",
+          "hash": "01mXIPblW4SlhDLfUaJA+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "5/HA5TRLuipiNI7aMe7XaA=="
+          "hash": "AwrZQVFVGuNSUFGrtQkHpw=="
         }
       },
       "is_incremental": false,

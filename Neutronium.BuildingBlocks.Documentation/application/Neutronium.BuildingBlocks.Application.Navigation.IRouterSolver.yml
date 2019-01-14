@@ -19,7 +19,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: IRouterSolver
     path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
     startLine: 7
@@ -52,7 +52,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
     startLine: 16
@@ -87,7 +87,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
     startLine: 25
@@ -124,7 +124,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveType
     path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
     startLine: 34

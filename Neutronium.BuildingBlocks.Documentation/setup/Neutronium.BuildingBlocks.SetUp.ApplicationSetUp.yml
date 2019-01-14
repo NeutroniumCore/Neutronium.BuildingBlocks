@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  id: ApplicationSetUp
+  parent: Neutronium.BuildingBlocks.SetUp
+  children:
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Uri)
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+  langs:
+  - csharp
+  - vb
+  name: ApplicationSetUp
+  nameWithType: ApplicationSetUp
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ApplicationSetUp
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  summary: "\nApplication set-up mode information\n"
+  example: []
+  syntax:
+    content: public class ApplicationSetUp
+    content.vb: Public Class ApplicationSetUp
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+  commentId: P:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+  id: Debug
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: ApplicationSetUp.Debug
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Debug
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 12
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  summary: "\nTrue when Neutronium component is in debug\n"
+  example: []
+  syntax:
+    content: public bool Debug { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Debug As Boolean
+  overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+  commentId: P:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+  id: Mode
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: ApplicationSetUp.Mode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Mode
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  summary: "\nApplication mode\n"
+  example: []
+  syntax:
+    content: public ApplicationMode Mode { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+    content.vb: Public ReadOnly Property Mode As ApplicationMode
+  overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+  commentId: P:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+  id: Uri
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: ApplicationSetUp.Uri
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Uri
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 22
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  summary: "\nApplication view uri\n"
+  example: []
+  syntax:
+    content: public Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property Uri As Uri
+  overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Uri)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Uri)
+  id: '#ctor(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Uri)'
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  langs:
+  - csharp
+  - vb
+  name: ApplicationSetUp(ApplicationMode, Uri)
+  nameWithType: ApplicationSetUp.ApplicationSetUp(ApplicationMode, Uri)
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ApplicationSetUp(Neutronium.BuildingBlocks.SetUp.ApplicationMode, System.Uri)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 24
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: public ApplicationSetUp(ApplicationMode mode, Uri uri)
+    parameters:
+    - id: mode
+      type: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+    - id: uri
+      type: System.Uri
+    content.vb: Public Sub New(mode As ApplicationMode, uri As Uri)
+  overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString
+  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString
+  id: ToString
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ApplicationSetUp.ToString()
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ToString
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUp.cs
+    startLine: 30
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Neutronium.BuildingBlocks.SetUp
+  commentId: N:Neutronium.BuildingBlocks.SetUp
+  name: Neutronium.BuildingBlocks.SetUp
+  nameWithType: Neutronium.BuildingBlocks.SetUp
+  fullName: Neutronium.BuildingBlocks.SetUp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+  name: Debug
+  nameWithType: ApplicationSetUp.Debug
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Debug
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+  name: Mode
+  nameWithType: ApplicationSetUp.Mode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Mode
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  parent: Neutronium.BuildingBlocks.SetUp
+  name: ApplicationMode
+  nameWithType: ApplicationMode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+  name: Uri
+  nameWithType: ApplicationSetUp.Uri
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.Uri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.#ctor
+  name: ApplicationSetUp
+  nameWithType: ApplicationSetUp.ApplicationSetUp
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ApplicationSetUp
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString
+  name: ToString
+  nameWithType: ApplicationSetUp.ToString
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

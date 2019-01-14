@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.Utils
+  commentId: N:Neutronium.BuildingBlocks.SetUp.Utils
+  id: Neutronium.BuildingBlocks.SetUp.Utils
+  children:
+  - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.SetUp.Utils
+  nameWithType: Neutronium.BuildingBlocks.SetUp.Utils
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+references:
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  commentId: T:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  name: TaskExtensions
+  nameWithType: TaskExtensions
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions

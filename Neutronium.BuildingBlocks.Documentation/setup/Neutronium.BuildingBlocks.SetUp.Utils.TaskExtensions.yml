@@ -1,0 +1,560 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  commentId: T:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  id: TaskExtensions
+  parent: Neutronium.BuildingBlocks.SetUp.Utils
+  children:
+  - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask``1(System.Threading.CancellationToken)
+  - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: TaskExtensions
+  nameWithType: TaskExtensions
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: TaskExtensions
+    path: ../Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+    startLine: 8
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.Utils
+  summary: "\nTask extensions\n"
+  example: []
+  syntax:
+    content: public static class TaskExtensions
+    content.vb: Public Module TaskExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask``1(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask``1(System.Threading.CancellationToken)
+  id: AsTask``1(System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsTask<T>(CancellationToken)
+  nameWithType: TaskExtensions.AsTask<T>(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask<T>(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: AsTask
+    path: ../Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+    startLine: 16
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.Utils
+  summary: "\nTransform a CancellationToken in a Task\n"
+  example: []
+  syntax:
+    content: public static Task<T> AsTask<T>(this CancellationToken token)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AsTask(Of T)(token As CancellationToken) As Task(Of T)
+  overload: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask*
+  nameWithType.vb: TaskExtensions.AsTask(Of T)(CancellationToken)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask(Of T)(System.Threading.CancellationToken)
+  name.vb: AsTask(Of T)(CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+  id: WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithCancellation<T>(Task<T>, CancellationToken)
+  nameWithType: TaskExtensions.WithCancellation<T>(Task<T>, CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation<T>(System.Threading.Tasks.Task<T>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: WithCancellation
+    path: ../Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
+    startLine: 32
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.Utils
+  summary: "\nExecute the task with a cancellation Token,\nIf the token is cancelled the returned task will immediattely\nreturn as cancelled.\n"
+  example: []
+  syntax:
+    content: public static Task<T> WithCancellation<T>(this Task<T> task, CancellationToken token)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{{T}}
+      description: ''
+    - id: token
+      type: System.Threading.CancellationToken
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithCancellation(Of T)(task As Task(Of T), token As CancellationToken) As Task(Of T)
+  overload: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation*
+  nameWithType.vb: TaskExtensions.WithCancellation(Of T)(Task(Of T), CancellationToken)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation(Of T)(System.Threading.Tasks.Task(Of T), System.Threading.CancellationToken)
+  name.vb: WithCancellation(Of T)(Task(Of T), CancellationToken)
+references:
+- uid: Neutronium.BuildingBlocks.SetUp.Utils
+  commentId: N:Neutronium.BuildingBlocks.SetUp.Utils
+  name: Neutronium.BuildingBlocks.SetUp.Utils
+  nameWithType: Neutronium.BuildingBlocks.SetUp.Utils
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask
+  name: AsTask
+  nameWithType: TaskExtensions.AsTask
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation
+  name: WithCancellation
+  nameWithType: TaskExtensions.WithCancellation
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation

@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: LifeCycleEventsRegister
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
     startLine: 9
@@ -61,7 +61,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
     startLine: 15
@@ -98,7 +98,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
     startLine: 27

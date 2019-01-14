@@ -17,7 +17,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ITaskCancellableCommand
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
     startLine: 51
@@ -68,7 +68,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Progress
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
     startLine: 56

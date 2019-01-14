@@ -23,7 +23,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: INavigator
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 8
@@ -56,7 +56,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 18
@@ -94,7 +94,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 25
@@ -129,7 +129,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 33
@@ -170,7 +170,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 41
@@ -208,7 +208,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigating
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 46
@@ -237,7 +237,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigated
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 51
@@ -266,7 +266,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnRoutingMessage
     path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
     startLine: 56

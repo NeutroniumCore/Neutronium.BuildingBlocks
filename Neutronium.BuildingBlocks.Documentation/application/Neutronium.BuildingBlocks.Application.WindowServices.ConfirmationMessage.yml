@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ConfirmationMessage
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
     startLine: 5
@@ -67,7 +67,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CancelMessage
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
     startLine: 10
@@ -104,7 +104,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
     startLine: 12

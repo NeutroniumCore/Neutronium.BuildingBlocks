@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp
+  commentId: N:Neutronium.BuildingBlocks.SetUp
+  id: Neutronium.BuildingBlocks.SetUp
+  children:
+  - Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
+  - Neutronium.BuildingBlocks.SetUp.ArgumentParser
+  - Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+  - Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.SetUp
+  nameWithType: Neutronium.BuildingBlocks.SetUp
+  fullName: Neutronium.BuildingBlocks.SetUp
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+references:
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  parent: Neutronium.BuildingBlocks.SetUp
+  name: ApplicationMode
+  nameWithType: ApplicationMode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+  parent: Neutronium.BuildingBlocks.SetUp
+  name: ApplicationSetUp
+  nameWithType: ApplicationSetUp
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUp
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
+  parent: Neutronium.BuildingBlocks.SetUp
+  name: ApplicationSetUpBuilder
+  nameWithType: ApplicationSetUpBuilder
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
+- uid: Neutronium.BuildingBlocks.SetUp.ArgumentParser
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ArgumentParser
+  name: ArgumentParser
+  nameWithType: ArgumentParser
+  fullName: Neutronium.BuildingBlocks.SetUp.ArgumentParser
+- uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+  commentId: T:Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+  name: MessageEventArgs
+  nameWithType: MessageEventArgs
+  fullName: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  commentId: T:Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  name: SetUpViewModel
+  nameWithType: SetUpViewModel
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+- uid: Neutronium.BuildingBlocks.SetUp
+  commentId: N:Neutronium.BuildingBlocks.SetUp
+  name: Neutronium.BuildingBlocks.SetUp
+  nameWithType: Neutronium.BuildingBlocks.SetUp
+  fullName: Neutronium.BuildingBlocks.SetUp

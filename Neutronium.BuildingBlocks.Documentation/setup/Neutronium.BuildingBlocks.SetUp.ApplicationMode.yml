@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  id: ApplicationMode
+  parent: Neutronium.BuildingBlocks.SetUp
+  children:
+  - Neutronium.BuildingBlocks.SetUp.ApplicationMode.Dev
+  - Neutronium.BuildingBlocks.SetUp.ApplicationMode.Live
+  - Neutronium.BuildingBlocks.SetUp.ApplicationMode.Production
+  langs:
+  - csharp
+  - vb
+  name: ApplicationMode
+  nameWithType: ApplicationMode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  type: Enum
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ApplicationMode
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  summary: "\nApplication set-up modes\n"
+  example: []
+  syntax:
+    content: public enum ApplicationMode
+    content.vb: Public Enum ApplicationMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Dev
+  commentId: F:Neutronium.BuildingBlocks.SetUp.ApplicationMode.Dev
+  id: Dev
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  langs:
+  - csharp
+  - vb
+  name: Dev
+  nameWithType: ApplicationMode.Dev
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Dev
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Dev
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: Dev = 0
+    return:
+      type: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Live
+  commentId: F:Neutronium.BuildingBlocks.SetUp.ApplicationMode.Live
+  id: Live
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  langs:
+  - csharp
+  - vb
+  name: Live
+  nameWithType: ApplicationMode.Live
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Live
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Live
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+    startLine: 8
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: Live = 1
+    return:
+      type: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Production
+  commentId: F:Neutronium.BuildingBlocks.SetUp.ApplicationMode.Production
+  id: Production
+  parent: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  langs:
+  - csharp
+  - vb
+  name: Production
+  nameWithType: ApplicationMode.Production
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode.Production
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Production
+    path: ../Neutronium.BuildingBlocks.SetUp/ApplicationMode.cs
+    startLine: 9
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: Production = 2
+    return:
+      type: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Neutronium.BuildingBlocks.SetUp
+  commentId: N:Neutronium.BuildingBlocks.SetUp
+  name: Neutronium.BuildingBlocks.SetUp
+  nameWithType: Neutronium.BuildingBlocks.SetUp
+  fullName: Neutronium.BuildingBlocks.SetUp
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationMode
+  parent: Neutronium.BuildingBlocks.SetUp
+  name: ApplicationMode
+  nameWithType: ApplicationMode
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationMode

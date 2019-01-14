@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: IChooserCommand
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
     startLine: 9
@@ -61,7 +61,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CanBeExecuted
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
     startLine: 14
@@ -97,7 +97,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Picker
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
     startLine: 19
@@ -134,7 +134,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Results
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
     startLine: 24
@@ -171,7 +171,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Choose
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IChooserCommand.cs
     startLine: 29

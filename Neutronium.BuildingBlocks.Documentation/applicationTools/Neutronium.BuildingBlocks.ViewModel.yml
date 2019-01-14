@@ -21,7 +21,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ViewModel
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 8
@@ -71,7 +71,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: PropertyChanged
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 10
@@ -104,7 +104,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: PropertyChanging
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 11
@@ -137,7 +137,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Set
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 23
@@ -188,7 +188,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: PropertyHasChanged
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 34
@@ -221,7 +221,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: PropertyIsChanging
     path: ../Neutronium.BuildingBlocks.ApplicationTools/ViewModel.cs
     startLine: 39

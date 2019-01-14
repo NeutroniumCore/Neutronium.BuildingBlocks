@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RoutedEventArgs
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
     startLine: 4
@@ -64,7 +64,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: NewRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
     startLine: 6
@@ -99,7 +99,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
     startLine: 12
@@ -134,7 +134,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
     startLine: 17
@@ -167,7 +167,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
     startLine: 22

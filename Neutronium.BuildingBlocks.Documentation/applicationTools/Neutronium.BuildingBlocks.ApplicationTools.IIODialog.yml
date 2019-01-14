@@ -19,7 +19,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: IIODialog
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
     startLine: 5
@@ -52,7 +52,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Title
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
     startLine: 10
@@ -86,7 +86,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Directory
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
     startLine: 15
@@ -120,7 +120,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Choose
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
     startLine: 23
