@@ -1,7 +1,7 @@
 
 
 <p align="center"><img <p align="center"><img width="200"src="./__doc__/logo.png"></p>
-<h1 align="center">ViewModel Tools for Neutronium</h1>
+<h1 align="center">Neutronium Building Blocks</h1>
 
 [![Build status](https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-buildingblocks.svg)](https://ci.appveyor.com/project/David-Desmaisons/neutronium-buildingblocks)
 [![NuGet Badge](https://buildstats.info/nuget/Neutronium.BuildingBlocks.Standard)](https://www.nuget.org/packages/Neutronium.BuildingBlocks.Standard/)
