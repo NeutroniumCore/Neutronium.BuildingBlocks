@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.40.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Neutronium.BuildingBlocks.ApplicationTools\Neutronium.BuildingBlocks.ApplicationTools.csproj" />
+    <ProjectReference Include="..\Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.csproj" />
+    <ProjectReference Include="..\Neutronium.BuildingBlocks.SetUp\Neutronium.BuildingBlocks.SetUp.csproj" />
+    <ProjectReference Include="..\Neutronium.BuildingBlocks.Wpf\Neutronium.BuildingBlocks.Wpf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+
+</Project>

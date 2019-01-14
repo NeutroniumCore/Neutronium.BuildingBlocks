@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  id: IMessageBox
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  langs:
+  - csharp
+  - vb
+  name: IMessageBox
+  nameWithType: IMessageBox
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IMessageBox
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nMessage box/ modal window abstraction\n"
+  example: []
+  syntax:
+    content: public interface IMessageBox
+    content.vb: Public Interface IMessageBox
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  id: ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(ConfirmationMessage)
+  nameWithType: IMessageBox.ShowMessage(ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowMessage
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+    startLine: 14
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nDisplay a confirmation message\n"
+  example: []
+  syntax:
+    content: Task<bool> ShowMessage(ConfirmationMessage confirmationMessage)
+    parameters:
+    - id: confirmationMessage
+      type: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
+    content.vb: Function ShowMessage(confirmationMessage As ConfirmationMessage) As Task(Of Boolean)
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage*
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  id: ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  langs:
+  - csharp
+  - vb
+  name: ShowInformation(MessageInformation)
+  nameWithType: IMessageBox.ShowInformation(MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowInformation
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
+    startLine: 20
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nShow information\n"
+  example: []
+  syntax:
+    content: void ShowInformation(MessageInformation messageInformation)
+    parameters:
+    - id: messageInformation
+      type: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+      description: ''
+    content.vb: Sub ShowInformation(messageInformation As MessageInformation)
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation*
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+  name: ShowMessage
+  nameWithType: IMessageBox.ShowMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+  name: ShowInformation
+  nameWithType: IMessageBox.ShowInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: MessageInformation
+  nameWithType: MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation

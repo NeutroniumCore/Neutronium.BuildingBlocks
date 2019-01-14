@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  id: INotificationSender
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  langs:
+  - csharp
+  - vb
+  name: INotificationSender
+  nameWithType: INotificationSender
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: INotificationSender
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nNotifier abstraction\n"
+  example: []
+  syntax:
+    content: public interface INotificationSender
+    content.vb: Public Interface INotificationSender
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  id: Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  langs:
+  - csharp
+  - vb
+  name: Send(Notification)
+  nameWithType: INotificationSender.Send(Notification)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Send
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nShow the corresponding notification\n"
+  example: []
+  syntax:
+    content: void Send(Notification notification)
+    parameters:
+    - id: notification
+      type: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+      description: ''
+    content.vb: Sub Send(notification As Notification)
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send*
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+  name: Send
+  nameWithType: INotificationSender.Send
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Notification
+  nameWithType: Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification

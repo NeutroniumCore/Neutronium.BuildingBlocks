@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  id: ITaskCancellableCommand`2
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  langs:
+  - csharp
+  - vb
+  name: ITaskCancellableCommand<TResult, TProgress>
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ITaskCancellableCommand
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
+    startLine: 51
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nCancellable command with progress\n"
+  example: []
+  syntax:
+    content: 'public interface ITaskCancellableCommand<TResult, out TProgress> : ITaskCancellableCommand<TResult>, INotifyPropertyChanged, INotifyPropertyChanging'
+    typeParameters:
+    - id: TResult
+      description: "\nResult type\n"
+    - id: TProgress
+      description: "\nProgress type\n"
+    content.vb: >-
+      Public Interface ITaskCancellableCommand(Of TResult, Out TProgress)
+          Inherits ITaskCancellableCommand(Of TResult)
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Computing
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.CanBeExecuted
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Run
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Cancel
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Results
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress)
+  name.vb: ITaskCancellableCommand(Of TResult, TProgress)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  id: Progress
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>.Progress
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>.Progress
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Progress
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/ITaskCancellableCommand.cs
+    startLine: 56
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nCommand progress exposed as Observable \n"
+  example: []
+  syntax:
+    content: IObservable<TProgress> Progress { get; }
+    parameters: []
+    return:
+      type: System.IObservable{{TProgress}}
+    content.vb: ReadOnly Property Progress As IObservable(Of TProgress)
+  overload: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress*
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress).Progress
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress).Progress
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Computing
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}.Computing
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  name: Computing
+  nameWithType: ITaskCancellableCommand<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Computing
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}.CanBeExecuted
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: ITaskCancellableCommand<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Run
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}.Run
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  name: Run
+  nameWithType: ITaskCancellableCommand<TResult>.Run
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Run
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Run
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Cancel
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}.Cancel
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  name: Cancel
+  nameWithType: ITaskCancellableCommand<TResult>.Cancel
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Cancel
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}.Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}.Results
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  name: Results
+  nameWithType: ITaskCancellableCommand<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Results
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Results
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+  commentId: E:System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+  parent: System.ComponentModel.INotifyPropertyChanging
+  isExternal: true
+  name: PropertyChanging
+  nameWithType: INotifyPropertyChanging.PropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  name: Computing
+  nameWithType: ITaskCancellableCommand<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Computing
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  nameWithType: ITaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  name.vb: ITaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: ITaskCancellableCommand<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  name: Run
+  nameWithType: ITaskCancellableCommand<TResult>.Run
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Run
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Run
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  name: Cancel
+  nameWithType: ITaskCancellableCommand<TResult>.Cancel
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Cancel
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  name: Results
+  nameWithType: ITaskCancellableCommand<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Results
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Results
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  nameWithType: ITaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  name.vb: ITaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  name: Progress
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>.Progress
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>.Progress
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress).Progress
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress).Progress
+- uid: System.IObservable{{TProgress}}
+  commentId: T:System.IObservable{`1}
+  parent: System
+  definition: System.IObservable`1
+  name: IObservable<TProgress>
+  nameWithType: IObservable<TProgress>
+  fullName: System.IObservable<TProgress>
+  nameWithType.vb: IObservable(Of TProgress)
+  fullName.vb: System.IObservable(Of TProgress)
+  name.vb: IObservable(Of TProgress)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

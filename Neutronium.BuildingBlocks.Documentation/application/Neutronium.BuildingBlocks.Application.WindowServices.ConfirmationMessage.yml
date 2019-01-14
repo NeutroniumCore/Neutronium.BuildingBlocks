@@ -1,0 +1,469 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  id: ConfirmationMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor(System.String,System.String,System.String,System.String)
+  - Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  langs:
+  - csharp
+  - vb
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ConfirmationMessage
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nMessage asking for confirmation \n"
+  example: []
+  syntax:
+    content: 'public class ConfirmationMessage : MessageInformation'
+    content.vb: >-
+      Public Class ConfirmationMessage
+          Inherits MessageInformation
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  - Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  - Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  id: CancelMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  langs:
+  - csharp
+  - vb
+  name: CancelMessage
+  nameWithType: ConfirmationMessage.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CancelMessage
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  summary: "\nCancel message\n"
+  example: []
+  syntax:
+    content: public string CancelMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CancelMessage As String
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  langs:
+  - csharp
+  - vb
+  name: ConfirmationMessage(String, String, String, String)
+  nameWithType: ConfirmationMessage.ConfirmationMessage(String, String, String, String)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.ConfirmationMessage(System.String, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/ConfirmationMessage.cs
+    startLine: 12
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public ConfirmationMessage(string title, string message, string okMessage, string cancelMessage)
+    parameters:
+    - id: title
+      type: System.String
+    - id: message
+      type: System.String
+    - id: okMessage
+      type: System.String
+    - id: cancelMessage
+      type: System.String
+    content.vb: Public Sub New(title As String, message As String, okMessage As String, cancelMessage As String)
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: MessageInformation
+  nameWithType: MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  name: Message
+  nameWithType: MessageInformation.Message
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  name: OkMessage
+  nameWithType: MessageInformation.OkMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  name: Title
+  nameWithType: MessageInformation.Title
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  name: CancelMessage
+  nameWithType: ConfirmationMessage.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage.ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.ConfirmationMessage

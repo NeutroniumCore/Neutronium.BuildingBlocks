@@ -1,0 +1,1890 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  id: NavigationViewModel
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: NavigationViewModel
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nViewModel providing an implementing of <xref href=\"Neutronium.BuildingBlocks.Application.Navigation.INavigator\" data-throw-if-not-resolved=\"false\"></xref> and binding with\njavascript routing API.\nOriginally designed to work with vue-router.\n"
+  example: []
+  syntax:
+    content: 'public class NavigationViewModel : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging, INavigator'
+    content.vb: >-
+      Public Class NavigationViewModel
+          Inherits ViewModel
+          Implements INotifyPropertyChanged, INotifyPropertyChanging, INavigator
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  - Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  id: BeforeResolveCommand
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: BeforeResolveCommand
+  nameWithType: NavigationViewModel.BeforeResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: BeforeResolveCommand
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public IResultCommand<string, BeforeRouterResult> BeforeResolveCommand { get; }
+    parameters: []
+    return:
+      type: Neutronium.MVVMComponents.IResultCommand{System.String,Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult}
+    content.vb: Public ReadOnly Property BeforeResolveCommand As IResultCommand(Of String, BeforeRouterResult)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  id: AfterResolveCommand
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: AfterResolveCommand
+  nameWithType: NavigationViewModel.AfterResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: AfterResolveCommand
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 18
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public ISimpleCommand<string> AfterResolveCommand { get; }
+    parameters: []
+    return:
+      type: Neutronium.MVVMComponents.ISimpleCommand{System.String}
+    content.vb: Public ReadOnly Property AfterResolveCommand As ISimpleCommand(Of String)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  id: Route
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Route
+  nameWithType: NavigationViewModel.Route
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Route
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 21
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public string Route { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Route As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  id: OnNavigating
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnNavigating
+  nameWithType: NavigationViewModel.OnNavigating
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnNavigating
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 27
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public event EventHandler<RoutingEventArgs> OnNavigating
+    return:
+      type: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs}
+    content.vb: Public Event OnNavigating As EventHandler(Of RoutingEventArgs)
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  id: OnNavigated
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnNavigated
+  nameWithType: NavigationViewModel.OnNavigated
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnNavigated
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 28
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public event EventHandler<RoutedEventArgs> OnNavigated
+    return:
+      type: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs}
+    content.vb: Public Event OnNavigated As EventHandler(Of RoutedEventArgs)
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  id: OnRoutingMessage
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnRoutingMessage
+  nameWithType: NavigationViewModel.OnRoutingMessage
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnRoutingMessage
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 29
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public event EventHandler<RoutingMessageArgs> OnRoutingMessage
+    return:
+      type: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs}
+    content.vb: Public Event OnRoutingMessage As EventHandler(Of RoutingMessageArgs)
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)
+  id: '#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel(Lazy<IServiceLocator>, IRouterSolver, String)
+  nameWithType: NavigationViewModel.NavigationViewModel(Lazy<IServiceLocator>, IRouterSolver, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel(System.Lazy<CommonServiceLocator.IServiceLocator>, Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 37
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public NavigationViewModel(Lazy<IServiceLocator> serviceLocator, IRouterSolver routerSolver, string initialRoute = null)
+    parameters:
+    - id: serviceLocator
+      type: System.Lazy{CommonServiceLocator.IServiceLocator}
+    - id: routerSolver
+      type: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+    - id: initialRoute
+      type: System.String
+    content.vb: Public Sub New(serviceLocator As Lazy(Of IServiceLocator), routerSolver As IRouterSolver, initialRoute As String = Nothing)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor*
+  nameWithType.vb: NavigationViewModel.NavigationViewModel(Lazy(Of IServiceLocator), IRouterSolver, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel(System.Lazy(Of CommonServiceLocator.IServiceLocator), Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver, System.String)
+  name.vb: NavigationViewModel(Lazy(Of IServiceLocator), IRouterSolver, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)
+  id: Navigate(System.Object,System.String)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Navigate(Object, String)
+  nameWithType: NavigationViewModel.Navigate(Object, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Navigate
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 167
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public Task Navigate(object viewModel, string routeName)
+    parameters:
+    - id: viewModel
+      type: System.Object
+    - id: routeName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Navigate(viewModel As Object, routeName As String) As Task
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  id: Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Navigate<T>(NavigationContext<T>)
+  nameWithType: NavigationViewModel.Navigate<T>(NavigationContext<T>)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate<T>(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Navigate
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 209
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public Task Navigate<T>(NavigationContext<T> context = null)
+    parameters:
+    - id: context
+      type: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Navigate(Of T)(context As NavigationContext(Of T) = Nothing) As Task
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{{T}})
+  nameWithType.vb: NavigationViewModel.Navigate(Of T)(NavigationContext(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(Of T)(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T))
+  name.vb: Navigate(Of T)(NavigationContext(Of T))
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  id: Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Navigate(Type, NavigationContext)
+  nameWithType: NavigationViewModel.Navigate(Type, NavigationContext)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type, Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Navigate
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 217
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public Task Navigate(Type type, NavigationContext context = null)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: context
+      type: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Navigate(type As Type, context As NavigationContext = Nothing) As Task
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  id: Navigate(System.String)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Navigate(String)
+  nameWithType: NavigationViewModel.Navigate(String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Navigate
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs
+    startLine: 229
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public Task Navigate(string routeName)
+    parameters:
+    - id: routeName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Navigate(routeName As String) As Task
+  overload: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: INavigator
+  nameWithType: INavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  parent: Neutronium.BuildingBlocks
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  definition: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyHasChanged(String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyIsChanging(String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  isExternal: true
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  name: BeforeResolveCommand
+  nameWithType: NavigationViewModel.BeforeResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+- uid: Neutronium.MVVMComponents.IResultCommand{System.String,Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult}
+  commentId: T:Neutronium.MVVMComponents.IResultCommand{System.String,Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult}
+  parent: Neutronium.MVVMComponents
+  definition: Neutronium.MVVMComponents.IResultCommand`2
+  name: IResultCommand<String, BeforeRouterResult>
+  nameWithType: IResultCommand<String, BeforeRouterResult>
+  fullName: Neutronium.MVVMComponents.IResultCommand<System.String, Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult>
+  nameWithType.vb: IResultCommand(Of String, BeforeRouterResult)
+  fullName.vb: Neutronium.MVVMComponents.IResultCommand(Of System.String, Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult)
+  name.vb: IResultCommand(Of String, BeforeRouterResult)
+  spec.csharp:
+  - uid: Neutronium.MVVMComponents.IResultCommand`2
+    name: IResultCommand
+    nameWithType: IResultCommand
+    fullName: Neutronium.MVVMComponents.IResultCommand
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+    name: BeforeRouterResult
+    nameWithType: BeforeRouterResult
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.MVVMComponents.IResultCommand`2
+    name: IResultCommand
+    nameWithType: IResultCommand
+    fullName: Neutronium.MVVMComponents.IResultCommand
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+    name: BeforeRouterResult
+    nameWithType: BeforeRouterResult
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.MVVMComponents.IResultCommand`2
+  commentId: T:Neutronium.MVVMComponents.IResultCommand`2
+  isExternal: true
+  name: IResultCommand<TArg, TResult>
+  nameWithType: IResultCommand<TArg, TResult>
+  fullName: Neutronium.MVVMComponents.IResultCommand<TArg, TResult>
+  nameWithType.vb: IResultCommand(Of TArg, TResult)
+  fullName.vb: Neutronium.MVVMComponents.IResultCommand(Of TArg, TResult)
+  name.vb: IResultCommand(Of TArg, TResult)
+  spec.csharp:
+  - uid: Neutronium.MVVMComponents.IResultCommand`2
+    name: IResultCommand
+    nameWithType: IResultCommand
+    fullName: Neutronium.MVVMComponents.IResultCommand
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TArg
+    nameWithType: TArg
+    fullName: TArg
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.MVVMComponents.IResultCommand`2
+    name: IResultCommand
+    nameWithType: IResultCommand
+    fullName: Neutronium.MVVMComponents.IResultCommand
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TArg
+    nameWithType: TArg
+    fullName: TArg
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.MVVMComponents
+  commentId: N:Neutronium.MVVMComponents
+  isExternal: true
+  name: Neutronium.MVVMComponents
+  nameWithType: Neutronium.MVVMComponents
+  fullName: Neutronium.MVVMComponents
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  name: AfterResolveCommand
+  nameWithType: NavigationViewModel.AfterResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+- uid: Neutronium.MVVMComponents.ISimpleCommand{System.String}
+  commentId: T:Neutronium.MVVMComponents.ISimpleCommand{System.String}
+  parent: Neutronium.MVVMComponents
+  definition: Neutronium.MVVMComponents.ISimpleCommand`1
+  name: ISimpleCommand<String>
+  nameWithType: ISimpleCommand<String>
+  fullName: Neutronium.MVVMComponents.ISimpleCommand<System.String>
+  nameWithType.vb: ISimpleCommand(Of String)
+  fullName.vb: Neutronium.MVVMComponents.ISimpleCommand(Of System.String)
+  name.vb: ISimpleCommand(Of String)
+  spec.csharp:
+  - uid: Neutronium.MVVMComponents.ISimpleCommand`1
+    name: ISimpleCommand
+    nameWithType: ISimpleCommand
+    fullName: Neutronium.MVVMComponents.ISimpleCommand
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.MVVMComponents.ISimpleCommand`1
+    name: ISimpleCommand
+    nameWithType: ISimpleCommand
+    fullName: Neutronium.MVVMComponents.ISimpleCommand
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.MVVMComponents.ISimpleCommand`1
+  commentId: T:Neutronium.MVVMComponents.ISimpleCommand`1
+  isExternal: true
+  name: ISimpleCommand<T>
+  nameWithType: ISimpleCommand<T>
+  fullName: Neutronium.MVVMComponents.ISimpleCommand<T>
+  nameWithType.vb: ISimpleCommand(Of T)
+  fullName.vb: Neutronium.MVVMComponents.ISimpleCommand(Of T)
+  name.vb: ISimpleCommand(Of T)
+  spec.csharp:
+  - uid: Neutronium.MVVMComponents.ISimpleCommand`1
+    name: ISimpleCommand
+    nameWithType: ISimpleCommand
+    fullName: Neutronium.MVVMComponents.ISimpleCommand
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.MVVMComponents.ISimpleCommand`1
+    name: ISimpleCommand
+    nameWithType: ISimpleCommand
+    fullName: Neutronium.MVVMComponents.ISimpleCommand
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  name: Route
+  nameWithType: NavigationViewModel.Route
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  name: OnNavigating
+  nameWithType: INavigator.OnNavigating
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+- uid: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs}
+  commentId: T:System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<RoutingEventArgs>
+  nameWithType: EventHandler<RoutingEventArgs>
+  fullName: System.EventHandler<Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs>
+  nameWithType.vb: EventHandler(Of RoutingEventArgs)
+  fullName.vb: System.EventHandler(Of Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  name.vb: EventHandler(Of RoutingEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+    name: RoutingEventArgs
+    nameWithType: RoutingEventArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+    name: RoutingEventArgs
+    nameWithType: RoutingEventArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  name: OnNavigated
+  nameWithType: INavigator.OnNavigated
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+- uid: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs}
+  commentId: T:System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<RoutedEventArgs>
+  nameWithType: EventHandler<RoutedEventArgs>
+  fullName: System.EventHandler<Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs>
+  nameWithType.vb: EventHandler(Of RoutedEventArgs)
+  fullName.vb: System.EventHandler(Of Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  name.vb: EventHandler(Of RoutedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+    name: RoutedEventArgs
+    nameWithType: RoutedEventArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+    name: RoutedEventArgs
+    nameWithType: RoutedEventArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  name: OnRoutingMessage
+  nameWithType: INavigator.OnRoutingMessage
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+- uid: System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs}
+  commentId: T:System.EventHandler{Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<RoutingMessageArgs>
+  nameWithType: EventHandler<RoutingMessageArgs>
+  fullName: System.EventHandler<Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs>
+  nameWithType.vb: EventHandler(Of RoutingMessageArgs)
+  fullName.vb: System.EventHandler(Of Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs)
+  name.vb: EventHandler(Of RoutingMessageArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+    name: RoutingMessageArgs
+    nameWithType: RoutingMessageArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+    name: RoutingMessageArgs
+    nameWithType: RoutingMessageArgs
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel.NavigationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel
+- uid: System.Lazy{CommonServiceLocator.IServiceLocator}
+  commentId: T:System.Lazy{CommonServiceLocator.IServiceLocator}
+  parent: System
+  definition: System.Lazy`1
+  name: Lazy<IServiceLocator>
+  nameWithType: Lazy<IServiceLocator>
+  fullName: System.Lazy<CommonServiceLocator.IServiceLocator>
+  nameWithType.vb: Lazy(Of IServiceLocator)
+  fullName.vb: System.Lazy(Of CommonServiceLocator.IServiceLocator)
+  name.vb: Lazy(Of IServiceLocator)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IRouterSolver
+  nameWithType: IRouterSolver
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate
+  name: Navigate
+  nameWithType: NavigationViewModel.Navigate
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  isExternal: true
+  name: Navigate(Object, String)
+  nameWithType: INavigator.Navigate(Object, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object, System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{{T}})
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  definition: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name: Navigate<T>(NavigationContext<T>)
+  nameWithType: INavigator.Navigate<T>(NavigationContext<T>)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate<T>(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>)
+  nameWithType.vb: INavigator.Navigate(Of T)(NavigationContext(Of T))
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(Of T)(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T))
+  name.vb: Navigate(Of T)(NavigationContext(Of T))
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+    name: Navigate<T>
+    nameWithType: INavigator.Navigate<T>
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+    name: Navigate(Of T)
+    nameWithType: INavigator.Navigate(Of T)
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{{T}}
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0}
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  definition: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  name: NavigationContext<T>
+  nameWithType: NavigationContext<T>
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>
+  nameWithType.vb: NavigationContext(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T)
+  name.vb: NavigationContext(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name: Navigate<T>(NavigationContext<T>)
+  nameWithType: INavigator.Navigate<T>(NavigationContext<T>)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate<T>(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>)
+  nameWithType.vb: INavigator.Navigate(Of T)(NavigationContext(Of T))
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(Of T)(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T))
+  name.vb: Navigate(Of T)(NavigationContext(Of T))
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+    name: Navigate<T>
+    nameWithType: INavigator.Navigate<T>
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+    name: Navigate(Of T)
+    nameWithType: INavigator.Navigate(Of T)
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  name: NavigationContext<T>
+  nameWithType: NavigationContext<T>
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>
+  nameWithType.vb: NavigationContext(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T)
+  name.vb: NavigationContext(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  isExternal: true
+  name: Navigate(Type, NavigationContext)
+  nameWithType: INavigator.Navigate(Type, NavigationContext)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type, Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: NavigationContext
+  nameWithType: NavigationContext
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  isExternal: true
+  name: Navigate(String)
+  nameWithType: INavigator.Navigate(String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+    name: Navigate
+    nameWithType: INavigator.Navigate
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

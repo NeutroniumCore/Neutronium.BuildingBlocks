@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  id: RoutingMessageArgs
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  langs:
+  - csharp
+  - vb
+  name: RoutingMessageArgs
+  nameWithType: RoutingMessageArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: RoutingMessageArgs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRouting information, useful for logging purpose\n"
+  example: []
+  syntax:
+    content: 'public class RoutingMessageArgs : EventArgs'
+    content.vb: >-
+      Public Class RoutingMessageArgs
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  id: Message
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: RoutingMessageArgs.Message
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Message
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 12
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nMessage\n"
+  example: []
+  syntax:
+    content: public string Message { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Message As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  id: Type
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: RoutingMessageArgs.Type
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Type
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nMessage type\n"
+  example: []
+  syntax:
+    content: public MessageType Type { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+    content.vb: Public ReadOnly Property Type As MessageType
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  id: '#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  langs:
+  - csharp
+  - vb
+  name: RoutingMessageArgs(String, MessageType)
+  nameWithType: RoutingMessageArgs.RoutingMessageArgs(String, MessageType)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.RoutingMessageArgs(System.String, Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 19
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public RoutingMessageArgs(string message, MessageType type)
+    parameters:
+    - id: message
+      type: System.String
+    - id: type
+      type: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+    content.vb: Public Sub New(message As String, type As MessageType)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  name: Message
+  nameWithType: RoutingMessageArgs.Message
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  name: Type
+  nameWithType: RoutingMessageArgs.Type
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: MessageType
+  nameWithType: MessageType
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor
+  name: RoutingMessageArgs
+  nameWithType: RoutingMessageArgs.RoutingMessageArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.RoutingMessageArgs

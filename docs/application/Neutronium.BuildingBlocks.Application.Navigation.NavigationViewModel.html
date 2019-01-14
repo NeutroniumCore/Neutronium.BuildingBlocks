@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NavigationViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NavigationViewModel
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel">
+  
+  
+  <h1 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel" class="text-break">Class NavigationViewModel
+  </h1>
+  <div class="markdown level0 summary"><p>ViewModel providing an implementing of <a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.INavigator.html">INavigator</a> and binding with
+javascript routing API.
+Originally designed to work with vue-router.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html">ViewModel</a></div>
+    <div class="level2"><span class="xref">NavigationViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanging</span></div>
+    <div><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.INavigator.html">INavigator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanging">ViewModel.PropertyChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_Set__1___0____0_System_String_">ViewModel.Set&lt;T&gt;(T, T, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyHasChanged_System_String_">ViewModel.PropertyHasChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyIsChanging_System_String_">ViewModel.PropertyIsChanging(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.html">Neutronium.BuildingBlocks.Application.Navigation</a></h6>
+  <h6><strong>Assembly</strong>: Neutronium.BuildingBlocks.Application.dll</h6>
+  <h5 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NavigationViewModel : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging, INavigator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__ctor_System_Lazy_CommonServiceLocator_IServiceLocator__Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.%23ctor(System.Lazy%7BCommonServiceLocator.IServiceLocator%7D%2CNeutronium.BuildingBlocks.Application.Navigation.IRouterSolver%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L38">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__ctor_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__ctor_System_Lazy_CommonServiceLocator_IServiceLocator__Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_System_String_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)">NavigationViewModel(Lazy&lt;IServiceLocator&gt;, IRouterSolver, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationViewModel(Lazy&lt;IServiceLocator&gt; serviceLocator, IRouterSolver routerSolver, string initialRoute = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">CommonServiceLocator.IServiceLocator</span>&gt;</td>
+        <td><span class="parametername">serviceLocator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html">IRouterSolver</a></td>
+        <td><span class="parametername">routerSolver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">initialRoute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_AfterResolveCommand.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L19">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_AfterResolveCommand_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_AfterResolveCommand" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand">AfterResolveCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISimpleCommand&lt;string&gt; AfterResolveCommand { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Neutronium.MVVMComponents.ISimpleCommand</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_BeforeResolveCommand.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L18">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_BeforeResolveCommand_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_BeforeResolveCommand" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand">BeforeResolveCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResultCommand&lt;string, BeforeRouterResult&gt; BeforeResolveCommand { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Neutronium.MVVMComponents.IResultCommand</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html">BeforeRouterResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Route.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L22">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Route_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Route" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route">Route</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Route { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Object_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L168">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Object_System_String_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)">Navigate(Object, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Navigate(object viewModel, string routeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">viewModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">routeName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L230">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_String_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)">Navigate(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Navigate(string routeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">routeName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Type_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type%2CNeutronium.BuildingBlocks.Application.Navigation.NavigationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L218">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Type_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)">Navigate(Type, NavigationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Navigate(Type type, NavigationContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html">NavigationContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate__1_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext___0__.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate%60%601(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L210">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate__1_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext___0__" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})">Navigate&lt;T&gt;(NavigationContext&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Navigate&lt;T&gt;(NavigationContext&lt;T&gt; context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html">NavigationContext</a>&lt;T&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigated.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L29">View Source</a>
+  </span>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigated" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated">OnNavigated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RoutedEventArgs&gt; OnNavigated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html">RoutedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigating.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigating" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating">OnNavigating</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RoutingEventArgs&gt; OnNavigating</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html">RoutingEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnRoutingMessage.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnRoutingMessage" data-uid="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage">OnRoutingMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RoutingMessageArgs&gt; OnRoutingMessage</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html">RoutingMessageArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanging</span>
+  </div>
+  <div>
+      <a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.INavigator.html">INavigator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/NavigationViewModel.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels
+  id: Neutronium.BuildingBlocks.Application.ViewModels
+  children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+references:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  name: ApplicationInformation
+  nameWithType: ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  name: ApplicationViewModel<T>
+  nameWithType: ApplicationViewModel<T>
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>
+  nameWithType.vb: ApplicationViewModel(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T)
+  name.vb: ApplicationViewModel(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

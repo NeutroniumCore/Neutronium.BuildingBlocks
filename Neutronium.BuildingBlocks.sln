@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.SetUp.Tests", "Neutronium.BuildingBlocks.SetUp.Tests\Neutronium.BuildingBlocks.SetUp.Tests.csproj", "{27AE976B-943A-4568-A3C4-9C2D94C6C501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neutronium.BuildingBlocks.Application", "Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.csproj", "{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.Application", "Neutronium.BuildingBlocks.Application\Neutronium.BuildingBlocks.Application.csproj", "{558A9EE8-3C97-4B7B-B478-9CD0E25D355C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.ApplicationTools", "Neutronium.BuildingBlocks.ApplicationTools\Neutronium.BuildingBlocks.ApplicationTools.csproj", "{D1A8C947-33E6-4660-85EE-D9A2B9F3D800}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neutronium.BuildingBlocks.Wpf", "Neutronium.BuildingBlocks.Wpf\Neutronium.BuildingBlocks.Wpf.csproj", "{17472EC0-9ABF-449A-85D8-FB9E9A60C9B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neutronium.BuildingBlocks.Wpf.Tests", "Neutronium.BuildingBlocks.Wpf.Tests\Neutronium.BuildingBlocks.Wpf.Tests.csproj", "{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.Documentation", "Neutronium.BuildingBlocks.Documentation\Neutronium.BuildingBlocks.Documentation.csproj", "{9D506500-3EE6-4BAF-BA8B-504401BE4348}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,14 @@ Global
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|x86.ActiveCfg = Release|x86
 		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E}.Release|x86.Build.0 = Release|x86
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

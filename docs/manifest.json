@@ -1,0 +1,700 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/David/Documents/Source/Neutronium.BuildingBlocks/Neutronium.BuildingBlocks.Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html",
+          "hash": "H0rQNPdBQgdXztG8JL4E7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html",
+          "hash": "aRBku3Csfh6ilsU7CzTuuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.LifeCycleHook.html",
+          "hash": "p4eLeUpSJt2guD8IDfiQMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html",
+          "hash": "tV1hAlnQXBUIiG0tH5MGQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html",
+          "hash": "deDp+ojGlyy+PZvpHM/8mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html",
+          "hash": "5ZQq5sW7lHKHfl2isrpZYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html",
+          "hash": "5gWrC2hyNQ7dFL0Tdz9SHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html",
+          "hash": "UDpukANkkVYVLUQFpOFL4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html",
+          "hash": "tkNB1PaIeyBG82dGlVEjBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.html",
+          "hash": "qVjOoEQqAIe8fqdlRqHp8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html",
+          "hash": "4PadGa3LS27p6tz3byTa/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html",
+          "hash": "yPcEydKCwmqD60umOn5bKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html",
+          "hash": "lh4LuVji+19J0EF3wPOTfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html",
+          "hash": "dFL5c6Bu8RLRVp9h2RhIYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html",
+          "hash": "J8XDe5bhQKAKPHMndAFBug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.Router.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.Router.html",
+          "hash": "mRda0pLwzYyAKGejS57rfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.html",
+          "hash": "+FqpfKcvl08iMyPYZqxtGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html",
+          "hash": "nfP93TMtfdS2z5WgTjLTHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html",
+          "hash": "RmS7DkPlnRGR3p9Qq62vew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.html",
+          "hash": "b/H2MK7Fsjut9Uj6HwEfMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html",
+          "hash": "T3xGoMzdh5vX9Z8INHug3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html",
+          "hash": "OC5jH+L429fw7ulvtnOClA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html",
+          "hash": "4KIAMEGktiQFNzq3gfYQFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html",
+          "hash": "6ELEX4LpcmPFuwnJbYEXTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.html",
+          "hash": "3CpARACZgOGs7zp3LUY9mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.ViewModels.html",
+          "hash": "9rcOeIlC8cyHmt2iRooJFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html",
+          "hash": "dzxDF7xpY0qV19R26NZeaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html",
+          "hash": "njpASZ7qE1Zw2jTICtxTiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html",
+          "hash": "zzImEdHVDGdJxiw6BfeEUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html",
+          "hash": "py2YNSp+Dt0RJ9AXlM3AsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html",
+          "hash": "t5QABClfriN3boEo9Y1mvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html",
+          "hash": "rtFiS3MA0tXG2YDtVo4VEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/Neutronium.BuildingBlocks.Application.WindowServices.html",
+          "hash": "Si9o91Au3TwUk+WxAk0y2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "application/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "application/index.html",
+          "hash": "zVPvWUlDpYQ6IVPg8I8dVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "application/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "application/toc.html",
+          "hash": "QufJslFZ5ULmIpIo1fsZ5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html",
+          "hash": "Nz3UifUvlQG/FVGyLZ52aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html",
+          "hash": "FwrXpndCJaCV4vuIfWulIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html",
+          "hash": "Lu7rtQCbELepvQ+SwRpnvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress-1.html",
+          "hash": "UKARoohbqrlyH8LCDRhpRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html",
+          "hash": "Md21bCfrtbhX9a3QQY2q9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.html",
+          "hash": "+HUFUeoolhzJG79pp4h+pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html",
+          "hash": "nrukNbU+wJI8ms5Povdz2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html",
+          "hash": "E2B3TZ71r4tjme7az8gbQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html",
+          "hash": "wE5y9kAy0Ra/5QYjrROpoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-2.html",
+          "hash": "U1pcN+zyugmAduW440XWBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.WindowType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.WindowType.html",
+          "hash": "3LAR94qx1bCgQeml7R4UMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.html",
+          "hash": "pV0QLJimO8EfQ2AXfHjr8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ViewModel.html",
+          "hash": "8bNPoQJE60DC+19q4Psn2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.html",
+          "hash": "fYrjieJKQMaHoO3e6XxZQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "applicationTools/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/index.html",
+          "hash": "wDZDZpTzFM+hfrAAzBKBCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "applicationTools/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/toc.html",
+          "hash": "xKCpVVKS+TDQs2u8RgNGjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "ebehUn0STsU/zbWs99+2gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "5/HA5TRLuipiNI7aMe7XaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

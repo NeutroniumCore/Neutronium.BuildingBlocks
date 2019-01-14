@@ -1,11 +1,21 @@
 ﻿namespace Neutronium.BuildingBlocks.Application.Navigation
 {
+    /// <summary>
+    /// Route description
+    /// </summary>
     public struct RouteInfo
     {
+        /// <summary>
+        /// Destination viewModel 
+        /// </summary>
         public object ViewModel { get; }
+
+        /// <summary>
+        /// Destination route
+        /// </summary>
         public string RouteName { get; }
 
-        public RouteInfo(RouteContext routeContext) : this(routeContext.ViewModel, routeContext.Route)
+        internal RouteInfo(RouteContext routeContext) : this(routeContext.ViewModel, routeContext.Route)
         {
         }
 

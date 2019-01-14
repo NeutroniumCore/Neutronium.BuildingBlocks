@@ -1,0 +1,2166 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  href: applicationTools/Neutronium.BuildingBlocks.html
+  commentId: N:Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.html
+  commentId: N:Neutronium.BuildingBlocks.Application.LifeCycleHook
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  nameWithType: Neutronium.BuildingBlocks.Application.LifeCycleHook
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  name: IApplicationLifeCycle
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  nameWithType: IApplicationLifeCycle
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  name: OnClosed()
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnClosed
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed()
+  nameWithType: IApplicationLifeCycle.OnClosed()
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed*
+  name: OnClosed
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnClosed_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  nameWithType: IApplicationLifeCycle.OnClosed
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  name: OnClosing(CancelEventArgs)
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnClosing_System_ComponentModel_CancelEventArgs_
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  nameWithType: IApplicationLifeCycle.OnClosing(CancelEventArgs)
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing*
+  name: OnClosing
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnClosing_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing
+  nameWithType: IApplicationLifeCycle.OnClosing
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  name: OnNavigated(RoutedEventArgs)
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnNavigated_Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs_
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  nameWithType: IApplicationLifeCycle.OnNavigated(RoutedEventArgs)
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated*
+  name: OnNavigated
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnNavigated_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated
+  nameWithType: IApplicationLifeCycle.OnNavigated
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  name: OnNavigating(RoutingEventArgs)
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnNavigating_Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  nameWithType: IApplicationLifeCycle.OnNavigating(RoutingEventArgs)
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating*
+  name: OnNavigating
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnNavigating_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating
+  nameWithType: IApplicationLifeCycle.OnNavigating
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  name: OnSessionEnding(CancelEventArgs)
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnSessionEnding_System_ComponentModel_CancelEventArgs_
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  nameWithType: IApplicationLifeCycle.OnSessionEnding(CancelEventArgs)
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding*
+  name: OnSessionEnding
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_OnSessionEnding_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding
+  nameWithType: IApplicationLifeCycle.OnSessionEnding
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  name: LifeCycleEventsRegister
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  name: LifeCycleEventsRegister(IApplicationLifeCycle, IApplication, INavigator)
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_LifeCycleEventsRegister__ctor_Neutronium_BuildingBlocks_Application_LifeCycleHook_IApplicationLifeCycle_Neutronium_BuildingBlocks_ApplicationTools_IApplication_Neutronium_BuildingBlocks_Application_Navigation_INavigator_
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.LifeCycleEventsRegister(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle, Neutronium.BuildingBlocks.ApplicationTools.IApplication, Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  nameWithType: LifeCycleEventsRegister.LifeCycleEventsRegister(IApplicationLifeCycle, IApplication, INavigator)
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor*
+  name: LifeCycleEventsRegister
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_LifeCycleEventsRegister__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister.LifeCycleEventsRegister
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  name: Register()
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_LifeCycleEventsRegister_Register
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register()
+  nameWithType: LifeCycleEventsRegister.Register()
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register*
+  name: Register
+  href: application/Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.html#Neutronium_BuildingBlocks_Application_LifeCycleHook_LifeCycleEventsRegister_Register_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  nameWithType: LifeCycleEventsRegister.Register
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.html
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  name: BeforeRouterResult
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  nameWithType: BeforeRouterResult
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel
+  name: Cancel()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Cancel
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel()
+  nameWithType: BeforeRouterResult.Cancel()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel*
+  name: Cancel
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Cancel_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel
+  nameWithType: BeforeRouterResult.Cancel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue
+  name: Continue
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Continue
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue
+  nameWithType: BeforeRouterResult.Continue
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue*
+  name: Continue
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Continue_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue
+  nameWithType: BeforeRouterResult.Continue
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect(System.String)
+  name: CreateRedirect(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_CreateRedirect_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect(System.String)
+  nameWithType: BeforeRouterResult.CreateRedirect(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect*
+  name: CreateRedirect
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_CreateRedirect_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect
+  nameWithType: BeforeRouterResult.CreateRedirect
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok(System.Object)
+  name: Ok(Object)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Ok_System_Object_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok(System.Object)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok(System.Object)
+  nameWithType: BeforeRouterResult.Ok(Object)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok*
+  name: Ok
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Ok_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok
+  nameWithType: BeforeRouterResult.Ok
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect
+  name: Redirect
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Redirect
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect
+  nameWithType: BeforeRouterResult.Redirect
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect*
+  name: Redirect
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_Redirect_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect
+  nameWithType: BeforeRouterResult.Redirect
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
+  name: To
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_To
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
+  nameWithType: BeforeRouterResult.To
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To*
+  name: To
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.html#Neutronium_BuildingBlocks_Application_Navigation_BeforeRouterResult_To_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
+  nameWithType: BeforeRouterResult.To
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  name: ConventionRouter
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  nameWithType: ConventionRouter
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)
+  name: ConventionRouter(IRouterBuilder, String, Boolean, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter__ctor_Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_System_String_System_Boolean_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.ConventionRouter(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder, System.String, System.Boolean, System.String)
+  nameWithType: ConventionRouter.ConventionRouter(IRouterBuilder, String, Boolean, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor*
+  name: ConventionRouter
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.ConventionRouter
+  nameWithType: ConventionRouter.ConventionRouter
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+  name: Register(IEnumerable<Type>)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_System_Collections_Generic_IEnumerable_System_Type__
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+  name.vb: Register(IEnumerable(Of Type))
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable<System.Type>)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable(Of System.Type))
+  nameWithType: ConventionRouter.Register(IEnumerable<Type>)
+  nameWithType.vb: ConventionRouter.Register(IEnumerable(Of Type))
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)
+  name: Register(Type, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_System_Type_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type, System.String)
+  nameWithType: ConventionRouter.Register(Type, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register*
+  name: Register
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register
+  nameWithType: ConventionRouter.Register
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)
+  name: Register<T>(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register__1_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)
+  name.vb: Register(Of T)(String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register<T>(System.String)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(Of T)(System.String)
+  nameWithType: ConventionRouter.Register<T>(String)
+  nameWithType.vb: ConventionRouter.Register(Of T)(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  name: INavigator
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  nameWithType: INavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+  name: Navigate(Object, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_Navigate_System_Object_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object, System.String)
+  nameWithType: INavigator.Navigate(Object, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  name: Navigate(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_Navigate_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)
+  nameWithType: INavigator.Navigate(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  name: Navigate(Type, NavigationContext)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_Navigate_System_Type_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type, Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  nameWithType: INavigator.Navigate(Type, NavigationContext)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate*
+  name: Navigate
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_Navigate_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate
+  nameWithType: INavigator.Navigate
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name: Navigate<T>(NavigationContext<T>)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_Navigate__1_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext___0__
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name.vb: Navigate(Of T)(NavigationContext(Of T))
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate<T>(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(Of T)(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T))
+  nameWithType: INavigator.Navigate<T>(NavigationContext<T>)
+  nameWithType.vb: INavigator.Navigate(Of T)(NavigationContext(Of T))
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  name: OnNavigated
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_OnNavigated
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated
+  nameWithType: INavigator.OnNavigated
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  name: OnNavigating
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_OnNavigating
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating
+  nameWithType: INavigator.OnNavigating
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  name: OnRoutingMessage
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html#Neutronium_BuildingBlocks_Application_Navigation_INavigator_OnRoutingMessage
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage
+  nameWithType: INavigator.OnRoutingMessage
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  name: IRouterBuilder
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  nameWithType: IRouterBuilder
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
+  name: Register(Type, String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register_System_Type_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type, System.String, System.Boolean)
+  nameWithType: IRouterBuilder.Register(Type, String, Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register*
+  name: Register
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register
+  nameWithType: IRouterBuilder.Register
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
+  name: Register<T>(String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register__1_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
+  name.vb: Register(Of T)(String, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register<T>(System.String, System.Boolean)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Of T)(System.String, System.Boolean)
+  nameWithType: IRouterBuilder.Register<T>(String, Boolean)
+  nameWithType.vb: IRouterBuilder.Register(Of T)(String, Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  name: IRouterSolver
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  nameWithType: IRouterSolver
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(System.Object)
+  name: SolveRoute(Object)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveRoute_System_Object_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(System.Object)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(System.Object)
+  nameWithType: IRouterSolver.SolveRoute(Object)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute*
+  name: SolveRoute
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveRoute_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute
+  nameWithType: IRouterSolver.SolveRoute
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute``1
+  name: SolveRoute<T>()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveRoute__1
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute``1
+  name.vb: SolveRoute(Of T)()
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute<T>()
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(Of T)()
+  nameWithType: IRouterSolver.SolveRoute<T>()
+  nameWithType.vb: IRouterSolver.SolveRoute(Of T)()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  name: SolveType(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveType_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  nameWithType: IRouterSolver.SolveType(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType*
+  name: SolveType
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveType_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType
+  nameWithType: IRouterSolver.SolveType
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  name: ISubNavigator
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  nameWithType: ISubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  name: Child
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_Child
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  nameWithType: ISubNavigator.Child
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child*
+  name: Child
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_Child_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  nameWithType: ISubNavigator.Child
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  name: NavigateTo(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_NavigateTo_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  nameWithType: ISubNavigator.NavigateTo(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo*
+  name: NavigateTo
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_NavigateTo_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo
+  nameWithType: ISubNavigator.NavigateTo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  name: RelativeName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_RelativeName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  nameWithType: ISubNavigator.RelativeName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName*
+  name: RelativeName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_RelativeName_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  nameWithType: ISubNavigator.RelativeName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  name: MessageType
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  nameWithType: MessageType
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  name: Error
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.html#Neutronium_BuildingBlocks_Application_Navigation_MessageType_Error
+  commentId: F:Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  nameWithType: MessageType.Error
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  name: Information
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.html#Neutronium_BuildingBlocks_Application_Navigation_MessageType_Information
+  commentId: F:Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  nameWithType: MessageType.Information
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  name: NavigationContext
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  nameWithType: NavigationContext
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey
+  name: ResolutionKey
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_ResolutionKey
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey
+  nameWithType: NavigationContext.ResolutionKey
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey*
+  name: ResolutionKey
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_ResolutionKey_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey
+  nameWithType: NavigationContext.ResolutionKey
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName
+  name: RouteName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_RouteName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName
+  nameWithType: NavigationContext.RouteName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName*
+  name: RouteName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_RouteName_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName
+  nameWithType: NavigationContext.RouteName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  name: NavigationContext<T>
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  name.vb: NavigationContext(Of T)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T)
+  nameWithType: NavigationContext<T>
+  nameWithType.vb: NavigationContext(Of T)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1.BeforeNavigate
+  name: BeforeNavigate
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_1_BeforeNavigate
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1.BeforeNavigate
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>.BeforeNavigate
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T).BeforeNavigate
+  nameWithType: NavigationContext<T>.BeforeNavigate
+  nameWithType.vb: NavigationContext(Of T).BeforeNavigate
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1.BeforeNavigate*
+  name: BeforeNavigate
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_1_BeforeNavigate_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1.BeforeNavigate
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>.BeforeNavigate
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T).BeforeNavigate
+  nameWithType: NavigationContext<T>.BeforeNavigate
+  nameWithType.vb: NavigationContext(Of T).BeforeNavigate
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  name: NavigationViewModel
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  nameWithType: NavigationViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)
+  name: NavigationViewModel(Lazy<IServiceLocator>, IRouterSolver, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__ctor_System_Lazy_CommonServiceLocator_IServiceLocator__Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor(System.Lazy{CommonServiceLocator.IServiceLocator},Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver,System.String)
+  name.vb: NavigationViewModel(Lazy(Of IServiceLocator), IRouterSolver, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel(System.Lazy<CommonServiceLocator.IServiceLocator>, Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver, System.String)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel(System.Lazy(Of CommonServiceLocator.IServiceLocator), Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver, System.String)
+  nameWithType: NavigationViewModel.NavigationViewModel(Lazy<IServiceLocator>, IRouterSolver, String)
+  nameWithType.vb: NavigationViewModel.NavigationViewModel(Lazy(Of IServiceLocator), IRouterSolver, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor*
+  name: NavigationViewModel
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.NavigationViewModel
+  nameWithType: NavigationViewModel.NavigationViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  name: AfterResolveCommand
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_AfterResolveCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  nameWithType: NavigationViewModel.AfterResolveCommand
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand*
+  name: AfterResolveCommand
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_AfterResolveCommand_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.AfterResolveCommand
+  nameWithType: NavigationViewModel.AfterResolveCommand
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  name: BeforeResolveCommand
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_BeforeResolveCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  nameWithType: NavigationViewModel.BeforeResolveCommand
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand*
+  name: BeforeResolveCommand
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_BeforeResolveCommand_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.BeforeResolveCommand
+  nameWithType: NavigationViewModel.BeforeResolveCommand
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)
+  name: Navigate(Object, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Object_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Object, System.String)
+  nameWithType: NavigationViewModel.Navigate(Object, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  name: Navigate(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.String)
+  nameWithType: NavigationViewModel.Navigate(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  name: Navigate(Type, NavigationContext)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_System_Type_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(System.Type, Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)
+  nameWithType: NavigationViewModel.Navigate(Type, NavigationContext)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate*
+  name: Navigate
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate
+  nameWithType: NavigationViewModel.Navigate
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name: Navigate<T>(NavigationContext<T>)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Navigate__1_Neutronium_BuildingBlocks_Application_Navigation_NavigationContext___0__
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})
+  name.vb: Navigate(Of T)(NavigationContext(Of T))
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate<T>(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Navigate(Of T)(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T))
+  nameWithType: NavigationViewModel.Navigate<T>(NavigationContext<T>)
+  nameWithType.vb: NavigationViewModel.Navigate(Of T)(NavigationContext(Of T))
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  name: OnNavigated
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigated
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigated
+  nameWithType: NavigationViewModel.OnNavigated
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  name: OnNavigating
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnNavigating
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnNavigating
+  nameWithType: NavigationViewModel.OnNavigating
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  name: OnRoutingMessage
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_OnRoutingMessage
+  commentId: E:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.OnRoutingMessage
+  nameWithType: NavigationViewModel.OnRoutingMessage
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  name: Route
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Route
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  nameWithType: NavigationViewModel.Route
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route*
+  name: Route
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html#Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_Route_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
+  nameWithType: NavigationViewModel.Route
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  name: RoutedEventArgs
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  nameWithType: RoutedEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor(Neutronium.BuildingBlocks.Application.Navigation.RouteInfo)
+  name: RoutedEventArgs(RouteInfo)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs__ctor_Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor(Neutronium.BuildingBlocks.Application.Navigation.RouteInfo)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.RoutedEventArgs(Neutronium.BuildingBlocks.Application.Navigation.RouteInfo)
+  nameWithType: RoutedEventArgs.RoutedEventArgs(RouteInfo)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor(System.Object,System.String)
+  name: RoutedEventArgs(Object, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs__ctor_System_Object_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor(System.Object,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.RoutedEventArgs(System.Object, System.String)
+  nameWithType: RoutedEventArgs.RoutedEventArgs(Object, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor*
+  name: RoutedEventArgs
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.RoutedEventArgs
+  nameWithType: RoutedEventArgs.RoutedEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute
+  name: NewRoute
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs_NewRoute
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute
+  nameWithType: RoutedEventArgs.NewRoute
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute*
+  name: NewRoute
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs_NewRoute_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.NewRoute
+  nameWithType: RoutedEventArgs.NewRoute
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString
+  name: ToString()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs_ToString
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString()
+  nameWithType: RoutedEventArgs.ToString()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString*
+  name: ToString
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutedEventArgs_ToString_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.ToString
+  nameWithType: RoutedEventArgs.ToString
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  name: RouteInfo
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  nameWithType: RouteInfo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor(System.Object,System.String)
+  name: RouteInfo(Object, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo__ctor_System_Object_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor(System.Object,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteInfo(System.Object, System.String)
+  nameWithType: RouteInfo.RouteInfo(Object, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor*
+  name: RouteInfo
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteInfo
+  nameWithType: RouteInfo.RouteInfo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  name: RouteName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_RouteName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  nameWithType: RouteInfo.RouteName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName*
+  name: RouteName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_RouteName_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  nameWithType: RouteInfo.RouteName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  name: ToString()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_ToString
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString()
+  nameWithType: RouteInfo.ToString()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString*
+  name: ToString
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_ToString_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  nameWithType: RouteInfo.ToString
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  name: ViewModel
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_ViewModel
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  nameWithType: RouteInfo.ViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel*
+  name: ViewModel
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.html#Neutronium_BuildingBlocks_Application_Navigation_RouteInfo_ViewModel_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  nameWithType: RouteInfo.ViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router
+  name: Router
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.Router
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router
+  nameWithType: Router
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
+  name: Register(Type, String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register_System_Type_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type, System.String, System.Boolean)
+  nameWithType: Router.Register(Type, String, Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register*
+  name: Register
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.Router.Register
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register
+  nameWithType: Router.Register
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register``1(System.String,System.Boolean)
+  name: Register<T>(String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register__1_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register``1(System.String,System.Boolean)
+  name.vb: Register(Of T)(String, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register<T>(System.String, System.Boolean)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Of T)(System.String, System.Boolean)
+  nameWithType: Router.Register<T>(String, Boolean)
+  nameWithType.vb: Router.Register(Of T)(String, Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(System.Object)
+  name: SolveRoute(Object)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveRoute_System_Object_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(System.Object)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(System.Object)
+  nameWithType: Router.SolveRoute(Object)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute*
+  name: SolveRoute
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveRoute_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute
+  nameWithType: Router.SolveRoute
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute``1
+  name: SolveRoute<T>()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveRoute__1
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute``1
+  name.vb: SolveRoute(Of T)()
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute<T>()
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(Of T)()
+  nameWithType: Router.SolveRoute<T>()
+  nameWithType.vb: Router.SolveRoute(Of T)()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
+  name: SolveType(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveType_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
+  nameWithType: Router.SolveType(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType*
+  name: SolveType
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveType_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType
+  nameWithType: Router.SolveType
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  name: RouterBuilderExtensions
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  nameWithType: RouterBuilderExtensions
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean)
+  name: GetTemplateConvention(IRouterBuilder, String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.html#Neutronium_BuildingBlocks_Application_Navigation_RouterBuilderExtensions_GetTemplateConvention_Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder, System.String, System.Boolean)
+  nameWithType: RouterBuilderExtensions.GetTemplateConvention(IRouterBuilder, String, Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.String)
+  name: GetTemplateConvention(IRouterBuilder, String, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.html#Neutronium_BuildingBlocks_Application_Navigation_RouterBuilderExtensions_GetTemplateConvention_Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder, System.String, System.String)
+  nameWithType: RouterBuilderExtensions.GetTemplateConvention(IRouterBuilder, String, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention*
+  name: GetTemplateConvention
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.html#Neutronium_BuildingBlocks_Application_Navigation_RouterBuilderExtensions_GetTemplateConvention_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention
+  nameWithType: RouterBuilderExtensions.GetTemplateConvention
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  name: RoutingEventArgs
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  nameWithType: RoutingEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From
+  name: From
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_From
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From
+  nameWithType: RoutingEventArgs.From
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From*
+  name: From
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_From_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From
+  nameWithType: RoutingEventArgs.From
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo
+  name: RedirectedTo
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_RedirectedTo
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo
+  nameWithType: RoutingEventArgs.RedirectedTo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo*
+  name: RedirectedTo
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_RedirectedTo_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo
+  nameWithType: RoutingEventArgs.RedirectedTo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute(System.String)
+  name: RedirectToRoute(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_RedirectToRoute_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute(System.String)
+  nameWithType: RoutingEventArgs.RedirectToRoute(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute*
+  name: RedirectToRoute
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_RedirectToRoute_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute
+  nameWithType: RoutingEventArgs.RedirectToRoute
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To
+  name: To
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_To
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To
+  nameWithType: RoutingEventArgs.To
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To*
+  name: To
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_To_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To
+  nameWithType: RoutingEventArgs.To
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString
+  name: ToString()
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_ToString
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString()
+  nameWithType: RoutingEventArgs.ToString()
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString*
+  name: ToString
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingEventArgs_ToString_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.ToString
+  nameWithType: RoutingEventArgs.ToString
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  name: RoutingMessageArgs
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  nameWithType: RoutingMessageArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  name: RoutingMessageArgs(String, MessageType)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs__ctor_System_String_Neutronium_BuildingBlocks_Application_Navigation_MessageType_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.RoutingMessageArgs(System.String, Neutronium.BuildingBlocks.Application.Navigation.MessageType)
+  nameWithType: RoutingMessageArgs.RoutingMessageArgs(String, MessageType)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor*
+  name: RoutingMessageArgs
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.RoutingMessageArgs
+  nameWithType: RoutingMessageArgs.RoutingMessageArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs_Message
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  nameWithType: RoutingMessageArgs.Message
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message*
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs_Message_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message
+  nameWithType: RoutingMessageArgs.Message
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs_Type
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  nameWithType: RoutingMessageArgs.Type
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type*
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.html#Neutronium_BuildingBlocks_Application_Navigation_RoutingMessageArgs_Type_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type
+  nameWithType: RoutingMessageArgs.Type
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.html
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  name: ApplicationInformation
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  nameWithType: ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.#ctor(System.String,System.String)
+  name: ApplicationInformation(String, String)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation__ctor_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.#ctor(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.ApplicationInformation(System.String, System.String)
+  nameWithType: ApplicationInformation.ApplicationInformation(String, String)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.#ctor*
+  name: ApplicationInformation
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.ApplicationInformation
+  nameWithType: ApplicationInformation.ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy
+  name: MadeBy
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_MadeBy
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy
+  nameWithType: ApplicationInformation.MadeBy
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy*
+  name: MadeBy
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_MadeBy_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy
+  nameWithType: ApplicationInformation.MadeBy
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name
+  name: Name
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Name
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name
+  nameWithType: ApplicationInformation.Name
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name*
+  name: Name
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Name_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name
+  nameWithType: ApplicationInformation.Name
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version
+  name: Version
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Version
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version
+  nameWithType: ApplicationInformation.Version
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version*
+  name: Version
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Version_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version
+  nameWithType: ApplicationInformation.Version
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year
+  name: Year
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Year
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year
+  nameWithType: ApplicationInformation.Year
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year*
+  name: Year
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationInformation_Year_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year
+  nameWithType: ApplicationInformation.Year
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  name: ApplicationViewModel<T>
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  name.vb: ApplicationViewModel(Of T)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T)
+  nameWithType: ApplicationViewModel<T>
+  nameWithType.vb: ApplicationViewModel(Of T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)
+  name: ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_Neutronium_MVVMComponents_IWindowViewModel_Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__0_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, T)
+  nameWithType: ApplicationViewModel<T>.ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor*
+  name: ApplicationViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationViewModel
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel
+  nameWithType: ApplicationViewModel<T>.ApplicationViewModel
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  name: ApplicationInformation
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ApplicationInformation
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationInformation
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationInformation
+  nameWithType: ApplicationViewModel<T>.ApplicationInformation
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation*
+  name: ApplicationInformation
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ApplicationInformation_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationInformation
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationInformation
+  nameWithType: ApplicationViewModel<T>.ApplicationInformation
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  name: CurrentViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_CurrentViewModel
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.CurrentViewModel
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).CurrentViewModel
+  nameWithType: ApplicationViewModel<T>.CurrentViewModel
+  nameWithType.vb: ApplicationViewModel(Of T).CurrentViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel*
+  name: CurrentViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_CurrentViewModel_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.CurrentViewModel
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).CurrentViewModel
+  nameWithType: ApplicationViewModel<T>.CurrentViewModel
+  nameWithType.vb: ApplicationViewModel(Of T).CurrentViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  name: Modal
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Modal
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Modal
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Modal
+  nameWithType: ApplicationViewModel<T>.Modal
+  nameWithType.vb: ApplicationViewModel(Of T).Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal*
+  name: Modal
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Modal_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Modal
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Modal
+  nameWithType: ApplicationViewModel<T>.Modal
+  nameWithType.vb: ApplicationViewModel(Of T).Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  name: Notification
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Notification
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Notification
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Notification
+  nameWithType: ApplicationViewModel<T>.Notification
+  nameWithType.vb: ApplicationViewModel(Of T).Notification
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification*
+  name: Notification
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Notification_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Notification
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Notification
+  nameWithType: ApplicationViewModel<T>.Notification
+  nameWithType.vb: ApplicationViewModel(Of T).Notification
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  name: Router
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Router
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Router
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Router
+  nameWithType: ApplicationViewModel<T>.Router
+  nameWithType.vb: ApplicationViewModel(Of T).Router
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router*
+  name: Router
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Router_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Router
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Router
+  nameWithType: ApplicationViewModel<T>.Router
+  nameWithType.vb: ApplicationViewModel(Of T).Router
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  name: Send(Notification)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Send_Neutronium_BuildingBlocks_Application_WindowServices_Notification_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  nameWithType: ApplicationViewModel<T>.Send(Notification)
+  nameWithType.vb: ApplicationViewModel(Of T).Send(Notification)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send*
+  name: Send
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Send_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Send
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Send
+  nameWithType: ApplicationViewModel<T>.Send
+  nameWithType.vb: ApplicationViewModel(Of T).Send
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  name: ShowInformation(MessageInformation)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowInformation_Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  nameWithType: ApplicationViewModel<T>.ShowInformation(MessageInformation)
+  nameWithType.vb: ApplicationViewModel(Of T).ShowInformation(MessageInformation)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation*
+  name: ShowInformation
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowInformation_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowInformation
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowInformation
+  nameWithType: ApplicationViewModel<T>.ShowInformation
+  nameWithType.vb: ApplicationViewModel(Of T).ShowInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  name: ShowMessage(ConfirmationMessage)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowMessage_Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  nameWithType: ApplicationViewModel<T>.ShowMessage(ConfirmationMessage)
+  nameWithType.vb: ApplicationViewModel(Of T).ShowMessage(ConfirmationMessage)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage*
+  name: ShowMessage
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowMessage
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowMessage
+  nameWithType: ApplicationViewModel<T>.ShowMessage
+  nameWithType.vb: ApplicationViewModel(Of T).ShowMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  name: Window
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Window
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Window
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Window
+  nameWithType: ApplicationViewModel<T>.Window
+  nameWithType.vb: ApplicationViewModel(Of T).Window
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window*
+  name: Window
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Window_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Window
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Window
+  nameWithType: ApplicationViewModel<T>.Window
+  nameWithType.vb: ApplicationViewModel(Of T).Window
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.html
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  name: MainModalViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  nameWithType: MainModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  name: CancelCommand
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CancelCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  nameWithType: MainModalViewModel.CancelCommand
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand*
+  name: CancelCommand
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CancelCommand_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  nameWithType: MainModalViewModel.CancelCommand
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  name: CancelMessage
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CancelMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  nameWithType: MainModalViewModel.CancelMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage*
+  name: CancelMessage
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CancelMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  nameWithType: MainModalViewModel.CancelMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  name: CompletionTask
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CompletionTask
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  nameWithType: MainModalViewModel.CompletionTask
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask*
+  name: CompletionTask
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CompletionTask_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  nameWithType: MainModalViewModel.CompletionTask
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  name: Ok()
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_Ok
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok()
+  nameWithType: MainModalViewModel.Ok()
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok*
+  name: Ok
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_Ok_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  nameWithType: MainModalViewModel.Ok
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: MessageModalViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  nameWithType: MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Message
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  nameWithType: MessageModalViewModel.Message
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message*
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Message_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  nameWithType: MessageModalViewModel.Message
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  name: Ok()
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Ok
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok()
+  nameWithType: MessageModalViewModel.Ok()
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok*
+  name: Ok
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Ok_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  nameWithType: MessageModalViewModel.Ok
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  name: OkCommand
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_OkCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  nameWithType: MessageModalViewModel.OkCommand
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand*
+  name: OkCommand
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_OkCommand_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  nameWithType: MessageModalViewModel.OkCommand
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  name: OkMessage
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_OkMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  nameWithType: MessageModalViewModel.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage*
+  name: OkMessage
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_OkMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  nameWithType: MessageModalViewModel.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Title
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  nameWithType: MessageModalViewModel.Title
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title*
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  nameWithType: MessageModalViewModel.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.html
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  name: ConfirmationMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  nameWithType: ConfirmationMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor(System.String,System.String,System.String,System.String)
+  name: ConfirmationMessage(String, String, String, String)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html#Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage__ctor_System_String_System_String_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor(System.String,System.String,System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.ConfirmationMessage(System.String, System.String, System.String, System.String)
+  nameWithType: ConfirmationMessage.ConfirmationMessage(String, String, String, String)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor*
+  name: ConfirmationMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html#Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.ConfirmationMessage
+  nameWithType: ConfirmationMessage.ConfirmationMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  name: CancelMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html#Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_CancelMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  nameWithType: ConfirmationMessage.CancelMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage*
+  name: CancelMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html#Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_CancelMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage
+  nameWithType: ConfirmationMessage.CancelMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  name: IMessageBox
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  nameWithType: IMessageBox
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  name: ShowInformation(MessageInformation)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html#Neutronium_BuildingBlocks_Application_WindowServices_IMessageBox_ShowInformation_Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  nameWithType: IMessageBox.ShowInformation(MessageInformation)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation*
+  name: ShowInformation
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html#Neutronium_BuildingBlocks_Application_WindowServices_IMessageBox_ShowInformation_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+  nameWithType: IMessageBox.ShowInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  name: ShowMessage(ConfirmationMessage)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html#Neutronium_BuildingBlocks_Application_WindowServices_IMessageBox_ShowMessage_Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  nameWithType: IMessageBox.ShowMessage(ConfirmationMessage)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage*
+  name: ShowMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html#Neutronium_BuildingBlocks_Application_WindowServices_IMessageBox_ShowMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+  nameWithType: IMessageBox.ShowMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  name: INotificationSender
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  nameWithType: INotificationSender
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  name: Send(Notification)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html#Neutronium_BuildingBlocks_Application_WindowServices_INotificationSender_Send_Neutronium_BuildingBlocks_Application_WindowServices_Notification_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  nameWithType: INotificationSender.Send(Notification)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send*
+  name: Send
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html#Neutronium_BuildingBlocks_Application_WindowServices_INotificationSender_Send_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+  nameWithType: INotificationSender.Send
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  name: MessageInformation
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  nameWithType: MessageInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.#ctor(System.String,System.String,System.String)
+  name: MessageInformation(String, String, String)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation__ctor_System_String_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.#ctor(System.String,System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.MessageInformation(System.String, System.String, System.String)
+  nameWithType: MessageInformation.MessageInformation(String, String, String)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.#ctor*
+  name: MessageInformation
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.MessageInformation
+  nameWithType: MessageInformation.MessageInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_Message
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  nameWithType: MessageInformation.Message
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message*
+  name: Message
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_Message_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message
+  nameWithType: MessageInformation.Message
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  name: OkMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_OkMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  nameWithType: MessageInformation.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage*
+  name: OkMessage
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_OkMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage
+  nameWithType: MessageInformation.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_Title
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  nameWithType: MessageInformation.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title*
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html#Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title
+  nameWithType: MessageInformation.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  name: Notification
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  nameWithType: Notification
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  name: Content
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Content
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  nameWithType: Notification.Content
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content*
+  name: Content
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Content_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  nameWithType: Notification.Content
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String,System.String)
+  name: Error(String, String)
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Error_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String, System.String)
+  nameWithType: Notification.Error(String, String)
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error*
+  name: Error
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Error_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error
+  nameWithType: Notification.Error
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Title
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  nameWithType: Notification.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title*
+  name: Title
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  nameWithType: Notification.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Type
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  nameWithType: Notification.Type
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type*
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.Notification.html#Neutronium_BuildingBlocks_Application_WindowServices_Notification_Type_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  nameWithType: Notification.Type
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  name: NotificationType
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  nameWithType: NotificationType
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  name: Error
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html#Neutronium_BuildingBlocks_Application_WindowServices_NotificationType_Error
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  nameWithType: NotificationType.Error
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  name: Info
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html#Neutronium_BuildingBlocks_Application_WindowServices_NotificationType_Info
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  nameWithType: NotificationType.Info
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  name: Success
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html#Neutronium_BuildingBlocks_Application_WindowServices_NotificationType_Success
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  nameWithType: NotificationType.Success
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  name: Warning
+  href: application/Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.html#Neutronium_BuildingBlocks_Application_WindowServices_NotificationType_Warning
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  nameWithType: NotificationType.Warning
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.html
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  name: CommandResult<TResult>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  name.vb: CommandResult(Of TResult)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult)
+  nameWithType: CommandResult<TResult>
+  nameWithType.vb: CommandResult(Of TResult)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  name: CommandResult()
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1__ctor
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult()
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult()
+  nameWithType: CommandResult<TResult>.CommandResult()
+  nameWithType.vb: CommandResult(Of TResult).CommandResult()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)
+  name: CommandResult(TResult)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1__ctor__0_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult(TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult(TResult)
+  nameWithType: CommandResult<TResult>.CommandResult(TResult)
+  nameWithType.vb: CommandResult(Of TResult).CommandResult(TResult)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(System.Exception)
+  name: CommandResult(Exception)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1__ctor_System_Exception_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(System.Exception)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult(System.Exception)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult(System.Exception)
+  nameWithType: CommandResult<TResult>.CommandResult(Exception)
+  nameWithType.vb: CommandResult(Of TResult).CommandResult(Exception)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor*
+  name: CommandResult
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult
+  nameWithType: CommandResult<TResult>.CommandResult
+  nameWithType.vb: CommandResult(Of TResult).CommandResult
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  name: Cancelled
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Cancelled
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Cancelled
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Cancelled
+  nameWithType: CommandResult<TResult>.Cancelled
+  nameWithType.vb: CommandResult(Of TResult).Cancelled
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled*
+  name: Cancelled
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Cancelled_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Cancelled
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Cancelled
+  nameWithType: CommandResult<TResult>.Cancelled
+  nameWithType.vb: CommandResult(Of TResult).Cancelled
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  name: Exception
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Exception
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Exception
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Exception
+  nameWithType: CommandResult<TResult>.Exception
+  nameWithType.vb: CommandResult(Of TResult).Exception
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception*
+  name: Exception
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Exception_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Exception
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Exception
+  nameWithType: CommandResult<TResult>.Exception
+  nameWithType.vb: CommandResult(Of TResult).Exception
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  name: HasError
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_HasError
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.HasError
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).HasError
+  nameWithType: CommandResult<TResult>.HasError
+  nameWithType.vb: CommandResult(Of TResult).HasError
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError*
+  name: HasError
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_HasError_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.HasError
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).HasError
+  nameWithType: CommandResult<TResult>.HasError
+  nameWithType.vb: CommandResult(Of TResult).HasError
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  name: Result
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Result
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Result
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Result
+  nameWithType: CommandResult<TResult>.Result
+  nameWithType.vb: CommandResult(Of TResult).Result
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result*
+  name: Result
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Result_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Result
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Result
+  nameWithType: CommandResult<TResult>.Result
+  nameWithType.vb: CommandResult(Of TResult).Result
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  name: Success
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Success
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Success
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Success
+  nameWithType: CommandResult<TResult>.Success
+  nameWithType.vb: CommandResult(Of TResult).Success
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success*
+  name: Success
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html#Neutronium_BuildingBlocks_ApplicationTools_CommandResult_1_Success_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Success
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Success
+  nameWithType: CommandResult<TResult>.Success
+  nameWithType.vb: CommandResult(Of TResult).Success
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: IApplication
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  nameWithType: IApplication
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  name: Closed
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_Closed
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  nameWithType: IApplication.Closed
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  name: ForceClose()
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_ForceClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose()
+  nameWithType: IApplication.ForceClose()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose*
+  name: ForceClose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_ForceClose_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  nameWithType: IApplication.ForceClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  name: MainWindowClosing
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_MainWindowClosing
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  nameWithType: IApplication.MainWindowClosing
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  name: Restart(String)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_Restart_System_String_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  nameWithType: IApplication.Restart(String)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart*
+  name: Restart
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_Restart_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+  nameWithType: IApplication.Restart
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  name: SessionEnding
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_SessionEnding
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  nameWithType: IApplication.SessionEnding
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  name: TryClose()
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_TryClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose()
+  nameWithType: IApplication.TryClose()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose*
+  name: TryClose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IApplication.html#Neutronium_BuildingBlocks_ApplicationTools_IApplication_TryClose_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  nameWithType: IApplication.TryClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  name: IChooserCommand<T>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  name.vb: IChooserCommand(Of T)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T)
+  nameWithType: IChooserCommand<T>
+  nameWithType.vb: IChooserCommand(Of T)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).CanBeExecuted
+  nameWithType: IChooserCommand<T>.CanBeExecuted
+  nameWithType.vb: IChooserCommand(Of T).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.CanBeExecuted*
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_CanBeExecuted_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.CanBeExecuted
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).CanBeExecuted
+  nameWithType: IChooserCommand<T>.CanBeExecuted
+  nameWithType.vb: IChooserCommand(Of T).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Choose
+  name: Choose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Choose
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Choose
+  nameWithType: IChooserCommand<T>.Choose
+  nameWithType.vb: IChooserCommand(Of T).Choose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Choose*
+  name: Choose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Choose_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Choose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Choose
+  nameWithType: IChooserCommand<T>.Choose
+  nameWithType.vb: IChooserCommand(Of T).Choose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Picker
+  name: Picker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Picker
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Picker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Picker
+  nameWithType: IChooserCommand<T>.Picker
+  nameWithType.vb: IChooserCommand(Of T).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Picker*
+  name: Picker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Picker_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Picker
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Picker
+  nameWithType: IChooserCommand<T>.Picker
+  nameWithType.vb: IChooserCommand(Of T).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Results
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Results
+  nameWithType: IChooserCommand<T>.Results
+  nameWithType.vb: IChooserCommand(Of T).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Results*
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_IChooserCommand_1_Results_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1.Results
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T).Results
+  nameWithType: IChooserCommand<T>.Results
+  nameWithType.vb: IChooserCommand(Of T).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  name: IDisposableProgress<T>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress-1.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  name.vb: IDisposableProgress(Of T)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress<T>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress(Of T)
+  nameWithType: IDisposableProgress<T>
+  nameWithType.vb: IDisposableProgress(Of T)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  name: IFilePicker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  nameWithType: IFilePicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  name: ExtensionDescription
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFilePicker_ExtensionDescription
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  nameWithType: IFilePicker.ExtensionDescription
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription*
+  name: ExtensionDescription
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFilePicker_ExtensionDescription_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  nameWithType: IFilePicker.ExtensionDescription
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  name: Extensions
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFilePicker_Extensions
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  nameWithType: IFilePicker.Extensions
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions*
+  name: Extensions
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFilePicker_Extensions_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  nameWithType: IFilePicker.Extensions
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  name: IFolderPicker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  nameWithType: IFolderPicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  name: Multiselect
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFolderPicker_Multiselect
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  nameWithType: IFolderPicker.Multiselect
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect*
+  name: Multiselect
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.html#Neutronium_BuildingBlocks_ApplicationTools_IFolderPicker_Multiselect_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  nameWithType: IFolderPicker.Multiselect
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: IIODialog
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  nameWithType: IIODialog
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  name: Choose()
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Choose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose()
+  nameWithType: IIODialog.Choose()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose*
+  name: Choose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Choose_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  nameWithType: IIODialog.Choose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  name: Directory
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Directory
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  nameWithType: IIODialog.Directory
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory*
+  name: Directory
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Directory_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  nameWithType: IIODialog.Directory
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  name: Title
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Title
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  nameWithType: IIODialog.Title
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title*
+  name: Title
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.IIODialog.html#Neutronium_BuildingBlocks_ApplicationTools_IIODialog_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  nameWithType: IIODialog.Title
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  name: INativeMessageBox
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  nameWithType: INativeMessageBox
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  name: ShowConfirmationMessage(String, String, WindowType)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html#Neutronium_BuildingBlocks_ApplicationTools_INativeMessageBox_ShowConfirmationMessage_System_String_System_String_Neutronium_BuildingBlocks_ApplicationTools_WindowType_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String, System.String, Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  nameWithType: INativeMessageBox.ShowConfirmationMessage(String, String, WindowType)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage*
+  name: ShowConfirmationMessage
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html#Neutronium_BuildingBlocks_ApplicationTools_INativeMessageBox_ShowConfirmationMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+  nameWithType: INativeMessageBox.ShowConfirmationMessage
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  name: ShowMessage(String, String)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html#Neutronium_BuildingBlocks_ApplicationTools_INativeMessageBox_ShowMessage_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String, System.String)
+  nameWithType: INativeMessageBox.ShowMessage(String, String)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage*
+  name: ShowMessage
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.html#Neutronium_BuildingBlocks_ApplicationTools_INativeMessageBox_ShowMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage
+  nameWithType: INativeMessageBox.ShowMessage
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name.vb: ITaskCancellableCommand(Of TResult)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  nameWithType: ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).CanBeExecuted
+  nameWithType: ITaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted*
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_CanBeExecuted_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.CanBeExecuted
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).CanBeExecuted
+  nameWithType: ITaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  name: Cancel
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Cancel
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Cancel
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Cancel
+  nameWithType: ITaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel*
+  name: Cancel
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Cancel_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Cancel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Cancel
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Cancel
+  nameWithType: ITaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  name: Computing
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Computing
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Computing
+  nameWithType: ITaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing*
+  name: Computing
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Computing_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Computing
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Computing
+  nameWithType: ITaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Results
+  nameWithType: ITaskCancellableCommand<TResult>.Results
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results*
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Results_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Results
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Results
+  nameWithType: ITaskCancellableCommand<TResult>.Results
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  name: Run
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Run
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Run
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Run
+  nameWithType: ITaskCancellableCommand<TResult>.Run
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run*
+  name: Run
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_1_Run_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1.Run
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>.Run
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult).Run
+  nameWithType: ITaskCancellableCommand<TResult>.Run
+  nameWithType.vb: ITaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  name: ITaskCancellableCommand<TResult, TProgress>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-2.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  name.vb: ITaskCancellableCommand(Of TResult, TProgress)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress)
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  name: Progress
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-2.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_2_Progress
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>.Progress
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress).Progress
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>.Progress
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress).Progress
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress*
+  name: Progress
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand-2.html#Neutronium_BuildingBlocks_ApplicationTools_ITaskCancellableCommand_2_Progress_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2.Progress
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>.Progress
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress).Progress
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>.Progress
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress).Progress
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  name: WindowType
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.WindowType.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  nameWithType: WindowType
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  name: OkCancel
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.WindowType.html#Neutronium_BuildingBlocks_ApplicationTools_WindowType_OkCancel
+  commentId: F:Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  nameWithType: WindowType.OkCancel
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  name: YesNo
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.WindowType.html#Neutronium_BuildingBlocks_ApplicationTools_WindowType_YesNo
+  commentId: F:Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  nameWithType: WindowType.YesNo
+- uid: Neutronium.BuildingBlocks.ViewModel
+  name: ViewModel
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+  nameWithType: ViewModel
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  name: PropertyChanged
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  name: PropertyChanging
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  name: PropertyHasChanged(String)
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyHasChanged_System_String_
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged*
+  name: PropertyHasChanged
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyHasChanged_
+  commentId: Overload:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  nameWithType: ViewModel.PropertyHasChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  name: PropertyIsChanging(String)
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyIsChanging_System_String_
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging*
+  name: PropertyIsChanging
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyIsChanging_
+  commentId: Overload:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  nameWithType: ViewModel.PropertyIsChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set*
+  name: Set
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_Set_
+  commentId: Overload:Neutronium.BuildingBlocks.ViewModel.Set
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set
+  nameWithType: ViewModel.Set
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(ref T, T, String)
+  href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_Set__1___0____0_System_String_
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name.vb: Set(Of T)(ByRef T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(ref T, T, System.String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(ByRef T, T, System.String)
+  nameWithType: ViewModel.Set<T>(ref T, T, String)
+  nameWithType.vb: ViewModel.Set(Of T)(ByRef T, T, String)

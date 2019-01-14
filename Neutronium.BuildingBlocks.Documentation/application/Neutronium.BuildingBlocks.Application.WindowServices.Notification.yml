@@ -1,0 +1,523 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  id: Notification
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  - Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String,System.String)
+  - Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  - Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  langs:
+  - csharp
+  - vb
+  name: Notification
+  nameWithType: Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Notification
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+    startLine: 2
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public class Notification
+    content.vb: Public Class Notification
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  id: Type
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Notification.Type
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Type
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+    startLine: 4
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public string Type { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Type As String
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  id: Title
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Notification.Title
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Title
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Title As String
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  commentId: P:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  id: Content
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Notification.Content
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Content
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+    startLine: 6
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public string Content { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Content As String
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String,System.String)
+  id: Error(System.String,System.String)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  langs:
+  - csharp
+  - vb
+  name: Error(String, String)
+  nameWithType: Notification.Error(String, String)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Error
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public static Notification Error(string title, string message)
+    parameters:
+    - id: title
+      type: System.String
+    - id: message
+      type: System.String
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+    content.vb: Public Shared Function Error(title As String, message As String) As Notification
+  overload: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+  name: Type
+  nameWithType: Notification.Type
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+  name: Title
+  nameWithType: Notification.Title
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Title
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+  name: Content
+  nameWithType: Notification.Content
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Content
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error
+  name: Error
+  nameWithType: Notification.Error
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification.Error
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Notification
+  nameWithType: Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification

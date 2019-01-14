@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  id: MessageType
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  - Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  langs:
+  - csharp
+  - vb
+  name: MessageType
+  nameWithType: MessageType
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  type: Enum
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: MessageType
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 29
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRouting message type\n"
+  example: []
+  syntax:
+    content: public enum MessageType
+    content.vb: Public Enum MessageType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  commentId: F:Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  id: Error
+  parent: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: MessageType.Error
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Error
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Error
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 31
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: Error = 0
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  commentId: F:Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  id: Information
+  parent: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: MessageType.Information
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType.Information
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Information
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
+    startLine: 32
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: Information = 1
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: MessageType
+  nameWithType: MessageType
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType

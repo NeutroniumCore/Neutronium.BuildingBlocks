@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  commentId: N:Neutronium.BuildingBlocks.Application.LifeCycleHook
+  id: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  children:
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  nameWithType: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+references:
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: IApplicationLifeCycle
+  nameWithType: IApplicationLifeCycle
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  commentId: N:Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  nameWithType: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook

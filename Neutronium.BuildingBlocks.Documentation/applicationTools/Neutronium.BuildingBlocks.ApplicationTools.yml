@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  id: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  - Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  - Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  - Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  - Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  - Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  name: CommandResult<TResult>
+  nameWithType: CommandResult<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>
+  nameWithType.vb: CommandResult(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult)
+  name.vb: CommandResult(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+    name: CommandResult
+    nameWithType: CommandResult
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+    name: CommandResult
+    nameWithType: CommandResult
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: IApplication
+  nameWithType: IApplication
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  name: IChooserCommand<T>
+  nameWithType: IChooserCommand<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>
+  nameWithType.vb: IChooserCommand(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T)
+  name.vb: IChooserCommand(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  name: IDisposableProgress<T>
+  nameWithType: IDisposableProgress<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress<T>
+  nameWithType.vb: IDisposableProgress(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress(Of T)
+  name.vb: IDisposableProgress(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+    name: IDisposableProgress
+    nameWithType: IDisposableProgress
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+    name: IDisposableProgress
+    nameWithType: IDisposableProgress
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  name: IFilePicker
+  nameWithType: IFilePicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  name: IFolderPicker
+  nameWithType: IFolderPicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IIODialog
+  nameWithType: IIODialog
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: WindowType
+  nameWithType: WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  name: INativeMessageBox
+  nameWithType: INativeMessageBox
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  nameWithType: ITaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  name.vb: ITaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+  name: ITaskCancellableCommand<TResult, TProgress>
+  nameWithType: ITaskCancellableCommand<TResult, TProgress>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult, TProgress>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult, TProgress)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult, TProgress)
+  name.vb: ITaskCancellableCommand(Of TResult, TProgress)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools

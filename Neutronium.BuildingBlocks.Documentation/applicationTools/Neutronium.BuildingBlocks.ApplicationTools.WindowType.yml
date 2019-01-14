@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  id: WindowType
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  - Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  langs:
+  - csharp
+  - vb
+  name: WindowType
+  nameWithType: WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  type: Enum
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: WindowType
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nMessage box window type\n"
+  example: []
+  syntax:
+    content: public enum WindowType
+    content.vb: Public Enum WindowType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  commentId: F:Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  id: OkCancel
+  parent: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  langs:
+  - csharp
+  - vb
+  name: OkCancel
+  nameWithType: WindowType.OkCancel
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType.OkCancel
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OkCancel
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  syntax:
+    content: OkCancel = 0
+    return:
+      type: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  commentId: F:Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  id: YesNo
+  parent: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  langs:
+  - csharp
+  - vb
+  name: YesNo
+  nameWithType: WindowType.YesNo
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType.YesNo
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: YesNo
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 8
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  syntax:
+    content: YesNo = 1
+    return:
+      type: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: WindowType
+  nameWithType: WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType

@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  id: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  - Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  - Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  - Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  - Neutronium.BuildingBlocks.Application.Navigation.Router
+  - Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  - Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: BeforeRouterResult
+  nameWithType: BeforeRouterResult
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  name: ConventionRouter
+  nameWithType: ConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: INavigator
+  nameWithType: INavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IRouterBuilder
+  nameWithType: IRouterBuilder
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IRouterSolver
+  nameWithType: IRouterSolver
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: ISubNavigator
+  nameWithType: ISubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: NavigationContext
+  nameWithType: NavigationContext
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+  name: NavigationContext<T>
+  nameWithType: NavigationContext<T>
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext<T>
+  nameWithType.vb: NavigationContext(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext(Of T)
+  name.vb: NavigationContext(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext
+    nameWithType: NavigationContext
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteInfo
+  nameWithType: RouteInfo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.Router
+  name: Router
+  nameWithType: Router
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouterBuilderExtensions
+  nameWithType: RouterBuilderExtensions
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RoutingEventArgs
+  nameWithType: RoutingEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+  name: RoutingMessageArgs
+  nameWithType: RoutingMessageArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.MessageType
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: MessageType
+  nameWithType: MessageType
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation

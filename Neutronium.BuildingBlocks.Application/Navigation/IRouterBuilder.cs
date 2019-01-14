@@ -2,6 +2,9 @@
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
+    /// <summary>
+    /// Route builder
+    /// </summary>
     public interface IRouterBuilder
     {
         /// <summary>

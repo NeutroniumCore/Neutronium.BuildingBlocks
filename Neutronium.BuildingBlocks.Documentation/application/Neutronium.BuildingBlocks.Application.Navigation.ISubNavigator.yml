@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  id: ISubNavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  langs:
+  - csharp
+  - vb
+  name: ISubNavigator
+  nameWithType: ISubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ISubNavigator
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+    startLine: 6
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nManage relative navigation within ViewModel\n"
+  example: []
+  syntax:
+    content: public interface ISubNavigator
+    content.vb: Public Interface ISubNavigator
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  id: RelativeName
+  parent: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  langs:
+  - csharp
+  - vb
+  name: RelativeName
+  nameWithType: ISubNavigator.RelativeName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: RelativeName
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRelative Name\n"
+  example: []
+  syntax:
+    content: string RelativeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property RelativeName As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  id: Child
+  parent: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  langs:
+  - csharp
+  - vb
+  name: Child
+  nameWithType: ISubNavigator.Child
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Child
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+    startLine: 16
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nChild\n"
+  example: []
+  syntax:
+    content: ISubNavigator Child { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+    content.vb: ReadOnly Property Child As ISubNavigator
+  overload: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  id: NavigateTo(System.String)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  langs:
+  - csharp
+  - vb
+  name: NavigateTo(String)
+  nameWithType: ISubNavigator.NavigateTo(String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: NavigateTo
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
+    startLine: 25
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nNavigate to a sub path\n"
+  example: []
+  syntax:
+    content: ISubNavigator NavigateTo(string relativePath)
+    parameters:
+    - id: relativePath
+      type: System.String
+      description: ''
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+      description: "\nThe created nested viewModel\n"
+    content.vb: Function NavigateTo(relativePath As String) As ISubNavigator
+  overload: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo*
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  name: RelativeName
+  nameWithType: ISubNavigator.RelativeName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  name: Child
+  nameWithType: ISubNavigator.Child
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: ISubNavigator
+  nameWithType: ISubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo
+  name: NavigateTo
+  nameWithType: ISubNavigator.NavigateTo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo

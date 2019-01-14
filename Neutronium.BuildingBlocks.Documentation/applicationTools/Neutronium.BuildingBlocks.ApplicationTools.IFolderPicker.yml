@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  id: IFolderPicker
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  langs:
+  - csharp
+  - vb
+  name: IFolderPicker
+  nameWithType: IFolderPicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IFolderPicker.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IFolderPicker
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IFolderPicker.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nFolder picker abstraction\n"
+  example: []
+  syntax:
+    content: 'public interface IFolderPicker : IIODialog'
+    content.vb: >-
+      Public Interface IFolderPicker
+          Inherits IIODialog
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  id: Multiselect
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  langs:
+  - csharp
+  - vb
+  name: Multiselect
+  nameWithType: IFolderPicker.Multiselect
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IFolderPicker.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Multiselect
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IFolderPicker.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\ntrue to allow multi select\n"
+  example: []
+  syntax:
+    content: bool Multiselect { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Multiselect As Boolean
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Title
+  nameWithType: IIODialog.Title
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Directory
+  nameWithType: IIODialog.Directory
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Choose()
+  nameWithType: IIODialog.Choose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose()
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+    name: Choose
+    nameWithType: IIODialog.Choose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+    name: Choose
+    nameWithType: IIODialog.Choose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IIODialog
+  nameWithType: IIODialog
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+  name: Multiselect
+  nameWithType: IFolderPicker.Multiselect
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker.Multiselect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

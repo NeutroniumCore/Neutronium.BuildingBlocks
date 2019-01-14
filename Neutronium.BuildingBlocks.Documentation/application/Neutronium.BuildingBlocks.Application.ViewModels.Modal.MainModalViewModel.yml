@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  id: MainModalViewModel
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  langs:
+  - csharp
+  - vb
+  name: MainModalViewModel
+  nameWithType: MainModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: MainModalViewModel
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nModal ViewModel. Internally used by <xref href=\"Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox\" data-throw-if-not-resolved=\"false\"></xref> implementation\n"
+  example: []
+  syntax:
+    content: 'public class MainModalViewModel : MessageModalViewModel'
+    content.vb: >-
+      Public Class MainModalViewModel
+          Inherits MessageModalViewModel
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  id: CancelMessage
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: CancelMessage
+  nameWithType: MainModalViewModel.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CancelMessage
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 13
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  syntax:
+    content: public string CancelMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CancelMessage As String
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  id: CancelCommand
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: CancelCommand
+  nameWithType: MainModalViewModel.CancelCommand
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CancelCommand
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  syntax:
+    content: public ISimpleCommand CancelCommand { get; }
+    parameters: []
+    return:
+      type: Neutronium.MVVMComponents.ISimpleCommand
+    content.vb: Public ReadOnly Property CancelCommand As ISimpleCommand
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  id: CompletionTask
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: CompletionTask
+  nameWithType: MainModalViewModel.CompletionTask
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CompletionTask
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  syntax:
+    content: >-
+      [Bindable(false)]
+
+      public Task<bool> CompletionTask { get; }
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: >-
+      <Bindable(False)>
+
+      Public ReadOnly Property CompletionTask As Task(Of Boolean)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask*
+  attributes:
+  - type: System.ComponentModel.BindableAttribute
+    ctor: System.ComponentModel.BindableAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  id: Ok
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: Ok()
+  nameWithType: MainModalViewModel.Ok()
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Ok
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 28
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  syntax:
+    content: protected override void Ok()
+    content.vb: Protected Overrides Sub Ok
+  overridden: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: IMessageBox
+  nameWithType: IMessageBox
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: MessageModalViewModel
+  nameWithType: MessageModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: Title
+  nameWithType: MessageModalViewModel.Title
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: Message
+  nameWithType: MessageModalViewModel.Message
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: OkMessage
+  nameWithType: MessageModalViewModel.OkMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: OkCommand
+  nameWithType: MessageModalViewModel.OkCommand
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+  name: CancelMessage
+  nameWithType: MainModalViewModel.CancelMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+  name: CancelCommand
+  nameWithType: MainModalViewModel.CancelCommand
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
+- uid: Neutronium.MVVMComponents.ISimpleCommand
+  commentId: T:Neutronium.MVVMComponents.ISimpleCommand
+  parent: Neutronium.MVVMComponents
+  isExternal: true
+  name: ISimpleCommand
+  nameWithType: ISimpleCommand
+  fullName: Neutronium.MVVMComponents.ISimpleCommand
+- uid: Neutronium.MVVMComponents
+  commentId: N:Neutronium.MVVMComponents
+  isExternal: true
+  name: Neutronium.MVVMComponents
+  nameWithType: Neutronium.MVVMComponents
+  fullName: Neutronium.MVVMComponents
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+  name: CompletionTask
+  nameWithType: MainModalViewModel.CompletionTask
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  name: Ok()
+  nameWithType: MessageModalViewModel.Ok()
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok()
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+    name: Ok
+    nameWithType: MessageModalViewModel.Ok
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+    name: Ok
+    nameWithType: MessageModalViewModel.Ok
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
+  name: Ok
+  nameWithType: MainModalViewModel.Ok
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok

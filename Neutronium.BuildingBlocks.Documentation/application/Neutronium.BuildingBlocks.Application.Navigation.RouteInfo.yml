@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  id: RouteInfo
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor(System.Object,System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  langs:
+  - csharp
+  - vb
+  name: RouteInfo
+  nameWithType: RouteInfo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  type: Struct
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: RouteInfo
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRoute description\n"
+  example: []
+  syntax:
+    content: public struct RouteInfo
+    content.vb: Public Structure RouteInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  id: ViewModel
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  langs:
+  - csharp
+  - vb
+  name: ViewModel
+  nameWithType: RouteInfo.ViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ViewModel
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nDestination viewModel \n"
+  example: []
+  syntax:
+    content: public object ViewModel { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property ViewModel As Object
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  id: RouteName
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  langs:
+  - csharp
+  - vb
+  name: RouteName
+  nameWithType: RouteInfo.RouteName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: RouteName
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nDestination route\n"
+  example: []
+  syntax:
+    content: public string RouteName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RouteName As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor(System.Object,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor(System.Object,System.String)
+  id: '#ctor(System.Object,System.String)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  langs:
+  - csharp
+  - vb
+  name: RouteInfo(Object, String)
+  nameWithType: RouteInfo.RouteInfo(Object, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteInfo(System.Object, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+    startLine: 21
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public RouteInfo(object viewModel, string routeName)
+    parameters:
+    - id: viewModel
+      type: System.Object
+    - id: routeName
+      type: System.String
+    content.vb: Public Sub New(viewModel As Object, routeName As String)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  id: ToString
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: RouteInfo.ToString()
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ToString
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
+    startLine: 27
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+  name: ViewModel
+  nameWithType: RouteInfo.ViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+  name: RouteName
+  nameWithType: RouteInfo.RouteName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.#ctor
+  name: RouteInfo
+  nameWithType: RouteInfo.RouteInfo
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteInfo
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString
+  name: ToString
+  nameWithType: RouteInfo.ToString
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ToString

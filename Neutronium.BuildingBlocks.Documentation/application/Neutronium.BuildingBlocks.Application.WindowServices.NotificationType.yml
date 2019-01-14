@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  id: NotificationType
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  - Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  - Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  - Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  langs:
+  - csharp
+  - vb
+  name: NotificationType
+  nameWithType: NotificationType
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  type: Enum
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: NotificationType
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+    startLine: 2
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: public enum NotificationType
+    content.vb: Public Enum NotificationType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  id: Error
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: NotificationType.Error
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Error
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Error
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+    startLine: 4
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: Error = 0
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  id: Warning
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: NotificationType.Warning
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Warning
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Warning
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: Warning = 1
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  id: Success
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: NotificationType.Success
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Success
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Success
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+    startLine: 6
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: Success = 2
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  commentId: F:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  id: Info
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: NotificationType.Info
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType.Info
+  type: Field
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Info
+    path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.WindowServices
+  syntax:
+    content: Info = 3
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: NotificationType
+  nameWithType: NotificationType
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType

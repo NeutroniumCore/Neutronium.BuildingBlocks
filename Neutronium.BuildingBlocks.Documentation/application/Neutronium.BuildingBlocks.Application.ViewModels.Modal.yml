@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  id: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+references:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  name: MainModalViewModel
+  nameWithType: MainModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: MessageModalViewModel
+  nameWithType: MessageModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal

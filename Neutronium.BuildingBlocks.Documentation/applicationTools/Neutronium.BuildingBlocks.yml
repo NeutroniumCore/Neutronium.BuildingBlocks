@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  id: Neutronium.BuildingBlocks
+  children:
+  - Neutronium.BuildingBlocks.ViewModel
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+references:
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel

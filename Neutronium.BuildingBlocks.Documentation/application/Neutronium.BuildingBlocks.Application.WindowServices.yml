@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  id: Neutronium.BuildingBlocks.Application.WindowServices
+  children:
+  - Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  - Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  - Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  - Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  - Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+references:
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: IMessageBox
+  nameWithType: IMessageBox
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: INotificationSender
+  nameWithType: INotificationSender
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: MessageInformation
+  nameWithType: MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Notification
+  nameWithType: Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: NotificationType
+  nameWithType: NotificationType
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices

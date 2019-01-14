@@ -1,0 +1,74 @@
+### YamlMime:TableOfContent
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  items:
+  - uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+    name: IApplicationLifeCycle
+  - uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+    name: LifeCycleEventsRegister
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  items:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
+    name: BeforeRouterResult
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+    name: ConventionRouter
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+    name: INavigator
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+    name: IRouterBuilder
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
+    name: IRouterSolver
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+    name: ISubNavigator
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
+    name: MessageType
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
+    name: NavigationContext
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
+    name: NavigationContext<T>
+    name.vb: NavigationContext(Of T)
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+    name: NavigationViewModel
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+    name: RoutedEventArgs
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
+    name: RouteInfo
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.Router
+    name: Router
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+    name: RouterBuilderExtensions
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+    name: RoutingEventArgs
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
+    name: RoutingMessageArgs
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  items:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    name: ApplicationInformation
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel<T>
+    name.vb: ApplicationViewModel(Of T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  items:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+    name: MainModalViewModel
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+    name: MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  items:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+    name: ConfirmationMessage
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+    name: IMessageBox
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+    name: INotificationSender
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+    name: MessageInformation
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+    name: Notification
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.NotificationType
+    name: NotificationType

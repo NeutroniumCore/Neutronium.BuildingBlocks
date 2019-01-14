@@ -1,0 +1,253 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+  id: IDisposableProgress`1
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IDisposableProgress<T>
+  nameWithType: IDisposableProgress<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress<T>
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IDisposableProgress.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IDisposableProgress
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IDisposableProgress.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nDisposable progress \n"
+  example: []
+  syntax:
+    content: 'public interface IDisposableProgress<in T> : IProgress<T>, IDisposable'
+    typeParameters:
+    - id: T
+      description: "\nProgress type.\n"
+    content.vb: >-
+      Public Interface IDisposableProgress(Of In T)
+          Inherits IProgress(Of T), IDisposable
+  inheritedMembers:
+  - System.IProgress{{T}}.Report({T})
+  - System.IDisposable.Dispose
+  nameWithType.vb: IDisposableProgress(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress(Of T)
+  name.vb: IDisposableProgress(Of T)
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: System.IProgress{{T}}.Report({T})
+  commentId: M:System.IProgress{`0}.Report(`0)
+  parent: System.IProgress{{T}}
+  definition: System.IProgress`1.Report(`0)
+  name: Report(T)
+  nameWithType: IProgress<T>.Report(T)
+  fullName: System.IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  fullName.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    nameWithType: IProgress<T>.Report
+    fullName: System.IProgress<T>.Report
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    nameWithType: IProgress(Of T).Report
+    fullName: System.IProgress(Of T).Report
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IProgress`1.Report(`0)
+  commentId: M:System.IProgress`1.Report(`0)
+  isExternal: true
+  name: Report(T)
+  nameWithType: IProgress<T>.Report(T)
+  fullName: System.IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  fullName.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    nameWithType: IProgress<T>.Report
+    fullName: System.IProgress<T>.Report
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    nameWithType: IProgress(Of T).Report
+    fullName: System.IProgress(Of T).Report
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IProgress{{T}}
+  commentId: T:System.IProgress{`0}
+  parent: System
+  definition: System.IProgress`1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

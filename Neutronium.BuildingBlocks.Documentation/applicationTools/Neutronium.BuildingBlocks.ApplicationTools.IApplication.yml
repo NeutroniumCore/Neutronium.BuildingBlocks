@@ -1,0 +1,341 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  id: IApplication
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  langs:
+  - csharp
+  - vb
+  name: IApplication
+  nameWithType: IApplication
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IApplication
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 8
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nApplication abstraction\n"
+  example: []
+  syntax:
+    content: public interface IApplication
+    content.vb: Public Interface IApplication
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  id: ForceClose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: ForceClose()
+  nameWithType: IApplication.ForceClose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ForceClose
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 13
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nClose the application without calling the cancellation hooks.\n"
+  example: []
+  syntax:
+    content: void ForceClose()
+    content.vb: Sub ForceClose
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose*
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  id: TryClose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: TryClose()
+  nameWithType: IApplication.TryClose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: TryClose
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 18
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nTry to close the application\n"
+  example: []
+  syntax:
+    content: void TryClose()
+    content.vb: Sub TryClose
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose*
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  id: Restart(System.String)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: Restart(String)
+  nameWithType: IApplication.Restart(String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Restart
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 26
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nClose the application and restart it.\n"
+  example: []
+  syntax:
+    content: void Restart(string commandLineOptions = "")
+    parameters:
+    - id: commandLineOptions
+      type: System.String
+      description: "\ncommand line to be applied to the restarting application\n"
+    content.vb: Sub Restart(commandLineOptions As String = "")
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart*
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  id: MainWindowClosing
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: MainWindowClosing
+  nameWithType: IApplication.MainWindowClosing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: MainWindowClosing
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 31
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nSent when the main window is closing\n"
+  example: []
+  syntax:
+    content: event EventHandler<CancelEventArgs> MainWindowClosing
+    return:
+      type: System.EventHandler{System.ComponentModel.CancelEventArgs}
+    content.vb: Event MainWindowClosing As EventHandler(Of CancelEventArgs)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  id: Closed
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: IApplication.Closed
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Closed
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 36
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nSent when the main window is closing\n"
+  example: []
+  syntax:
+    content: event EventHandler Closed
+    return:
+      type: System.EventHandler
+    content.vb: Event Closed As EventHandler
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  id: SessionEnding
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  langs:
+  - csharp
+  - vb
+  name: SessionEnding
+  nameWithType: IApplication.SessionEnding
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: SessionEnding
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IApplication.cs
+    startLine: 41
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nSent when the session is ending\n"
+  example: []
+  syntax:
+    content: event EventHandler<CancelEventArgs> SessionEnding
+    return:
+      type: System.EventHandler{System.ComponentModel.CancelEventArgs}
+    content.vb: Event SessionEnding As EventHandler(Of CancelEventArgs)
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  name: ForceClose
+  nameWithType: IApplication.ForceClose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  name: TryClose
+  nameWithType: IApplication.TryClose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+  name: Restart
+  nameWithType: IApplication.Restart
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{System.ComponentModel.CancelEventArgs}
+  commentId: T:System.EventHandler{System.ComponentModel.CancelEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<CancelEventArgs>
+  nameWithType: EventHandler<CancelEventArgs>
+  fullName: System.EventHandler<System.ComponentModel.CancelEventArgs>
+  nameWithType.vb: EventHandler(Of CancelEventArgs)
+  fullName.vb: System.EventHandler(Of System.ComponentModel.CancelEventArgs)
+  name.vb: EventHandler(Of CancelEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    nameWithType: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    nameWithType: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler

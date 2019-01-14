@@ -1,0 +1,36 @@
+### YamlMime:TableOfContent
+- uid: Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  items:
+  - uid: Neutronium.BuildingBlocks.ViewModel
+    name: ViewModel
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  items:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+    name: CommandResult<TResult>
+    name.vb: CommandResult(Of TResult)
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+    name: IApplication
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand<T>
+    name.vb: IChooserCommand(Of T)
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IDisposableProgress`1
+    name: IDisposableProgress<T>
+    name.vb: IDisposableProgress(Of T)
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    name: IFilePicker
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+    name: IFolderPicker
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+    name: IIODialog
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+    name: INativeMessageBox
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`2
+    name: ITaskCancellableCommand<TResult, TProgress>
+    name.vb: ITaskCancellableCommand(Of TResult, TProgress)
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand<TResult>
+    name.vb: ITaskCancellableCommand(Of TResult)
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+    name: WindowType

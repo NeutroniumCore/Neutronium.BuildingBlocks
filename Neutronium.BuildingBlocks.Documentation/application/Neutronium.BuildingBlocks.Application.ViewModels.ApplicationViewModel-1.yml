@@ -1,0 +1,1359 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  id: ApplicationViewModel`1
+  parent: Neutronium.BuildingBlocks.Application.ViewModels
+  children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  - Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  langs:
+  - csharp
+  - vb
+  name: ApplicationViewModel<T>
+  nameWithType: ApplicationViewModel<T>
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ApplicationViewModel
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 16
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  summary: "\nViewModel representing the application\n"
+  example: []
+  syntax:
+    content: 'public class ApplicationViewModel<T> : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging, IMessageBox, INotificationSender'
+    typeParameters:
+    - id: T
+      description: "\nViewModel type that is designed to be accessible\nthroughout the application life cycle independent from\nwhich page is currently displayed \n"
+    content.vb: >-
+      Public Class ApplicationViewModel(Of T)
+          Inherits ViewModel
+          Implements INotifyPropertyChanged, INotifyPropertyChanging, IMessageBox, INotificationSender
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  - Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  - Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: ApplicationViewModel(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T)
+  name.vb: ApplicationViewModel(Of T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  id: ApplicationInformation
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ApplicationInformation
+  nameWithType: ApplicationViewModel<T>.ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationInformation
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ApplicationInformation
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 18
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public T ApplicationInformation { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property ApplicationInformation As T
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation*
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationInformation
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  id: Window
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: ApplicationViewModel<T>.Window
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Window
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Window
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 19
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public IWindowViewModel Window { get; }
+    parameters: []
+    return:
+      type: Neutronium.MVVMComponents.IWindowViewModel
+    content.vb: Public ReadOnly Property Window As IWindowViewModel
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window*
+  nameWithType.vb: ApplicationViewModel(Of T).Window
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Window
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  id: Router
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Router
+  nameWithType: ApplicationViewModel<T>.Router
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Router
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Router
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 20
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public NavigationViewModel Router { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+    content.vb: Public ReadOnly Property Router As NavigationViewModel
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router*
+  nameWithType.vb: ApplicationViewModel(Of T).Router
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Router
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  id: CurrentViewModel
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: CurrentViewModel
+  nameWithType: ApplicationViewModel<T>.CurrentViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.CurrentViewModel
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CurrentViewModel
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 25
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  summary: "\nPage ViewModel\n"
+  example: []
+  syntax:
+    content: public object CurrentViewModel { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property CurrentViewModel As Object
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel*
+  nameWithType.vb: ApplicationViewModel(Of T).CurrentViewModel
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).CurrentViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  id: Modal
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Modal
+  nameWithType: ApplicationViewModel<T>.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Modal
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Modal
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 28
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public MessageModalViewModel Modal { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+    content.vb: Public ReadOnly Property Modal As MessageModalViewModel
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal*
+  nameWithType.vb: ApplicationViewModel(Of T).Modal
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  commentId: P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  id: Notification
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Notification
+  nameWithType: ApplicationViewModel<T>.Notification
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Notification
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Notification
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 35
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public Notification Notification { get; set; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+    content.vb: Public Property Notification As Notification
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification*
+  nameWithType.vb: ApplicationViewModel(Of T).Notification
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Notification
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)
+  id: '#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)'
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+  nameWithType: ApplicationViewModel<T>.ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, T)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 41
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  syntax:
+    content: public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router, T applicationInformation)
+    parameters:
+    - id: window
+      type: Neutronium.MVVMComponents.IWindowViewModel
+    - id: router
+      type: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+    - id: applicationInformation
+      type: '{T}'
+    content.vb: Public Sub New(window As IWindowViewModel, router As NavigationViewModel, applicationInformation As T)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor*
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  id: ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(ConfirmationMessage)
+  nameWithType: ApplicationViewModel<T>.ShowMessage(ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowMessage
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 55
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  summary: "\nShow message with confirmation in modal window\n"
+  example: []
+  syntax:
+    content: public Task<bool> ShowMessage(ConfirmationMessage confirmationMessage)
+    parameters:
+    - id: confirmationMessage
+      type: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+      description: "\ntrue if the user clicks on OK\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
+    content.vb: Public Function ShowMessage(confirmationMessage As ConfirmationMessage) As Task(Of Boolean)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage*
+  implements:
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  nameWithType.vb: ApplicationViewModel(Of T).ShowMessage(ConfirmationMessage)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  id: ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: ShowInformation(MessageInformation)
+  nameWithType: ApplicationViewModel<T>.ShowInformation(MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowInformation
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 66
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  summary: "\nShow information in modal window\n"
+  example: []
+  syntax:
+    content: public void ShowInformation(MessageInformation messageInformation)
+    parameters:
+    - id: messageInformation
+      type: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+      description: ''
+    content.vb: Public Sub ShowInformation(messageInformation As MessageInformation)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation*
+  implements:
+  - Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  nameWithType.vb: ApplicationViewModel(Of T).ShowInformation(MessageInformation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  id: Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Send(Notification)
+  nameWithType: ApplicationViewModel<T>.Send(Notification)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Send
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
+    startLine: 76
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels
+  summary: "\nDisplay a notification\n"
+  example: []
+  syntax:
+    content: public void Send(Notification notification)
+    parameters:
+    - id: notification
+      type: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+      description: ''
+    content.vb: Public Sub Send(notification As Notification)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send*
+  implements:
+  - Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  nameWithType.vb: ApplicationViewModel(Of T).Send(Notification)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+references:
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  parent: Neutronium.BuildingBlocks
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: IMessageBox
+  nameWithType: IMessageBox
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: INotificationSender
+  nameWithType: INotificationSender
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  definition: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyHasChanged(String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyIsChanging(String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.Application.WindowServices
+  commentId: N:Neutronium.BuildingBlocks.Application.WindowServices
+  name: Neutronium.BuildingBlocks.Application.WindowServices
+  nameWithType: Neutronium.BuildingBlocks.Application.WindowServices
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  isExternal: true
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation
+  name: ApplicationInformation
+  nameWithType: ApplicationViewModel<T>.ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationInformation
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationInformation
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationInformation
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window
+  name: Window
+  nameWithType: ApplicationViewModel<T>.Window
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Window
+  nameWithType.vb: ApplicationViewModel(Of T).Window
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Window
+- uid: Neutronium.MVVMComponents.IWindowViewModel
+  commentId: T:Neutronium.MVVMComponents.IWindowViewModel
+  parent: Neutronium.MVVMComponents
+  isExternal: true
+  name: IWindowViewModel
+  nameWithType: IWindowViewModel
+  fullName: Neutronium.MVVMComponents.IWindowViewModel
+- uid: Neutronium.MVVMComponents
+  commentId: N:Neutronium.MVVMComponents
+  isExternal: true
+  name: Neutronium.MVVMComponents
+  nameWithType: Neutronium.MVVMComponents
+  fullName: Neutronium.MVVMComponents
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router
+  name: Router
+  nameWithType: ApplicationViewModel<T>.Router
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Router
+  nameWithType.vb: ApplicationViewModel(Of T).Router
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Router
+- uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel
+  name: CurrentViewModel
+  nameWithType: ApplicationViewModel<T>.CurrentViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.CurrentViewModel
+  nameWithType.vb: ApplicationViewModel(Of T).CurrentViewModel
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).CurrentViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal
+  name: Modal
+  nameWithType: ApplicationViewModel<T>.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Modal
+  nameWithType.vb: ApplicationViewModel(Of T).Modal
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: MessageModalViewModel
+  nameWithType: MessageModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  name: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification
+  name: Notification
+  nameWithType: ApplicationViewModel<T>.Notification
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Notification
+  nameWithType.vb: ApplicationViewModel(Of T).Notification
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Notification
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: Notification
+  nameWithType: Notification
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor
+  name: ApplicationViewModel
+  nameWithType: ApplicationViewModel<T>.ApplicationViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationViewModel
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage
+  name: ShowMessage
+  nameWithType: ApplicationViewModel<T>.ShowMessage
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowMessage
+  nameWithType.vb: ApplicationViewModel(Of T).ShowMessage
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowMessage
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  name: ShowMessage(ConfirmationMessage)
+  nameWithType: IMessageBox.ShowMessage(ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+    name: ShowMessage
+    nameWithType: IMessageBox.ShowMessage
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+    name: ConfirmationMessage
+    nameWithType: ConfirmationMessage
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+    name: ShowMessage
+    nameWithType: IMessageBox.ShowMessage
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+    name: ConfirmationMessage
+    nameWithType: ConfirmationMessage
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation
+  name: ShowInformation
+  nameWithType: ApplicationViewModel<T>.ShowInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ShowInformation
+  nameWithType.vb: ApplicationViewModel(Of T).ShowInformation
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ShowInformation
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox
+  name: ShowInformation(MessageInformation)
+  nameWithType: IMessageBox.ShowInformation(MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+    name: ShowInformation
+    nameWithType: IMessageBox.ShowInformation
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+    name: MessageInformation
+    nameWithType: MessageInformation
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+    name: ShowInformation
+    nameWithType: IMessageBox.ShowInformation
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+    name: MessageInformation
+    nameWithType: MessageInformation
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: MessageInformation
+  nameWithType: MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send
+  name: Send
+  nameWithType: ApplicationViewModel<T>.Send
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.Send
+  nameWithType.vb: ApplicationViewModel(Of T).Send
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).Send
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  commentId: M:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  parent: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender
+  name: Send(Notification)
+  nameWithType: INotificationSender.Send(Notification)
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+    name: Send
+    nameWithType: INotificationSender.Send
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+    name: Notification
+    nameWithType: Notification
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)
+    name: Send
+    nameWithType: INotificationSender.Send
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+    name: Notification
+    nameWithType: Notification
+    fullName: Neutronium.BuildingBlocks.Application.WindowServices.Notification
+  - name: )
+    nameWithType: )
+    fullName: )

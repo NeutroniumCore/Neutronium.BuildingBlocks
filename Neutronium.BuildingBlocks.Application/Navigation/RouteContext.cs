@@ -2,26 +2,26 @@
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
-    public class RouteContext
+    internal class RouteContext
     {
-        public object ViewModel { get; private set; }
-        public string Route { get; private set; }
-        public Task Task => _TaskCompletionSource.Task;
+        internal object ViewModel { get; private set; }
+        internal string Route { get; private set; }
+        internal Task Task => _TaskCompletionSource.Task;
 
         private readonly TaskCompletionSource<int> _TaskCompletionSource = new TaskCompletionSource<int>();
 
-        public RouteContext(object viewModel, string route)
+        internal RouteContext(object viewModel, string route)
         {
             ViewModel = viewModel;
             Route = route;
         }
 
-        public void Complete()
+        internal void Complete()
         {
             _TaskCompletionSource.TrySetResult(0);
         }
 
-        public void Redirect(string redirect, object viewModel)
+        internal void Redirect(string redirect, object viewModel)
         {
             Route = redirect;
             ViewModel = viewModel;

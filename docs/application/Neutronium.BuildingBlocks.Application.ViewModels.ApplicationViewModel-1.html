@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationViewModel&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationViewModel&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1">
+  
+  
+  <h1 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1" class="text-break">Class ApplicationViewModel&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>ViewModel representing the application</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html">ViewModel</a></div>
+    <div class="level2"><span class="xref">ApplicationViewModel&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanging</span></div>
+    <div><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html">IMessageBox</a></div>
+    <div><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html">INotificationSender</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyChanging">ViewModel.PropertyChanging</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_Set__1___0____0_System_String_">ViewModel.Set&lt;T&gt;(T, T, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyHasChanged_System_String_">ViewModel.PropertyHasChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../applicationTools/Neutronium.BuildingBlocks.ViewModel.html#Neutronium_BuildingBlocks_ViewModel_PropertyIsChanging_System_String_">ViewModel.PropertyIsChanging(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Neutronium.BuildingBlocks.Application.ViewModels.html">Neutronium.BuildingBlocks.Application.ViewModels</a></h6>
+  <h6><strong>Assembly</strong>: Neutronium.BuildingBlocks.Application.dll</h6>
+  <h5 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApplicationViewModel&lt;T&gt; : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging, IMessageBox, INotificationSender</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>ViewModel type that is designed to be accessible
+throughout the application life cycle independent from
+which page is currently displayed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_Neutronium_MVVMComponents_IWindowViewModel_Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__0_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.%23ctor(Neutronium.MVVMComponents.IWindowViewModel%2CNeutronium.BuildingBlocks.Application.Navigation.NavigationViewModel%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_Neutronium_MVVMComponents_IWindowViewModel_Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel__0_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)">ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router, T applicationInformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Neutronium.MVVMComponents.IWindowViewModel</span></td>
+        <td><span class="parametername">window</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html">NavigationViewModel</a></td>
+        <td><span class="parametername">router</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">applicationInformation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ApplicationInformation.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.ApplicationInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L19">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ApplicationInformation_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ApplicationInformation" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation">ApplicationInformation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T ApplicationInformation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_CurrentViewModel.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.CurrentViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L26">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_CurrentViewModel_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_CurrentViewModel" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel">CurrentViewModel</h4>
+  <div class="markdown level1 summary"><p>Page ViewModel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object CurrentViewModel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Modal.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.Modal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L29">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Modal_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Modal" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Modal">Modal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageModalViewModel Modal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html">MessageModalViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Notification.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.Notification%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L36">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Notification_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Notification" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Notification">Notification</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Notification Notification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.Notification.html">Notification</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Router.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.Router%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L21">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Router_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Router" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router">Router</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationViewModel Router { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html">NavigationViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Window.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.Window%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L20">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Window_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Window" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window">Window</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWindowViewModel Window { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Neutronium.MVVMComponents.IWindowViewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Send_Neutronium_BuildingBlocks_Application_WindowServices_Notification_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L77">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Send_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_Send_Neutronium_BuildingBlocks_Application_WindowServices_Notification_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)">Send(Notification)</h4>
+  <div class="markdown level1 summary"><p>Display a notification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(Notification notification)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.Notification.html">Notification</a></td>
+        <td><span class="parametername">notification</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowInformation_Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L67">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowInformation_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowInformation_Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)">ShowInformation(MessageInformation)</h4>
+  <div class="markdown level1 summary"><p>Show information in modal window</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowInformation(MessageInformation messageInformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.html">MessageInformation</a></td>
+        <td><span class="parametername">messageInformation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowMessage_Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L56">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowMessage_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1_ShowMessage_Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_" data-uid="Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)">ShowMessage(ConfirmationMessage)</h4>
+  <div class="markdown level1 summary"><p>Show message with confirmation in modal window</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ShowMessage(ConfirmationMessage confirmationMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.html">ConfirmationMessage</a></td>
+        <td><span class="parametername">confirmationMessage</span></td>
+        <td><p>true if the user clicks on OK</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanging</span>
+  </div>
+  <div>
+      <a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.html">IMessageBox</a>
+  </div>
+  <div>
+      <a class="xref" href="Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.html">INotificationSender</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  id: IFilePicker
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  - Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  langs:
+  - csharp
+  - vb
+  name: IFilePicker
+  nameWithType: IFilePicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IFilePicker
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nFile picker abstraction\n"
+  example: []
+  syntax:
+    content: 'public interface IFilePicker : IIODialog'
+    content.vb: >-
+      Public Interface IFilePicker
+          Inherits IIODialog
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  id: Extensions
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  nameWithType: IFilePicker.Extensions
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Extensions
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nAccepted extensions\n"
+  example: []
+  syntax:
+    content: string[] Extensions { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Property Extensions As String()
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  id: ExtensionDescription
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  langs:
+  - csharp
+  - vb
+  name: ExtensionDescription
+  nameWithType: IFilePicker.ExtensionDescription
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ExtensionDescription
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nExtension description\n"
+  example: []
+  syntax:
+    content: string ExtensionDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ExtensionDescription As String
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Title
+  nameWithType: IIODialog.Title
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Directory
+  nameWithType: IIODialog.Directory
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  name: Choose()
+  nameWithType: IIODialog.Choose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose()
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+    name: Choose
+    nameWithType: IIODialog.Choose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+    name: Choose
+    nameWithType: IIODialog.Choose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IIODialog
+  nameWithType: IIODialog
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+  name: Extensions
+  nameWithType: IFilePicker.Extensions
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.Extensions
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+  name: ExtensionDescription
+  nameWithType: IFilePicker.ExtensionDescription
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker.ExtensionDescription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

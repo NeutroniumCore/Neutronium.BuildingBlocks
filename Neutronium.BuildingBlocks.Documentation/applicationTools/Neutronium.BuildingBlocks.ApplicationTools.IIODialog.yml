@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  id: IIODialog
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  - Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  langs:
+  - csharp
+  - vb
+  name: IIODialog
+  nameWithType: IIODialog
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IIODialog
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nCommon abstraction for both <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.IFilePicker\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public interface IIODialog
+    content.vb: Public Interface IIODialog
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  id: Title
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: IIODialog.Title
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Title
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nWindow title\n"
+  example: []
+  syntax:
+    content: string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Title As String
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  id: Directory
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  langs:
+  - csharp
+  - vb
+  name: Directory
+  nameWithType: IIODialog.Directory
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Directory
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nDirectory where the picker is opened\n"
+  example: []
+  syntax:
+    content: string Directory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Directory As String
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  id: Choose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IIODialog
+  langs:
+  - csharp
+  - vb
+  name: Choose()
+  nameWithType: IIODialog.Choose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Choose
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/IIODialog.cs
+    startLine: 23
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nOpen the picker\n"
+  example: []
+  syntax:
+    content: string Choose()
+    return:
+      type: System.String
+      description: "\nEntity chosen, null if canceled\n"
+    content.vb: Function Choose As String
+  overload: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose*
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  name: IFilePicker
+  nameWithType: IFilePicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+  name: IFolderPicker
+  nameWithType: IFolderPicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+  name: Title
+  nameWithType: IIODialog.Title
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+  name: Directory
+  nameWithType: IIODialog.Directory
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Directory
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose
+  name: Choose
+  nameWithType: IIODialog.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IIODialog.Choose

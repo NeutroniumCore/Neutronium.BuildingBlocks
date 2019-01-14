@@ -4,6 +4,9 @@ using Neutronium.MVVMComponents.Relay;
 
 namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal 
 {
+    /// <summary>
+    /// Modal ViewModel. Internally used by <see cref="IMessageBox"/> implementation
+    /// </summary>
     public class MessageModalViewModel
     {
         public string Title { get; }
@@ -12,7 +15,7 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal
 
         public ISimpleCommand OkCommand { get; }
 
-        public MessageModalViewModel(MessageInformation messageInformation)
+        internal MessageModalViewModel(MessageInformation messageInformation)
         {
             Title = messageInformation.Title;
             Message = messageInformation.Message;

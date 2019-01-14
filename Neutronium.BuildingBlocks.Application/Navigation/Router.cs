@@ -4,6 +4,9 @@ using MoreCollection.Extensions;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
+    /// <summary>
+    /// <see cref="IRouterBuilder"/> and <see cref="IRouterSolver"/> implementation
+    /// </summary>
     public class Router : IRouterBuilder, IRouterSolver
     {
         private readonly Dictionary<string, Type> _RouteToType = new Dictionary<string, Type>();

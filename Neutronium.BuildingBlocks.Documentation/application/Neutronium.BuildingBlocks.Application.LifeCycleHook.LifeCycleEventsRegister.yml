@@ -1,0 +1,462 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  id: LifeCycleEventsRegister
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  children:
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  langs:
+  - csharp
+  - vb
+  name: LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: LifeCycleEventsRegister
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+    startLine: 9
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nFacade object that listens to <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.IApplication\" data-throw-if-not-resolved=\"false\"></xref> and\n<xref href=\"Neutronium.BuildingBlocks.Application.Navigation.INavigator\" data-throw-if-not-resolved=\"false\"></xref> and redirect events to the <xref href=\"Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public class LifeCycleEventsRegister
+    content.vb: Public Class LifeCycleEventsRegister
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  id: '#ctor(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle,Neutronium.BuildingBlocks.ApplicationTools.IApplication,Neutronium.BuildingBlocks.Application.Navigation.INavigator)'
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  langs:
+  - csharp
+  - vb
+  name: LifeCycleEventsRegister(IApplicationLifeCycle, IApplication, INavigator)
+  nameWithType: LifeCycleEventsRegister.LifeCycleEventsRegister(IApplicationLifeCycle, IApplication, INavigator)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.LifeCycleEventsRegister(Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle, Neutronium.BuildingBlocks.ApplicationTools.IApplication, Neutronium.BuildingBlocks.Application.Navigation.INavigator)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  syntax:
+    content: public LifeCycleEventsRegister(IApplicationLifeCycle applicationLifeCycle, IApplication application, INavigator navigator)
+    parameters:
+    - id: applicationLifeCycle
+      type: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+    - id: application
+      type: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+    - id: navigator
+      type: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+    content.vb: Public Sub New(applicationLifeCycle As IApplicationLifeCycle, application As IApplication, navigator As INavigator)
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  id: Register
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  langs:
+  - csharp
+  - vb
+  name: Register()
+  nameWithType: LifeCycleEventsRegister.Register()
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Register
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/LifeCycleEventsRegistror.cs
+    startLine: 27
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nListen to <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.IApplication\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Neutronium.BuildingBlocks.Application.Navigation.INavigator\" data-throw-if-not-resolved=\"false\"></xref>\nand redirect events to the <xref href=\"Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public LifeCycleEventsRegister Register()
+    return:
+      type: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+      description: ''
+    content.vb: Public Function Register As LifeCycleEventsRegister
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IApplication
+  nameWithType: IApplication
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+- uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.INavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: INavigator
+  nameWithType: INavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.INavigator
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: IApplicationLifeCycle
+  nameWithType: IApplicationLifeCycle
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  commentId: N:Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  nameWithType: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.#ctor
+  name: LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister.LifeCycleEventsRegister
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.LifeCycleEventsRegister
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+  name: Register
+  nameWithType: LifeCycleEventsRegister.Register
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: LifeCycleEventsRegister
+  nameWithType: LifeCycleEventsRegister
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister

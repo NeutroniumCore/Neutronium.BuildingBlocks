@@ -6,7 +6,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
     {
         public RouteInfo NewRoute { get; }
 
-        public RoutedEventArgs(RouteContext routeContext): this(new RouteInfo(routeContext))
+        internal RoutedEventArgs(RouteContext routeContext): this(new RouteInfo(routeContext))
         {
         }
 

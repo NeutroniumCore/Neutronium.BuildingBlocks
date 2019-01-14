@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  id: INativeMessageBox
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: INativeMessageBox
+  nameWithType: INativeMessageBox
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: INativeMessageBox
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 14
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nNative message box abstraction\n"
+  example: []
+  syntax:
+    content: public interface INativeMessageBox
+    content.vb: Public Interface INativeMessageBox
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  id: ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  langs:
+  - csharp
+  - vb
+  name: ShowConfirmationMessage(String, String, WindowType)
+  nameWithType: INativeMessageBox.ShowConfirmationMessage(String, String, WindowType)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String, System.String, Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowConfirmationMessage
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 25
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nShow a message to end user and wait for an answer\n"
+  example: []
+  syntax:
+    content: bool ShowConfirmationMessage(string message, string title, WindowType type)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be displayed.
+    - id: title
+      type: System.String
+      description: The title of the window.
+    - id: type
+      type: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+      description: ''
+    return:
+      type: System.Boolean
+      description: "\ntrue if end users agrees to the question\n"
+    content.vb: Function ShowConfirmationMessage(message As String, title As String, type As WindowType) As Boolean
+  overload: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage*
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  id: ShowMessage(System.String,System.String)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(String, String)
+  nameWithType: INativeMessageBox.ShowMessage(String, String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowMessage
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
+    startLine: 32
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nShow a message to end user\n"
+  example: []
+  syntax:
+    content: void ShowMessage(string message, string title)
+    parameters:
+    - id: message
+      type: System.String
+      description: Message to be displayed.
+    - id: title
+      type: System.String
+      description: The title of the window.
+    content.vb: Sub ShowMessage(message As String, title As String)
+  overload: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage*
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+  name: ShowConfirmationMessage
+  nameWithType: INativeMessageBox.ShowConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: WindowType
+  nameWithType: WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage
+  name: ShowMessage
+  nameWithType: INativeMessageBox.ShowMessage
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage

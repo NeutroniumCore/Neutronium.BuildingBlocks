@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  commentId: T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  id: IApplicationLifeCycle
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  children:
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  - Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: IApplicationLifeCycle
+  nameWithType: IApplicationLifeCycle
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IApplicationLifeCycle
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 9
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nAbstraction exposing application hook to listen and control\nnavigation and closing events.\n"
+  example: []
+  syntax:
+    content: public interface IApplicationLifeCycle
+    content.vb: Public Interface IApplicationLifeCycle
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  id: OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  langs:
+  - csharp
+  - vb
+  name: OnNavigating(RoutingEventArgs)
+  nameWithType: IApplicationLifeCycle.OnNavigating(RoutingEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnNavigating
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nSent before navigation, allows cancellation and redirect\n"
+  example: []
+  syntax:
+    content: void OnNavigating(RoutingEventArgs routingEvent)
+    parameters:
+    - id: routingEvent
+      type: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+      description: ''
+    content.vb: Sub OnNavigating(routingEvent As RoutingEventArgs)
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating*
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  id: OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  langs:
+  - csharp
+  - vb
+  name: OnNavigated(RoutedEventArgs)
+  nameWithType: IApplicationLifeCycle.OnNavigated(RoutedEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnNavigated
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 21
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nSent after navigation\n"
+  example: []
+  syntax:
+    content: void OnNavigated(RoutedEventArgs routedEvent)
+    parameters:
+    - id: routedEvent
+      type: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+      description: ''
+    content.vb: Sub OnNavigated(routedEvent As RoutedEventArgs)
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated*
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  id: OnClosing(System.ComponentModel.CancelEventArgs)
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  langs:
+  - csharp
+  - vb
+  name: OnClosing(CancelEventArgs)
+  nameWithType: IApplicationLifeCycle.OnClosing(CancelEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnClosing
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 27
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nSent on application closing, allows cancellation\n"
+  example: []
+  syntax:
+    content: void OnClosing(CancelEventArgs cancelEvent)
+    parameters:
+    - id: cancelEvent
+      type: System.ComponentModel.CancelEventArgs
+      description: ''
+    content.vb: Sub OnClosing(cancelEvent As CancelEventArgs)
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing*
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  id: OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  langs:
+  - csharp
+  - vb
+  name: OnSessionEnding(CancelEventArgs)
+  nameWithType: IApplicationLifeCycle.OnSessionEnding(CancelEventArgs)
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnSessionEnding
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 33
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nSent on session closing, allows cancellation\n"
+  example: []
+  syntax:
+    content: void OnSessionEnding(CancelEventArgs cancelEvent)
+    parameters:
+    - id: cancelEvent
+      type: System.ComponentModel.CancelEventArgs
+      description: ''
+    content.vb: Sub OnSessionEnding(cancelEvent As CancelEventArgs)
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding*
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  commentId: M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  id: OnClosed
+  parent: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle
+  langs:
+  - csharp
+  - vb
+  name: OnClosed()
+  nameWithType: IApplicationLifeCycle.OnClosed()
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnClosed
+    path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
+    startLine: 38
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  summary: "\nSent on application closed\n"
+  example: []
+  syntax:
+    content: void OnClosed()
+    content.vb: Sub OnClosed
+  overload: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed*
+references:
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  commentId: N:Neutronium.BuildingBlocks.Application.LifeCycleHook
+  name: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  nameWithType: Neutronium.BuildingBlocks.Application.LifeCycleHook
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating
+  name: OnNavigating
+  nameWithType: IApplicationLifeCycle.OnNavigating
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RoutingEventArgs
+  nameWithType: RoutingEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated
+  name: OnNavigated
+  nameWithType: IApplicationLifeCycle.OnNavigated
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing
+  name: OnClosing
+  nameWithType: IApplicationLifeCycle.OnClosing
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing
+- uid: System.ComponentModel.CancelEventArgs
+  commentId: T:System.ComponentModel.CancelEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  name: CancelEventArgs
+  nameWithType: CancelEventArgs
+  fullName: System.ComponentModel.CancelEventArgs
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding
+  name: OnSessionEnding
+  nameWithType: IApplicationLifeCycle.OnSessionEnding
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding
+- uid: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed
+  name: OnClosed
+  nameWithType: IApplicationLifeCycle.OnClosed
+  fullName: Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed

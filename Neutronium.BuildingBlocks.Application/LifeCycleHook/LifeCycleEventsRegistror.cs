@@ -3,6 +3,10 @@ using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Application.LifeCycleHook
 {
+    /// <summary>
+    /// Facade object that listens to <see cref="IApplication"/> and
+    /// <see cref="INavigator"/> and redirect events to the <see cref="IApplicationLifeCycle"/>
+    /// </summary>
     public class LifeCycleEventsRegister
     {
         private readonly IApplicationLifeCycle _ApplicationLifeCycle;
@@ -16,6 +20,11 @@ namespace Neutronium.BuildingBlocks.Application.LifeCycleHook
             _Navigator = navigator;
         }
 
+        /// <summary>
+        /// Listen to <see cref="IApplication"/> and <see cref="INavigator"/>
+        /// and redirect events to the <see cref="IApplicationLifeCycle"/>
+        /// </summary>
+        /// <returns></returns>
         public LifeCycleEventsRegister Register()
         {
             _Navigator.OnNavigated += Router_OnNavigated;

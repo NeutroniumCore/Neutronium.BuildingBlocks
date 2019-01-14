@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  id: CommandResult`1
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  children:
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(System.Exception)
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  langs:
+  - csharp
+  - vb
+  name: CommandResult<TResult>
+  nameWithType: CommandResult<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CommandResult
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nResult of a command that may throw exception\n"
+  example: []
+  syntax:
+    content: public class CommandResult<TResult>
+    typeParameters:
+    - id: TResult
+      description: "\nCommand result type\n"
+    content.vb: Public Class CommandResult(Of TResult)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: CommandResult(Of TResult)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult)
+  name.vb: CommandResult(Of TResult)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  id: Result
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: CommandResult<TResult>.Result
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Result
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Result
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nResult\n"
+  example: []
+  syntax:
+    content: public TResult Result { get; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: Public ReadOnly Property Result As TResult
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result*
+  nameWithType.vb: CommandResult(Of TResult).Result
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Result
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  id: Exception
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: CommandResult<TResult>.Exception
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Exception
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Exception
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 20
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nException if any\n"
+  example: []
+  syntax:
+    content: public Exception Exception { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property Exception As Exception
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception*
+  nameWithType.vb: CommandResult(Of TResult).Exception
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Exception
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  id: Success
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: CommandResult<TResult>.Success
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Success
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Success
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 25
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nSuccess\n"
+  example: []
+  syntax:
+    content: public bool Success { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Success As Boolean
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success*
+  nameWithType.vb: CommandResult(Of TResult).Success
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Success
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  id: HasError
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: HasError
+  nameWithType: CommandResult<TResult>.HasError
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.HasError
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: HasError
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 30
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nHasError\n"
+  example: []
+  syntax:
+    content: public bool HasError { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasError As Boolean
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError*
+  nameWithType.vb: CommandResult(Of TResult).HasError
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).HasError
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  id: Cancelled
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: CommandResult<TResult>.Cancelled
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Cancelled
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Cancelled
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 35
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  summary: "\nCancelled\n"
+  example: []
+  syntax:
+    content: public bool Cancelled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Cancelled As Boolean
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled*
+  nameWithType.vb: CommandResult(Of TResult).Cancelled
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Cancelled
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  id: '#ctor'
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CommandResult()
+  nameWithType: CommandResult<TResult>.CommandResult()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult()
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 37
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  syntax:
+    content: public CommandResult()
+    content.vb: Public Sub New
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor*
+  nameWithType.vb: CommandResult(Of TResult).CommandResult()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult()
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CommandResult(TResult)
+  nameWithType: CommandResult<TResult>.CommandResult(TResult)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult(TResult)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 43
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  syntax:
+    content: public CommandResult(TResult result)
+    parameters:
+    - id: result
+      type: '{TResult}'
+    content.vb: Public Sub New(result As TResult)
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor*
+  nameWithType.vb: CommandResult(Of TResult).CommandResult(TResult)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult(TResult)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(System.Exception)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(System.Exception)
+  id: '#ctor(System.Exception)'
+  parent: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CommandResult(Exception)
+  nameWithType: CommandResult<TResult>.CommandResult(Exception)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult(System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.ApplicationTools/CommandResult.cs
+    startLine: 49
+  assemblies:
+  - Neutronium.BuildingBlocks.ApplicationTools
+  namespace: Neutronium.BuildingBlocks.ApplicationTools
+  syntax:
+    content: public CommandResult(Exception exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+    content.vb: Public Sub New(exception As Exception)
+  overload: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor*
+  nameWithType.vb: CommandResult(Of TResult).CommandResult(Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult(System.Exception)
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Result
+  name: Result
+  nameWithType: CommandResult<TResult>.Result
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Result
+  nameWithType.vb: CommandResult(Of TResult).Result
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Result
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Exception
+  name: Exception
+  nameWithType: CommandResult<TResult>.Exception
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Exception
+  nameWithType.vb: CommandResult(Of TResult).Exception
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Exception
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Success
+  name: Success
+  nameWithType: CommandResult<TResult>.Success
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Success
+  nameWithType.vb: CommandResult(Of TResult).Success
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Success
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.HasError
+  name: HasError
+  nameWithType: CommandResult<TResult>.HasError
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.HasError
+  nameWithType.vb: CommandResult(Of TResult).HasError
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).HasError
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.Cancelled
+  name: Cancelled
+  nameWithType: CommandResult<TResult>.Cancelled
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.Cancelled
+  nameWithType.vb: CommandResult(Of TResult).Cancelled
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).Cancelled
+- uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor
+  name: CommandResult
+  nameWithType: CommandResult<TResult>.CommandResult
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>.CommandResult
+  nameWithType.vb: CommandResult(Of TResult).CommandResult
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult).CommandResult

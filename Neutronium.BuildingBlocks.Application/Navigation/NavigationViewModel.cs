@@ -8,6 +8,11 @@ using Neutronium.MVVMComponents.Relay;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
+    /// <summary>
+    /// ViewModel providing an implementing of <see cref="INavigator"/> and binding with
+    /// javascript routing API.
+    /// Originally designed to work with vue-router.
+    /// </summary>
     public class NavigationViewModel : ViewModel, INavigator
     {
         public IResultCommand<string, BeforeRouterResult> BeforeResolveCommand { get; }
