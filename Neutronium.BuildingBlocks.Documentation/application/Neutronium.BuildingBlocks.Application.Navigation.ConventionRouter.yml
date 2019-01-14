@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ConventionRouter
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
     startLine: 10
@@ -67,7 +67,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
     startLine: 27
@@ -115,7 +115,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
     startLine: 40
@@ -159,7 +159,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
     startLine: 52
@@ -206,7 +206,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ConventionRouter.cs
     startLine: 63

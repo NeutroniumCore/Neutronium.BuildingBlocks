@@ -21,7 +21,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: MessageModalViewModel
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 9
@@ -66,7 +66,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Title
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 11
@@ -101,7 +101,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Message
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 12
@@ -136,7 +136,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OkMessage
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 13
@@ -171,7 +171,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OkCommand
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 15
@@ -206,7 +206,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Ok
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
     startLine: 26

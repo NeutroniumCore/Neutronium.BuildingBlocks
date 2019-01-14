@@ -22,7 +22,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: BeforeRouterResult
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 5
@@ -62,7 +62,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Cancel
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 25
@@ -99,7 +99,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Ok
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 35
@@ -140,7 +140,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: CreateRedirect
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 45
@@ -181,7 +181,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Redirect
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 50
@@ -216,7 +216,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Continue
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 51
@@ -251,7 +251,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: To
     path: ../Neutronium.BuildingBlocks.Application/Navigation/BeforeRouterResult.cs
     startLine: 52

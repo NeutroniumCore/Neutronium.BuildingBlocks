@@ -26,7 +26,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ApplicationViewModel
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 16
@@ -89,7 +89,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ApplicationInformation
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 18
@@ -126,7 +126,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Window
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 19
@@ -163,7 +163,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Router
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 20
@@ -200,7 +200,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: CurrentViewModel
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 25
@@ -239,7 +239,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Modal
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 28
@@ -276,7 +276,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Notification
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 35
@@ -313,7 +313,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 41
@@ -352,7 +352,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ShowMessage
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 55
@@ -395,7 +395,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ShowInformation
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 66
@@ -435,7 +435,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Send
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/ApplicationViewModel.cs
     startLine: 76

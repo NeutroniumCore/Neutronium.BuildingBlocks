@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: IMessageBox
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
     startLine: 7
@@ -51,7 +51,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ShowMessage
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
     startLine: 14
@@ -86,7 +86,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ShowInformation
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/IMessageBox.cs
     startLine: 20

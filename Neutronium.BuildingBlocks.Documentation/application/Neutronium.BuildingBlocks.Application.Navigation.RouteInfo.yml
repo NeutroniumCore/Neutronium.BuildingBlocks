@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: RouteInfo
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
     startLine: 5
@@ -59,7 +59,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ViewModel
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
     startLine: 10
@@ -96,7 +96,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: RouteName
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
     startLine: 15
@@ -133,7 +133,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
     startLine: 21
@@ -168,7 +168,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
     startLine: 27

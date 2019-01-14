@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: NavigationContext
     path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
     startLine: 7
@@ -63,7 +63,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ResolutionKey
     path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
     startLine: 12
@@ -100,7 +100,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: RouteName
     path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
     startLine: 17

@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: WindowType
     path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
     startLine: 5
@@ -51,7 +51,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OkCancel
     path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
     startLine: 7
@@ -83,7 +83,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: YesNo
     path: ../Neutronium.BuildingBlocks.ApplicationTools/INativeMessageBox.cs
     startLine: 8

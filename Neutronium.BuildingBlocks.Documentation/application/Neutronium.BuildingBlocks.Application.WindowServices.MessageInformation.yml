@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: MessageInformation
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
     startLine: 5
@@ -65,7 +65,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Message
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
     startLine: 10
@@ -102,7 +102,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OkMessage
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
     startLine: 15
@@ -139,7 +139,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Title
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
     startLine: 20
@@ -176,7 +176,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/MessageInformation.cs
     startLine: 28

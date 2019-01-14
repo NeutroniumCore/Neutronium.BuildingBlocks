@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: NotificationType
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
     startLine: 2
@@ -51,7 +51,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Error
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
     startLine: 4
@@ -83,7 +83,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Warning
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
     startLine: 5
@@ -115,7 +115,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Success
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
     startLine: 6
@@ -147,7 +147,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Info
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/NotificationType.cs
     startLine: 7

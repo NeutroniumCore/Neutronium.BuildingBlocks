@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: IFilePicker
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
     startLine: 5
@@ -57,7 +57,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Extensions
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
     startLine: 10
@@ -91,7 +91,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: ExtensionDescription
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IFilePicker.cs
     startLine: 15

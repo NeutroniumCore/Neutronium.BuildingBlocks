@@ -21,7 +21,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Router
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 9
@@ -72,7 +72,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 14
@@ -113,7 +113,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 26
@@ -157,7 +157,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 31
@@ -194,7 +194,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 36
@@ -233,7 +233,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: SolveType
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
     startLine: 46

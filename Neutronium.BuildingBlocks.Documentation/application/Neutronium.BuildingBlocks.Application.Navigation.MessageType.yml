@@ -18,7 +18,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: MessageType
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
     startLine: 29
@@ -51,7 +51,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Error
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
     startLine: 31
@@ -83,7 +83,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Information
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingMessageArgs.cs
     startLine: 32

@@ -20,7 +20,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Notification
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
     startLine: 2
@@ -61,7 +61,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Type
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
     startLine: 4
@@ -96,7 +96,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Title
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
     startLine: 5
@@ -131,7 +131,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Content
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
     startLine: 6
@@ -166,7 +166,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Error
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/Notification.cs
     startLine: 15

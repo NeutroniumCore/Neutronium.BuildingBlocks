@@ -17,7 +17,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: INotificationSender
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
     startLine: 5
@@ -50,7 +50,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: Send
     path: ../Neutronium.BuildingBlocks.Application/WindowServices/INotificationSender.cs
     startLine: 11

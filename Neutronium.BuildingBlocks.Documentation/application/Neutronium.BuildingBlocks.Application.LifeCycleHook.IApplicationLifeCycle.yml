@@ -21,7 +21,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: IApplicationLifeCycle
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 9
@@ -54,7 +54,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OnNavigating
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 15
@@ -86,7 +86,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OnNavigated
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 21
@@ -118,7 +118,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OnClosing
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 27
@@ -150,7 +150,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OnSessionEnding
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 33
@@ -182,7 +182,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: OnClosed
     path: ../Neutronium.BuildingBlocks.Application/LifeCycleHook/IApplicationLifeCycle.cs
     startLine: 38

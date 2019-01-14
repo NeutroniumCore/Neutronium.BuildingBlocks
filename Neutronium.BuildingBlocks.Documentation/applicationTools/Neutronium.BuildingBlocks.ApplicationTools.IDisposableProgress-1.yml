@@ -16,7 +16,7 @@ items:
     remote:
       path: Neutronium.BuildingBlocks.ApplicationTools/IDisposableProgress.cs
       branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+      repo: https://github.com/NeutroniumCore/Neutronium.BuildingBlocks.git
     id: IDisposableProgress
     path: ../Neutronium.BuildingBlocks.ApplicationTools/IDisposableProgress.cs
     startLine: 11
