@@ -1,0 +1,1199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  id: TaskCommandResult`1
+  parent: Neutronium.BuildingBlocks.Wpf.Async
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor(System.Func{System.Threading.Tasks.Task{`0}})
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecuteChanged
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  langs:
+  - csharp
+  - vb
+  name: TaskCommandResult<TResult>
+  nameWithType: TaskCommandResult<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: TaskCommandResult
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 12
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: 'public class TaskCommandResult<TResult> : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging, ICommandWithoutParameter, IUpdatableCommand'
+    typeParameters:
+    - id: TResult
+      description: ''
+    content.vb: >-
+      Public Class TaskCommandResult(Of TResult)
+          Inherits ViewModel
+          Implements INotifyPropertyChanged, INotifyPropertyChanging, ICommandWithoutParameter, IUpdatableCommand
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  - Neutronium.MVVMComponents.ICommandWithoutParameter
+  - Neutronium.MVVMComponents.IUpdatableCommand
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  - Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: TaskCommandResult(Of TResult)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult)
+  name.vb: TaskCommandResult(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  id: Computing
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Computing
+  nameWithType: TaskCommandResult<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Computing
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Computing
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public bool Computing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Computing As Boolean
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing*
+  nameWithType.vb: TaskCommandResult(Of TResult).Computing
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  id: CanBeExecuted
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CanBeExecuted
+  nameWithType: TaskCommandResult<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanBeExecuted
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CanBeExecuted
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 28
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public bool CanBeExecuted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CanBeExecuted As Boolean
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted*
+  nameWithType.vb: TaskCommandResult(Of TResult).CanBeExecuted
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  id: Results
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Results
+  nameWithType: TaskCommandResult<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Results
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Results
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 40
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public IObservable<CommandResult<TResult>> Results { get; }
+    parameters: []
+    return:
+      type: System.IObservable{Neutronium.BuildingBlocks.ApplicationTools.CommandResult{{TResult}}}
+    content.vb: Public ReadOnly Property Results As IObservable(Of CommandResult(Of TResult))
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results*
+  nameWithType.vb: TaskCommandResult(Of TResult).Results
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  id: CanExecute
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CanExecute
+  nameWithType: TaskCommandResult<TResult>.CanExecute
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecute
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CanExecute
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 42
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public bool CanExecute { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanExecute As Boolean
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute*
+  implements:
+  - Neutronium.MVVMComponents.ICommandWithoutParameter.CanExecute
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecute
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecute
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecuteChanged
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecuteChanged
+  id: CanExecuteChanged
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: CanExecuteChanged
+  nameWithType: TaskCommandResult<TResult>.CanExecuteChanged
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecuteChanged
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: CanExecuteChanged
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 45
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public event EventHandler CanExecuteChanged
+    return:
+      type: System.EventHandler
+    content.vb: Public Event CanExecuteChanged As EventHandler
+  implements:
+  - Neutronium.MVVMComponents.IUpdatableCommand.CanExecuteChanged
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecuteChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecuteChanged
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor(System.Func{System.Threading.Tasks.Task{`0}})
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor(System.Func{System.Threading.Tasks.Task{`0}})
+  id: '#ctor(System.Func{System.Threading.Tasks.Task{`0}})'
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: TaskCommandResult(Func<Task<TResult>>)
+  nameWithType: TaskCommandResult<TResult>.TaskCommandResult(Func<Task<TResult>>)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.TaskCommandResult(System.Func<System.Threading.Tasks.Task<TResult>>)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 49
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: protected TaskCommandResult(Func<Task<TResult>> compute)
+    parameters:
+    - id: compute
+      type: System.Func{System.Threading.Tasks.Task{{TResult}}}
+    content.vb: Protected Sub New(compute As Func(Of Task(Of TResult)))
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor*
+  nameWithType.vb: TaskCommandResult(Of TResult).TaskCommandResult(Func(Of Task(Of TResult)))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).TaskCommandResult(System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  name.vb: TaskCommandResult(Func(Of Task(Of TResult)))
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  id: Execute
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: TaskCommandResult<TResult>.Execute()
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Execute()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Execute
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommandResult.cs
+    startLine: 67
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: public void Execute()
+    content.vb: Public Sub Execute
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute*
+  implements:
+  - Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+  nameWithType.vb: TaskCommandResult(Of TResult).Execute()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Execute()
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Async
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Async
+  name: Neutronium.BuildingBlocks.Wpf.Async
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Async
+  fullName: Neutronium.BuildingBlocks.Wpf.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  parent: Neutronium.BuildingBlocks
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.MVVMComponents.ICommandWithoutParameter
+  commentId: T:Neutronium.MVVMComponents.ICommandWithoutParameter
+  parent: Neutronium.MVVMComponents
+  isExternal: true
+  name: ICommandWithoutParameter
+  nameWithType: ICommandWithoutParameter
+  fullName: Neutronium.MVVMComponents.ICommandWithoutParameter
+- uid: Neutronium.MVVMComponents.IUpdatableCommand
+  commentId: T:Neutronium.MVVMComponents.IUpdatableCommand
+  parent: Neutronium.MVVMComponents
+  isExternal: true
+  name: IUpdatableCommand
+  nameWithType: IUpdatableCommand
+  fullName: Neutronium.MVVMComponents.IUpdatableCommand
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  definition: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyHasChanged(String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyIsChanging(String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.MVVMComponents
+  commentId: N:Neutronium.MVVMComponents
+  isExternal: true
+  name: Neutronium.MVVMComponents
+  nameWithType: Neutronium.MVVMComponents
+  fullName: Neutronium.MVVMComponents
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  isExternal: true
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  name: Computing
+  nameWithType: TaskCommandResult<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Computing
+  nameWithType.vb: TaskCommandResult(Of TResult).Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Computing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: TaskCommandResult<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCommandResult(Of TResult).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  name: Results
+  nameWithType: TaskCommandResult<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Results
+  nameWithType.vb: TaskCommandResult(Of TResult).Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Results
+- uid: System.IObservable{Neutronium.BuildingBlocks.ApplicationTools.CommandResult{{TResult}}}
+  commentId: T:System.IObservable{Neutronium.BuildingBlocks.ApplicationTools.CommandResult{`0}}
+  parent: System
+  definition: System.IObservable`1
+  name: IObservable<CommandResult<TResult>>
+  nameWithType: IObservable<CommandResult<TResult>>
+  fullName: System.IObservable<Neutronium.BuildingBlocks.ApplicationTools.CommandResult<TResult>>
+  nameWithType.vb: IObservable(Of CommandResult(Of TResult))
+  fullName.vb: System.IObservable(Of Neutronium.BuildingBlocks.ApplicationTools.CommandResult(Of TResult))
+  name.vb: IObservable(Of CommandResult(Of TResult))
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+    name: CommandResult
+    nameWithType: CommandResult
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
+    name: CommandResult
+    nameWithType: CommandResult
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.CommandResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  isExternal: true
+  name: IObservable<T>
+  nameWithType: IObservable<T>
+  fullName: System.IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  spec.csharp:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObservable`1
+    name: IObservable
+    nameWithType: IObservable
+    fullName: System.IObservable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  name: CanExecute
+  nameWithType: TaskCommandResult<TResult>.CanExecute
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecute
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecute
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecute
+- uid: Neutronium.MVVMComponents.ICommandWithoutParameter.CanExecute
+  commentId: P:Neutronium.MVVMComponents.ICommandWithoutParameter.CanExecute
+  parent: Neutronium.MVVMComponents.ICommandWithoutParameter
+  isExternal: true
+  name: CanExecute
+  nameWithType: ICommandWithoutParameter.CanExecute
+  fullName: Neutronium.MVVMComponents.ICommandWithoutParameter.CanExecute
+- uid: Neutronium.MVVMComponents.IUpdatableCommand.CanExecuteChanged
+  commentId: E:Neutronium.MVVMComponents.IUpdatableCommand.CanExecuteChanged
+  parent: Neutronium.MVVMComponents.IUpdatableCommand
+  isExternal: true
+  name: CanExecuteChanged
+  nameWithType: IUpdatableCommand.CanExecuteChanged
+  fullName: Neutronium.MVVMComponents.IUpdatableCommand.CanExecuteChanged
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor
+  name: TaskCommandResult
+  nameWithType: TaskCommandResult<TResult>.TaskCommandResult
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.TaskCommandResult
+  nameWithType.vb: TaskCommandResult(Of TResult).TaskCommandResult
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).TaskCommandResult
+- uid: System.Func{System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{`0}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<TResult>>
+  nameWithType: Func<Task<TResult>>
+  fullName: System.Func<System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of Task(Of TResult))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  name: Execute
+  nameWithType: TaskCommandResult<TResult>.Execute
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Execute
+  nameWithType.vb: TaskCommandResult(Of TResult).Execute
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Execute
+- uid: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+  commentId: M:Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+  parent: Neutronium.MVVMComponents.ICommandWithoutParameter
+  isExternal: true
+  name: Execute()
+  nameWithType: ICommandWithoutParameter.Execute()
+  fullName: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute()
+  spec.csharp:
+  - uid: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+    name: Execute
+    nameWithType: ICommandWithoutParameter.Execute
+    fullName: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+    name: Execute
+    nameWithType: ICommandWithoutParameter.Execute
+    fullName: Neutronium.MVVMComponents.ICommandWithoutParameter.Execute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

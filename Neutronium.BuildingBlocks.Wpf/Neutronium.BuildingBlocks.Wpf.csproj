@@ -115,7 +115,6 @@
     <Compile Include="Dialog\FolderChooser\FolderPicker.cs" />
     <Compile Include="Dialog\Message\MessageBoxWpf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Dialog\ChooserCommand.cs" />
     <Compile Include="Dialog\FileChooser\FilePicker.cs" />
   </ItemGroup>
   <ItemGroup>

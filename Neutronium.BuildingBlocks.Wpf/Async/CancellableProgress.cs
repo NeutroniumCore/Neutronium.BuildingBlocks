@@ -5,7 +5,7 @@ using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Wpf.Async
 {
-    public class CancellableProgress<T> : IDisposableProgress<T>
+    internal class CancellableProgress<T> : IDisposableProgress<T>
     {
         private readonly Action<T> _Action;
         private readonly Dispatcher _Dispatcher;
@@ -14,7 +14,7 @@ namespace Neutronium.BuildingBlocks.Wpf.Async
 
         public bool Cancelled => _CancellationTokenSource.IsCancellationRequested;
 
-        public CancellableProgress(Action<T> action, CancellationToken cancellationToken, DispatcherPriority priority = DispatcherPriority.Normal,
+        internal CancellableProgress(Action<T> action, CancellationToken cancellationToken, DispatcherPriority priority = DispatcherPriority.Normal,
             Dispatcher dispatcher = null)
         {
             _CancellationTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);

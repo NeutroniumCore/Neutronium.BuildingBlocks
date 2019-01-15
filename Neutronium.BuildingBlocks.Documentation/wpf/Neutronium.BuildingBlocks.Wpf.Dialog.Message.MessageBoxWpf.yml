@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  id: MessageBoxWpf
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor(System.Windows.Window)
+  - Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  - Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxWpf
+  nameWithType: MessageBoxWpf
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: MessageBoxWpf
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+    startLine: 8
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  summary: "\nWpf implementation of <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class MessageBoxWpf : INativeMessageBox'
+    content.vb: >-
+      Public Class MessageBoxWpf
+          Implements INativeMessageBox
+  inheritance:
+  - System.Object
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor(System.Windows.Window)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor(System.Windows.Window)
+  id: '#ctor(System.Windows.Window)'
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxWpf(Window)
+  nameWithType: MessageBoxWpf.MessageBoxWpf(Window)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.MessageBoxWpf(System.Windows.Window)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+    startLine: 18
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  summary: "\nConstruct MessageBoxWpf\n"
+  example: []
+  syntax:
+    content: public MessageBoxWpf(Window window)
+    parameters:
+    - id: window
+      type: System.Windows.Window
+      description: "\nMain application window\n"
+    content.vb: Public Sub New(window As Window)
+  overload: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  id: ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  langs:
+  - csharp
+  - vb
+  name: ShowConfirmationMessage(String, String, WindowType)
+  nameWithType: MessageBoxWpf.ShowConfirmationMessage(String, String, WindowType)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String, System.String, Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowConfirmationMessage
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+    startLine: 23
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  syntax:
+    content: public bool ShowConfirmationMessage(string message, string title, WindowType type)
+    parameters:
+    - id: message
+      type: System.String
+    - id: title
+      type: System.String
+    - id: type
+      type: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+    return:
+      type: System.Boolean
+    content.vb: Public Function ShowConfirmationMessage(message As String, title As String, type As WindowType) As Boolean
+  overload: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage*
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String,System.String)
+  id: ShowMessage(System.String,System.String)
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(String, String)
+  nameWithType: MessageBoxWpf.ShowMessage(String, String)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ShowMessage
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/Message/MessageBoxWpf.cs
+    startLine: 29
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  syntax:
+    content: public void ShowMessage(string message, string title)
+    parameters:
+    - id: message
+      type: System.String
+    - id: title
+      type: System.String
+    content.vb: Public Sub ShowMessage(message As String, title As String)
+  overload: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage*
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: INativeMessageBox
+  nameWithType: INativeMessageBox
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor
+  name: MessageBoxWpf
+  nameWithType: MessageBoxWpf.MessageBoxWpf
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.MessageBoxWpf
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage
+  name: ShowConfirmationMessage
+  nameWithType: MessageBoxWpf.ShowConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  isExternal: true
+  name: ShowConfirmationMessage(String, String, WindowType)
+  nameWithType: INativeMessageBox.ShowConfirmationMessage(String, String, WindowType)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String, System.String, Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+    name: ShowConfirmationMessage
+    nameWithType: INativeMessageBox.ShowConfirmationMessage
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+    name: WindowType
+    nameWithType: WindowType
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+    name: ShowConfirmationMessage
+    nameWithType: INativeMessageBox.ShowConfirmationMessage
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowConfirmationMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+    name: WindowType
+    nameWithType: WindowType
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.WindowType
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: WindowType
+  nameWithType: WindowType
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.WindowType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage
+  name: ShowMessage
+  nameWithType: MessageBoxWpf.ShowMessage
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage
+- uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox
+  isExternal: true
+  name: ShowMessage(String, String)
+  nameWithType: INativeMessageBox.ShowMessage(String, String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String, System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+    name: ShowMessage
+    nameWithType: INativeMessageBox.ShowMessage
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage(System.String,System.String)
+    name: ShowMessage
+    nameWithType: INativeMessageBox.ShowMessage
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.INativeMessageBox.ShowMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

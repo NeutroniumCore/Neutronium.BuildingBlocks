@@ -1,0 +1,840 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  id: WpfApplication
+  parent: Neutronium.BuildingBlocks.Wpf.Application
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor(System.Windows.Window)
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  langs:
+  - csharp
+  - vb
+  name: WpfApplication
+  nameWithType: WpfApplication
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: WpfApplication
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  summary: "\nWpf implementation of <xref href=\"Neutronium.BuildingBlocks.ApplicationTools.IApplication\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class WpfApplication : IApplication'
+    content.vb: >-
+      Public Class WpfApplication
+          Implements IApplication
+  inheritance:
+  - System.Object
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor(System.Windows.Window)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor(System.Windows.Window)
+  id: '#ctor(System.Windows.Window)'
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: WpfApplication(Window)
+  nameWithType: WpfApplication.WpfApplication(Window)
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.WpfApplication(System.Windows.Window)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public WpfApplication(Window window)
+    parameters:
+    - id: window
+      type: System.Windows.Window
+    content.vb: Public Sub New(window As Window)
+  overload: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  id: ForceClose
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: ForceClose()
+  nameWithType: WpfApplication.ForceClose()
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ForceClose
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 38
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public void ForceClose()
+    content.vb: Public Sub ForceClose
+  overload: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose*
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  id: TryClose
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: TryClose()
+  nameWithType: WpfApplication.TryClose()
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: TryClose
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 43
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public void TryClose()
+    content.vb: Public Sub TryClose
+  overload: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose*
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  id: Restart(System.String)
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: Restart(String)
+  nameWithType: WpfApplication.Restart(String)
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Restart
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 48
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public void Restart(string commandLineOptions = "")
+    parameters:
+    - id: commandLineOptions
+      type: System.String
+    content.vb: Public Sub Restart(commandLineOptions As String = "")
+  overload: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart*
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  id: MainWindowClosing
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: MainWindowClosing
+  nameWithType: WpfApplication.MainWindowClosing
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: MainWindowClosing
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 54
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public event EventHandler<CancelEventArgs> MainWindowClosing
+    return:
+      type: System.EventHandler{System.ComponentModel.CancelEventArgs}
+    content.vb: Public Event MainWindowClosing As EventHandler(Of CancelEventArgs)
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  id: Closed
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: WpfApplication.Closed
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Closed
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 55
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public event EventHandler Closed
+    return:
+      type: System.EventHandler
+    content.vb: Public Event Closed As EventHandler
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  id: SessionEnding
+  parent: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: SessionEnding
+  nameWithType: WpfApplication.SessionEnding
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: SessionEnding
+    path: ../Neutronium.BuildingBlocks.Wpf/Application/WpfApplication.cs
+    startLine: 56
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Application
+  syntax:
+    content: public event EventHandler<CancelEventArgs> SessionEnding
+    return:
+      type: System.EventHandler{System.ComponentModel.CancelEventArgs}
+    content.vb: Public Event SessionEnding As EventHandler(Of CancelEventArgs)
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IApplication
+  nameWithType: IApplication
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+- uid: Neutronium.BuildingBlocks.Wpf.Application
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Application
+  name: Neutronium.BuildingBlocks.Wpf.Application
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Application
+  fullName: Neutronium.BuildingBlocks.Wpf.Application
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor
+  name: WpfApplication
+  nameWithType: WpfApplication.WpfApplication
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.WpfApplication
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  name: ForceClose
+  nameWithType: WpfApplication.ForceClose
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: ForceClose()
+  nameWithType: IApplication.ForceClose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose()
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+    name: ForceClose
+    nameWithType: IApplication.ForceClose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+    name: ForceClose
+    nameWithType: IApplication.ForceClose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.ForceClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  name: TryClose
+  nameWithType: WpfApplication.TryClose
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: TryClose()
+  nameWithType: IApplication.TryClose()
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose()
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+    name: TryClose
+    nameWithType: IApplication.TryClose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+    name: TryClose
+    nameWithType: IApplication.TryClose
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.TryClose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart
+  name: Restart
+  nameWithType: WpfApplication.Restart
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  isExternal: true
+  name: Restart(String)
+  nameWithType: IApplication.Restart(String)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+    name: Restart
+    nameWithType: IApplication.Restart
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart(System.String)
+    name: Restart
+    nameWithType: IApplication.Restart
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Restart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: MainWindowClosing
+  nameWithType: IApplication.MainWindowClosing
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.MainWindowClosing
+- uid: System.EventHandler{System.ComponentModel.CancelEventArgs}
+  commentId: T:System.EventHandler{System.ComponentModel.CancelEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<CancelEventArgs>
+  nameWithType: EventHandler<CancelEventArgs>
+  fullName: System.EventHandler<System.ComponentModel.CancelEventArgs>
+  nameWithType.vb: EventHandler(Of CancelEventArgs)
+  fullName.vb: System.EventHandler(Of System.ComponentModel.CancelEventArgs)
+  name.vb: EventHandler(Of CancelEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    nameWithType: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.ComponentModel.CancelEventArgs
+    name: CancelEventArgs
+    nameWithType: CancelEventArgs
+    fullName: System.ComponentModel.CancelEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: Closed
+  nameWithType: IApplication.Closed
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.Closed
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  commentId: E:Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding
+  parent: Neutronium.BuildingBlocks.ApplicationTools.IApplication
+  name: SessionEnding
+  nameWithType: IApplication.SessionEnding
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IApplication.SessionEnding

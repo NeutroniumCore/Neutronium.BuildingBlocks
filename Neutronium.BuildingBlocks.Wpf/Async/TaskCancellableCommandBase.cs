@@ -9,6 +9,10 @@ using Neutronium.MVVMComponents.Relay;
 
 namespace Neutronium.BuildingBlocks.Wpf.Async
 {
+    /// <summary>
+    /// <see cref="ITaskCancellableCommand{T}"/> base class implementation
+    /// </summary>
+    /// <typeparam name="TResult"></typeparam>
     public abstract class TaskCancellableCommand<TResult> : ViewModel, ITaskCancellableCommand<TResult>
     {
         private bool _Computing;

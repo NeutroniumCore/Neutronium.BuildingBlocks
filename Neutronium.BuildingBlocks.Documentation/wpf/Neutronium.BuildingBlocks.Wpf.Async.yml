@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Async
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Async
+  id: Neutronium.BuildingBlocks.Wpf.Async
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Wpf.Async
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Async
+  fullName: Neutronium.BuildingBlocks.Wpf.Async
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  name: TaskCommandResult<TResult>
+  nameWithType: TaskCommandResult<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>
+  nameWithType.vb: TaskCommandResult(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult)
+  name.vb: TaskCommandResult(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+    name: TaskCommandResult
+    nameWithType: TaskCommandResult
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+    name: TaskCommandResult
+    nameWithType: TaskCommandResult
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  name: TaskCancellableCommand<TResult>
+  nameWithType: TaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>
+  nameWithType.vb: TaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult)
+  name.vb: TaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  name: TaskCommand<TResult>
+  nameWithType: TaskCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>
+  nameWithType.vb: TaskCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult)
+  name.vb: TaskCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+    name: TaskCommand
+    nameWithType: TaskCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+    name: TaskCommand
+    nameWithType: TaskCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+  name: TaskCommand<TResult, TProgress>
+  nameWithType: TaskCommand<TResult, TProgress>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>
+  nameWithType.vb: TaskCommand(Of TResult, TProgress)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress)
+  name.vb: TaskCommand(Of TResult, TProgress)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+    name: TaskCommand
+    nameWithType: TaskCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+    name: TaskCommand
+    nameWithType: TaskCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TProgress
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: )
+    nameWithType: )
+    fullName: )

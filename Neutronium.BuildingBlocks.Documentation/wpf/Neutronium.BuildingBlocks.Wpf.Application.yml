@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Application
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Application
+  id: Neutronium.BuildingBlocks.Wpf.Application
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Wpf.Application
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Application
+  fullName: Neutronium.BuildingBlocks.Wpf.Application
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  name: WpfApplication
+  nameWithType: WpfApplication
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication

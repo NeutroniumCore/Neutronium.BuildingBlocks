@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Reactive.Linq;
-using Neutronium.BuildingBlocks.ApplicationTools;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 
-namespace Neutronium.BuildingBlocks.Wpf.Dialog 
+namespace Neutronium.BuildingBlocks.ApplicationTools 
 {
+    /// <summary>
+    /// <see cref="IChooserCommand{T}"/> implementation
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ChooserCommand<T> : IChooserCommand<T> where T:IIODialog
     {
         public bool CanBeExecuted

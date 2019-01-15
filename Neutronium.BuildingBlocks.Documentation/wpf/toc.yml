@@ -1,0 +1,40 @@
+### YamlMime:TableOfContent
+- uid: Neutronium.BuildingBlocks.Wpf.Application
+  name: Neutronium.BuildingBlocks.Wpf.Application
+  items:
+  - uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+    name: WpfApplication
+- uid: Neutronium.BuildingBlocks.Wpf.Async
+  name: Neutronium.BuildingBlocks.Wpf.Async
+  items:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand<TResult>
+    name.vb: TaskCancellableCommand(Of TResult)
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+    name: TaskCommand<TResult, TProgress>
+    name.vb: TaskCommand(Of TResult, TProgress)
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+    name: TaskCommand<TResult>
+    name.vb: TaskCommand(Of TResult)
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+    name: TaskCommandResult<TResult>
+    name.vb: TaskCommandResult(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  items:
+  - uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+    name: FileChooserCommand
+  - uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+    name: FilePicker
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  items:
+  - uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+    name: FolderChooserCommand
+  - uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+    name: FolderPicker
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  items:
+  - uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+    name: MessageBoxWpf

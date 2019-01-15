@@ -1,0 +1,651 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  id: FileChooserCommand
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  langs:
+  - csharp
+  - vb
+  name: FileChooserCommand
+  nameWithType: FileChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: FileChooserCommand
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  summary: "\nChooserCommand for FilePicker\n"
+  example: []
+  syntax:
+    content: 'public class FileChooserCommand : ChooserCommand<IFilePicker>, IChooserCommand<IFilePicker>'
+    content.vb: >-
+      Public Class FileChooserCommand
+          Inherits ChooserCommand(Of IFilePicker)
+          Implements IChooserCommand(Of IFilePicker)
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.CanBeExecuted
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Picker
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Results
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Choose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  id: '#ctor'
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  langs:
+  - csharp
+  - vb
+  name: FileChooserCommand()
+  nameWithType: FileChooserCommand.FileChooserCommand()
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand()
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+    startLine: 9
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  syntax:
+    content: public FileChooserCommand()
+    content.vb: Public Sub New
+  overload: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  id: '#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)'
+  parent: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  langs:
+  - csharp
+  - vb
+  name: FileChooserCommand(IFilePicker)
+  nameWithType: FileChooserCommand.FileChooserCommand(IFilePicker)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Dialog/FileChooser/FileChooserCommand.cs
+    startLine: 13
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  syntax:
+    content: public FileChooserCommand(IFilePicker filePicker)
+    parameters:
+    - id: filePicker
+      type: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    content.vb: Public Sub New(filePicker As IFilePicker)
+  overload: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  name: ChooserCommand<IFilePicker>
+  nameWithType: ChooserCommand<IFilePicker>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>
+  nameWithType.vb: ChooserCommand(Of IFilePicker)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  name.vb: ChooserCommand(Of IFilePicker)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    name: IFilePicker
+    nameWithType: IFilePicker
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    name: IFilePicker
+    nameWithType: IFilePicker
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  definition: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  name: IChooserCommand<IFilePicker>
+  nameWithType: IChooserCommand<IFilePicker>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>
+  nameWithType.vb: IChooserCommand(Of IFilePicker)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  name.vb: IChooserCommand(Of IFilePicker)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    name: IFilePicker
+    nameWithType: IFilePicker
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+    name: IFilePicker
+    nameWithType: IFilePicker
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.CanBeExecuted
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: ChooserCommand<IFilePicker>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>.CanBeExecuted
+  nameWithType.vb: ChooserCommand(Of IFilePicker).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Picker
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Picker
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  name: Picker
+  nameWithType: ChooserCommand<IFilePicker>.Picker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>.Picker
+  nameWithType.vb: ChooserCommand(Of IFilePicker).Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Results
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  name: Results
+  nameWithType: ChooserCommand<IFilePicker>.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>.Results
+  nameWithType.vb: ChooserCommand(Of IFilePicker).Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Choose
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}.Choose
+  parent: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand{Neutronium.BuildingBlocks.ApplicationTools.IFilePicker}
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  name: Choose
+  nameWithType: ChooserCommand<IFilePicker>.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<Neutronium.BuildingBlocks.ApplicationTools.IFilePicker>.Choose
+  nameWithType.vb: ChooserCommand(Of IFilePicker).Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of Neutronium.BuildingBlocks.ApplicationTools.IFilePicker).Choose
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  name: ChooserCommand<T>
+  nameWithType: ChooserCommand<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>
+  nameWithType.vb: ChooserCommand(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T)
+  name.vb: ChooserCommand(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+  name: IChooserCommand<T>
+  nameWithType: IChooserCommand<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand<T>
+  nameWithType.vb: IChooserCommand(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand(Of T)
+  name.vb: IChooserCommand(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
+    name: IChooserCommand
+    nameWithType: IChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: ChooserCommand<T>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.CanBeExecuted
+  nameWithType.vb: ChooserCommand(Of T).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  name: Picker
+  nameWithType: ChooserCommand<T>.Picker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Picker
+  nameWithType.vb: ChooserCommand(Of T).Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  name: Results
+  nameWithType: ChooserCommand<T>.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Results
+  nameWithType.vb: ChooserCommand(Of T).Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  name: Choose
+  nameWithType: ChooserCommand<T>.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Choose
+  nameWithType.vb: ChooserCommand(Of T).Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Choose
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  name: FileChooserCommand
+  nameWithType: FileChooserCommand.FileChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand
+- uid: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.IFilePicker
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  name: IFilePicker
+  nameWithType: IFilePicker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.IFilePicker

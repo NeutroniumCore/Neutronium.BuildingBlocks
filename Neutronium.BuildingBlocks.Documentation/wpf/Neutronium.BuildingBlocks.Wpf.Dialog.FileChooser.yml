@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  id: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  name: FileChooserCommand
+  nameWithType: FileChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  name: FilePicker
+  nameWithType: FilePicker
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker

@@ -5,7 +5,7 @@
 Neutronium.BuildingBlocks provides opinionated solutions to build [Neutronium](https://github.com/NeutroniumCore/Neutronium) application:
 
 - [`ApplicationTools`](./applicationTools) provides interfaces for common application features such as native message box, native file and directory picker...
-- `Wpf` provides an implementation for `ApplicationTools` interfaces based on Wpf framework.
+- [`Wpf`](./wpf) provides an implementation for `ApplicationTools` interfaces based on Wpf framework.
 - [`Application`](./application) provides solution for application architecture including:
   - routing (integrated with vue via [vue-cli-plugin-neutronium](https://github.com/NeutroniumCore/vue-cli-plugin-neutronium)).
   - Dependency injection for main View-models

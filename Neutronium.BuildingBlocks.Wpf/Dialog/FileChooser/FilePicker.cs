@@ -6,6 +6,9 @@ using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
 {
+    /// <summary>
+    /// Wpf implementation for <see cref="IFilePicker"/> 
+    /// </summary>
     public class FilePicker : IFilePicker
     {
         public string Title { get; set; }

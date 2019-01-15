@@ -1562,6 +1562,100 @@ references:
   commentId: N:Neutronium.BuildingBlocks.ApplicationTools
   fullName: Neutronium.BuildingBlocks.ApplicationTools
   nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  name: ChooserCommand<T>
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  name.vb: ChooserCommand(Of T)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T)
+  nameWithType: ChooserCommand<T>
+  nameWithType.vb: ChooserCommand(Of T)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.#ctor(`0)
+  name: ChooserCommand(T)
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1__ctor__0_
+  commentId: M:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.#ctor(`0)
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.ChooserCommand(T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).ChooserCommand(T)
+  nameWithType: ChooserCommand<T>.ChooserCommand(T)
+  nameWithType.vb: ChooserCommand(Of T).ChooserCommand(T)
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.#ctor*
+  name: ChooserCommand
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.ChooserCommand
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).ChooserCommand
+  nameWithType: ChooserCommand<T>.ChooserCommand
+  nameWithType.vb: ChooserCommand(Of T).ChooserCommand
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).CanBeExecuted
+  nameWithType: ChooserCommand<T>.CanBeExecuted
+  nameWithType.vb: ChooserCommand(Of T).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted*
+  name: CanBeExecuted
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_CanBeExecuted_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).CanBeExecuted
+  nameWithType: ChooserCommand<T>.CanBeExecuted
+  nameWithType.vb: ChooserCommand(Of T).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  name: Choose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Choose
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Choose
+  nameWithType: ChooserCommand<T>.Choose
+  nameWithType.vb: ChooserCommand(Of T).Choose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose*
+  name: Choose
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Choose_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Choose
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Choose
+  nameWithType: ChooserCommand<T>.Choose
+  nameWithType.vb: ChooserCommand(Of T).Choose
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  name: Picker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Picker
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Picker
+  nameWithType: ChooserCommand<T>.Picker
+  nameWithType.vb: ChooserCommand(Of T).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker*
+  name: Picker
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Picker_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Picker
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Picker
+  nameWithType: ChooserCommand<T>.Picker
+  nameWithType.vb: ChooserCommand(Of T).Picker
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Results
+  commentId: P:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Results
+  nameWithType: ChooserCommand<T>.Results
+  nameWithType.vb: ChooserCommand(Of T).Results
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results*
+  name: Results
+  href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html#Neutronium_BuildingBlocks_ApplicationTools_ChooserCommand_1_Results_
+  commentId: Overload:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>.Results
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T).Results
+  nameWithType: ChooserCommand<T>.Results
+  nameWithType.vb: ChooserCommand(Of T).Results
 - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
   name: CommandResult<TResult>
   href: applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.html
@@ -2737,3 +2831,686 @@ references:
   fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(ByRef T, T, System.String)
   nameWithType: ViewModel.Set<T>(ref T, T, String)
   nameWithType.vb: ViewModel.Set(Of T)(ByRef T, T, String)
+- uid: Neutronium.BuildingBlocks.Wpf.Application
+  name: Neutronium.BuildingBlocks.Wpf.Application
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.html
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Application
+  fullName: Neutronium.BuildingBlocks.Wpf.Application
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Application
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  name: WpfApplication
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication
+  nameWithType: WpfApplication
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor(System.Windows.Window)
+  name: WpfApplication(Window)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication__ctor_System_Windows_Window_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor(System.Windows.Window)
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.WpfApplication(System.Windows.Window)
+  nameWithType: WpfApplication.WpfApplication(Window)
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor*
+  name: WpfApplication
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.WpfApplication
+  nameWithType: WpfApplication.WpfApplication
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  name: Closed
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_Closed
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Closed
+  nameWithType: WpfApplication.Closed
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  name: ForceClose()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_ForceClose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose()
+  nameWithType: WpfApplication.ForceClose()
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose*
+  name: ForceClose
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_ForceClose_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.ForceClose
+  nameWithType: WpfApplication.ForceClose
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  name: MainWindowClosing
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_MainWindowClosing
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.MainWindowClosing
+  nameWithType: WpfApplication.MainWindowClosing
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  name: Restart(String)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_Restart_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart(System.String)
+  nameWithType: WpfApplication.Restart(String)
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart*
+  name: Restart
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_Restart_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.Restart
+  nameWithType: WpfApplication.Restart
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  name: SessionEnding
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_SessionEnding
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.SessionEnding
+  nameWithType: WpfApplication.SessionEnding
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  name: TryClose()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_TryClose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose()
+  nameWithType: WpfApplication.TryClose()
+- uid: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose*
+  name: TryClose
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html#Neutronium_BuildingBlocks_Wpf_Application_WpfApplication_TryClose_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.TryClose
+  nameWithType: WpfApplication.TryClose
+- uid: Neutronium.BuildingBlocks.Wpf.Async
+  name: Neutronium.BuildingBlocks.Wpf.Async
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.html
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Async
+  fullName: Neutronium.BuildingBlocks.Wpf.Async
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Async
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  name: TaskCancellableCommand<TResult>
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  name.vb: TaskCancellableCommand(Of TResult)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult)
+  nameWithType: TaskCancellableCommand<TResult>
+  nameWithType.vb: TaskCancellableCommand(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.#ctor
+  name: TaskCancellableCommand()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1__ctor
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.#ctor
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.TaskCancellableCommand()
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).TaskCancellableCommand()
+  nameWithType: TaskCancellableCommand<TResult>.TaskCancellableCommand()
+  nameWithType.vb: TaskCancellableCommand(Of TResult).TaskCancellableCommand()
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.#ctor*
+  name: TaskCancellableCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.TaskCancellableCommand
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).TaskCancellableCommand
+  nameWithType: TaskCancellableCommand<TResult>.TaskCancellableCommand
+  nameWithType.vb: TaskCancellableCommand(Of TResult).TaskCancellableCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).CanBeExecuted
+  nameWithType: TaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted*
+  name: CanBeExecuted
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_CanBeExecuted_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).CanBeExecuted
+  nameWithType: TaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  name: Cancel
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Cancel
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Cancel
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Cancel
+  nameWithType: TaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel*
+  name: Cancel
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Cancel_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Cancel
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Cancel
+  nameWithType: TaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  name: Computing
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Computing
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Computing
+  nameWithType: TaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing*
+  name: Computing
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Computing_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Computing
+  nameWithType: TaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+  name: Process(CancellationToken)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Process_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process(System.Threading.CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process(System.Threading.CancellationToken)
+  nameWithType: TaskCancellableCommand<TResult>.Process(CancellationToken)
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Process(CancellationToken)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process*
+  name: Process
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Process_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process
+  nameWithType: TaskCancellableCommand<TResult>.Process
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Process
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  name: Results
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Results
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Results
+  nameWithType: TaskCancellableCommand<TResult>.Results
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results*
+  name: Results
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Results_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Results
+  nameWithType: TaskCancellableCommand<TResult>.Results
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  name: Run
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Run
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Run
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Run
+  nameWithType: TaskCancellableCommand<TResult>.Run
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run*
+  name: Run
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCancellableCommand_1_Run_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Run
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Run
+  nameWithType: TaskCancellableCommand<TResult>.Run
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  name: TaskCommand<TResult>
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  name.vb: TaskCommand(Of TResult)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult)
+  nameWithType: TaskCommand<TResult>
+  nameWithType.vb: TaskCommand(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor(System.Func{System.Threading.CancellationToken,`0})
+  name: TaskCommand(Func<CancellationToken, TResult>)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_1__ctor_System_Func_System_Threading_CancellationToken__0__
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor(System.Func{System.Threading.CancellationToken,`0})
+  name.vb: TaskCommand(Func(Of CancellationToken, TResult))
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.TaskCommand(System.Func<System.Threading.CancellationToken, TResult>)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).TaskCommand(System.Func(Of System.Threading.CancellationToken, TResult))
+  nameWithType: TaskCommand<TResult>.TaskCommand(Func<CancellationToken, TResult>)
+  nameWithType.vb: TaskCommand(Of TResult).TaskCommand(Func(Of CancellationToken, TResult))
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor*
+  name: TaskCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.TaskCommand
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).TaskCommand
+  nameWithType: TaskCommand<TResult>.TaskCommand
+  nameWithType.vb: TaskCommand(Of TResult).TaskCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process(System.Threading.CancellationToken)
+  name: Process(CancellationToken)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_1_Process_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.Process(System.Threading.CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).Process(System.Threading.CancellationToken)
+  nameWithType: TaskCommand<TResult>.Process(CancellationToken)
+  nameWithType.vb: TaskCommand(Of TResult).Process(CancellationToken)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process*
+  name: Process
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_1_Process_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.Process
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).Process
+  nameWithType: TaskCommand<TResult>.Process
+  nameWithType.vb: TaskCommand(Of TResult).Process
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+  name: TaskCommand<TResult, TProgress>
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2
+  name.vb: TaskCommand(Of TResult, TProgress)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress)
+  nameWithType: TaskCommand<TResult, TProgress>
+  nameWithType.vb: TaskCommand(Of TResult, TProgress)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.#ctor(System.Func{System.Threading.CancellationToken,System.IProgress{`1},`0},System.Nullable{System.TimeSpan})
+  name: TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult>, Nullable<TimeSpan>)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2__ctor_System_Func_System_Threading_CancellationToken_System_IProgress__1___0__System_Nullable_System_TimeSpan__
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.#ctor(System.Func{System.Threading.CancellationToken,System.IProgress{`1},`0},System.Nullable{System.TimeSpan})
+  name.vb: TaskCommand(Func(Of CancellationToken, IProgress(Of TProgress), TResult), Nullable(Of TimeSpan))
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.TaskCommand(System.Func<System.Threading.CancellationToken, System.IProgress<TProgress>, TResult>, System.Nullable<System.TimeSpan>)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).TaskCommand(System.Func(Of System.Threading.CancellationToken, System.IProgress(Of TProgress), TResult), System.Nullable(Of System.TimeSpan))
+  nameWithType: TaskCommand<TResult, TProgress>.TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult>, Nullable<TimeSpan>)
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).TaskCommand(Func(Of CancellationToken, IProgress(Of TProgress), TResult), Nullable(Of TimeSpan))
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.#ctor*
+  name: TaskCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.TaskCommand
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).TaskCommand
+  nameWithType: TaskCommand<TResult, TProgress>.TaskCommand
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).TaskCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Process(System.Threading.CancellationToken)
+  name: Process(CancellationToken)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2_Process_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Process(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.Process(System.Threading.CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).Process(System.Threading.CancellationToken)
+  nameWithType: TaskCommand<TResult, TProgress>.Process(CancellationToken)
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).Process(CancellationToken)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Process*
+  name: Process
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2_Process_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Process
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.Process
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).Process
+  nameWithType: TaskCommand<TResult, TProgress>.Process
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).Process
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Progress
+  name: Progress
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2_Progress
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Progress
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.Progress
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).Progress
+  nameWithType: TaskCommand<TResult, TProgress>.Progress
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).Progress
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Progress*
+  name: Progress
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommand_2_Progress_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`2.Progress
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult, TProgress>.Progress
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult, TProgress).Progress
+  nameWithType: TaskCommand<TResult, TProgress>.Progress
+  nameWithType.vb: TaskCommand(Of TResult, TProgress).Progress
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  name: TaskCommandResult<TResult>
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1
+  name.vb: TaskCommandResult(Of TResult)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult)
+  nameWithType: TaskCommandResult<TResult>
+  nameWithType.vb: TaskCommandResult(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor(System.Func{System.Threading.Tasks.Task{`0}})
+  name: TaskCommandResult(Func<Task<TResult>>)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1__ctor_System_Func_System_Threading_Tasks_Task__0___
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor(System.Func{System.Threading.Tasks.Task{`0}})
+  name.vb: TaskCommandResult(Func(Of Task(Of TResult)))
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.TaskCommandResult(System.Func<System.Threading.Tasks.Task<TResult>>)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).TaskCommandResult(System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  nameWithType: TaskCommandResult<TResult>.TaskCommandResult(Func<Task<TResult>>)
+  nameWithType.vb: TaskCommandResult(Of TResult).TaskCommandResult(Func(Of Task(Of TResult)))
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor*
+  name: TaskCommandResult
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.TaskCommandResult
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).TaskCommandResult
+  nameWithType: TaskCommandResult<TResult>.TaskCommandResult
+  nameWithType.vb: TaskCommandResult(Of TResult).TaskCommandResult
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  name: CanBeExecuted
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanBeExecuted
+  nameWithType: TaskCommandResult<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCommandResult(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted*
+  name: CanBeExecuted
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_CanBeExecuted_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanBeExecuted
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanBeExecuted
+  nameWithType: TaskCommandResult<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCommandResult(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  name: CanExecute
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_CanExecute
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecute
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecute
+  nameWithType: TaskCommandResult<TResult>.CanExecute
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecute
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute*
+  name: CanExecute
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_CanExecute_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecute
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecute
+  nameWithType: TaskCommandResult<TResult>.CanExecute
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecute
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecuteChanged
+  name: CanExecuteChanged
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_CanExecuteChanged
+  commentId: E:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.CanExecuteChanged
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.CanExecuteChanged
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).CanExecuteChanged
+  nameWithType: TaskCommandResult<TResult>.CanExecuteChanged
+  nameWithType.vb: TaskCommandResult(Of TResult).CanExecuteChanged
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  name: Computing
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Computing
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Computing
+  nameWithType: TaskCommandResult<TResult>.Computing
+  nameWithType.vb: TaskCommandResult(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing*
+  name: Computing
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Computing_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Computing
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Computing
+  nameWithType: TaskCommandResult<TResult>.Computing
+  nameWithType.vb: TaskCommandResult(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  name: Execute()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Execute
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Execute()
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Execute()
+  nameWithType: TaskCommandResult<TResult>.Execute()
+  nameWithType.vb: TaskCommandResult(Of TResult).Execute()
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute*
+  name: Execute
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Execute_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Execute
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Execute
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Execute
+  nameWithType: TaskCommandResult<TResult>.Execute
+  nameWithType.vb: TaskCommandResult(Of TResult).Execute
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  name: Results
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Results
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Results
+  nameWithType: TaskCommandResult<TResult>.Results
+  nameWithType.vb: TaskCommandResult(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results*
+  name: Results
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html#Neutronium_BuildingBlocks_Wpf_Async_TaskCommandResult_1_Results_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult`1.Results
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult<TResult>.Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult(Of TResult).Results
+  nameWithType: TaskCommandResult<TResult>.Results
+  nameWithType.vb: TaskCommandResult(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.html
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  name: FileChooserCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand
+  nameWithType: FileChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  name: FileChooserCommand()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FileChooserCommand__ctor
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand()
+  nameWithType: FileChooserCommand.FileChooserCommand()
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  name: FileChooserCommand(IFilePicker)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FileChooserCommand__ctor_Neutronium_BuildingBlocks_ApplicationTools_IFilePicker_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand(Neutronium.BuildingBlocks.ApplicationTools.IFilePicker)
+  nameWithType: FileChooserCommand.FileChooserCommand(IFilePicker)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor*
+  name: FileChooserCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FileChooserCommand__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.FileChooserCommand
+  nameWithType: FileChooserCommand.FileChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  name: FilePicker
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker
+  nameWithType: FilePicker
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose
+  name: Choose()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Choose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose()
+  nameWithType: FilePicker.Choose()
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose*
+  name: Choose
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Choose_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Choose
+  nameWithType: FilePicker.Choose
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory
+  name: Directory
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Directory
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory
+  nameWithType: FilePicker.Directory
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory*
+  name: Directory
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Directory_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Directory
+  nameWithType: FilePicker.Directory
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription
+  name: ExtensionDescription
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_ExtensionDescription
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription
+  nameWithType: FilePicker.ExtensionDescription
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription*
+  name: ExtensionDescription
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_ExtensionDescription_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.ExtensionDescription
+  nameWithType: FilePicker.ExtensionDescription
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions
+  name: Extensions
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Extensions
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions
+  nameWithType: FilePicker.Extensions
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions*
+  name: Extensions
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Extensions_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Extensions
+  nameWithType: FilePicker.Extensions
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title
+  name: Title
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Title
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title
+  nameWithType: FilePicker.Title
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title*
+  name: Title
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FileChooser_FilePicker_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.Title
+  nameWithType: FilePicker.Title
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.html
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  name: FolderChooserCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  nameWithType: FolderChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor
+  name: FolderChooserCommand()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderChooserCommand__ctor
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.FolderChooserCommand()
+  nameWithType: FolderChooserCommand.FolderChooserCommand()
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker)
+  name: FolderChooserCommand(IFolderPicker)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderChooserCommand__ctor_Neutronium_BuildingBlocks_ApplicationTools_IFolderPicker_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor(Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.FolderChooserCommand(Neutronium.BuildingBlocks.ApplicationTools.IFolderPicker)
+  nameWithType: FolderChooserCommand.FolderChooserCommand(IFolderPicker)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor*
+  name: FolderChooserCommand
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderChooserCommand__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.FolderChooserCommand
+  nameWithType: FolderChooserCommand.FolderChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  name: FolderPicker
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  nameWithType: FolderPicker
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose
+  name: Choose()
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Choose
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose()
+  nameWithType: FolderPicker.Choose()
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose*
+  name: Choose
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Choose_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Choose
+  nameWithType: FolderPicker.Choose
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory
+  name: Directory
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Directory
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory
+  nameWithType: FolderPicker.Directory
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory*
+  name: Directory
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Directory_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Directory
+  nameWithType: FolderPicker.Directory
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect
+  name: Multiselect
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Multiselect
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect
+  nameWithType: FolderPicker.Multiselect
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect*
+  name: Multiselect
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Multiselect_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Multiselect
+  nameWithType: FolderPicker.Multiselect
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title
+  name: Title
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Title
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title
+  nameWithType: FolderPicker.Title
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title*
+  name: Title
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html#Neutronium_BuildingBlocks_Wpf_Dialog_FolderChooser_FolderPicker_Title_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.Title
+  nameWithType: FolderPicker.Title
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.html
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  name: MessageBoxWpf
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  nameWithType: MessageBoxWpf
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor(System.Windows.Window)
+  name: MessageBoxWpf(Window)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf__ctor_System_Windows_Window_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor(System.Windows.Window)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.MessageBoxWpf(System.Windows.Window)
+  nameWithType: MessageBoxWpf.MessageBoxWpf(Window)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor*
+  name: MessageBoxWpf
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.MessageBoxWpf
+  nameWithType: MessageBoxWpf.MessageBoxWpf
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  name: ShowConfirmationMessage(String, String, WindowType)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf_ShowConfirmationMessage_System_String_System_String_Neutronium_BuildingBlocks_ApplicationTools_WindowType_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String,System.String,Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage(System.String, System.String, Neutronium.BuildingBlocks.ApplicationTools.WindowType)
+  nameWithType: MessageBoxWpf.ShowConfirmationMessage(String, String, WindowType)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage*
+  name: ShowConfirmationMessage
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf_ShowConfirmationMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowConfirmationMessage
+  nameWithType: MessageBoxWpf.ShowConfirmationMessage
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String,System.String)
+  name: ShowMessage(String, String)
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf_ShowMessage_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage(System.String, System.String)
+  nameWithType: MessageBoxWpf.ShowMessage(String, String)
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage*
+  name: ShowMessage
+  href: wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html#Neutronium_BuildingBlocks_Wpf_Dialog_Message_MessageBoxWpf_ShowMessage_
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.ShowMessage
+  nameWithType: MessageBoxWpf.ShowMessage

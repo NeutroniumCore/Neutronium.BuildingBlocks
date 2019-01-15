@@ -1,29 +1,44 @@
-﻿using System;
+﻿using Neutronium.BuildingBlocks.ApplicationTools;
+using System;
 using System.Reactive.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Wpf.Async
 {
+    /// <summary>
+    /// <see cref="ITaskCancellableCommand{TResult, TProgress}"/> Wpf implementation
+    /// </summary>
+    /// <typeparam name="TResult"></typeparam>
+    /// <typeparam name="TProgress"></typeparam>
     public sealed class TaskCommand<TResult, TProgress> : TaskCancellableCommand<TResult>, ITaskCancellableCommand<TResult, TProgress>
     {
         public IObservable<TProgress> Progress { get; }
 
         private event EventHandler<TProgress> _OnProgress;
         private readonly Func<CancellationToken, IProgress<TProgress>, TResult> _Process;
-        private readonly TimeSpan? _ThrottleProgess;
+        private readonly TimeSpan? _ThrottleProgress;
         private CancellationToken _CancellationToken;
 
-        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process, TimeSpan? throttleProgess = null)
+        /// <summary>
+        /// Construct a new TaskCommand
+        /// </summary>
+        /// <param name="process">
+        /// Function to be executed in the command.
+        /// Will be dispatcher in a Task.
+        /// </param>
+        /// <param name="throttleProgress">
+        /// If not null TimeSpan used to throttle progress events
+        /// </param>
+        public TaskCommand(Func<CancellationToken, IProgress<TProgress>, TResult> process, TimeSpan? throttleProgress = null)
         {
             _Process = process;
-            _ThrottleProgess = throttleProgess;
+            _ThrottleProgress = throttleProgress;
 
-            var progess = Observable.FromEventPattern<TProgress>(evt => _OnProgress += evt, evt => _OnProgress -= evt)
+            var progress = Observable.FromEventPattern<TProgress>(evt => _OnProgress += evt, evt => _OnProgress -= evt)
                     .Select(evtArg => evtArg.EventArgs);
 
-            Progress = _ThrottleProgess.HasValue ? progess.Sample(_ThrottleProgess.Value).ObserveOn(SynchronizationContext.Current).Where(_ => !_CancellationToken.IsCancellationRequested) : progess;
+            Progress = _ThrottleProgress.HasValue ? progress.Sample(_ThrottleProgress.Value).ObserveOn(SynchronizationContext.Current).Where(_ => !_CancellationToken.IsCancellationRequested) : progress;
         }
 
         protected override async Task<TResult> Process(CancellationToken cancellationToken)
@@ -45,7 +60,7 @@ namespace Neutronium.BuildingBlocks.Wpf.Async
                 _OnProgress?.Invoke(this, progress);
             }
 
-            return _ThrottleProgess.HasValue ? (IDisposableProgress<TProgress>)new CancellableProgressNoDispatch<TProgress>(OnProgress, cancellationToken) : new CancellableProgress<TProgress>(OnProgress, cancellationToken);
+            return _ThrottleProgress.HasValue ? (IDisposableProgress<TProgress>)new CancellableProgressNoDispatch<TProgress>(OnProgress, cancellationToken) : new CancellableProgress<TProgress>(OnProgress, cancellationToken);
         }
     }
 }

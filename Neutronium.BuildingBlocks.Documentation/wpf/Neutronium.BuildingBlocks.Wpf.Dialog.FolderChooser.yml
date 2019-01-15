@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  id: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  - Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+  name: FolderChooserCommand
+  nameWithType: FolderChooserCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker
+  name: FolderPicker
+  nameWithType: FolderPicker
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker

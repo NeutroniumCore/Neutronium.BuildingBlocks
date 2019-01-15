@@ -1,6 +1,9 @@
 - name: ApplicationTools Api Documentation
   href: applicationTools/
   homepage: applicationTools/index.html
+- name: Wpf Api Documentation
+  href: wpf/
+  homepage: wpf/index.html
 - name: Application Api Documentation
   href: application/
   homepage: application/index.html

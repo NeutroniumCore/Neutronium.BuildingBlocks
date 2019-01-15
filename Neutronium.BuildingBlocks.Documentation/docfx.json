@@ -41,6 +41,20 @@
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
       "properties": { "TargetFramework": "net472" }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "src": "..\\Neutronium.BuildingBlocks.Wpf"
+        }
+      ],
+      "dest": "wpf",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "properties": { "TargetFramework": "net472" }
     }
   ],
   "build": {
@@ -61,6 +75,12 @@
         "files": [
           "setup/**.yml",
           "setup/index.md"
+        ]
+      },
+      {
+        "files": [
+          "wpf/**.yml",
+          "wpf/index.md"
         ]
       },
       {

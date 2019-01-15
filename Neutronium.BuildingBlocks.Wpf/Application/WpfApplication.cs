@@ -5,6 +5,10 @@ using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Wpf.Application
 {
+
+    /// <summary>
+    /// Wpf implementation of <see cref="IApplication"/>
+    /// </summary>
     public class WpfApplication : IApplication
     {
         private readonly Window _Window;

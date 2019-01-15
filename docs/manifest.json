@@ -425,6 +425,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.html",
+          "hash": "1RQOdjLPeINq/yWkYvAosA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.yml",
       "output": {
         ".html": {
@@ -561,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "applicationTools/Neutronium.BuildingBlocks.ApplicationTools.html",
-          "hash": "pV0QLJimO8EfQ2AXfHjr8g=="
+          "hash": "msMGo/3kqO43/AMaRWQUBQ=="
         }
       },
       "is_incremental": false,
@@ -609,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "applicationTools/toc.html",
-          "hash": "xKCpVVKS+TDQs2u8RgNGjg=="
+          "hash": "RIp1RtRtDG9Wn4k3MMJrsw=="
         }
       },
       "is_incremental": false,
@@ -635,7 +647,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "omXywvZzhIJnCEVDsHDMyw=="
+          "hash": "60dodZLH1/ISzBg44lP6iA=="
         }
       },
       "is_incremental": false,
@@ -842,7 +854,214 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "AwrZQVFVGuNSUFGrtQkHpw=="
+          "hash": "CM5hsxhB5zP4dHy81l5BHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Application.WpfApplication.html",
+          "hash": "tXL/n0uGcATBKL5YWOMR5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Application.html",
+          "hash": "XFVu2O18mHfmDTvbrMogcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand-1.html",
+          "hash": "dBDm2DhGFPCJq/Rsanmypg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-1.html",
+          "hash": "EsP21uksLTXhOvCY6QA7QA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommand-2.html",
+          "hash": "jogbmEr3amuzMKOoQkZYmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.TaskCommandResult-1.html",
+          "hash": "qO+dcYs0swcnz55Prt5nuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Async.html",
+          "hash": "K9oJ56nUB801zuYmpdUOWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FileChooserCommand.html",
+          "hash": "fPhHdLKYG66dXIdHBjsgtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.FilePicker.html",
+          "hash": "D2X/oHQXn9JwAlhkzanGYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FileChooser.html",
+          "hash": "uaqAO1UqFzFpuFZz2H1AwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderChooserCommand.html",
+          "hash": "K2uf5GvGGxU4XeOQdJThBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.FolderPicker.html",
+          "hash": "ClJwz37c8VNwyMVa9vFbpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser.html",
+          "hash": "TAmhAZ6GcGZx3VCJTwXa5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf.html",
+          "hash": "I0g8XSTt2LIWxfycyC76aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/Neutronium.BuildingBlocks.Wpf.Dialog.Message.html",
+          "hash": "IGIERmbRWYgHfQpNy4WIaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wpf/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/index.html",
+          "hash": "Gd1wzdUtqA8eTi9JZreceA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "wpf/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/toc.html",
+          "hash": "n268g7JL+yxVC486HkEnqw=="
         }
       },
       "is_incremental": false,
@@ -857,22 +1076,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

@@ -7,6 +7,9 @@
 - uid: Neutronium.BuildingBlocks.ApplicationTools
   name: Neutronium.BuildingBlocks.ApplicationTools
   items:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand<T>
+    name.vb: ChooserCommand(Of T)
   - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
     name: CommandResult<TResult>
     name.vb: CommandResult(Of TResult)

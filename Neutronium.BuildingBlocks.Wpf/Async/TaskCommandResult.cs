@@ -6,6 +6,10 @@ using Neutronium.MVVMComponents;
 
 namespace Neutronium.BuildingBlocks.Wpf.Async 
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="TResult"></typeparam>
     public class TaskCommandResult<TResult> : ViewModel, ICommandWithoutParameter
     {
         private bool _Computing;

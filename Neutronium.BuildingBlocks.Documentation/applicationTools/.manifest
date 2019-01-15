@@ -1,6 +1,12 @@
 {
   "Neutronium.BuildingBlocks": "Neutronium.BuildingBlocks.yml",
   "Neutronium.BuildingBlocks.ApplicationTools": "Neutronium.BuildingBlocks.ApplicationTools.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.#ctor(`0)": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.CanBeExecuted": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Choose": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Picker": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
+  "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1.Results": "Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand-1.yml",
   "Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1": "Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.yml",
   "Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor": "Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.yml",
   "Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1.#ctor(`0)": "Neutronium.BuildingBlocks.ApplicationTools.CommandResult-1.yml",

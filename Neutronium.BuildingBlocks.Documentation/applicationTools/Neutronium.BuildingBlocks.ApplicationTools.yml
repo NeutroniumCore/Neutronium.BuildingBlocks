@@ -4,6 +4,7 @@ items:
   commentId: N:Neutronium.BuildingBlocks.ApplicationTools
   id: Neutronium.BuildingBlocks.ApplicationTools
   children:
+  - Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
   - Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
   - Neutronium.BuildingBlocks.ApplicationTools.IApplication
   - Neutronium.BuildingBlocks.ApplicationTools.IChooserCommand`1
@@ -25,6 +26,42 @@ items:
   assemblies:
   - Neutronium.BuildingBlocks.ApplicationTools
 references:
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+  name: ChooserCommand<T>
+  nameWithType: ChooserCommand<T>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand<T>
+  nameWithType.vb: ChooserCommand(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand(Of T)
+  name.vb: ChooserCommand(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand`1
+    name: ChooserCommand
+    nameWithType: ChooserCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ChooserCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
   commentId: T:Neutronium.BuildingBlocks.ApplicationTools.CommandResult`1
   name: CommandResult<TResult>

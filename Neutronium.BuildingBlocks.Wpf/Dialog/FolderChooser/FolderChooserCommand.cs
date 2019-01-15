@@ -2,6 +2,9 @@
 
 namespace Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser 
 {
+    /// <summary>
+    /// ChooserCommand for FolderPicker
+    /// </summary>
     public class FolderChooserCommand : ChooserCommand<IFolderPicker> 
     {
         public FolderChooserCommand() : this(new FolderPicker())

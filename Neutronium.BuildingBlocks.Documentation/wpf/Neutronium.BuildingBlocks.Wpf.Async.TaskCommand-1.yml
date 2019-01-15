@@ -1,0 +1,1237 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  id: TaskCommand`1
+  parent: Neutronium.BuildingBlocks.Wpf.Async
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor(System.Func{System.Threading.CancellationToken,`0})
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: TaskCommand<TResult>
+  nameWithType: TaskCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: TaskCommand
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+    startLine: 10
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  summary: "\n<see cref=\"!:ITaskCancellableCommand&lt;T>\"></see> Wpf implementation\n"
+  example: []
+  syntax:
+    content: 'public sealed class TaskCommand<TResult> : TaskCancellableCommand<TResult>, ITaskCancellableCommand<TResult>, INotifyPropertyChanged, INotifyPropertyChanging'
+    typeParameters:
+    - id: TResult
+      description: ''
+    content.vb: >-
+      Public NotInheritable Class TaskCommand(Of TResult)
+          Inherits TaskCancellableCommand(Of TResult)
+          Implements ITaskCancellableCommand(Of TResult), INotifyPropertyChanged, INotifyPropertyChanging
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ViewModel
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  implements:
+  - Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Computing
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.CanBeExecuted
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Run
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Cancel
+  - Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Results
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  - Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: TaskCommand(Of TResult)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult)
+  name.vb: TaskCommand(Of TResult)
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor(System.Func{System.Threading.CancellationToken,`0})
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor(System.Func{System.Threading.CancellationToken,`0})
+  id: '#ctor(System.Func{System.Threading.CancellationToken,`0})'
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  langs:
+  - csharp
+  - vb
+  name: TaskCommand(Func<CancellationToken, TResult>)
+  nameWithType: TaskCommand<TResult>.TaskCommand(Func<CancellationToken, TResult>)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.TaskCommand(System.Func<System.Threading.CancellationToken, TResult>)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+    startLine: 21
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  summary: "\nConstruct a new TaskCommand\n"
+  example: []
+  syntax:
+    content: public TaskCommand(Func<CancellationToken, TResult> process)
+    parameters:
+    - id: process
+      type: System.Func{System.Threading.CancellationToken,{TResult}}
+      description: "\nFunction to be executed in the command.\nWill be dispatcher in a Task.\n"
+    content.vb: Public Sub New(process As Func(Of CancellationToken, TResult))
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor*
+  nameWithType.vb: TaskCommand(Of TResult).TaskCommand(Func(Of CancellationToken, TResult))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).TaskCommand(System.Func(Of System.Threading.CancellationToken, TResult))
+  name.vb: TaskCommand(Func(Of CancellationToken, TResult))
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process(System.Threading.CancellationToken)
+  id: Process(System.Threading.CancellationToken)
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1
+  langs:
+  - csharp
+  - vb
+  name: Process(CancellationToken)
+  nameWithType: TaskCommand<TResult>.Process(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.Process(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Process
+    path: ../Neutronium.BuildingBlocks.Wpf/Async/TaskCommand_TR.cs
+    startLine: 26
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+  namespace: Neutronium.BuildingBlocks.Wpf.Async
+  syntax:
+    content: protected override Task<TResult> Process(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: Protected Overrides Function Process(cancellationToken As CancellationToken) As Task(Of TResult)
+  overridden: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Process(System.Threading.CancellationToken)
+  overload: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process*
+  nameWithType.vb: TaskCommand(Of TResult).Process(CancellationToken)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).Process(System.Threading.CancellationToken)
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Async
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Async
+  name: Neutronium.BuildingBlocks.Wpf.Async
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Async
+  fullName: Neutronium.BuildingBlocks.Wpf.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  parent: Neutronium.BuildingBlocks
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}
+  parent: Neutronium.BuildingBlocks.Wpf.Async
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  name: TaskCancellableCommand<TResult>
+  nameWithType: TaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>
+  nameWithType.vb: TaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult)
+  name.vb: TaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{{TResult}}
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand{`0}
+  parent: Neutronium.BuildingBlocks.ApplicationTools
+  definition: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  nameWithType: ITaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  name.vb: ITaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Computing
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.Computing
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  name: Computing
+  nameWithType: TaskCancellableCommand<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.CanBeExecuted
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: TaskCancellableCommand<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCancellableCommand(Of TResult).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Run
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.Run
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  name: Run
+  nameWithType: TaskCancellableCommand<TResult>.Run
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Run
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Run
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Cancel
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.Cancel
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  name: Cancel
+  nameWithType: TaskCancellableCommand<TResult>.Cancel
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Cancel
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Results
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.Results
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  name: Results
+  nameWithType: TaskCancellableCommand<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Results
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  parent: Neutronium.BuildingBlocks.ViewModel
+  name: PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  definition: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyHasChanged(String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyIsChanging(String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+  name: TaskCancellableCommand<TResult>
+  nameWithType: TaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>
+  nameWithType.vb: TaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult)
+  name.vb: TaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1
+    name: TaskCancellableCommand
+    nameWithType: TaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  commentId: T:Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+  name: ITaskCancellableCommand<TResult>
+  nameWithType: ITaskCancellableCommand<TResult>
+  fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand<TResult>
+  nameWithType.vb: ITaskCancellableCommand(Of TResult)
+  fullName.vb: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand(Of TResult)
+  name.vb: ITaskCancellableCommand(Of TResult)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand`1
+    name: ITaskCancellableCommand
+    nameWithType: ITaskCancellableCommand
+    fullName: Neutronium.BuildingBlocks.ApplicationTools.ITaskCancellableCommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ApplicationTools
+  commentId: N:Neutronium.BuildingBlocks.ApplicationTools
+  name: Neutronium.BuildingBlocks.ApplicationTools
+  nameWithType: Neutronium.BuildingBlocks.ApplicationTools
+  fullName: Neutronium.BuildingBlocks.ApplicationTools
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Computing
+  name: Computing
+  nameWithType: TaskCancellableCommand<TResult>.Computing
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Computing
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Computing
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Computing
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.CanBeExecuted
+  name: CanBeExecuted
+  nameWithType: TaskCancellableCommand<TResult>.CanBeExecuted
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.CanBeExecuted
+  nameWithType.vb: TaskCancellableCommand(Of TResult).CanBeExecuted
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).CanBeExecuted
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Run
+  name: Run
+  nameWithType: TaskCancellableCommand<TResult>.Run
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Run
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Run
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Run
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Cancel
+  name: Cancel
+  nameWithType: TaskCancellableCommand<TResult>.Cancel
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Cancel
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Cancel
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Cancel
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  commentId: P:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Results
+  name: Results
+  nameWithType: TaskCancellableCommand<TResult>.Results
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Results
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Results
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Results
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  isExternal: true
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.#ctor
+  name: TaskCommand
+  nameWithType: TaskCommand<TResult>.TaskCommand
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.TaskCommand
+  nameWithType.vb: TaskCommand(Of TResult).TaskCommand
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).TaskCommand
+- uid: System.Func{System.Threading.CancellationToken,{TResult}}
+  commentId: T:System.Func{System.Threading.CancellationToken,`0}
+  parent: System
+  definition: System.Func`2
+  name: Func<CancellationToken, TResult>
+  nameWithType: Func<CancellationToken, TResult>
+  fullName: System.Func<System.Threading.CancellationToken, TResult>
+  nameWithType.vb: Func(Of CancellationToken, TResult)
+  fullName.vb: System.Func(Of System.Threading.CancellationToken, TResult)
+  name.vb: Func(Of CancellationToken, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}.Process(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{`0}.Process(System.Threading.CancellationToken)
+  parent: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand{{TResult}}
+  definition: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+  name: Process(CancellationToken)
+  nameWithType: TaskCancellableCommand<TResult>.Process(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process(System.Threading.CancellationToken)
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Process(CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+    name: Process
+    nameWithType: TaskCancellableCommand<TResult>.Process
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+    name: Process
+    nameWithType: TaskCancellableCommand(Of TResult).Process
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process*
+  commentId: Overload:Neutronium.BuildingBlocks.Wpf.Async.TaskCommand`1.Process
+  name: Process
+  nameWithType: TaskCommand<TResult>.Process
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand<TResult>.Process
+  nameWithType.vb: TaskCommand(Of TResult).Process
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCommand(Of TResult).Process
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{`0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+  isExternal: true
+  name: Process(CancellationToken)
+  nameWithType: TaskCancellableCommand<TResult>.Process(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process(System.Threading.CancellationToken)
+  nameWithType.vb: TaskCancellableCommand(Of TResult).Process(CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+    name: Process
+    nameWithType: TaskCancellableCommand<TResult>.Process
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand<TResult>.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand`1.Process(System.Threading.CancellationToken)
+    name: Process
+    nameWithType: TaskCancellableCommand(Of TResult).Process
+    fullName: Neutronium.BuildingBlocks.Wpf.Async.TaskCancellableCommand(Of TResult).Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

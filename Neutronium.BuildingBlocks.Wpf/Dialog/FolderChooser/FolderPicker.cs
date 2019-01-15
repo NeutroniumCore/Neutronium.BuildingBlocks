@@ -4,6 +4,9 @@ using Neutronium.BuildingBlocks.ApplicationTools;
 
 namespace Neutronium.BuildingBlocks.Wpf.Dialog.FolderChooser 
 {
+    /// <summary>
+    /// Wpf implementation for <see cref="IFolderPicker"/> 
+    /// </summary>
     public class FolderPicker : IFolderPicker
     {
         public string Title { get; set; }

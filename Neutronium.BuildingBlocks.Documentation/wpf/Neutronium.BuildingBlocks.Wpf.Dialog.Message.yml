@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  commentId: N:Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  id: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  children:
+  - Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  nameWithType: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message
+  type: Namespace
+  assemblies:
+  - Neutronium.BuildingBlocks.Wpf
+references:
+- uid: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  commentId: T:Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
+  name: MessageBoxWpf
+  nameWithType: MessageBoxWpf
+  fullName: Neutronium.BuildingBlocks.Wpf.Dialog.Message.MessageBoxWpf
