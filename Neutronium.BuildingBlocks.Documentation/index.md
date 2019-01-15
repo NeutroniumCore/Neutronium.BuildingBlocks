@@ -1,5 +1,11 @@
 <p align="center"><img <p align="center"><img width="200"src="./images/logo.png"></p>
 
+<h1 align="center">Neutronium Building Blocks</h1>
+
+[![Build status](https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-buildingblocks.svg)](https://ci.appveyor.com/project/David-Desmaisons/neutronium-buildingblocks)
+[![NuGet Badge](https://buildstats.info/nuget/Neutronium.BuildingBlocks.Standard)](https://www.nuget.org/packages/Neutronium.BuildingBlocks.Standard/)
+[![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tools.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
+
 ## Description
 
 Neutronium.BuildingBlocks provides opinionated solutions to build [Neutronium](https://github.com/NeutroniumCore/Neutronium) application:
