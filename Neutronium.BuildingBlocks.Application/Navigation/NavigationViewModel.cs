@@ -197,12 +197,15 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
                 return root;
 
             var builder = new StringBuilder(root);
-            var child = subNavigator.Child;
-            while (child != null)
+            while (subNavigator != null)
             {
-                builder.Append('/');
-                builder.Append(child.RelativeName);
-                child = child.Child;
+                var relativeName = subNavigator.RelativeName;
+                if (relativeName != null)
+                {
+                    builder.Append('/');
+                    builder.Append(relativeName);
+                }        
+                subNavigator = subNavigator.Child;
             }
             return builder.ToString();
         }

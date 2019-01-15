@@ -126,3 +126,4 @@ UpgradeLog*.XML
 /**/obj/
 _site
 log.text
+/Neutronium.BuildingBlocks.Documentation/log.txt

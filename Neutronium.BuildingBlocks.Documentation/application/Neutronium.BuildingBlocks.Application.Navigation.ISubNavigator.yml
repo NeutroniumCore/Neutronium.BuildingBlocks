@@ -22,7 +22,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ISubNavigator
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
-    startLine: 6
+    startLine: 5
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -55,11 +55,11 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RelativeName
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
-    startLine: 11
+    startLine: 10
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
-  summary: "\nRelative Name\n"
+  summary: "\nRelative Name of Child\n"
   example: []
   syntax:
     content: string RelativeName { get; }
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Child
     path: ../Neutronium.BuildingBlocks.Application/Navigation/ISubNavigator.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -129,7 +129,7 @@ items:
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
-  summary: "\nNavigate to a sub path\n"
+  summary: "\nNavigate to a sub path and set RelativeName to the corresponding\nrelativePath.\n"
   example: []
   syntax:
     content: ISubNavigator NavigateTo(string relativePath)

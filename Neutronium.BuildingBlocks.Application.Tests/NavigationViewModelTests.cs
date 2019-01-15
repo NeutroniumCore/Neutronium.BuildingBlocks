@@ -289,7 +289,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var type = typeof(FakeSubNavigator);
             const string route = "path1/path2/path3";
             _RouterSolver.SolveType("path1").Returns(type);
-            _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigator("path1"));
+            _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigator());
 
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
@@ -513,11 +513,13 @@ namespace Neutronium.BuildingBlocks.Application.Tests
 
         private FakeSubNavigator GetFakeSubNavigator()
         {
-            return new FakeSubNavigator("path1")
+            return new FakeSubNavigator()
             {
-                SubNavigator = new FakeSubNavigator("path2")
+                RelativeName = "path2",
+                SubNavigator = new FakeSubNavigator()
                 {
-                    SubNavigator = new FakeSubNavigator("path3")
+                    RelativeName = "path3",
+                    SubNavigator = new FakeSubNavigator()
                 }
             };
         }

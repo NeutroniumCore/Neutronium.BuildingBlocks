@@ -1,13 +1,12 @@
 ﻿namespace Neutronium.BuildingBlocks.Application.Navigation
 {
-
     /// <summary>
     /// Manage relative navigation within ViewModel
     /// </summary>
     public interface ISubNavigator
     {
         /// <summary>
-        /// Relative Name
+        /// Relative Name of Child
         /// </summary>
         string RelativeName { get; }
 
@@ -17,7 +16,8 @@
         ISubNavigator Child { get; }
 
         /// <summary>
-        /// Navigate to a sub path
+        /// Navigate to a sub path and set RelativeName to the corresponding
+        /// relativePath.
         /// </summary>
         /// <param name="relativePath"></param>
         /// <returns>
