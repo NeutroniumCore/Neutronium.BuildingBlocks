@@ -7,7 +7,7 @@
 [![NuGet Badge](https://buildstats.info/nuget/Neutronium.BuildingBlocks.Standard)](https://www.nuget.org/packages/Neutronium.BuildingBlocks.Standard/)
 [![MIT License](https://img.shields.io/github/license/NeutroniumCore/ViewModel.Tools.svg)](https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/LICENSE)
 
-[https://neutroniumcore.github.io/Neutronium.BuildingBlocks/index.html](https://neutroniumcore.github.io/Neutronium.BuildingBlocks/index.html)
+[https://neutroniumcore.github.io/Neutronium.BuildingBlocks](https://neutroniumcore.github.io/Neutronium.BuildingBlocks)
 
 ## Description
 
