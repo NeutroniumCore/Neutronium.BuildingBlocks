@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  id: RouteDefinition
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,System.Type,System.String,System.Boolean)
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+  langs:
+  - csharp
+  - vb
+  name: RouteDefinition
+  nameWithType: RouteDefinition
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  type: Struct
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: RouteDefinition
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRoute definition\n"
+  example: []
+  syntax:
+    content: public struct RouteDefinition
+    content.vb: Public Structure RouteDefinition
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+  id: Name
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RouteDefinition.Name
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Name
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 12
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRoute name\n"
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+  id: Destination
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  langs:
+  - csharp
+  - vb
+  name: Destination
+  nameWithType: RouteDefinition.Destination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Destination
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nRoute destination\n"
+  example: []
+  syntax:
+    content: public RouteDestination Destination { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+    content.vb: Public ReadOnly Property Destination As RouteDestination
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+  id: IsDefault
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  langs:
+  - csharp
+  - vb
+  name: IsDefault
+  nameWithType: RouteDefinition.IsDefault
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IsDefault
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 22
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nDefault type\n"
+  example: []
+  syntax:
+    content: public bool IsDefault { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDefault As Boolean
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
+  id: '#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  langs:
+  - csharp
+  - vb
+  name: RouteDefinition(String, RouteDestination, Boolean)
+  nameWithType: RouteDefinition.RouteDefinition(String, RouteDestination, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition(System.String, Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 24
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public RouteDefinition(string name, RouteDestination destination, bool isDefault = true)
+    parameters:
+    - id: name
+      type: System.String
+    - id: destination
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+    - id: isDefault
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, destination As RouteDestination, isDefault As Boolean = True)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,System.Type,System.String,System.Boolean)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,System.Type,System.String,System.Boolean)
+  id: '#ctor(System.String,System.Type,System.String,System.Boolean)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  langs:
+  - csharp
+  - vb
+  name: RouteDefinition(String, Type, String, Boolean)
+  nameWithType: RouteDefinition.RouteDefinition(String, Type, String, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition(System.String, System.Type, System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDefinition.cs
+    startLine: 31
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public RouteDefinition(string name, Type type, string resolutionKey = null, bool isDefault = true)
+    parameters:
+    - id: name
+      type: System.String
+    - id: type
+      type: System.Type
+    - id: resolutionKey
+      type: System.String
+    - id: isDefault
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, type As Type, resolutionKey As String = Nothing, isDefault As Boolean = True)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+  name: Name
+  nameWithType: RouteDefinition.Name
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+  name: Destination
+  nameWithType: RouteDefinition.Destination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteDestination
+  nameWithType: RouteDestination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+  name: IsDefault
+  nameWithType: RouteDefinition.IsDefault
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor
+  name: RouteDefinition
+  nameWithType: RouteDefinition.RouteDefinition
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

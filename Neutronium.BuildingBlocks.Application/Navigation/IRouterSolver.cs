@@ -30,8 +30,8 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// </summary>
         /// <param name="route"></param>
         /// <returns>
-        /// The corresponding
+        /// The corresponding route destination
         /// </returns>
-        Type SolveType(string route);
+        RouteDestination SolveType(string route);
     }
 }

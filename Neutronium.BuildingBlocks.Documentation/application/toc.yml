@@ -30,6 +30,10 @@
     name.vb: NavigationContext(Of T)
   - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
     name: NavigationViewModel
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+    name: RouteDefinition
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+    name: RouteDestination
   - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
     name: RoutedEventArgs
   - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteInfo

@@ -134,15 +134,15 @@ items:
   summary: "\nFind the viewModel type associated with the corresponding route\n"
   example: []
   syntax:
-    content: Type SolveType(string route)
+    content: RouteDestination SolveType(string route)
     parameters:
     - id: route
       type: System.String
       description: ''
     return:
-      type: System.Type
-      description: "\nThe corresponding\n"
-    content.vb: Function SolveType(route As String) As Type
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+      description: "\nThe corresponding route destination\n"
+    content.vb: Function SolveType(route As String) As RouteDestination
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType*
 references:
 - uid: Neutronium.BuildingBlocks.Application.Navigation
@@ -180,10 +180,9 @@ references:
   name: SolveType
   nameWithType: IRouterSolver.SolveType
   fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  name: Type
-  nameWithType: Type
-  fullName: System.Type
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteDestination
+  nameWithType: RouteDestination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination

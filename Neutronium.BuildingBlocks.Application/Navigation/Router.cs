@@ -1,6 +1,6 @@
-﻿using System;
+﻿using MoreCollection.Extensions;
+using System;
 using System.Collections.Generic;
-using MoreCollection.Extensions;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
@@ -9,19 +9,26 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
     /// </summary>
     public class Router : IRouterBuilder, IRouterSolver
     {
-        private readonly Dictionary<string, Type> _RouteToType = new Dictionary<string, Type>();
+        private readonly Dictionary<string, RouteDestination> _RouteToType = new Dictionary<string, RouteDestination>();
         private readonly Dictionary<Type, string> _TypeToRoute = new Dictionary<Type, string>();
+
+        public IRouterBuilder Register(RouteDefinition routeDefinition)
+        {
+            var destination = routeDefinition.Destination;
+            if (!_TypeToRoute.ContainsKey(destination.Type))
+                _TypeToRoute.Add(destination.Type, routeDefinition.Name);
+
+            if (!routeDefinition.IsDefault && _RouteToType.ContainsKey(routeDefinition.Name))
+                return this;
+
+            _RouteToType[routeDefinition.Name] = destination;
+            return this;
+        }
 
         public IRouterBuilder Register(Type type, string routerName, bool defaultType = true)
         {
-            if (!_TypeToRoute.ContainsKey(type))
-                _TypeToRoute.Add(type, routerName);     
-
-            if (!defaultType && _RouteToType.ContainsKey(routerName))
-                return this;
-
-            _RouteToType[routerName] = type;
-            return this;
+            var routeDefinition = new RouteDefinition(routerName, type,null, defaultType);
+            return Register(routeDefinition);
         }
 
         public IRouterBuilder Register<T>(string routerName, bool defaultType = true)
@@ -44,7 +51,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             return _TypeToRoute.GetOrDefault(type);
         }
 
-        public Type SolveType(string route)
+        public RouteDestination SolveType(string route)
         {
             return _RouteToType.GetOrDefault(route);
         }

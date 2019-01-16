@@ -5,6 +5,7 @@ items:
   id: Router
   parent: Neutronium.BuildingBlocks.Application.Navigation
   children:
+  - Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
   - Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.Router.Register``1(System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(System.Object)
@@ -57,6 +58,43 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  id: Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.Router
+  langs:
+  - csharp
+  - vb
+  name: Register(RouteDefinition)
+  nameWithType: Router.Register(RouteDefinition)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/Router.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Register
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
+    startLine: 14
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  syntax:
+    content: public IRouterBuilder Register(RouteDefinition routeDefinition)
+    parameters:
+    - id: routeDefinition
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+    return:
+      type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+    content.vb: Public Function Register(routeDefinition As RouteDefinition) As IRouterBuilder
+  overload: Neutronium.BuildingBlocks.Application.Navigation.Router.Register*
+  implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
   commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
   id: Register(System.Type,System.String,System.Boolean)
@@ -75,7 +113,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
-    startLine: 14
+    startLine: 27
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -116,7 +154,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -160,7 +198,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
-    startLine: 31
+    startLine: 38
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -197,7 +235,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
-    startLine: 36
+    startLine: 43
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -236,18 +274,18 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveType
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Router.cs
-    startLine: 46
+    startLine: 53
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   syntax:
-    content: public Type SolveType(string route)
+    content: public RouteDestination SolveType(string route)
     parameters:
     - id: route
       type: System.String
     return:
-      type: System.Type
-    content.vb: Public Function SolveType(route As String) As Type
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+    content.vb: Public Function SolveType(route As String) As RouteDestination
   overload: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType*
   implements:
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
@@ -822,6 +860,48 @@ references:
   name: Register
   nameWithType: Router.Register
   fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
+  name: Register(RouteDefinition)
+  nameWithType: IRouterBuilder.Register(RouteDefinition)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+    name: Register
+    nameWithType: IRouterBuilder.Register
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+    name: RouteDefinition
+    nameWithType: RouteDefinition
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+    name: Register
+    nameWithType: IRouterBuilder.Register
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+    name: RouteDefinition
+    nameWithType: RouteDefinition
+    fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteDefinition
+  nameWithType: RouteDefinition
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
   commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
   parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
@@ -1091,3 +1171,9 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteDestination
+  nameWithType: RouteDestination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination

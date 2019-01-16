@@ -110,17 +110,24 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         private object GetViewModelFromRoute(string routeName)
         {
             var paths = routeName.Split('/');
-            var type = _RouterSolver.SolveType(paths[0]);
-            if (type == null)
+            var routeDestination = _RouterSolver.SolveType(paths[0]);
+            if (routeDestination == null)
                 return null;
 
-            var root = _ServiceLocator.Value.GetInstance(type);
+            var root = GetInstance(routeDestination);
             return CreateChildren(root, paths, routeName) ? root : null;
         }
 
-        private bool CreateChildren(object root, string[] paths, string route)
+        private object GetInstance(RouteDestination routeDestination)
         {
-            if (paths.Length < 2)
+            var key = routeDestination.ResolutionKey;
+            var type = routeDestination.Type;
+            return key == null ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, key);
+        }
+
+        private bool CreateChildren(object root, IReadOnlyList<string> paths, string route)
+        {
+            if (paths.Count < 2)
                 return true;
 
             if (!(root is ISubNavigator subNavigator))
@@ -129,7 +136,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
                 return false;
             }
 
-            for (var i = 1; i < paths.Length; i++)
+            for (var i = 1; i < paths.Count; i++)
             {
                 subNavigator = subNavigator.NavigateTo(paths[i]);
                 if (subNavigator == null)

@@ -288,7 +288,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var expected = GetFakeSubNavigator();
             var type = typeof(FakeSubNavigator);
             const string route = "path1/path2/path3";
-            _RouterSolver.SolveType("path1").Returns(type);
+            _RouterSolver.SolveType("path1").Returns(new RouteDestination(type));
             _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigator());
 
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
@@ -535,14 +535,14 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         private void SetupSubNavigation(object rootViewModel, string root)
         {
             var typeForSubNavigation = rootViewModel.GetType();
-            _RouterSolver.SolveType(root).Returns(typeForSubNavigation);
+            _RouterSolver.SolveType(root).Returns(new RouteDestination(typeForSubNavigation));
             _ServiceLocator.GetInstance(typeForSubNavigation).Returns(rootViewModel);
         }
 
         private void SetupRedirect(string route, string redirectRoute)
         {
             SetupRoute(route);
-            _RouterSolver.SolveType(redirectRoute).Returns(_FakeTypeRedirect);
+            _RouterSolver.SolveType(redirectRoute).Returns(new RouteDestination(_FakeTypeRedirect));
 
             void OnNavigating(object _, RoutingEventArgs e)
             {
@@ -556,7 +556,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
 
         private void SetupRoute(string route)
         {
-            _RouterSolver.SolveType(route).Returns(_FakeType);
+            _RouterSolver.SolveType(route).Returns(new RouteDestination(_FakeType));
         }
 
         private void SetupRouteFromType(string route)
