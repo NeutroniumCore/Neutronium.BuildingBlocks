@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Neutronium.BuildingBlocks.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle">
+            <summary>
+            Abstraction exposing application hook to listen and control
+            navigation and closing events.
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigating(Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs)">
+            <summary>
+            Sent before navigation, allows cancellation and redirect
+            </summary>
+            <param name="routingEvent"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnNavigated(Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs)">
+            <summary>
+            Sent after navigation
+            </summary>
+            <param name="routedEvent"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Sent on application closing, allows cancellation
+            </summary>
+            <param name="cancelEvent"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnSessionEnding(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Sent on session closing, allows cancellation
+            </summary>
+            <param name="cancelEvent"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle.OnClosed">
+            <summary>
+            Sent on application closed
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister">
+            <summary>
+            Facade object that listens to <see cref="T:Neutronium.BuildingBlocks.ApplicationTools.IApplication"/> and
+            <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator"/> and redirect events to the <see cref="T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle"/>
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.LifeCycleHook.LifeCycleEventsRegister.Register">
+            <summary>
+            Listen to <see cref="T:Neutronium.BuildingBlocks.ApplicationTools.IApplication"/> and <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator"/>
+            and redirect events to the <see cref="T:Neutronium.BuildingBlocks.Application.LifeCycleHook.IApplicationLifeCycle"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult">
+            <summary>
+            Before navigation information
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel">
+            <summary>
+            Instance used to cancel navigation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Ok(System.Object)">
+            <summary>
+            Instance used to  navigate to the given ViewModel
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.CreateRedirect(System.String)">
+            <summary>
+            Instance used to redirect the navigation
+            </summary>
+            <param name="routeName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter">
+            <summary>
+            Object that build navigation based on convention
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="routerBuilder"></param>
+            <param name="format">Route name using template string where {vm} is the class name without postfix,
+            {namespace} is the namespace, and {id} is the id provided in the register method
+            </param>
+            <param name="lowerPath">true to use class name in lower case</param>
+            <param name="postFix">Class name post fix to be discarded- default to "ViewModel"</param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Add the corresponding types to the convention
+            </summary>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)">
+            <summary>
+            Add the corresponding type to the convention, using option id
+            </summary>
+            <typeparam name="T">type to register</typeparam>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)">
+            <summary>
+            Add the corresponding type to the convention, using option id
+            </summary>
+            <param name="type">type to register</param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator">
+            <summary>
+            Navigation interface
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Object,System.String)">
+            <summary>
+            Navigate to the given viewModel using the optional route
+            If no route, is provided the RouterSolver will be used to find
+            the corresponding route
+            </summary>
+            <param name="viewModel"></param>
+            <param name="routeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.String)">
+            <summary>
+            Navigate to the given route
+            </summary>
+            <param name="routeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate``1(Neutronium.BuildingBlocks.Application.Navigation.NavigationContext{``0})">
+            <summary>
+            Navigate to the given NavigationContext
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.INavigator.Navigate(System.Type,Neutronium.BuildingBlocks.Application.Navigation.NavigationContext)">
+            <summary>
+            Navigate to the type, using CommonServiceLocator to instance the corresponding ViewModel
+            </summary>
+            <param name="type"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigating">
+            <summary>
+            Sent during navigation 
+            </summary>
+        </member>
+        <member name="E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnNavigated">
+            <summary>
+            Sent after navigation
+            </summary>
+        </member>
+        <member name="E:Neutronium.BuildingBlocks.Application.Navigation.INavigator.OnRoutingMessage">
+            <summary>
+            Routing events sent for routing purpose 
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder">
+            <summary>
+            Route builder
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)">
+            <summary>
+            Associate a viewmodel type to a given route
+            </summary>
+            <param name="type">
+            Type of view model to register
+            </param>
+            <param name="routerName">
+            router name
+            </param>
+            <param name="defaultType">
+            true if the type should be considered as default 
+            for the corresponding route name
+            </param>
+            <returns>
+            the router builder instance
+            </returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)">
+            <summary>
+            Associate a viewmodel type to a given route
+            </summary>
+            <typeparam name="T">
+            Type of view model to register
+            </typeparam>
+            <param name="routerName">
+            Route name
+            </param>
+            <param name="defaultType">
+            True if the type should be considered as default 
+            for the corresponding route name
+            </param>
+            <returns>
+            The navigation builder instance
+            </returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)">
+            <summary>
+            Associate a viewmodel type to a given route
+            </summary>
+            <param name="routeDefinition">
+            </param>
+            <returns>
+            The navigation builder instance
+            </returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver">
+            <summary>
+            Routing configuration associating viewModels and route
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(System.Object)">
+            <summary>
+            Find route associated with the viewModel
+            </summary>
+            <param name="viewModel"></param>
+            <returns>
+            The corresponding route
+            </returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute``1">
+            <summary>
+            Find route associated with the provided type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>
+            The corresponding route
+            </returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)">
+            <summary>
+            Find the viewModel type associated with the corresponding route
+            </summary>
+            <param name="route"></param>
+            <returns>
+            The corresponding route destination
+            </returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator">
+            <summary>
+            Manage relative navigation within ViewModel
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName">
+            <summary>
+            Relative Name of Child
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child">
+            <summary>
+            Child
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)">
+            <summary>
+            Navigate to a sub path and set RelativeName to the corresponding
+            relativePath.
+            </summary>
+            <param name="relativePath"></param>
+            <returns>
+            The created nested viewModel
+            </returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext">
+            <summary>
+            Navigation context
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.ResolutionKey">
+            <summary>
+            Resolution key used by dependency injection
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.RouteName">
+            <summary>
+            Route name
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1">
+            <summary>
+            Navigation context with before event
+            </summary>
+            <typeparam name="T">
+            viewModel type
+            </typeparam>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1.BeforeNavigate">
+            <summary>
+            Action that wil be called before navigation
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel">
+            <summary>
+            ViewModel providing an implementing of <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator"/> and binding with
+            javascript routing API.
+            Originally designed to work with vue-router.
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition">
+            <summary>
+            Route definition
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name">
+            <summary>
+            Route name
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination">
+            <summary>
+            Route destination
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault">
+            <summary>
+            Default type
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination">
+            <summary>
+            Route destination
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type">
+            <summary>
+            Destination type
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey">
+            <summary>
+            Resolution key to be used in common service locator
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo">
+            <summary>
+            Route description
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.ViewModel">
+            <summary>
+            Destination viewModel 
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteInfo.RouteName">
+            <summary>
+            Destination route
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.Router">
+            <summary>
+            <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder"/> and <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver"/> implementation
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions">
+            <summary>
+            Provides extensions for <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder"/>
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean)">
+            <summary>
+            Create a convention router for the given router builder
+            </summary>
+            <param name="routerBuilder"></param>
+            <param name="template"></param>
+            <param name="lowerPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.String)">
+            <summary>
+            Create a convention router for the given router builder
+            </summary>
+            <param name="routerBuilder"></param>
+            <param name="template"></param>
+            <param name="postFix"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs">
+            <summary>
+            Routing event
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.To">
+            <summary>
+            Destination route
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.From">
+            <summary>
+            Current route
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectedTo">
+            <summary>
+            Redirected route
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs.RedirectToRoute(System.String)">
+            <summary>
+            Redirect to the given route
+            </summary>
+            <param name="newRouteName"></param>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs">
+            <summary>
+            Routing information, useful for logging purpose
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs.Type">
+            <summary>
+            Message type
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.MessageType">
+            <summary>
+            Routing message type
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation">
+            <summary>
+            Application MetaData 
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Name">
+            <summary>
+            Application name
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Version">
+            <summary>
+            Application version
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.MadeBy">
+            <summary>
+            Application author
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation.Year">
+            <summary>
+            Copyright year
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1">
+            <summary>
+            ViewModel representing the application
+            </summary>
+            <typeparam name="T">
+            ViewModel type that is designed to be accessible
+            throughout the application life cycle independent from
+            which page is currently displayed 
+            </typeparam>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel">
+            <summary>
+            Page ViewModel
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)">
+            <summary>
+            Show message with confirmation in modal window
+            </summary>
+            <param name="confirmationMessage">
+            true if the user clicks on OK
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)">
+            <summary>
+            Show information in modal window
+            </summary>
+            <param name="messageInformation"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)">
+            <summary>
+            Display a notification
+            </summary>
+            <param name="notification"></param>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel">
+            <summary>
+            Modal ViewModel. Internally used by <see cref="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox"/> implementation
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel">
+            <summary>
+            Modal ViewModel. Internally used by <see cref="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox"/> implementation
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage">
+            <summary>
+            Message asking for confirmation 
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage.CancelMessage">
+            <summary>
+            Cancel message
+            </summary>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox">
+            <summary>
+            Message box/ modal window abstraction
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)">
+            <summary>
+            Display a confirmation message
+            </summary>
+            <param name="confirmationMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox.ShowInformation(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)">
+            <summary>
+            Show information
+            </summary>
+            <param name="messageInformation"></param>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender">
+            <summary>
+            Notifier abstraction
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.WindowServices.INotificationSender.Send(Neutronium.BuildingBlocks.Application.WindowServices.Notification)">
+            <summary>
+            Show the corresponding notification
+            </summary>
+            <param name="notification"></param>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation">
+            <summary>
+            Message to be displayed in modal window
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.OkMessage">
+            <summary>
+            Ok button message
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.Title">
+            <summary>
+            Window title
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="title"></param>
+            <param name="message"></param>
+            <param name="okMessage"></param>
+        </member>
+    </members>
+</doc>
