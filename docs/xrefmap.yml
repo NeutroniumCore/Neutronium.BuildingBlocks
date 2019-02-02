@@ -2844,15 +2844,15 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation
   nameWithType: TaskExtensions.WithCancellation
-- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
-  name: WithCancellation<T>(Task<T>, CancellationToken)
-  href: setup/Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.html#Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_
-  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
-  name.vb: WithCancellation(Of T)(Task(Of T), CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation<T>(System.Threading.Tasks.Task<T>, System.Threading.CancellationToken)
-  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation(Of T)(System.Threading.Tasks.Task(Of T), System.Threading.CancellationToken)
-  nameWithType: TaskExtensions.WithCancellation<T>(Task<T>, CancellationToken)
-  nameWithType.vb: TaskExtensions.WithCancellation(Of T)(Task(Of T), CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
+  name: WithCancellation<T>(Task<T>, CancellationToken, Boolean)
+  href: setup/Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.html#Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
+  name.vb: WithCancellation(Of T)(Task(Of T), CancellationToken, Boolean)
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation<T>(System.Threading.Tasks.Task<T>, System.Threading.CancellationToken, System.Boolean)
+  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation(Of T)(System.Threading.Tasks.Task(Of T), System.Threading.CancellationToken, System.Boolean)
+  nameWithType: TaskExtensions.WithCancellation<T>(Task<T>, CancellationToken, Boolean)
+  nameWithType.vb: TaskExtensions.WithCancellation(Of T)(Task(Of T), CancellationToken, Boolean)
 - uid: Neutronium.BuildingBlocks.ViewModel
   name: ViewModel
   href: applicationTools/Neutronium.BuildingBlocks.ViewModel.html

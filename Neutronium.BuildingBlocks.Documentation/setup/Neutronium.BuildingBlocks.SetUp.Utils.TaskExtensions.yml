@@ -6,7 +6,7 @@ items:
   parent: Neutronium.BuildingBlocks.SetUp.Utils
   children:
   - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask``1(System.Threading.CancellationToken)
-  - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+  - Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
   langs:
   - csharp
   - vb
@@ -98,17 +98,17 @@ items:
   - Shared
   fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask(Of T)(System.Threading.CancellationToken)
   name.vb: AsTask(Of T)(CancellationToken)
-- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
-  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
-  id: WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
+  id: WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)
   isExtensionMethod: true
   parent: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions
   langs:
   - csharp
   - vb
-  name: WithCancellation<T>(Task<T>, CancellationToken)
-  nameWithType: TaskExtensions.WithCancellation<T>(Task<T>, CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation<T>(System.Threading.Tasks.Task<T>, System.Threading.CancellationToken)
+  name: WithCancellation<T>(Task<T>, CancellationToken, Boolean)
+  nameWithType: TaskExtensions.WithCancellation<T>(Task<T>, CancellationToken, Boolean)
+  fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation<T>(System.Threading.Tasks.Task<T>, System.Threading.CancellationToken, System.Boolean)
   type: Method
   source:
     remote:
@@ -117,20 +117,23 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: WithCancellation
     path: ../Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.Utils
-  summary: "\nExecute the task with a cancellation Token,\nIf the token is cancelled the returned task will immediattely\nreturn as cancelled.\n"
+  summary: "\nExecute the task with a cancellation Token,\nIf the token is cancelled the returned task will immediately\nreturn as cancelled.\n"
   example: []
   syntax:
-    content: public static Task<T> WithCancellation<T>(this Task<T> task, CancellationToken token)
+    content: public static Task<T> WithCancellation<T>(this Task<T> task, CancellationToken token, bool configureAwait)
     parameters:
     - id: task
       type: System.Threading.Tasks.Task{{T}}
       description: ''
     - id: token
       type: System.Threading.CancellationToken
+      description: ''
+    - id: configureAwait
+      type: System.Boolean
       description: ''
     typeParameters:
     - id: T
@@ -141,17 +144,17 @@ items:
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function WithCancellation(Of T)(task As Task(Of T), token As CancellationToken) As Task(Of T)
+      Public Shared Function WithCancellation(Of T)(task As Task(Of T), token As CancellationToken, configureAwait As Boolean) As Task(Of T)
   overload: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation*
-  nameWithType.vb: TaskExtensions.WithCancellation(Of T)(Task(Of T), CancellationToken)
+  nameWithType.vb: TaskExtensions.WithCancellation(Of T)(Task(Of T), CancellationToken, Boolean)
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation(Of T)(System.Threading.Tasks.Task(Of T), System.Threading.CancellationToken)
-  name.vb: WithCancellation(Of T)(Task(Of T), CancellationToken)
+  fullName.vb: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation(Of T)(System.Threading.Tasks.Task(Of T), System.Threading.CancellationToken, System.Boolean)
+  name.vb: WithCancellation(Of T)(Task(Of T), CancellationToken, Boolean)
 references:
 - uid: Neutronium.BuildingBlocks.SetUp.Utils
   commentId: N:Neutronium.BuildingBlocks.SetUp.Utils
@@ -558,3 +561,10 @@ references:
   name: WithCancellation
   nameWithType: TaskExtensions.WithCancellation
   fullName: Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

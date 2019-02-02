@@ -23,16 +23,17 @@ namespace Neutronium.BuildingBlocks.SetUp.Utils
 
         /// <summary>
         /// Execute the task with a cancellation Token,
-        /// If the token is cancelled the returned task will immediattely
+        /// If the token is cancelled the returned task will immediately
         /// return as cancelled.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="task"></param>
         /// <param name="token"></param>
+        /// <param name="configureAwait"></param>
         /// <returns></returns>
-        public static async Task<T> WithCancellation<T>(this Task<T> task, CancellationToken token)
+        public static async Task<T> WithCancellation<T>(this Task<T> task, CancellationToken token, bool configureAwait)
         {
-            return await await Task.WhenAny(task, token.AsTask<T>());
+            return await await Task.WhenAny(task, token.AsTask<T>()).ConfigureAwait(configureAwait);
         }
     }
 }

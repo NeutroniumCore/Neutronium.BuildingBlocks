@@ -52,5 +52,5 @@
   "Neutronium.BuildingBlocks.SetUp.Utils": "Neutronium.BuildingBlocks.SetUp.Utils.yml",
   "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions": "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.yml",
   "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.AsTask``1(System.Threading.CancellationToken)": "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.yml",
-  "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)": "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.yml"
+  "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)": "Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.yml"
 }

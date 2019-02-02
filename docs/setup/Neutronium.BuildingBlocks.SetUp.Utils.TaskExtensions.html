@@ -178,21 +178,21 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation%60%601(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_System_Boolean_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation%60%601(System.Threading.Tasks.Task%7B%60%600%7D%2CSystem.Threading.CancellationToken%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs/#L33">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/Utils/TaskExtensions.cs/#L34">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation_" data-uid="Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation*"></a>
-  <h4 id="Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_" data-uid="Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken)">WithCancellation&lt;T&gt;(Task&lt;T&gt;, CancellationToken)</h4>
+  <h4 id="Neutronium_BuildingBlocks_SetUp_Utils_TaskExtensions_WithCancellation__1_System_Threading_Tasks_Task___0__System_Threading_CancellationToken_System_Boolean_" data-uid="Neutronium.BuildingBlocks.SetUp.Utils.TaskExtensions.WithCancellation``1(System.Threading.Tasks.Task{``0},System.Threading.CancellationToken,System.Boolean)">WithCancellation&lt;T&gt;(Task&lt;T&gt;, CancellationToken, Boolean)</h4>
   <div class="markdown level1 summary"><p>Execute the task with a cancellation Token,
-If the token is cancelled the returned task will immediattely
+If the token is cancelled the returned task will immediately
 return as cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; WithCancellation&lt;T&gt;(this Task&lt;T&gt; task, CancellationToken token)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; WithCancellation&lt;T&gt;(this Task&lt;T&gt; task, CancellationToken token, bool configureAwait)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,6 +212,11 @@ return as cancelled.</p>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">configureAwait</span></td>
         <td></td>
       </tr>
     </tbody>
