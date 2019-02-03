@@ -158,8 +158,12 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         private void AfterResolve(string routeName)
         {
             //Possible on hot-reload or after crash recovery
-            if ((routeName == Route) && (_CurrentNavigations.Count == 0))
+            //Or on redirect on load
+            if (_CurrentNavigations.Count == 0)
+            {
+                Route = routeName;
                 return;
+            }            
 
             var context = _CurrentNavigations.Dequeue();
             if (context.Route != routeName)
