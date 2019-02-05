@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using CommonServiceLocator;
+﻿using CommonServiceLocator;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {
@@ -109,8 +110,24 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         private object GetViewModelFromRoute(string routeName)
         {
-            var paths = routeName.Split('/');
-            var routeDestination = _RouterSolver.SolveType(paths[0]);
+            var routeDestination = _RouterSolver.SolveType(routeName);
+            if (routeDestination != null)
+            {
+                return GetInstance(routeDestination);
+            }
+
+            var path = routeName;
+            var paths = new Stack<string>();
+
+            var index = path.LastIndexOf('/');
+            while ((index != -1) && (routeDestination == null))
+            {
+                paths.Push(path.Substring(index + 1, path.Length - index - 1));
+                path = path.Substring(0, index);
+                routeDestination = _RouterSolver.SolveType(path);
+                index = path.LastIndexOf('/');
+            }
+
             if (routeDestination == null)
                 return null;
 
@@ -125,25 +142,22 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             return key == null ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, key);
         }
 
-        private bool CreateChildren(object root, IReadOnlyList<string> paths, string route)
+        private bool CreateChildren(object root, IEnumerable<string> paths, string route)
         {
-            if (paths.Count < 2)
-                return true;
-
             if (!(root is ISubNavigator subNavigator))
             {
-                OnError($"Problem when solving {route}. Sub-path not found: {paths[1]}, root viewModel {root} does not implement ISubNavigator");
+                OnError($"Problem when solving {route}. Sub-path not found: {paths.First()}, root viewModel {root} does not implement ISubNavigator");
                 return false;
             }
 
-            for (var i = 1; i < paths.Count; i++)
+            foreach (var path in paths)
             {
-                subNavigator = subNavigator.NavigateTo(paths[i]);
+                subNavigator = subNavigator.NavigateTo(path);
                 if (subNavigator == null)
                 {
-                    OnError($"Problem when solving {route}. Sub-path not found: {paths[i]}, path index: {i}");
+                    OnError($"Problem when solving {route}. Sub-path not found: {path}");
                     return false;
-                }            
+                }
             }
             return true;
         }
@@ -163,7 +177,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             {
                 Route = routeName;
                 return;
-            }            
+            }
 
             var context = _CurrentNavigations.Dequeue();
             if (context.Route != routeName)
@@ -215,7 +229,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
                 {
                     builder.Append('/');
                     builder.Append(relativeName);
-                }        
+                }
                 subNavigator = subNavigator.Child;
             }
             return builder.ToString();

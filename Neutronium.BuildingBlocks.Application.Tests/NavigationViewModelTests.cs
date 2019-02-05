@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoFixture.Xunit2;
+﻿using AutoFixture.Xunit2;
 using CommonServiceLocator;
 using FluentAssertions;
 using Neutronium.BuildingBlocks.Application.Navigation;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Neutronium.BuildingBlocks.Application.Tests
@@ -21,7 +21,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         private readonly string _OriginalRoute = "FirstRoute";
         private static readonly Type _FakeType = typeof(FakeClass);
         private static readonly Type _FakeTypeRedirect = typeof(SecondFakeClass);
-        private static readonly Type _FakeSubNavigatorType = typeof(FakeSubNavigator); 
+        private static readonly Type _FakeSubNavigatorType = typeof(FakeSubNavigator);
 
         public class FakeClass
         {
@@ -95,7 +95,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public async Task BeforeResolveCommand_continues_navigation_when_route_with_sub_path_is_found()
         {
             var expectedViewModel = SetupForSuccessfulNavigation("root");
-            var expected = BeforeRouterResult.Ok(expectedViewModel);         
+            var expected = BeforeRouterResult.Ok(expectedViewModel);
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
 
@@ -110,11 +110,55 @@ namespace Neutronium.BuildingBlocks.Application.Tests
 
             expectedViewModel.Received(3).NavigateTo(Arg.Any<string>());
 
-            Received.InOrder(() => {
+            Received.InOrder(() =>
+            {
                 expectedViewModel.NavigateTo("path1");
                 expectedViewModel.NavigateTo("path2");
                 expectedViewModel.NavigateTo("path3");
             });
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_allows_direct_sub_path_resolution_to_view_model()
+        {
+            var expectedViewModel = Substitute.For<ISubNavigator>();
+            var expected = BeforeRouterResult.Ok(expectedViewModel);
+            SetupSubNavigation(expectedViewModel, "root/path1");      
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1");
+
+            res.Should().BeEquivalentTo(expected);
+            expectedViewModel.DidNotReceive().NavigateTo(Arg.Any<string>());
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_allows_direct_sub_path_resolution_to_view_model_and_navigation()
+        {
+            var expectedViewModel = Substitute.For<ISubNavigator>();
+            var expected = BeforeRouterResult.Ok(expectedViewModel);
+            SetupSubNavigation(expectedViewModel, "root/path1");
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
+
+            res.Should().BeEquivalentTo(expected);
+            expectedViewModel.Received(1).NavigateTo(Arg.Any<string>());
+            expectedViewModel.Received(1).NavigateTo("path2");
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_gives_priority_to_direct_bind()
+        {
+            var expectedViewModel = new object();
+            var expected = BeforeRouterResult.Ok(expectedViewModel);
+            SetupSubNavigation(expectedViewModel, "root/path1/path2");
+
+            var another = Substitute.For<ISubNavigator>();
+            SetupSubNavigation(another, "root/path1");
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
+
+            res.Should().BeEquivalentTo(expected);
+            another.DidNotReceive().NavigateTo(Arg.Any<string>());
         }
 
         [Theory]
@@ -360,7 +404,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var viewModel = GetFakeSubNavigator();
             _ServiceLocator.GetInstance(_FakeSubNavigatorType).Returns(viewModel);
             _RouterSolver.SolveRoute(viewModel).Returns("root");
-           
+
 
             var task = _NavigationViewModel.Navigate(_FakeSubNavigatorType);
             _NavigationViewModel.Route.Should().Be("root/path2/path3");
@@ -370,7 +414,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_type_context_updates_route_with_context_route_when_provided(string route, string contextRoute)
         {
             SetupRouteFromType(route);
-            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext{ RouteName = contextRoute });
+            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext { RouteName = contextRoute });
             _NavigationViewModel.Route.Should().Be(contextRoute);
         }
 
@@ -456,7 +500,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_generic_context_call_cb_on_vm_route_when_provided(string route)
         {
             SetupRouteFromType(route);
-            var context = new NavigationContext<FakeClass> {BeforeNavigate = Substitute.For<Action<FakeClass>>()};
+            var context = new NavigationContext<FakeClass> { BeforeNavigate = Substitute.For<Action<FakeClass>>() };
             var task = _NavigationViewModel.Navigate(context);
             context.BeforeNavigate.Received(1).Invoke(Arg.Any<FakeClass>());
             context.BeforeNavigate.Received().Invoke(_ExpectedNewViewModel);
