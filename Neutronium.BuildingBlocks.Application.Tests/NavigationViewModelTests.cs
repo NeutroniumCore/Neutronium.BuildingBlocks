@@ -150,9 +150,8 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             var expectedViewModel = new object();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
-            SetupSubNavigation(expectedViewModel, "root/path1/path2");
-
             var another = Substitute.For<ISubNavigator>();
+            SetupSubNavigation(expectedViewModel, "root/path1/path2");
             SetupSubNavigation(another, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
