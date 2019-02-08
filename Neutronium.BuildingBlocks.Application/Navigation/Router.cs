@@ -51,7 +51,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             return _TypeToRoute.GetOrDefault(type);
         }
 
-        public RouteDestination SolveType(string route)
+        public RouteDestination SolveType(string route, string context= null)
         {
             return _RouteToType.GetOrDefault(route);
         }

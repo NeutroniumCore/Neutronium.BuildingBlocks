@@ -21,11 +21,11 @@ items:
   type: Interface
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: INavigator
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 8
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -54,11 +54,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 18
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -92,11 +92,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 25
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -127,11 +127,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 33
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -168,11 +168,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 41
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -206,11 +206,11 @@ items:
   type: Event
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigating
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 46
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -235,11 +235,11 @@ items:
   type: Event
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigated
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 51
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -264,11 +264,11 @@ items:
   type: Event
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnRoutingMessage
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/INavigator.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/INavigator.cs
     startLine: 56
   assemblies:
   - Neutronium.BuildingBlocks.Application

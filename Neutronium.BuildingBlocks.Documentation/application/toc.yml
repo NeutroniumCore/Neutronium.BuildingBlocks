@@ -13,6 +13,10 @@
     name: BeforeRouterResult
   - uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
     name: ConventionRouter
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+    name: IConventionSubNavigator
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+    name: IExtendedConventionRouter
   - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
     name: INavigator
   - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
@@ -21,6 +25,8 @@
     name: IRouterSolver
   - uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
     name: ISubNavigator
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+    name: ISubNavigatorFactory
   - uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
     name: MessageType
   - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext

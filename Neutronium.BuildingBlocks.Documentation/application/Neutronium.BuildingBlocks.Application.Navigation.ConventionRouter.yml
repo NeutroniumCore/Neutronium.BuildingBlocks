@@ -30,13 +30,14 @@ items:
   summary: "\nObject that build navigation based on convention\n"
   example: []
   syntax:
-    content: 'public class ConventionRouter : IConventionRouter'
+    content: 'public class ConventionRouter : IExtendedConventionRouter, IConventionRouter'
     content.vb: >-
       Public Class ConventionRouter
-          Implements IConventionRouter
+          Implements IExtendedConventionRouter, IConventionRouter
   inheritance:
   - System.Object
   implements:
+  - Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
   - Neutronium.Core.Navigation.Routing.IConventionRouter
   inheritedMembers:
   - System.Object.ToString
@@ -248,6 +249,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IExtendedConventionRouter
+  nameWithType: IExtendedConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
 - uid: Neutronium.Core.Navigation.Routing.IConventionRouter
   commentId: T:Neutronium.Core.Navigation.Routing.IConventionRouter
   parent: Neutronium.Core.Navigation.Routing

@@ -21,7 +21,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RouterBuilderExtensions
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouterBuilderExtensions.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -66,14 +66,14 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: GetTemplateConvention
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouterBuilderExtensions.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   summary: "\nCreate a convention router for the given router builder\n"
   example: []
   syntax:
-    content: public static IConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, bool lowerPath = true)
+    content: public static IExtendedConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, bool lowerPath = true)
     parameters:
     - id: routerBuilder
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
@@ -85,12 +85,12 @@ items:
       type: System.Boolean
       description: ''
     return:
-      type: Neutronium.Core.Navigation.Routing.IConventionRouter
+      type: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
       description: ''
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function GetTemplateConvention(routerBuilder As IRouterBuilder, template As String, lowerPath As Boolean = True) As IConventionRouter
+      Public Shared Function GetTemplateConvention(routerBuilder As IRouterBuilder, template As String, lowerPath As Boolean = True) As IExtendedConventionRouter
   overload: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention*
   modifiers.csharp:
   - public
@@ -117,14 +117,14 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: GetTemplateConvention
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouterBuilderExtensions.cs
-    startLine: 28
+    startLine: 26
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   summary: "\nCreate a convention router for the given router builder\n"
   example: []
   syntax:
-    content: public static IConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, string postFix)
+    content: public static IExtendedConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, string postFix)
     parameters:
     - id: routerBuilder
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
@@ -136,12 +136,12 @@ items:
       type: System.String
       description: ''
     return:
-      type: Neutronium.Core.Navigation.Routing.IConventionRouter
+      type: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
       description: ''
     content.vb: >-
       <ExtensionAttribute>
 
-      Public Shared Function GetTemplateConvention(routerBuilder As IRouterBuilder, template As String, postFix As String) As IConventionRouter
+      Public Shared Function GetTemplateConvention(routerBuilder As IRouterBuilder, template As String, postFix As String) As IExtendedConventionRouter
   overload: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions.GetTemplateConvention*
   modifiers.csharp:
   - public
@@ -472,16 +472,9 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Neutronium.Core.Navigation.Routing.IConventionRouter
-  commentId: T:Neutronium.Core.Navigation.Routing.IConventionRouter
-  parent: Neutronium.Core.Navigation.Routing
-  isExternal: true
-  name: IConventionRouter
-  nameWithType: IConventionRouter
-  fullName: Neutronium.Core.Navigation.Routing.IConventionRouter
-- uid: Neutronium.Core.Navigation.Routing
-  commentId: N:Neutronium.Core.Navigation.Routing
-  isExternal: true
-  name: Neutronium.Core.Navigation.Routing
-  nameWithType: Neutronium.Core.Navigation.Routing
-  fullName: Neutronium.Core.Navigation.Routing
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IExtendedConventionRouter
+  nameWithType: IExtendedConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter

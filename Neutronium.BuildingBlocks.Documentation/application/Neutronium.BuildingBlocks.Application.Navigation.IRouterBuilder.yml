@@ -17,11 +17,11 @@ items:
   type: Interface
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: IRouterBuilder
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
     startLine: 7
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -53,11 +53,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
     startLine: 25
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -94,11 +94,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
     startLine: 43
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -138,11 +138,11 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterBuilder.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
     startLine: 53
   assemblies:
   - Neutronium.BuildingBlocks.Application

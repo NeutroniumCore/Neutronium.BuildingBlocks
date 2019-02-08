@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  id: IConventionSubNavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children:
+  - Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IConventionSubNavigator
+  nameWithType: IConventionSubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IConventionSubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IConventionSubNavigator
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IConventionSubNavigator.cs
+    startLine: 5
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nManage relative navigation within ViewModel\n"
+  example: []
+  syntax:
+    content: 'public interface IConventionSubNavigator : ISubNavigator'
+    content.vb: >-
+      Public Interface IConventionSubNavigator
+          Inherits ISubNavigator
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)
+  id: SetChild(System.String,System.Object)
+  parent: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  langs:
+  - csharp
+  - vb
+  name: SetChild(String, Object)
+  nameWithType: IConventionSubNavigator.SetChild(String, Object)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IConventionSubNavigator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: SetChild
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IConventionSubNavigator.cs
+    startLine: 15
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nSet Child and ChildName to the corresponding\nvalues.\n"
+  example: []
+  syntax:
+    content: void SetChild(string relativePath, object child)
+    parameters:
+    - id: relativePath
+      type: System.String
+      description: ''
+    - id: child
+      type: System.Object
+    content.vb: Sub SetChild(relativePath As String, child As Object)
+  overload: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild*
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  parent: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  name: ChildName
+  nameWithType: ISubNavigator.ChildName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+  parent: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  name: Child
+  nameWithType: ISubNavigator.Child
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: ISubNavigator
+  nameWithType: ISubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild
+  name: SetChild
+  nameWithType: IConventionSubNavigator.SetChild
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

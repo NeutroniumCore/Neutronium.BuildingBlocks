@@ -10,7 +10,7 @@ items:
   - Neutronium.BuildingBlocks.Application.Navigation.Router.Register``1(System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(System.Object)
   - Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute``1
-  - Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String,System.String)
   langs:
   - csharp
   - vb
@@ -256,16 +256,16 @@ items:
   - Public
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(Of T)()
   name.vb: SolveRoute(Of T)()
-- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
-  id: SolveType(System.String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String,System.String)
+  id: SolveType(System.String,System.String)
   parent: Neutronium.BuildingBlocks.Application.Navigation.Router
   langs:
   - csharp
   - vb
-  name: SolveType(String)
-  nameWithType: Router.SolveType(String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
+  name: SolveType(String, String)
+  nameWithType: Router.SolveType(String, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String, System.String)
   type: Method
   source:
     remote:
@@ -279,16 +279,18 @@ items:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   syntax:
-    content: public RouteDestination SolveType(string route)
+    content: public RouteDestination SolveType(string route, string context = null)
     parameters:
     - id: route
       type: System.String
+    - id: context
+      type: System.String
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
-    content.vb: Public Function SolveType(route As String) As RouteDestination
+    content.vb: Public Function SolveType(route As String, context As String = Nothing) As RouteDestination
   overload: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType*
   implements:
-  - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1132,15 +1134,15 @@ references:
   name: SolveType
   nameWithType: Router.SolveType
   fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
   parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
   isExternal: true
-  name: SolveType(String)
-  nameWithType: IRouterSolver.SolveType(String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  name: SolveType(String, String)
+  nameWithType: IRouterSolver.SolveType(String, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String, System.String)
   spec.csharp:
-  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
     name: SolveType
     nameWithType: IRouterSolver.SolveType
     fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType
@@ -1152,17 +1154,33 @@ references:
     nameWithType: String
     fullName: System.String
     isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
     name: SolveType
     nameWithType: IRouterSolver.SolveType
     fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String

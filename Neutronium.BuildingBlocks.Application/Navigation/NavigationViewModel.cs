@@ -3,7 +3,6 @@ using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -110,29 +109,18 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         private object GetViewModelFromRoute(string routeName)
         {
-            var routeDestination = _RouterSolver.SolveType(routeName);
-            if (routeDestination != null)
+            var routeDestination = default(RouteDestination);
+            var pathContext = new PathContext(routeName);
+            do
             {
-                return GetInstance(routeDestination);
-            }
-
-            var path = routeName;
-            var paths = new Stack<string>();
-
-            var index = path.LastIndexOf('/');
-            while ((index != -1) && (routeDestination == null))
-            {
-                paths.Push(path.Substring(index + 1, path.Length - index - 1));
-                path = path.Substring(0, index);
-                routeDestination = _RouterSolver.SolveType(path);
-                index = path.LastIndexOf('/');
-            }
+                routeDestination = _RouterSolver.SolveType(pathContext.RootToCurrent);
+            } while (routeDestination == null && pathContext.Back());
 
             if (routeDestination == null)
                 return null;
 
             var root = GetInstance(routeDestination);
-            return CreateChildren(root, paths, routeName) ? root : null;
+            return UpdateChildren(root, pathContext) ? root : null;
         }
 
         private object GetInstance(RouteDestination routeDestination)
@@ -142,24 +130,37 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             return key == null ? _ServiceLocator.Value.GetInstance(type) : _ServiceLocator.Value.GetInstance(type, key);
         }
 
-        private bool CreateChildren(object root, IEnumerable<string> paths, string route)
+        private bool UpdateChildren(object root, PathContext pathContext)
         {
-            if (!(root is ISubNavigator subNavigator))
+            object subNavigator = root as ISubNavigator;
+            while (pathContext.CurrentRelativePath != null)
             {
-                OnError($"Problem when solving {route}. Sub-path not found: {paths.First()}, root viewModel {root} does not implement ISubNavigator");
-                return false;
-            }
-
-            foreach (var path in paths)
-            {
-                subNavigator = subNavigator.NavigateTo(path);
+                subNavigator = UpdateChild(subNavigator, pathContext);
                 if (subNavigator == null)
                 {
-                    OnError($"Problem when solving {route}. Sub-path not found: {path}");
+                    OnError($"Problem when solving {pathContext.CompletePath}. Sub-path not found: {pathContext.CurrentRelativePath}");
                     return false;
                 }
+
+                pathContext.Next();
             }
             return true;
+        }
+
+        private object UpdateChild(object root, PathContext pathContext)
+        {
+            switch (root)
+            {
+                case ISubNavigatorFactory factory:
+                    return factory.Create(pathContext.CurrentRelativePath);
+
+                case IConventionSubNavigator navigator:
+                    var child = _RouterSolver.SolveType(pathContext.CurrentRelativePath, pathContext.RootToCurrent);
+                    navigator.SetChild(pathContext.CurrentRelativePath, child);
+                    return child;
+            }
+
+            return null;
         }
 
         private RouteContext CreateRouteContext(object viewModel, string routeName)
@@ -224,7 +225,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             var builder = new StringBuilder(root);
             while (subNavigator != null)
             {
-                var relativeName = subNavigator.RelativeName;
+                var relativeName = subNavigator.ChildName;
                 if (relativeName != null)
                 {
                     builder.Append('/');

@@ -8,21 +8,11 @@
         /// <summary>
         /// Relative Name of Child
         /// </summary>
-        string RelativeName { get; }
+        string ChildName { get; }
 
         /// <summary>
         /// Child
         /// </summary>
         ISubNavigator Child { get; }
-
-        /// <summary>
-        /// Navigate to a sub path and set RelativeName to the corresponding
-        /// relativePath.
-        /// </summary>
-        /// <param name="relativePath"></param>
-        /// <returns>
-        /// The created nested viewModel
-        /// </returns>
-        ISubNavigator NavigateTo(string relativePath);
     }
 }

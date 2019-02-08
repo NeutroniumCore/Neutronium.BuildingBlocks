@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  id: IExtendedConventionRouter
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IExtendedConventionRouter
+  nameWithType: IExtendedConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IExtendedConventionRouter.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: IExtendedConventionRouter
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IExtendedConventionRouter.cs
+    startLine: 7
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nConvention router with sub-navigation capacity\n"
+  example: []
+  syntax:
+    content: 'public interface IExtendedConventionRouter : IConventionRouter'
+    content.vb: >-
+      Public Interface IExtendedConventionRouter
+          Inherits IConventionRouter
+  inheritedMembers:
+  - Neutronium.Core.Navigation.Routing.IConventionRouter.Register``1(System.String)
+  - Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type,System.String)
+  - Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Neutronium.BuildingBlocks.Application.Navigation
+  commentId: N:Neutronium.BuildingBlocks.Application.Navigation
+  name: Neutronium.BuildingBlocks.Application.Navigation
+  nameWithType: Neutronium.BuildingBlocks.Application.Navigation
+  fullName: Neutronium.BuildingBlocks.Application.Navigation
+- uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register``1(System.String)
+  commentId: M:Neutronium.Core.Navigation.Routing.IConventionRouter.Register``1(System.String)
+  parent: Neutronium.Core.Navigation.Routing.IConventionRouter
+  isExternal: true
+  name: Register<T>(String)
+  nameWithType: IConventionRouter.Register<T>(String)
+  fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register<T>(System.String)
+  nameWithType.vb: IConventionRouter.Register(Of T)(String)
+  fullName.vb: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(Of T)(System.String)
+  name.vb: Register(Of T)(String)
+  spec.csharp:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register``1(System.String)
+    name: Register<T>
+    nameWithType: IConventionRouter.Register<T>
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register``1(System.String)
+    name: Register(Of T)
+    nameWithType: IConventionRouter.Register(Of T)
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type,System.String)
+  commentId: M:Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type,System.String)
+  parent: Neutronium.Core.Navigation.Routing.IConventionRouter
+  isExternal: true
+  name: Register(Type, String)
+  nameWithType: IConventionRouter.Register(Type, String)
+  fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type, System.String)
+  spec.csharp:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type,System.String)
+    name: Register
+    nameWithType: IConventionRouter.Register
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Type,System.String)
+    name: Register
+    nameWithType: IConventionRouter.Register
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+  commentId: M:Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+  parent: Neutronium.Core.Navigation.Routing.IConventionRouter
+  isExternal: true
+  name: Register(IEnumerable<Type>)
+  nameWithType: IConventionRouter.Register(IEnumerable<Type>)
+  fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable<System.Type>)
+  nameWithType.vb: IConventionRouter.Register(IEnumerable(Of Type))
+  fullName.vb: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable(Of System.Type))
+  name.vb: Register(IEnumerable(Of Type))
+  spec.csharp:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+    name: Register
+    nameWithType: IConventionRouter.Register
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.Core.Navigation.Routing.IConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
+    name: Register
+    nameWithType: IConventionRouter.Register
+    fullName: Neutronium.Core.Navigation.Routing.IConventionRouter.Register
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.Core.Navigation.Routing.IConventionRouter
+  commentId: T:Neutronium.Core.Navigation.Routing.IConventionRouter
+  parent: Neutronium.Core.Navigation.Routing
+  isExternal: true
+  name: IConventionRouter
+  nameWithType: IConventionRouter
+  fullName: Neutronium.Core.Navigation.Routing.IConventionRouter
+- uid: Neutronium.Core.Navigation.Routing
+  commentId: N:Neutronium.Core.Navigation.Routing
+  isExternal: true
+  name: Neutronium.Core.Navigation.Routing
+  nameWithType: Neutronium.Core.Navigation.Routing
+  fullName: Neutronium.Core.Navigation.Routing

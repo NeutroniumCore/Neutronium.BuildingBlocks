@@ -2,23 +2,23 @@
 
 namespace Neutronium.BuildingBlocks.Application.Tests
 {
-    public class FakeSubNavigator : ISubNavigator
+    public class FakeSubNavigatorFactory : ISubNavigatorFactory
     {
-        public string RelativeName { get; set; }
-        public ISubNavigator Child => SubNavigator;
+        public string ChildName { get; set; }
+        public ISubNavigator Child => SubNavigatorFactory;
 
-        internal FakeSubNavigator SubNavigator { get; set; }     
+        internal FakeSubNavigatorFactory SubNavigatorFactory { get; set; }     
 
-        public ISubNavigator NavigateTo(string relativePath)
+        public ISubNavigator Create(string relativePath)
         {
-            RelativeName = relativePath;
-            SubNavigator = new FakeSubNavigator();
-            return SubNavigator;
+            ChildName = relativePath;
+            SubNavigatorFactory = new FakeSubNavigatorFactory();
+            return SubNavigatorFactory;
         }
 
         public override string ToString()
         {
-            return $"{RelativeName}/{Child}";
+            return $"{ChildName}/{Child}";
         }
     }
 }

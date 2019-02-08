@@ -6,10 +6,13 @@ items:
   children:
   - Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
   - Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+  - Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  - Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
   - Neutronium.BuildingBlocks.Application.Navigation.INavigator
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
   - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+  - Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
   - Neutronium.BuildingBlocks.Application.Navigation.MessageType
   - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
   - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
@@ -43,6 +46,17 @@ references:
   name: ConventionRouter
   nameWithType: ConventionRouter
   fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  name: IConventionSubNavigator
+  nameWithType: IConventionSubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: IExtendedConventionRouter
+  nameWithType: IExtendedConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
 - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.INavigator
   parent: Neutronium.BuildingBlocks.Application.Navigation
@@ -67,6 +81,11 @@ references:
   name: ISubNavigator
   nameWithType: ISubNavigator
   fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+  name: ISubNavigatorFactory
+  nameWithType: ISubNavigatorFactory
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
 - uid: Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
   parent: Neutronium.BuildingBlocks.Application.Navigation

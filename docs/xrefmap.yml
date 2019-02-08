@@ -256,6 +256,31 @@ references:
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(Of T)(System.String)
   nameWithType: ConventionRouter.Register<T>(String)
   nameWithType.vb: ConventionRouter.Register(Of T)(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  name: IConventionSubNavigator
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
+  nameWithType: IConventionSubNavigator
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)
+  name: SetChild(String, Object)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_IConventionSubNavigator_SetChild_System_String_System_Object_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String, System.Object)
+  nameWithType: IConventionSubNavigator.SetChild(String, Object)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild*
+  name: SetChild
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_IConventionSubNavigator_SetChild_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild
+  nameWithType: IConventionSubNavigator.SetChild
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  name: IExtendedConventionRouter
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
+  nameWithType: IExtendedConventionRouter
 - uid: Neutronium.BuildingBlocks.Application.Navigation.INavigator
   name: INavigator
   href: application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html
@@ -376,12 +401,12 @@ references:
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(Of T)()
   nameWithType: IRouterSolver.SolveRoute<T>()
   nameWithType.vb: IRouterSolver.SolveRoute(Of T)()
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  name: SolveType(String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveType_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  nameWithType: IRouterSolver.SolveType(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
+  name: SolveType(String, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveType_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String, System.String)
+  nameWithType: IRouterSolver.SolveType(String, String)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType*
   name: SolveType
   href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterSolver_SolveType_
@@ -408,32 +433,38 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child
   nameWithType: ISubNavigator.Child
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
-  name: NavigateTo(String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_NavigateTo_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)
-  nameWithType: ISubNavigator.NavigateTo(String)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo*
-  name: NavigateTo
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_NavigateTo_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  name: ChildName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_ChildName
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  nameWithType: ISubNavigator.ChildName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName*
+  name: ChildName
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_ChildName_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo
-  nameWithType: ISubNavigator.NavigateTo
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
-  name: RelativeName
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_RelativeName
-  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
-  nameWithType: ISubNavigator.RelativeName
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName*
-  name: RelativeName
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigator_RelativeName_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName
+  nameWithType: ISubNavigator.ChildName
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+  name: ISubNavigatorFactory
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.html
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory
+  nameWithType: ISubNavigatorFactory
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create(System.String)
+  name: Create(String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigatorFactory_Create_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create(System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create(System.String)
+  nameWithType: ISubNavigatorFactory.Create(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create*
+  name: Create
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.html#Neutronium_BuildingBlocks_Application_Navigation_ISubNavigatorFactory_Create_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName
-  nameWithType: ISubNavigator.RelativeName
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create
+  nameWithType: ISubNavigatorFactory.Create
 - uid: Neutronium.BuildingBlocks.Application.Navigation.MessageType
   name: MessageType
   href: application/Neutronium.BuildingBlocks.Application.Navigation.MessageType.html
@@ -693,6 +724,45 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   nameWithType: RouteDestination
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
+  name: RouteDestination(Type, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination(System.Type, System.String)
+  nameWithType: RouteDestination.RouteDestination(Type, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor*
+  name: RouteDestination
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination
+  nameWithType: RouteDestination.RouteDestination
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
+  name: ResolutionKey
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_ResolutionKey
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
+  nameWithType: RouteDestination.ResolutionKey
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey*
+  name: ResolutionKey
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_ResolutionKey_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
+  nameWithType: RouteDestination.ResolutionKey
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Type
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
+  nameWithType: RouteDestination.Type
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type*
+  name: Type
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Type_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
+  nameWithType: RouteDestination.Type
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
   name: RoutedEventArgs
   href: application/Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs.html
@@ -858,12 +928,12 @@ references:
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveRoute(Of T)()
   nameWithType: Router.SolveRoute<T>()
   nameWithType.vb: Router.SolveRoute(Of T)()
-- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
-  name: SolveType(String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveType_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String)
-  nameWithType: Router.SolveType(String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String,System.String)
+  name: SolveType(String, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveType_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType(System.String, System.String)
+  nameWithType: Router.SolveType(String, String)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.Router.SolveType*
   name: SolveType
   href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_SolveType_

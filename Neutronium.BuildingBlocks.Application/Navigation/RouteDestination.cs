@@ -10,14 +10,14 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <summary>
         /// Destination type
         /// </summary>
-        internal Type Type { get; }
+        public Type Type { get; }
 
         /// <summary>
         /// Resolution key to be used in common service locator
         /// </summary>
-        internal string ResolutionKey { get; }
+        public string ResolutionKey { get; }
 
-        internal RouteDestination(Type type, string resolutionKey = null)
+        public RouteDestination(Type type, string resolutionKey = null)
         {
             Type = type;
             ResolutionKey = resolutionKey;

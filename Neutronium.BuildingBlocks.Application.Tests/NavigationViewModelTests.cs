@@ -21,7 +21,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         private readonly string _OriginalRoute = "FirstRoute";
         private static readonly Type _FakeType = typeof(FakeClass);
         private static readonly Type _FakeTypeRedirect = typeof(SecondFakeClass);
-        private static readonly Type _FakeSubNavigatorType = typeof(FakeSubNavigator);
+        private static readonly Type _FakeSubNavigatorType = typeof(FakeSubNavigatorFactory);
 
         public class FakeClass
         {
@@ -71,8 +71,8 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public async Task BeforeResolveCommand_cancels_navigation_when_nested_sub_route_not_found(string route)
         {
             var expected = BeforeRouterResult.Cancel();
-            var subNavigator = Substitute.For<ISubNavigator>();
-            subNavigator.NavigateTo("path1").Returns(default(ISubNavigator));
+            var subNavigator = Substitute.For<ISubNavigatorFactory>();
+            subNavigator.Create("path1").Returns(default(ISubNavigatorFactory));
             SetupSubNavigation(subNavigator, route);
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute($"{route}/path1");
@@ -108,41 +108,41 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var expectedViewModel = SetupForSuccessfulNavigation("root");
             await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
 
-            expectedViewModel.Received(3).NavigateTo(Arg.Any<string>());
+            expectedViewModel.Received(3).Create(Arg.Any<string>());
 
             Received.InOrder(() =>
             {
-                expectedViewModel.NavigateTo("path1");
-                expectedViewModel.NavigateTo("path2");
-                expectedViewModel.NavigateTo("path3");
+                expectedViewModel.Create("path1");
+                expectedViewModel.Create("path2");
+                expectedViewModel.Create("path3");
             });
         }
 
         [Fact]
         public async Task BeforeResolveCommand_allows_direct_sub_path_resolution_to_view_model()
         {
-            var expectedViewModel = Substitute.For<ISubNavigator>();
+            var expectedViewModel = Substitute.For<ISubNavigatorFactory>();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
             SetupSubNavigation(expectedViewModel, "root/path1");      
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1");
 
             res.Should().BeEquivalentTo(expected);
-            expectedViewModel.DidNotReceive().NavigateTo(Arg.Any<string>());
+            expectedViewModel.DidNotReceive().Create(Arg.Any<string>());
         }
 
         [Fact]
         public async Task BeforeResolveCommand_allows_direct_sub_path_resolution_to_view_model_and_navigation()
         {
-            var expectedViewModel = Substitute.For<ISubNavigator>();
+            var expectedViewModel = Substitute.For<ISubNavigatorFactory>();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
             SetupSubNavigation(expectedViewModel, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
 
             res.Should().BeEquivalentTo(expected);
-            expectedViewModel.Received(1).NavigateTo(Arg.Any<string>());
-            expectedViewModel.Received(1).NavigateTo("path2");
+            expectedViewModel.Received(1).Create(Arg.Any<string>());
+            expectedViewModel.Received(1).Create("path2");
         }
 
         [Fact]
@@ -150,14 +150,14 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             var expectedViewModel = new object();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
-            var another = Substitute.For<ISubNavigator>();
+            var another = Substitute.For<ISubNavigatorFactory>();
             SetupSubNavigation(expectedViewModel, "root/path1/path2");
             SetupSubNavigation(another, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
 
             res.Should().BeEquivalentTo(expected);
-            another.DidNotReceive().NavigateTo(Arg.Any<string>());
+            another.DidNotReceive().Create(Arg.Any<string>());
         }
 
         [Theory]
@@ -329,10 +329,10 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public async Task AfterResolveCommand_construct_subNavigator_for_complex_path()
         {
             var expected = GetFakeSubNavigator();
-            var type = typeof(FakeSubNavigator);
+            var type = typeof(FakeSubNavigatorFactory);
             const string route = "path1/path2/path3";
             _RouterSolver.SolveType("path1").Returns(new RouteDestination(type));
-            _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigator());
+            _ServiceLocator.GetInstance(type).Returns(new FakeSubNavigatorFactory());
 
             await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
@@ -554,23 +554,23 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             _NavigationViewModel.Route.Should().Be("root/path2/path3");
         }
 
-        private FakeSubNavigator GetFakeSubNavigator()
+        private FakeSubNavigatorFactory GetFakeSubNavigator()
         {
-            return new FakeSubNavigator()
+            return new FakeSubNavigatorFactory()
             {
-                RelativeName = "path2",
-                SubNavigator = new FakeSubNavigator()
+                ChildName = "path2",
+                SubNavigatorFactory = new FakeSubNavigatorFactory()
                 {
-                    RelativeName = "path3",
-                    SubNavigator = new FakeSubNavigator()
+                    ChildName = "path3",
+                    SubNavigatorFactory = new FakeSubNavigatorFactory()
                 }
             };
         }
 
-        private ISubNavigator SetupForSuccessfulNavigation(string root)
+        private ISubNavigatorFactory SetupForSuccessfulNavigation(string root)
         {
-            var subNavigator = Substitute.For<ISubNavigator>();
-            subNavigator.NavigateTo(Arg.Any<string>()).Returns(subNavigator);
+            var subNavigator = Substitute.For<ISubNavigatorFactory>();
+            subNavigator.Create(Arg.Any<string>()).Returns(subNavigator);
             SetupSubNavigation(subNavigator, root);
             return subNavigator;
         }

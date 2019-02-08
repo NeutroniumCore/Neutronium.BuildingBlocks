@@ -1,6 +1,4 @@
-﻿using Neutronium.Core.Navigation.Routing;
-
-namespace Neutronium.BuildingBlocks.Application.Navigation
+﻿namespace Neutronium.BuildingBlocks.Application.Navigation
 {
     /// <summary>
     /// Provides extensions for <see cref="IRouterBuilder"/>
@@ -14,7 +12,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <param name="template"></param>
         /// <param name="lowerPath"></param>
         /// <returns></returns>
-        public static IConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, bool lowerPath = true)
+        public static IExtendedConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, bool lowerPath = true)
         {
             return new ConventionRouter(routerBuilder, template, lowerPath);
         }
@@ -26,7 +24,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <param name="template"></param>
         /// <param name="postFix"></param>
         /// <returns></returns>
-        public static IConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, string postFix)
+        public static IExtendedConventionRouter GetTemplateConvention(this IRouterBuilder routerBuilder, string template, string postFix)
         {
             return new ConventionRouter(routerBuilder, template, postFix: postFix);
         }

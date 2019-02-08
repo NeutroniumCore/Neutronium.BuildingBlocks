@@ -252,24 +252,24 @@
             The corresponding route destination
             </returns>
         </member>
-        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator">
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory">
             <summary>
             Manage relative navigation within ViewModel
             </summary>
         </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.RelativeName">
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.ChildName">
             <summary>
             Relative Name of Child
             </summary>
         </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child">
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Child">
             <summary>
             Child
             </summary>
         </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.NavigateTo(System.String)">
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create(System.String)">
             <summary>
-            Navigate to a sub path and set RelativeName to the corresponding
+            Navigate to a sub path and set ChildName to the corresponding
             relativePath.
             </summary>
             <param name="relativePath"></param>

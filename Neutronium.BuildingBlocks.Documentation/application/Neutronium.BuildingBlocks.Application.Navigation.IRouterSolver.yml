@@ -7,7 +7,7 @@ items:
   children:
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(System.Object)
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute``1
-  - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
   langs:
   - csharp
   - vb
@@ -17,12 +17,12 @@ items:
   type: Interface
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: IRouterSolver
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
-    startLine: 7
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
+    startLine: 5
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -50,12 +50,12 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
-    startLine: 16
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
+    startLine: 14
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -85,12 +85,12 @@ items:
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveRoute
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
-    startLine: 25
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
+    startLine: 23
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -109,40 +109,43 @@ items:
   nameWithType.vb: IRouterSolver.SolveRoute(Of T)()
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveRoute(Of T)()
   name.vb: SolveRoute(Of T)()
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
-  id: SolveType(System.String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)
+  id: SolveType(System.String,System.String)
   parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver
   langs:
   - csharp
   - vb
-  name: SolveType(String)
-  nameWithType: IRouterSolver.SolveType(String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)
+  name: SolveType(String, String)
+  nameWithType: IRouterSolver.SolveType(String, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String, System.String)
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SolveType
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/IRouterSolver.cs
-    startLine: 34
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterSolver.cs
+    startLine: 36
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
-  summary: "\nFind the viewModel type associated with the corresponding route\n"
+  summary: "\nFind the viewModel type associated with the corresponding route\nin the given context\n"
   example: []
   syntax:
-    content: RouteDestination SolveType(string route)
+    content: RouteDestination SolveType(string route, string context = null)
     parameters:
     - id: route
       type: System.String
       description: ''
+    - id: context
+      type: System.String
+      description: "\nnull if root context\n"
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
       description: "\nThe corresponding route destination\n"
-    content.vb: Function SolveType(route As String) As RouteDestination
+    content.vb: Function SolveType(route As String, context As String = Nothing) As RouteDestination
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType*
 references:
 - uid: Neutronium.BuildingBlocks.Application.Navigation

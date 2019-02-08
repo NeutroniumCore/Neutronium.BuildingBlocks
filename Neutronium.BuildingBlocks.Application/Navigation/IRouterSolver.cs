@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Neutronium.BuildingBlocks.Application.Navigation
+﻿namespace Neutronium.BuildingBlocks.Application.Navigation
 {
     /// <summary>
     /// Routing configuration associating viewModels and route
@@ -27,11 +25,15 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         /// <summary>
         /// Find the viewModel type associated with the corresponding route
+        /// in the given context
         /// </summary>
+        /// <param name="context">
+        /// null if root context
+        /// </param>
         /// <param name="route"></param>
         /// <returns>
         /// The corresponding route destination
         /// </returns>
-        RouteDestination SolveType(string route);
+        RouteDestination SolveType(string route, string context = null);
     }
 }
