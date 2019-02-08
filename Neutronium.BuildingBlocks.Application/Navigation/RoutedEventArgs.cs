@@ -1,4 +1,5 @@
 using System;
+using Neutronium.BuildingBlocks.Application.Navigation.Internals;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Neutronium.BuildingBlocks.Application.Navigation.Internals;
 
 namespace Neutronium.BuildingBlocks.Application.Navigation
 {

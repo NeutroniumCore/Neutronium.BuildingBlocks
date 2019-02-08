@@ -5,7 +5,8 @@ items:
   id: RouteDestination
   parent: Neutronium.BuildingBlocks.Application.Navigation
   children:
-  - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
   - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
   - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Type
   langs:
@@ -121,16 +122,53 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
-  id: '#ctor(System.Type,System.String)'
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  id: Context
   parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   langs:
   - csharp
   - vb
-  name: RouteDestination(Type, String)
-  nameWithType: RouteDestination.RouteDestination(Type, String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination(System.Type, System.String)
+  name: Context
+  nameWithType: RouteDestination.Context
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  type: Property
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Context
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs
+    startLine: 23
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.Navigation
+  summary: "\nResolution context as a path.\nNull for route context\n"
+  example: []
+  syntax:
+    content: public string Context { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Context As String
+  overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)
+  id: '#ctor(System.Type,System.String,System.String)'
+  parent: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  langs:
+  - csharp
+  - vb
+  name: RouteDestination(Type, String, String)
+  nameWithType: RouteDestination.RouteDestination(Type, String, String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination(System.Type, System.String, System.String)
   type: Constructor
   source:
     remote:
@@ -139,18 +177,20 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   syntax:
-    content: public RouteDestination(Type type, string resolutionKey = null)
+    content: public RouteDestination(Type type, string context = null, string resolutionKey = null)
     parameters:
     - id: type
       type: System.Type
+    - id: context
+      type: System.String
     - id: resolutionKey
       type: System.String
-    content.vb: Public Sub New(type As Type, resolutionKey As String = Nothing)
+    content.vb: Public Sub New(type As Type, context As String = Nothing, resolutionKey As String = Nothing)
   overload: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor*
   modifiers.csharp:
   - public
@@ -478,6 +518,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  name: Context
+  nameWithType: RouteDestination.Context
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor*
   commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor
   name: RouteDestination

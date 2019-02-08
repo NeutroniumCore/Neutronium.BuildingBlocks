@@ -115,18 +115,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.%23ctor(System.Type%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.%23ctor(System.Type%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs/#L20">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs/#L26">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor*"></a>
-  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)">RouteDestination(Type, String)</h4>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_System_String_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)">RouteDestination(Type, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RouteDestination(Type type, string resolutionKey = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public RouteDestination(Type type, string context = null, string resolutionKey = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,6 +145,11 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">resolutionKey</span></td>
         <td></td>
       </tr>
@@ -152,6 +157,38 @@
   </table>
   <h3 id="properties">Properties
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Context.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.Application/Navigation/RouteDestination.cs/#L24">View Source</a>
+  </span>
+  <a id="Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Context_" data-uid="Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context*"></a>
+  <h4 id="Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Context" data-uid="Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context">Context</h4>
+  <div class="markdown level1 summary"><p>Resolution context as a path.
+Null for route context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_ResolutionKey.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>

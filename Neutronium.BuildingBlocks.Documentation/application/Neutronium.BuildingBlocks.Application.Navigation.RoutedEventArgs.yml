@@ -23,7 +23,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RoutedEventArgs
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
-    startLine: 4
+    startLine: 5
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -67,7 +67,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: NewRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
-    startLine: 6
+    startLine: 7
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -137,7 +137,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -170,7 +170,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutedEventArgs.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation

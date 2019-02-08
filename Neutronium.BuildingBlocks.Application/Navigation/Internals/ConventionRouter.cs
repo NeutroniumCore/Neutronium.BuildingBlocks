@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using MoreCollection.Extensions;
 using Neutronium.Core.Navigation.Routing;
 
-namespace Neutronium.BuildingBlocks.Application.Navigation
+namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
 {
     /// <summary>
     /// Object that build navigation based on convention
     /// </summary>
-    public class ConventionRouter : IExtendedConventionRouter
+    internal class ConventionRouter : IExtendedConventionRouter
     {
         private readonly IRouterBuilder _RouterBuilder;
-        private readonly bool _LowerPath;
-        private readonly string _Format;
-        private const string ViewModelPostFix = "ViewModel";
-        private readonly string _PostFix;
+        private readonly Func<Type, string, Tuple<string, RouteDestination>>  _RouteInformationGetter;
 
         /// <summary>
-        /// 
+        /// Construct a template based convention router
         /// </summary>
         /// <param name="routerBuilder"></param>
         /// <param name="format">Route name using template string where {vm} is the class name without postfix,
@@ -25,12 +22,22 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// </param>
         /// <param name="lowerPath">true to use class name in lower case</param>
         /// <param name="postFix">Class name post fix to be discarded- default to "ViewModel"</param>
-        public ConventionRouter(IRouterBuilder routerBuilder, string format, bool lowerPath = true, string postFix = null)
+        internal ConventionRouter(IRouterBuilder routerBuilder, string format, bool lowerPath = true, string postFix = null)
         {
             _RouterBuilder = routerBuilder;
-            _LowerPath = lowerPath;
-            _PostFix = postFix ?? ViewModelPostFix;
-            _Format = format.Replace("{vm}", "{0}").Replace("{namespace}", "{1}").Replace("{id}", "{2}");
+            var templateConvention = new TemplateConvention(format, lowerPath, postFix);
+            _RouteInformationGetter = templateConvention.GetRouteInformation;
+        }
+
+        /// <summary>
+        /// Construct convention router using a factory method
+        /// </summary>
+        /// <param name="routerBuilder"></param>
+        /// <param name="routeInformationGetter"></param>
+        internal ConventionRouter(IRouterBuilder routerBuilder, Func<Type, string, Tuple<string, RouteDestination>> routeInformationGetter)
+        {
+            _RouterBuilder = routerBuilder;
+            _RouteInformationGetter = routeInformationGetter;
         }
 
         /// <summary>
@@ -63,14 +70,8 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <returns></returns>
         public IConventionRouter Register(Type type, string id = null)
         {
-            var typeName = type.Name;
-            if (typeName.EndsWith(_PostFix))
-                typeName = typeName.Substring(0, typeName.Length - _PostFix.Length);
-
-            var route = string.Format(_Format, typeName, type.Namespace, id);
-            if (_LowerPath)
-                route = route.ToLower();
-            _RouterBuilder.Register(type, route);
+            var (route, routeDestination) = _RouteInformationGetter(type, id);
+            _RouterBuilder.Register(routeDestination, route);
             return this;
         }
     }

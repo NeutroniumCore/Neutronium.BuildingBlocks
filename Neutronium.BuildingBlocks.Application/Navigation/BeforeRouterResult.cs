@@ -5,6 +5,21 @@
     /// </summary>
     public struct BeforeRouterResult
     {
+        /// <summary>
+        /// Redirect route if not null
+        /// </summary>
+        public string Redirect { get; }
+
+        /// <summary>
+        /// Cancel navigation if false
+        /// </summary>
+        public bool Continue { get; }
+
+        /// <summary>
+        /// Targeted ViewModel
+        /// </summary>
+        public object To { get; }
+
         private BeforeRouterResult(string redirect, object viewModel)
         {
             Redirect = redirect;
@@ -47,9 +62,5 @@
         {
             return new BeforeRouterResult(routeName, null);
         }
-
-        public string Redirect { get; }
-        public bool Continue { get; }
-        public object To { get; }
     }
 }

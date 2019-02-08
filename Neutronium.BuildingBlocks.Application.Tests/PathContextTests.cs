@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using Neutronium.BuildingBlocks.Application.Navigation;
 using System.Collections.Generic;
+using Neutronium.BuildingBlocks.Application.Navigation.Internals;
 using Xunit;
 
 namespace Neutronium.BuildingBlocks.Application.Tests

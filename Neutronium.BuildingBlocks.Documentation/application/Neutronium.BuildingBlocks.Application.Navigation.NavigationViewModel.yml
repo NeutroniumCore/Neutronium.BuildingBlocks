@@ -30,7 +30,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: NavigationViewModel
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -86,7 +86,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: BeforeResolveCommand
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -121,7 +121,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: AfterResolveCommand
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -156,7 +156,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Route
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -191,7 +191,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigating
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -224,7 +224,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnNavigated
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -257,7 +257,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnRoutingMessage
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -290,7 +290,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -330,7 +330,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 193
+    startLine: 194
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -369,7 +369,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 238
+    startLine: 239
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -411,7 +411,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 246
+    startLine: 247
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -450,7 +450,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Navigate
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationViewModel.cs
-    startLine: 258
+    startLine: 259
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation

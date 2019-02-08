@@ -11,8 +11,6 @@
   items:
   - uid: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
     name: BeforeRouterResult
-  - uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-    name: ConventionRouter
   - uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
     name: IConventionSubNavigator
   - uid: Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter

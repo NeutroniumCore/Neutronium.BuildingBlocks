@@ -206,56 +206,6 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To
   nameWithType: BeforeRouterResult.To
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-  name: ConventionRouter
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html
-  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-  nameWithType: ConventionRouter
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)
-  name: ConventionRouter(IRouterBuilder, String, Boolean, String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter__ctor_Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_System_String_System_Boolean_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.ConventionRouter(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder, System.String, System.Boolean, System.String)
-  nameWithType: ConventionRouter.ConventionRouter(IRouterBuilder, String, Boolean, String)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor*
-  name: ConventionRouter
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter__ctor_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.ConventionRouter
-  nameWithType: ConventionRouter.ConventionRouter
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
-  name: Register(IEnumerable<Type>)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_System_Collections_Generic_IEnumerable_System_Type__
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})
-  name.vb: Register(IEnumerable(Of Type))
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable<System.Type>)
-  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable(Of System.Type))
-  nameWithType: ConventionRouter.Register(IEnumerable<Type>)
-  nameWithType.vb: ConventionRouter.Register(IEnumerable(Of Type))
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)
-  name: Register(Type, String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_System_Type_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type, System.String)
-  nameWithType: ConventionRouter.Register(Type, String)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register*
-  name: Register
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register
-  nameWithType: ConventionRouter.Register
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)
-  name: Register<T>(String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.html#Neutronium_BuildingBlocks_Application_Navigation_ConventionRouter_Register__1_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)
-  name.vb: Register(Of T)(String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register<T>(System.String)
-  fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(Of T)(System.String)
-  nameWithType: ConventionRouter.Register<T>(String)
-  nameWithType.vb: ConventionRouter.Register(Of T)(String)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
   name: IConventionSubNavigator
   href: application/Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.html
@@ -660,12 +610,12 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   nameWithType: RouteDestination
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
-  name: RouteDestination(Type, String)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination(System.Type, System.String)
-  nameWithType: RouteDestination.RouteDestination(Type, String)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)
+  name: RouteDestination(Type, String, String)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_System_Type_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor(System.Type,System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination(System.Type, System.String, System.String)
+  nameWithType: RouteDestination.RouteDestination(Type, String, String)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.#ctor*
   name: RouteDestination
   href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination__ctor_
@@ -673,6 +623,19 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.RouteDestination
   nameWithType: RouteDestination.RouteDestination
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  name: Context
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Context
+  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  nameWithType: RouteDestination.Context
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context*
+  name: Context
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_Context_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.Context
+  nameWithType: RouteDestination.Context
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.ResolutionKey
   name: ResolutionKey
   href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_ResolutionKey

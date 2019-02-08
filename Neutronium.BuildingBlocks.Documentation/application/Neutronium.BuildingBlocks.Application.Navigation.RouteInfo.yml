@@ -23,7 +23,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RouteInfo
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ViewModel
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -99,7 +99,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RouteName
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -136,7 +136,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -171,7 +171,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RouteInfo.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation

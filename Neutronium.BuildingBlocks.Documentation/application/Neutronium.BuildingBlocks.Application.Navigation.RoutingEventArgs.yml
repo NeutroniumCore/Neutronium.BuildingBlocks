@@ -24,7 +24,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RoutingEventArgs
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: To
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -109,7 +109,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: From
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -146,7 +146,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RedirectedTo
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RedirectToRoute
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
@@ -219,7 +219,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.Application/Navigation/RoutingEventArgs.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation

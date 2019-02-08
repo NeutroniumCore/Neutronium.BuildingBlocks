@@ -17,9 +17,16 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// </summary>
         public string ResolutionKey { get; }
 
-        public RouteDestination(Type type, string resolutionKey = null)
+        /// <summary>
+        /// Resolution context as a path.
+        /// Null for route context
+        /// </summary>
+        public string Context { get; }
+
+        public RouteDestination(Type type, string context= null, string resolutionKey = null)
         {
             Type = type;
+            Context = context;
             ResolutionKey = resolutionKey;
         }
     }

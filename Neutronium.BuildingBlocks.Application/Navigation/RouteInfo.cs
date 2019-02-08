@@ -1,4 +1,6 @@
-﻿namespace Neutronium.BuildingBlocks.Application.Navigation
+﻿using Neutronium.BuildingBlocks.Application.Navigation.Internals;
+
+namespace Neutronium.BuildingBlocks.Application.Navigation
 {
     /// <summary>
     /// Route description

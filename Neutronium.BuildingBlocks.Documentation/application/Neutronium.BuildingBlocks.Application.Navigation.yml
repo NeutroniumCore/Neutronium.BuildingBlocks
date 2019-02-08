@@ -5,7 +5,6 @@ items:
   id: Neutronium.BuildingBlocks.Application.Navigation
   children:
   - Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
-  - Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
   - Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
   - Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter
   - Neutronium.BuildingBlocks.Application.Navigation.INavigator
@@ -40,11 +39,6 @@ references:
   name: BeforeRouterResult
   nameWithType: BeforeRouterResult
   fullName: Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult
-- uid: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
-  name: ConventionRouter
-  nameWithType: ConventionRouter
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator
   name: IConventionSubNavigator

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neutronium.BuildingBlocks.Application.Navigation
+namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
 {
     internal class PathContext
     {
