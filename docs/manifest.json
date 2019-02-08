@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html",
-          "hash": "KmHTND/6pxMGPz6C9vz8Rw=="
+          "hash": "8aGfubGmEABb6BngwdI+OA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext-1.html",
-          "hash": "4PadGa3LS27p6tz3byTa/Q=="
+          "hash": "fl9hkrnEIa3ZmEsfQNw13A=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationContext.html",
-          "hash": "yPcEydKCwmqD60umOn5bKw=="
+          "hash": "NorrOaglr3WVeQy73CM8Hg=="
         }
       },
       "is_incremental": false,
@@ -189,19 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.html",
-          "hash": "42GDVQIqnua91pJtUMyPsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html",
-          "hash": "zpbKSnOOwnSuiku0T20JJg=="
+          "hash": "qutpwM3vfPHe+1Vo3mG/zQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.Router.html",
-          "hash": "Q11MwzUvGf40kqSnAcNnkg=="
+          "hash": "1QXLCVXutFFu5qG6xekkng=="
         }
       },
       "is_incremental": false,
@@ -297,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "application/Neutronium.BuildingBlocks.Application.Navigation.html",
-          "hash": "E2EONT9Ab1+QC2b5gXzi9g=="
+          "hash": "nOzXfV3cP1XE6nSEHOjdcQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "application/toc.html",
-          "hash": "tqnmsENUGsIwkQPUCVN+gQ=="
+          "hash": "NusWmNw2DnbkD9wlnB94CQ=="
         }
       },
       "is_incremental": false,
@@ -1141,17 +1129,17 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

@@ -17,7 +17,6 @@ items:
   - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext
   - Neutronium.BuildingBlocks.Application.Navigation.NavigationContext`1
   - Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
-  - Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
   - Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   - Neutronium.BuildingBlocks.Application.Navigation.RoutedEventArgs
   - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
@@ -134,12 +133,6 @@ references:
   name: NavigationViewModel
   nameWithType: NavigationViewModel
   fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  parent: Neutronium.BuildingBlocks.Application.Navigation
-  name: RouteDefinition
-  nameWithType: RouteDefinition
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   parent: Neutronium.BuildingBlocks.Application.Navigation

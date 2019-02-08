@@ -13,7 +13,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <param name="type">
         /// Type of view model to register
         /// </param>
-        /// <param name="routerName">
+        /// <param name="routeName">
         /// router name
         /// </param>
         /// <param name="defaultType">
@@ -23,7 +23,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <returns>
         /// the router builder instance
         /// </returns>
-        IRouterBuilder Register(Type type, string routerName, bool defaultType = true);
+        IRouterBuilder Register(Type type, string routeName, bool defaultType = true);
 
         /// <summary>
         /// Associate a viewmodel type to a given route
@@ -31,7 +31,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <typeparam name="T">
         /// Type of view model to register
         /// </typeparam>
-        /// <param name="routerName">
+        /// <param name="routeName">
         /// Route name
         /// </param>
         /// <param name="defaultType">
@@ -41,16 +41,20 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <returns>
         /// The navigation builder instance
         /// </returns>
-        IRouterBuilder Register<T>(string routerName, bool defaultType = true);
+        IRouterBuilder Register<T>(string routeName, bool defaultType = true);
 
         /// <summary>
         /// Associate a viewmodel type to a given route
         /// </summary>
-        /// <param name="routeDefinition">
+        /// <param name="routeName"></param>
+        /// <param name="routeDestination"></param>
+        /// <param name="defaultType">
+        /// True if the type should be considered as default 
+        /// for the corresponding route name
         /// </param>
         /// <returns>
         /// The navigation builder instance
         /// </returns>
-        IRouterBuilder Register(RouteDefinition routeDefinition); 
+        IRouterBuilder Register(RouteDestination routeDestination, string routeName, bool defaultType = true);
     }
 }

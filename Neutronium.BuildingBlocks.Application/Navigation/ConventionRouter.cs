@@ -8,7 +8,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
     /// <summary>
     /// Object that build navigation based on convention
     /// </summary>
-    public class ConventionRouter : IConventionRouter
+    public class ConventionRouter : IExtendedConventionRouter
     {
         private readonly IRouterBuilder _RouterBuilder;
         private readonly bool _LowerPath;

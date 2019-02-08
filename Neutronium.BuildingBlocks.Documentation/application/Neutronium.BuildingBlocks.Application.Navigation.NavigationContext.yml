@@ -16,11 +16,11 @@ items:
   type: Class
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: NavigationContext
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
     startLine: 7
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -61,11 +61,11 @@ items:
   type: Property
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ResolutionKey
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
     startLine: 12
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -98,11 +98,11 @@ items:
   type: Property
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: RouteName
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
     startLine: 17
   assemblies:
   - Neutronium.BuildingBlocks.Application

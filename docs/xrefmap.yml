@@ -345,12 +345,12 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
   fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
   nameWithType: IRouterBuilder
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  name: Register(RouteDefinition)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register_Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  nameWithType: IRouterBuilder.Register(RouteDefinition)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  name: Register(RouteDestination, String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register_Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.String, System.Boolean)
+  nameWithType: IRouterBuilder.Register(RouteDestination, String, Boolean)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
   name: Register(Type, String, Boolean)
   href: application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html#Neutronium_BuildingBlocks_Application_Navigation_IRouterBuilder_Register_System_Type_System_String_System_Boolean_
@@ -654,70 +654,6 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel.Route
   nameWithType: NavigationViewModel.Route
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  name: RouteDefinition
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html
-  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  nameWithType: RouteDefinition
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
-  name: RouteDefinition(String, RouteDestination, Boolean)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition__ctor_System_String_Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_System_Boolean_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition(System.String, Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.Boolean)
-  nameWithType: RouteDefinition.RouteDefinition(String, RouteDestination, Boolean)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,System.Type,System.String,System.Boolean)
-  name: RouteDefinition(String, Type, String, Boolean)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition__ctor_System_String_System_Type_System_String_System_Boolean_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor(System.String,System.Type,System.String,System.Boolean)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition(System.String, System.Type, System.String, System.Boolean)
-  nameWithType: RouteDefinition.RouteDefinition(String, Type, String, Boolean)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor*
-  name: RouteDefinition
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition__ctor_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.#ctor
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.RouteDefinition
-  nameWithType: RouteDefinition.RouteDefinition
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
-  name: Destination
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_Destination
-  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
-  nameWithType: RouteDefinition.Destination
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination*
-  name: Destination
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_Destination_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination
-  nameWithType: RouteDefinition.Destination
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
-  name: IsDefault
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_IsDefault
-  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
-  nameWithType: RouteDefinition.IsDefault
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault*
-  name: IsDefault
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_IsDefault_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault
-  nameWithType: RouteDefinition.IsDefault
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
-  name: Name
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_Name
-  commentId: P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
-  nameWithType: RouteDefinition.Name
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name*
-  name: Name
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.html#Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_Name_
-  commentId: Overload:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name
-  nameWithType: RouteDefinition.Name
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   name: RouteDestination
   href: application/Neutronium.BuildingBlocks.Application.Navigation.RouteDestination.html
@@ -878,12 +814,12 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.Router
   fullName: Neutronium.BuildingBlocks.Application.Navigation.Router
   nameWithType: Router
-- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  name: Register(RouteDefinition)
-  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register_Neutronium_BuildingBlocks_Application_Navigation_RouteDefinition_
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  nameWithType: Router.Register(RouteDefinition)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  name: Register(RouteDestination, String, Boolean)
+  href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register_Neutronium_BuildingBlocks_Application_Navigation_RouteDestination_System_String_System_Boolean_
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.String, System.Boolean)
+  nameWithType: Router.Register(RouteDestination, String, Boolean)
 - uid: Neutronium.BuildingBlocks.Application.Navigation.Router.Register(System.Type,System.String,System.Boolean)
   name: Register(Type, String, Boolean)
   href: application/Neutronium.BuildingBlocks.Application.Navigation.Router.html#Neutronium_BuildingBlocks_Application_Navigation_Router_Register_System_Type_System_String_System_Boolean_

@@ -12,23 +12,22 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         private readonly Dictionary<string, RouteDestination> _RouteToType = new Dictionary<string, RouteDestination>();
         private readonly Dictionary<Type, string> _TypeToRoute = new Dictionary<Type, string>();
 
-        public IRouterBuilder Register(RouteDefinition routeDefinition)
+        public IRouterBuilder Register( RouteDestination destination, string routeName, bool defaultType = true)
         {
-            var destination = routeDefinition.Destination;
             if (!_TypeToRoute.ContainsKey(destination.Type))
-                _TypeToRoute.Add(destination.Type, routeDefinition.Name);
+                _TypeToRoute.Add(destination.Type, routeName);
 
-            if (!routeDefinition.IsDefault && _RouteToType.ContainsKey(routeDefinition.Name))
+            if (!defaultType && _RouteToType.ContainsKey(routeName))
                 return this;
 
-            _RouteToType[routeDefinition.Name] = destination;
+            _RouteToType[routeName] = destination;
             return this;
         }
 
-        public IRouterBuilder Register(Type type, string routerName, bool defaultType = true)
+        public IRouterBuilder Register(Type type, string routeName, bool defaultType = true)
         {
-            var routeDefinition = new RouteDefinition(routerName, type,null, defaultType);
-            return Register(routeDefinition);
+            var routeDestination = new RouteDestination(type, null);
+            return Register(routeDestination, routeName,defaultType);
         }
 
         public IRouterBuilder Register<T>(string routerName, bool defaultType = true)

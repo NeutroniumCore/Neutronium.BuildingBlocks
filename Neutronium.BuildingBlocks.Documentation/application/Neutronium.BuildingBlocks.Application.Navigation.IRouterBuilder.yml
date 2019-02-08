@@ -5,7 +5,7 @@ items:
   id: IRouterBuilder
   parent: Neutronium.BuildingBlocks.Application.Navigation
   children:
-  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
   langs:
@@ -65,12 +65,12 @@ items:
   summary: "\nAssociate a viewmodel type to a given route\n"
   example: []
   syntax:
-    content: IRouterBuilder Register(Type type, string routerName, bool defaultType = true)
+    content: IRouterBuilder Register(Type type, string routeName, bool defaultType = true)
     parameters:
     - id: type
       type: System.Type
       description: "\nType of view model to register\n"
-    - id: routerName
+    - id: routeName
       type: System.String
       description: "\nrouter name\n"
     - id: defaultType
@@ -79,7 +79,7 @@ items:
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
       description: "\nthe router builder instance\n"
-    content.vb: Function Register(type As Type, routerName As String, defaultType As Boolean = True) As IRouterBuilder
+    content.vb: Function Register(type As Type, routeName As String, defaultType As Boolean = True) As IRouterBuilder
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register*
 - uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
   commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
@@ -106,9 +106,9 @@ items:
   summary: "\nAssociate a viewmodel type to a given route\n"
   example: []
   syntax:
-    content: IRouterBuilder Register<T>(string routerName, bool defaultType = true)
+    content: IRouterBuilder Register<T>(string routeName, bool defaultType = true)
     parameters:
-    - id: routerName
+    - id: routeName
       type: System.String
       description: "\nRoute name\n"
     - id: defaultType
@@ -120,21 +120,21 @@ items:
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
       description: "\nThe navigation builder instance\n"
-    content.vb: Function Register(Of T)(routerName As String, defaultType As Boolean = True) As IRouterBuilder
+    content.vb: Function Register(Of T)(routeName As String, defaultType As Boolean = True) As IRouterBuilder
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register*
   nameWithType.vb: IRouterBuilder.Register(Of T)(String, Boolean)
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Of T)(System.String, System.Boolean)
   name.vb: Register(Of T)(String, Boolean)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
-  id: Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  id: Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
   parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
   langs:
   - csharp
   - vb
-  name: Register(RouteDefinition)
-  nameWithType: IRouterBuilder.Register(RouteDefinition)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)
+  name: Register(RouteDestination, String, Boolean)
+  nameWithType: IRouterBuilder.Register(RouteDestination, String, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.String, System.Boolean)
   type: Method
   source:
     remote:
@@ -143,22 +143,28 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Register
     path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/IRouterBuilder.cs
-    startLine: 53
+    startLine: 57
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.Navigation
   summary: "\nAssociate a viewmodel type to a given route\n"
   example: []
   syntax:
-    content: IRouterBuilder Register(RouteDefinition routeDefinition)
+    content: IRouterBuilder Register(RouteDestination routeDestination, string routeName, bool defaultType = true)
     parameters:
-    - id: routeDefinition
-      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-      description: "\n"
+    - id: routeDestination
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+      description: ''
+    - id: routeName
+      type: System.String
+      description: ''
+    - id: defaultType
+      type: System.Boolean
+      description: "\nTrue if the type should be considered as default \nfor the corresponding route name\n"
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
       description: "\nThe navigation builder instance\n"
-    content.vb: Function Register(routeDefinition As RouteDefinition) As IRouterBuilder
+    content.vb: Function Register(routeDestination As RouteDestination, routeName As String, defaultType As Boolean = True) As IRouterBuilder
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register*
 references:
 - uid: Neutronium.BuildingBlocks.Application.Navigation
@@ -456,9 +462,9 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
-  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   parent: Neutronium.BuildingBlocks.Application.Navigation
-  name: RouteDefinition
-  nameWithType: RouteDefinition
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition
+  name: RouteDestination
+  nameWithType: RouteDestination
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
