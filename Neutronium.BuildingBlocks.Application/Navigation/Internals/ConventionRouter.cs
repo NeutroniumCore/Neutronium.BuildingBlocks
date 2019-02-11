@@ -11,7 +11,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
     internal class ConventionRouter : IExtendedConventionRouter
     {
         private readonly IRouterBuilder _RouterBuilder;
-        private readonly Func<Type, string, Tuple<string, RouteDestination>>  _RouteInformationGetter;
+        private readonly Func<Type, string, Tuple<RouteSpecification, RouteDestination>>  _RouteInformationGetter;
 
         /// <summary>
         /// Construct a template based convention router
@@ -34,7 +34,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
         /// </summary>
         /// <param name="routerBuilder"></param>
         /// <param name="routeInformationGetter"></param>
-        internal ConventionRouter(IRouterBuilder routerBuilder, Func<Type, string, Tuple<string, RouteDestination>> routeInformationGetter)
+        internal ConventionRouter(IRouterBuilder routerBuilder, Func<Type, string, Tuple<RouteSpecification, RouteDestination>> routeInformationGetter)
         {
             _RouterBuilder = routerBuilder;
             _RouteInformationGetter = routeInformationGetter;
@@ -71,7 +71,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
         public IConventionRouter Register(Type type, string id = null)
         {
             var (route, routeDestination) = _RouteInformationGetter(type, id);
-            _RouterBuilder.Register(routeDestination, route);
+            _RouterBuilder.Register(route, routeDestination);
             return this;
         }
     }

@@ -5,7 +5,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
     /// <summary>
     /// Route destination
     /// </summary>
-    public class RouteDestination
+    public struct RouteDestination
     {
         /// <summary>
         /// Destination type
@@ -17,16 +17,9 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// </summary>
         public string ResolutionKey { get; }
 
-        /// <summary>
-        /// Resolution context as a path.
-        /// Null for route context
-        /// </summary>
-        public string Context { get; }
-
-        public RouteDestination(Type type, string context= null, string resolutionKey = null)
+        public RouteDestination(Type type, string resolutionKey = null)
         {
             Type = type;
-            Context = context;
             ResolutionKey = resolutionKey;
         }
     }

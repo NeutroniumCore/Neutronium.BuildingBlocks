@@ -21,6 +21,7 @@ items:
   - Neutronium.BuildingBlocks.Application.Navigation.RouteInfo
   - Neutronium.BuildingBlocks.Application.Navigation.Router
   - Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+  - Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
   - Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
   - Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs
   langs:
@@ -156,6 +157,12 @@ references:
   name: RouterBuilderExtensions
   nameWithType: RouterBuilderExtensions
   fullName: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteSpecification
+  nameWithType: RouteSpecification
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
   parent: Neutronium.BuildingBlocks.Application.Navigation

@@ -16,7 +16,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
             _Format = format.Replace("{vm}", "{0}").Replace("{namespace}", "{1}").Replace("{id}", "{2}");
         }
 
-        internal Tuple<string, RouteDestination> GetRouteInformation(Type type, string id)
+        internal Tuple<RouteSpecification, RouteDestination> GetRouteInformation(Type type, string id)
         {
             var typeName = type.Name;
             if (typeName.EndsWith(_PostFix))
@@ -27,7 +27,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
                 route = route.ToLower();
 
             var routeDestination = new RouteDestination(type);
-            return Tuple.Create(route, routeDestination);
+            return Tuple.Create(new RouteSpecification(route), routeDestination);
         }
     }
 }

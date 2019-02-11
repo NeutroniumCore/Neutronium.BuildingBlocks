@@ -35,5 +35,17 @@
         /// The corresponding route destination
         /// </returns>
         RouteDestination SolveType(string route, string context = null);
+
+
+        /// <summary>
+        /// Find the viewModel type associated with the corresponding route
+        /// </summary>
+        /// <param name="route">
+        /// Route specification
+        /// </param>
+        /// <returns>
+        /// The corresponding route destination
+        /// </returns>
+        RouteDestination SolveType(RouteSpecification route);
     }
 }

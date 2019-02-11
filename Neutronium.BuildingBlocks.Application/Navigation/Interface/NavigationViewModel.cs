@@ -110,14 +110,14 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         private object GetViewModelFromRoute(string routeName)
         {
-            var routeDestination = default(RouteDestination);
+            RouteDestination routeDestination;
             var pathContext = new PathContext(routeName);
             do
             {
                 routeDestination = _RouterSolver.SolveType(pathContext.RootToCurrent);
-            } while (routeDestination == null && pathContext.Back());
+            } while (routeDestination.Type == null && pathContext.Back());
 
-            if (routeDestination == null)
+            if (routeDestination.Type == null)
                 return null;
 
             var root = GetInstance(routeDestination);
@@ -156,7 +156,8 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
                     return factory.Create(pathContext.CurrentRelativePath);
 
                 case IConventionSubNavigator navigator:
-                    var child = _RouterSolver.SolveType(pathContext.CurrentRelativePath, pathContext.RootToCurrent);
+                    var childDestination = _RouterSolver.SolveType(pathContext.CurrentRelativePath, pathContext.RootToCurrent);
+                    var child = GetInstance(childDestination);
                     navigator.SetChild(pathContext.CurrentRelativePath, child);
                     return child;
             }

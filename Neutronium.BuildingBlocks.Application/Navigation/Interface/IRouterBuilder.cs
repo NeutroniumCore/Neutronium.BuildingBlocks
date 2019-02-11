@@ -46,7 +46,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <summary>
         /// Associate a viewmodel type to a given route
         /// </summary>
-        /// <param name="routeName"></param>
+        /// <param name="route"></param>
         /// <param name="routeDestination"></param>
         /// <param name="defaultType">
         /// True if the type should be considered as default 
@@ -55,6 +55,6 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
         /// <returns>
         /// The navigation builder instance
         /// </returns>
-        IRouterBuilder Register(RouteDestination routeDestination, string routeName, bool defaultType = true);
+        IRouterBuilder Register(RouteSpecification route, RouteDestination routeDestination,  bool defaultType = true);
     }
 }

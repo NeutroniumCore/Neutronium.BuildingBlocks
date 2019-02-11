@@ -44,6 +44,8 @@
     name: Router
   - uid: Neutronium.BuildingBlocks.Application.Navigation.RouterBuilderExtensions
     name: RouterBuilderExtensions
+  - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+    name: RouteSpecification
   - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs
     name: RoutingEventArgs
   - uid: Neutronium.BuildingBlocks.Application.Navigation.RoutingMessageArgs

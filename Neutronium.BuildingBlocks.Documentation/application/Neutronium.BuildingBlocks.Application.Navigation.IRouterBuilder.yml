@@ -5,7 +5,7 @@ items:
   id: IRouterBuilder
   parent: Neutronium.BuildingBlocks.Application.Navigation
   children:
-  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+  - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(System.Type,System.String,System.Boolean)
   - Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register``1(System.String,System.Boolean)
   langs:
@@ -125,16 +125,16 @@ items:
   nameWithType.vb: IRouterBuilder.Register(Of T)(String, Boolean)
   fullName.vb: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Of T)(System.String, System.Boolean)
   name.vb: Register(Of T)(String, Boolean)
-- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
-  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
-  id: Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.String,System.Boolean)
+- uid: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
+  commentId: M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
+  id: Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)
   parent: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
   langs:
   - csharp
   - vb
-  name: Register(RouteDestination, String, Boolean)
-  nameWithType: IRouterBuilder.Register(RouteDestination, String, Boolean)
-  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.String, System.Boolean)
+  name: Register(RouteSpecification, RouteDestination, Boolean)
+  nameWithType: IRouterBuilder.Register(RouteSpecification, RouteDestination, Boolean)
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification, Neutronium.BuildingBlocks.Application.Navigation.RouteDestination, System.Boolean)
   type: Method
   source:
     remote:
@@ -150,13 +150,13 @@ items:
   summary: "\nAssociate a viewmodel type to a given route\n"
   example: []
   syntax:
-    content: IRouterBuilder Register(RouteDestination routeDestination, string routeName, bool defaultType = true)
+    content: IRouterBuilder Register(RouteSpecification route, RouteDestination routeDestination, bool defaultType = true)
     parameters:
+    - id: route
+      type: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+      description: ''
     - id: routeDestination
       type: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
-      description: ''
-    - id: routeName
-      type: System.String
       description: ''
     - id: defaultType
       type: System.Boolean
@@ -164,7 +164,7 @@ items:
     return:
       type: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder
       description: "\nThe navigation builder instance\n"
-    content.vb: Function Register(routeDestination As RouteDestination, routeName As String, defaultType As Boolean = True) As IRouterBuilder
+    content.vb: Function Register(route As RouteSpecification, routeDestination As RouteDestination, defaultType As Boolean = True) As IRouterBuilder
   overload: Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register*
 references:
 - uid: Neutronium.BuildingBlocks.Application.Navigation
@@ -462,6 +462,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+  commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
+  parent: Neutronium.BuildingBlocks.Application.Navigation
+  name: RouteSpecification
+  nameWithType: RouteSpecification
+  fullName: Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification
 - uid: Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   commentId: T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination
   parent: Neutronium.BuildingBlocks.Application.Navigation
