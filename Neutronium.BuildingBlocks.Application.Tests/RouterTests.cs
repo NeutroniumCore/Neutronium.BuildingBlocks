@@ -46,9 +46,20 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         [InlineData(typeof(FakeClass1), "1")]
         [InlineData(typeof(FakeClass2), "2")]
         [InlineData(typeof(FakeClass3), "3")]
-        public void SolveType_finds_correct_route(Type expected, string route)
+        public void SolveType_String_finds_correct_route(Type expected, string route)
         {
             var context = _Router.SolveType(route);
+            context.Type.Should().Be(expected);
+        }
+
+        [Theory]
+        [InlineData(typeof(FakeClass1), "1")]
+        [InlineData(typeof(FakeClass2), "2")]
+        [InlineData(typeof(FakeClass3), "3")]
+        public void SolveType_Specification_finds_correct_route(Type expected, string route)
+        {
+            var specification = new RouteSpecification(route);
+            var context = _Router.SolveType(specification);
             context.Type.Should().Be(expected);
         }
 
@@ -56,9 +67,20 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         [InlineData(null)]
         [InlineData("b")]
         [InlineData("c")]
-        public void Register_is_context_dependent(string context)
+        public void SolveType_String_is_context_dependent(string context)
         {
             var route = _Router.SolveType("a", context);
+            route.Type.Should().BeNull();
+        }
+
+        [Theory]
+        [InlineData(null)]
+        [InlineData("b")]
+        [InlineData("c")]
+        public void SolveType_Specification_is_context_dependent(string context)
+        {
+            var specification = new RouteSpecification("a", context);
+            var route = _Router.SolveType(specification);
             route.Type.Should().BeNull();
         }
 

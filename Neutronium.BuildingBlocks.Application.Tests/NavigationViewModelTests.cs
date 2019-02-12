@@ -461,7 +461,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
 
             using (var monitor = _NavigationViewModel.Monitor())
             {
-                var task = _NavigationViewModel.Navigate(_FakeType, null);
+                _NavigationViewModel.Navigate(_FakeType, null);
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
@@ -471,7 +471,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_generic_context_updates_route(string route)
         {
             SetupRouteFromType(route);
-            var task = _NavigationViewModel.Navigate<FakeClass>(null);
+            _NavigationViewModel.Navigate<FakeClass>(null);
             _NavigationViewModel.Route.Should().Be(route);
         }
 
@@ -479,7 +479,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_generic_context_updates_route_with_context_route_when_provided(string route, string contextRoute)
         {
             SetupRouteFromType(route);
-            var task = _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { RouteName = contextRoute });
+            _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { RouteName = contextRoute });
             _NavigationViewModel.Route.Should().Be(contextRoute);
         }
 
@@ -491,7 +491,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             _RouterSolver.SolveRoute(newViewModel).Returns(route);
             SetupRouteFromType(routeWithoutKey);
 
-            var task = _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { ResolutionKey = resolutionKey });
+            _NavigationViewModel.Navigate(new NavigationContext<FakeClass> { ResolutionKey = resolutionKey });
             _NavigationViewModel.Route.Should().Be(route);
         }
 
@@ -500,7 +500,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             SetupRouteFromType(route);
             var context = new NavigationContext<FakeClass> { BeforeNavigate = Substitute.For<Action<FakeClass>>() };
-            var task = _NavigationViewModel.Navigate(context);
+            _NavigationViewModel.Navigate(context);
             context.BeforeNavigate.Received(1).Invoke(Arg.Any<FakeClass>());
             context.BeforeNavigate.Received().Invoke(_ExpectedNewViewModel);
         }
