@@ -2,6 +2,7 @@
 using CommonServiceLocator;
 using FluentAssertions;
 using Neutronium.BuildingBlocks.Application.Navigation;
+using Neutronium.Core.Infra;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 using System;
@@ -123,7 +124,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             var expectedViewModel = Substitute.For<ISubNavigatorFactory>();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
-            SetupSubNavigation(expectedViewModel, "root/path1");      
+            SetupSubNavigation(expectedViewModel, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1");
 
@@ -169,7 +170,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var expected = sameRouteNavigation ? BeforeRouterResult.Ok(_ExpectedNewViewModel) : BeforeRouterResult.Cancel();
             SetupRoute(originalRoute);
             SetupRoute(route);
-            var task = _NavigationViewModel.Navigate(originalRoute);
+            _NavigationViewModel.Navigate(originalRoute).DoNotWait();
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute(route);
 
@@ -393,7 +394,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_type_context_updates_route(string route)
         {
             SetupRouteFromType(route);
-            var task = _NavigationViewModel.Navigate(_FakeType, null);
+            _NavigationViewModel.Navigate(_FakeType, null).DoNotWait();
             _NavigationViewModel.Route.Should().Be(route);
         }
 
@@ -404,8 +405,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             _ServiceLocator.GetInstance(_FakeSubNavigatorType).Returns(viewModel);
             _RouterSolver.SolveRoute(viewModel).Returns("root");
 
-
-            var task = _NavigationViewModel.Navigate(_FakeSubNavigatorType);
+            _NavigationViewModel.Navigate(_FakeSubNavigatorType).DoNotWait();
             _NavigationViewModel.Route.Should().Be("root/path2/path3");
         }
 
@@ -413,7 +413,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         public void Navigate_type_context_updates_route_with_context_route_when_provided(string route, string contextRoute)
         {
             SetupRouteFromType(route);
-            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext { RouteName = contextRoute });
+            _NavigationViewModel.Navigate(_FakeType, new NavigationContext { RouteName = contextRoute }).DoNotWait();
             _NavigationViewModel.Route.Should().Be(contextRoute);
         }
 
@@ -425,7 +425,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             _RouterSolver.SolveRoute(newViewModel).Returns(route);
             SetupRouteFromType(routeWithoutKey);
 
-            var task = _NavigationViewModel.Navigate(_FakeType, new NavigationContext { ResolutionKey = resolutionKey });
+            _NavigationViewModel.Navigate(_FakeType, new NavigationContext { ResolutionKey = resolutionKey }).DoNotWait();
             _NavigationViewModel.Route.Should().Be(route);
         }
 
@@ -455,13 +455,13 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         }
 
         [Fact]
-        public void Navigate_type_context_send_event_when_route_is_the_same()
+        public async Task Navigate_type_context_send_event_when_route_is_the_same()
         {
             SetupRouteFromType(_OriginalRoute);
 
             using (var monitor = _NavigationViewModel.Monitor())
             {
-                _NavigationViewModel.Navigate(_FakeType, null);
+                await _NavigationViewModel.Navigate(_FakeType, null);
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
@@ -531,13 +531,13 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         }
 
         [Fact]
-        public void Navigate_generic_context_send_event_when_route_is_the_same()
+        public async Task Navigate_generic_context_send_event_when_route_is_the_same()
         {
             SetupRouteFromType(_OriginalRoute);
 
             using (var monitor = _NavigationViewModel.Monitor())
             {
-                var task = _NavigationViewModel.Navigate<FakeClass>(null);
+                await _NavigationViewModel.Navigate<FakeClass>(null);
                 monitor.Should().Raise("OnNavigated").WithArgs<RoutedEventArgs>(arg =>
                     arg.NewRoute.ViewModel == _ExpectedNewViewModel && arg.NewRoute.RouteName == _OriginalRoute);
             }
@@ -549,7 +549,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var viewModel = GetFakeSubNavigator();
             _RouterSolver.SolveRoute(viewModel).Returns("root");
 
-            var task = _NavigationViewModel.Navigate(viewModel, null);
+            _NavigationViewModel.Navigate(viewModel, null).DoNotWait();
 
             _NavigationViewModel.Route.Should().Be("root/path2/path3");
         }
