@@ -93,13 +93,12 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             }
 
             var context = _CurrentNavigations.Peek();
-            if (context.Route != routeName)
-            {
-                OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}");
-                return null;
-            }
+            if (context.Route == routeName)
+                return context;
 
-            return context;
+            OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}");
+            return null;
+
         }
 
         private RouteContext CreateRouteContext(string routeName)

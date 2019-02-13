@@ -95,7 +95,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         [Fact]
         public async Task BeforeResolveCommand_continues_navigation_when_route_with_sub_path_is_found()
         {
-            var expectedViewModel = SetupForSuccessfulNavigation("root");
+            var expectedViewModel = SetupForSuccessfulNavigationWithSubNavigatorFactory("root");
             var expected = BeforeRouterResult.Ok(expectedViewModel);
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
@@ -104,19 +104,59 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         }
 
         [Fact]
-        public async Task BeforeResolveCommand_calls_sub_navigator_to_resolve_view_model()
+        public async Task BeforeResolveCommand_uses_SubNavigatorFactory_to_resolve_view_model_sub_navigation()
         {
-            var expectedViewModel = SetupForSuccessfulNavigation("root");
-            await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
+            var expectedViewModel = SetupForSuccessfulNavigationWithSubNavigatorFactory("root");
+            var expectedResult = BeforeRouterResult.Ok(expectedViewModel);
 
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
+
+            res.Should().BeEquivalentTo(expectedResult);
             expectedViewModel.Received(3).Create(Arg.Any<string>());
-
             Received.InOrder(() =>
             {
                 expectedViewModel.Create("path1");
                 expectedViewModel.Create("path2");
                 expectedViewModel.Create("path3");
             });
+        }
+
+        [Theory]
+        [InlineAutoData("root/path1", "root", "path1")]
+        [InlineAutoData("root/path1/path2", "root/path1", "path2")]
+        [InlineAutoData("root/path1/path2/", "root/path1", "path2")]
+        public async Task BeforeResolveCommand_uses_ConventionSubNavigator_to_resolve_view_model_sub_navigation(string complete, string fromRoute, string path)
+        {          
+            var child = SetupServiceLocator(new FakeClass1());
+            _ServiceLocator.GetInstance(typeof(FakeClass1)).Returns(child);
+            _RouterSolver.SolveType(path, fromRoute).Returns(new RouteDestination(typeof(FakeClass1)));
+            var expectedViewModel = SetupForSuccessfulNavigation<IConventionSubNavigator>(fromRoute);
+            var expectedResult = BeforeRouterResult.Ok(expectedViewModel);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute(complete);
+
+            res.Should().BeEquivalentTo(expectedResult);
+            expectedViewModel.Received(1).SetChild(Arg.Any<string>(), Arg.Any<object>());
+            expectedViewModel.Received().SetChild(path, child);
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_uses_both_SubNavigatorFactory_and_ConventionSubNavigator_to_resolve_view_model_sub_navigation()
+        {
+            var child1 = Substitute.For<IConventionSubNavigator>();
+            var child2 = SetupServiceLocator(new FakeClass1());
+            _RouterSolver.SolveType("path2", "root/path1").Returns(new RouteDestination(child2.GetType()));
+            var expectedViewModel = SetupForSuccessfulNavigation<ISubNavigatorFactory>("root");
+            expectedViewModel.Create("path1").Returns(child1);
+            var expectedResult = BeforeRouterResult.Ok(expectedViewModel);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
+
+            res.Should().BeEquivalentTo(expectedResult);
+            expectedViewModel.Received(1).Create(Arg.Any<string>());
+            expectedViewModel.Create("path1");
+            child1.Received(1).SetChild(Arg.Any<string>(), Arg.Any<object>());
+            child1.Received().SetChild("path2", child2);
         }
 
         [Fact]
@@ -567,10 +607,22 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             };
         }
 
-        private ISubNavigatorFactory SetupForSuccessfulNavigation(string root)
+        private T SetupServiceLocator<T>(T instance)
         {
-            var subNavigator = Substitute.For<ISubNavigatorFactory>();
+            _ServiceLocator.GetInstance(typeof(T)).Returns(instance);
+            return instance;
+        }
+
+        private ISubNavigatorFactory SetupForSuccessfulNavigationWithSubNavigatorFactory(string root)
+        {
+            var subNavigator = SetupForSuccessfulNavigation<ISubNavigatorFactory>(root);
             subNavigator.Create(Arg.Any<string>()).Returns(subNavigator);
+            return subNavigator;
+        }
+
+        private T SetupForSuccessfulNavigation<T>(string root) where T : class
+        {
+            var subNavigator = Substitute.For<T>();
             SetupSubNavigation(subNavigator, root);
             return subNavigator;
         }
