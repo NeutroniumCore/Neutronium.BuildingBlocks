@@ -1,6 +1,6 @@
 ﻿<#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
-<#@ assembly name="$(SolutionDir)\Neutronium.Vue.SPA1\bin\Debug\Neutronium SPA.exe" #>
+<#@ assembly name="$(TargetPath)" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Resources" #>
@@ -8,7 +8,7 @@
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="Neutronium.Vue.SPA1" #>
+<#@ import namespace="Neutronium.Vue.SPA" #>
 <#@ output extension=".json" #>
 <# 
 	Langages = new [] { "en-US" };
@@ -57,7 +57,7 @@ private void DisplayDictionary(IDictionary<string,string> dictionary){
 
 private IDictionary<string,string> GetDictionary(string resourceName, string langage){
 	var asm = typeof(App).Assembly;
-	var resourceManager = new ResourceManager("Neutronium.Vue.SPA1." + resourceName, asm);
+	var resourceManager = new ResourceManager("Neutronium.Vue.SPA." + resourceName, asm);
 	var rs = resourceManager.GetResourceSet(new CultureInfo(langage), true, true);
 	return rs.Cast<DictionaryEntry>().OrderBy(entry =>entry.Key).ToDictionary(dicEntry => (string)dicEntry.Key, dicEntry => (string)dicEntry.Value);            
 }
