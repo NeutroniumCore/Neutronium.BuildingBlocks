@@ -74,7 +74,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var expected = BeforeRouterResult.Cancel();
             var subNavigator = Substitute.For<ISubNavigatorFactory>();
             subNavigator.Create("path1").Returns(default(ISubNavigatorFactory));
-            SetupSubNavigation(subNavigator, route);
+            SetupRootNavigation(subNavigator, route);
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute($"{route}/path1");
 
@@ -103,24 +103,6 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             res.Should().BeEquivalentTo(expected);
         }
 
-        [Fact]
-        public async Task BeforeResolveCommand_uses_SubNavigatorFactory_to_resolve_view_model_sub_navigation()
-        {
-            var expectedViewModel = SetupForSuccessfulNavigationWithSubNavigatorFactory("root");
-            var expectedResult = BeforeRouterResult.Ok(expectedViewModel);
-
-            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
-
-            res.Should().BeEquivalentTo(expectedResult);
-            expectedViewModel.Received(3).Create(Arg.Any<string>());
-            Received.InOrder(() =>
-            {
-                expectedViewModel.Create("path1");
-                expectedViewModel.Create("path2");
-                expectedViewModel.Create("path3");
-            });
-        }
-
         [Theory]
         [InlineAutoData("root/path1", "root", "path1")]
         [InlineAutoData("root/path1/path2", "root/path1", "path2")]
@@ -138,6 +120,24 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             res.Should().BeEquivalentTo(expectedResult);
             expectedViewModel.Received(1).SetChild(Arg.Any<string>(), Arg.Any<object>());
             expectedViewModel.Received().SetChild(path, child);
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_uses_SubNavigatorFactory_to_resolve_view_model_sub_navigation()
+        {
+            var expectedViewModel = SetupForSuccessfulNavigationWithSubNavigatorFactory("root");
+            var expectedResult = BeforeRouterResult.Ok(expectedViewModel);
+
+            var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2/path3");
+
+            res.Should().BeEquivalentTo(expectedResult);
+            expectedViewModel.Received(3).Create(Arg.Any<string>());
+            Received.InOrder(() =>
+            {
+                expectedViewModel.Create("path1");
+                expectedViewModel.Create("path2");
+                expectedViewModel.Create("path3");
+            });
         }
 
         [Fact]
@@ -164,7 +164,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             var expectedViewModel = Substitute.For<ISubNavigatorFactory>();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
-            SetupSubNavigation(expectedViewModel, "root/path1");
+            SetupRootNavigation(expectedViewModel, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1");
 
@@ -177,7 +177,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         {
             var expectedViewModel = Substitute.For<ISubNavigatorFactory>();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
-            SetupSubNavigation(expectedViewModel, "root/path1");
+            SetupRootNavigation(expectedViewModel, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
 
@@ -192,8 +192,8 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var expectedViewModel = new object();
             var expected = BeforeRouterResult.Ok(expectedViewModel);
             var another = Substitute.For<ISubNavigatorFactory>();
-            SetupSubNavigation(expectedViewModel, "root/path1/path2");
-            SetupSubNavigation(another, "root/path1");
+            SetupRootNavigation(expectedViewModel, "root/path1/path2");
+            SetupRootNavigation(another, "root/path1");
 
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("root/path1/path2");
 
@@ -623,11 +623,11 @@ namespace Neutronium.BuildingBlocks.Application.Tests
         private T SetupForSuccessfulNavigation<T>(string root) where T : class
         {
             var subNavigator = Substitute.For<T>();
-            SetupSubNavigation(subNavigator, root);
+            SetupRootNavigation(subNavigator, root);
             return subNavigator;
         }
 
-        private void SetupSubNavigation(object rootViewModel, string root)
+        private void SetupRootNavigation(object rootViewModel, string root)
         {
             var typeForSubNavigation = rootViewModel.GetType();
             _RouterSolver.SolveType(root).Returns(new RouteDestination(typeForSubNavigation));

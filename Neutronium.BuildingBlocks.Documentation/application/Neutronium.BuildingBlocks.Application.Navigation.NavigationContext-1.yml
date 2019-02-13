@@ -15,11 +15,11 @@ items:
   type: Class
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: NavigationContext
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
     startLine: 26
   assemblies:
   - Neutronium.BuildingBlocks.Application
@@ -69,11 +69,11 @@ items:
   type: Property
   source:
     remote:
-      path: Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
+      path: Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: BeforeNavigate
-    path: ../Neutronium.BuildingBlocks.Application/Navigation/Interface/NavigationContext.cs
+    path: ../Neutronium.BuildingBlocks.Application/Navigation/NavigationContext.cs
     startLine: 31
   assemblies:
   - Neutronium.BuildingBlocks.Application
