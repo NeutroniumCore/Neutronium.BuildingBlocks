@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Neutronium.Vue.SPA1"
+        xmlns:WPF="clr-namespace:Neutronium.WPF;assembly=Neutronium.WPF" x:Class="Neutronium.Vue.SPA.MainWindow"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        mc:Ignorable="d"
+        Icon="Content\logo.png"
+        MinWidth="1000"
+        Width ="1500"
+        Height="940"
+        Name="Root"
+        BorderThickness="1"
+        Title="MainWindow">
+    <i:Interaction.Behaviors>
+        <WPF:Chromeless />
+    </i:Interaction.Behaviors>
+    <Window.Resources>
+        <WPF:BoolToHiddenConverter x:Key="BoolToHidden"/>
+    </Window.Resources>
+    <Grid>
+        <WPF:HTMLViewControl x:Name="HtmlView" DebugCommands="{Binding ElementName=Root, Path=SetUp.DebugCommands}" IsDebug="{Binding ElementName=Root, Path=SetUp.Debug}" Uri="{Binding ElementName=Root, Path=SetUp.Uri}"  />
+    </Grid>
+    <Window.Visibility>
+        <Binding ElementName="HtmlView" Path="IsHTMLLoaded" Converter="{StaticResource BoolToHidden}"/>
+    </Window.Visibility>
+</Window>

@@ -19,6 +19,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neutronium.BuildingBlocks.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neutronium.BuildingBlocks.Documentation", "Neutronium.BuildingBlocks.Documentation\Neutronium.BuildingBlocks.Documentation.csproj", "{9D506500-3EE6-4BAF-BA8B-504401BE4348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neutronium.Vue.SPA", "example\Neutronium.Vue.SPA1\Neutronium.Vue.SPA.csproj", "{F5780B42-3472-4D87-A007-10F01CC319E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{C01C9D1F-E793-4A2D-BC85-DAF175561AA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5BA0420E-7E14-41C8-950F-D5DBAC731ED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,9 +97,23 @@ Global
 		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|x86.ActiveCfg = Release|Any CPU
 		{9D506500-3EE6-4BAF-BA8B-504401BE4348}.Release|x86.Build.0 = Release|Any CPU
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Debug|x86.ActiveCfg = Debug|x86
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Debug|x86.Build.0 = Debug|x86
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Release|x86.ActiveCfg = Release|x86
+		{F5780B42-3472-4D87-A007-10F01CC319E6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27AE976B-943A-4568-A3C4-9C2D94C6C501} = {5BA0420E-7E14-41C8-950F-D5DBAC731ED1}
+		{007ADD27-F13B-4F56-974B-E1F7F4814EFB} = {5BA0420E-7E14-41C8-950F-D5DBAC731ED1}
+		{A6F58484-F5EC-4196-A607-DC5F5ECAEC2E} = {5BA0420E-7E14-41C8-950F-D5DBAC731ED1}
+		{F5780B42-3472-4D87-A007-10F01CC319E6} = {C01C9D1F-E793-4A2D-BC85-DAF175561AA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE808649-F4B8-4A54-B3F6-D5D320F62F8D}
