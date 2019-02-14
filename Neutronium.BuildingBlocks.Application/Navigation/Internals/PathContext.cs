@@ -25,7 +25,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
 
         public bool Back()
         {
-            if (_Index == 0)
+            if (_Index == 1)
                 return false;
 
             _Index--;

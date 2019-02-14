@@ -42,6 +42,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             _ServiceLocator.GetInstance(_FakeTypeRedirect).Returns(_ExpectedRedirectViewModel);
             _ServiceLocator.GetInstance(null).Throws(new ArgumentNullException("serviceType"));
             _RouterSolver = Substitute.For<IRouterSolver>();
+            _RouterSolver.SolveType(null).Throws<Exception>();
             _RouterSolver.SolveRoute(Arg.Any<object>()).Returns(default(string));
             _NavigationViewModel = new NavigationViewModel(new Lazy<IServiceLocator>(() => _ServiceLocator),
                 _RouterSolver, _OriginalRoute);
@@ -55,6 +56,18 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             var res = await _NavigationViewModel.BeforeResolveCommand.Execute("route not found");
 
             res.Should().BeEquivalentTo(expected);
+        }
+
+        [Fact]
+        public async Task BeforeResolveCommand_send_error_event_when_route_not_found()
+        {
+            var route = "route not found";
+            using (var monitor = _NavigationViewModel.Monitor())
+            {
+                await _NavigationViewModel.BeforeResolveCommand.Execute(route);
+                monitor.Should().Raise("OnRoutingMessage").WithArgs<RoutingMessageArgs>(arg =>
+                    arg.Type == MessageType.Error && arg.Message.Contains(route));
+            }
         }
 
         [Theory, AutoData]

@@ -47,7 +47,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         private BeforeRouterResult BeforeResolve(string routeName)
         {
-            OnInformation($"Navigating to: {routeName}");
+            OnInformation($@"Navigating to: ""{routeName}""");
             var context = GetRouteContext(routeName);
             return (context == null) ? BeforeRouterResult.Cancel() : Navigate(context);
         }
@@ -74,7 +74,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             var nextViewModel = GetViewModelFromRoute(redirect);
             if (nextViewModel == null)
             {
-                OnError($"Redirect route not found: {redirect}, navigation will be cancelled.");
+                OnError($@"Redirect route not found: ""{redirect}"", navigation will be cancelled.");
                 return BeforeRouterResult.Cancel();
             }
 
@@ -88,7 +88,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             {
                 var newContext = CreateRouteContext(routeName);
                 if (newContext == null)
-                    OnError($"Route not found {routeName}. Cancelling navigation.");
+                    OnError($@"Route: ""{routeName}"" not found. Cancelling navigation.");
                 return newContext;
             }
 
@@ -96,9 +96,8 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             if (context.Route == routeName)
                 return context;
 
-            OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}");
+            OnError($@"Navigation inconsistency: from browser ""{routeName}"", from context: {context.Route}");
             return null;
-
         }
 
         private RouteContext CreateRouteContext(string routeName)
@@ -138,7 +137,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
                 subNavigator = UpdateChild(subNavigator, pathContext);
                 if (subNavigator == null)
                 {
-                    OnError($"Problem when solving {pathContext.CompletePath}. Sub-path not found: {pathContext.CurrentRelativePath}");
+                    OnError($@"Problem when solving: ""{pathContext.CompletePath}"".  Sub-path not found: {pathContext.CurrentRelativePath}");
                     return false;
                 }
 
@@ -184,7 +183,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
             var context = _CurrentNavigations.Dequeue();
             if (context.Route != routeName)
             {
-                OnError($"Navigation inconsistency: from browser {routeName}, from context: {context.Route}. Maybe rerouted?");
+                OnError($@"Navigation inconsistency: from browser ""{routeName}"", from context: {context.Route}. Maybe rerouted?");
             }
             context.Complete();
 
@@ -198,13 +197,13 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
             if (route == null)
             {
-                OnError($"Route not found for vm: {viewModel} of type {viewModel?.GetType()}");
+                OnError($@"Route not found for vm: ""{viewModel}"" of type {viewModel?.GetType()}");
                 return Task.CompletedTask;
             }
 
             if (Route == route)
             {
-                OnInformation($"Route unchanged: {routeName}");
+                OnInformation($@"Route unchanged: ""{routeName}""");
                 if (!ReferenceEquals(_ViewModel, viewModel))
                     OnNavigated?.Invoke(this, new RoutedEventArgs(viewModel, route));
 
@@ -259,18 +258,18 @@ namespace Neutronium.BuildingBlocks.Application.Navigation
 
         public Task Navigate(string routeName)
         {
-            OnInformation($"Navigating to: {routeName}");
+            OnInformation($@"Navigating to: ""{routeName}""");
 
             if (Route == routeName)
             {
-                OnInformation($"Route unchanged: {routeName}");
+                OnInformation($@"Route unchanged: ""{routeName}""");
                 return Task.CompletedTask;
             }
 
             var ctx = CreateRouteContext(routeName);
             if (ctx == null)
             {
-                OnError($"Route not registered: {routeName}.");
+                OnError($@"Route not registered: ""{routeName}"".");
                 return Task.FromException(new NotImplementedException($"Route not found: {routeName}"));
             }
 

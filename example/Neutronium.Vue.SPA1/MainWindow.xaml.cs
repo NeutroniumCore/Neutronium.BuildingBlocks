@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using Neutronium.BuildingBlocks.Application.Navigation;
 using Neutronium.BuildingBlocks.Application.ViewModels;
 using Neutronium.BuildingBlocks.SetUp;
 
@@ -21,15 +23,32 @@ namespace Neutronium.Vue.SPA
 
         private void MainWindow_Initialized(object sender, EventArgs e)
         {
-            DataContext = BuildApplicationViewModel();
+            DataContext = BuildApplicationViewModel(); ;
             Initialized -= MainWindow_Initialized;
         }
 
         private ApplicationViewModel<ApplicationInformation> BuildApplicationViewModel()
         {
             _ApplicationViewModelBuilder = new ApplicationViewModelBuilder(this);
-            return _ApplicationViewModelBuilder.ApplicationViewModel;
+            var mainViewModel = _ApplicationViewModelBuilder.ApplicationViewModel;
+#if DEBUG
+            mainViewModel.Router.OnRoutingMessage += Router_OnRoutingMessage;
+#endif
+            return mainViewModel;
         }
+
+#if DEBUG
+        private void Router_OnRoutingMessage(object sender, RoutingMessageArgs e)
+        {
+            if (e.Type == MessageType.Error)
+            {
+                Trace.TraceError(e.Message);
+                return;
+            }
+
+            Trace.TraceInformation(e.Message);
+        }
+#endif
 
         protected override void OnClosed(EventArgs e)
         {

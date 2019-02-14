@@ -35,7 +35,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             {
                 paths.Add(_PathContext.CurrentRelativePath);
             }
-            paths.Should().BeEquivalentTo("p4", "p3", "p2", "p1", "root");
+            paths.Should().BeEquivalentTo("p4", "p3", "p2", "p1");
         }
 
         [Fact]
@@ -52,7 +52,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             {
                 paths.Add(_PathContext.RootToCurrent);
             }
-            paths.Should().BeEquivalentTo("root/p1/p2/p3", "root/p1/p2", "root/p1", "root", null);
+            paths.Should().BeEquivalentTo("root/p1/p2/p3", "root/p1/p2", "root/p1", "root");
         }
 
         [Fact]
@@ -69,7 +69,7 @@ namespace Neutronium.BuildingBlocks.Application.Tests
             {
                 paths.Add(_PathContext.CurrentToEnd);
             }
-            paths.Should().BeEquivalentTo("p4", "p3/p4", "p2/p3/p4", "p1/p2/p3/p4", "root/p1/p2/p3/p4");
+            paths.Should().BeEquivalentTo("p4", "p3/p4", "p2/p3/p4", "p1/p2/p3/p4");
         }
 
         [Fact]
