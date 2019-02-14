@@ -1,6 +1,5 @@
 ﻿<#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
-<#@ assembly name="$(TargetPath)" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Resources" #>
@@ -8,11 +7,13 @@
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="Neutronium.Vue.SPA" #>
 <#@ output extension=".json" #>
 <# 
 	Langages = new [] { "en-US" };
 	Resources = new []{"Resource"};
+	var path = this.Host.ResolveAssemblyReference("$(TargetPath)");
+	MainAssembly = Assembly.LoadFrom(path);
+	Namespace = MainAssembly.GetTypes().FirstOrDefault(t => t.Name == "App")?.Namespace;
 #>
 {
  <# var first = true;
@@ -40,8 +41,9 @@
 }
 <#+
 private string[] Langages;
-
 private string[] Resources;
+private Assembly MainAssembly;
+private string Namespace;
 
 private void DisplayDictionary(IDictionary<string,string> dictionary){
 	var first = true;
@@ -56,8 +58,7 @@ private void DisplayDictionary(IDictionary<string,string> dictionary){
 }
 
 private IDictionary<string,string> GetDictionary(string resourceName, string langage){
-	var asm = typeof(App).Assembly;
-	var resourceManager = new ResourceManager("Neutronium.Vue.SPA." + resourceName, asm);
+	var resourceManager = new ResourceManager($"{Namespace}.{resourceName}", MainAssembly);
 	var rs = resourceManager.GetResourceSet(new CultureInfo(langage), true, true);
 	return rs.Cast<DictionaryEntry>().OrderBy(entry =>entry.Key).ToDictionary(dicEntry => (string)dicEntry.Key, dicEntry => (string)dicEntry.Value);            
 }
