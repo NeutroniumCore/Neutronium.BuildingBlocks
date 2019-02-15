@@ -11,8 +11,8 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
 
         internal string CompletePath { get; }
         internal string CurrentRelativePath => (_Index != _Paths.Length) ? _Paths[_Index] : null;
-        internal string RootToCurrent => _Index == 0 ? null : BuilPath(_Paths.Where((p, i) => i < _Index));
-        internal string CurrentToEnd => _Index == _Paths.Length ? null : BuilPath(_Paths.Where((p, i) => i >= _Index));
+        internal string RootToCurrent => _Index == 0 ? null : BuildPath(_Paths.Where((p, i) => i < _Index));
+        internal string CurrentToEnd => _Index == _Paths.Length ? null : BuildPath(_Paths.Where((p, i) => i >= _Index));
 
         public PathContext(string path)
         {
@@ -21,7 +21,7 @@ namespace Neutronium.BuildingBlocks.Application.Navigation.Internals
             _Index = _Paths.Length;
         }
 
-        private static string BuilPath(IEnumerable<string> paths) => String.Join("/", paths);
+        private static string BuildPath(IEnumerable<string> paths) => String.Join("/", paths);
 
         public bool Back()
         {
