@@ -41,6 +41,46 @@
       <Visible>False</Visible>
     </T4ParameterValues>
   </ItemGroup>
+  <PropertyGroup>
+	<GlobalNodePath>$(NODEJS)</GlobalNodePath>
+    <GlobalNodeModulePath>$(HOMEDRIVE)$(HOMEPATH)\AppData\Roaming\npm</GlobalNodeModulePath>
+    <LocalNodePath>
+    </LocalNodePath>
+    <LocalNodeModulePath>
+    </LocalNodeModulePath>
+    <NodePath>$(GlobalNodePath)</NodePath>
+    <NodeModulePath>$(GlobalNodeModulePath)</NodeModulePath>
+  </PropertyGroup>
+  <Target Name="EnsureNode">
+    <PropertyGroup>
+      <UnknownNodePath>Global NodeJS installation not found. Please set the 'NODEJS' environment variable for a global installation or set the 'LocalNodePath' property in your project file for a local installation.</UnknownNodePath>
+      <InvalidGlobalNodePath>Invalid global node path.</InvalidGlobalNodePath>
+      <InvalidLocalNodePath>Invalid local node path.</InvalidLocalNodePath>
+      <EnsureNodeInPathCmd>
+      </EnsureNodeInPathCmd>
+    </PropertyGroup>
+    <Message Text="Ensuring NodeJS is installed" Importance="low" />
+    <Error Condition=" '$(LocalNodePath)' != '' AND !Exists('$(LocalNodePath)')" Text="$(InvalidLocalNodePath) $(LocalNodePath)" />
+    <PropertyGroup Condition=" '$(LocalNodePath)' != '' ">
+      <NodePath>$(LocalNodePath)</NodePath>
+      <EnsureNodeInPathCmd>SETLOCAL &amp; SET PATH=$(NodePath);%PATH% &amp;</EnsureNodeInPathCmd>
+    </PropertyGroup>
+    <Exec Command="$(WINDIR)\system32\where.exe node" ContinueOnError="true" IgnoreExitCode="true" ConsoleToMsBuild="true" Condition=" '$(NodePath)' == '' ">
+      <Output TaskParameter="ExitCode" PropertyName="WhereExitCode" />
+      <Output TaskParameter="ConsoleOutput" PropertyName="NodeExecutable" />
+    </Exec>
+    <PropertyGroup Condition=" '$(WhereExitCode)' == '0' ">
+      <NodePath>$([System.IO.Path]::GetDirectoryName('$(NodeExecutable)'))</NodePath>
+    </PropertyGroup>
+    <Error Condition=" '$(NodePath)' == '' " Text="$(UnknownNodePath)" />
+    <Error Condition=" !Exists('$(NodePath)') " Text="$(InvalidGlobalNodePath) $(NodePath)" />
+    <Message Text="NodeJS path is: '$(NodePath)'" />
+  </Target>
+  <PropertyGroup>
+    <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
+    <NpmCommandInstall>install --loglevel error</NpmCommandInstall>
+    <NpmCommandBuild>run build</NpmCommandBuild>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
@@ -328,8 +368,16 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>-->
-  <Target Name="AfterBuild">
-	<CallTarget Targets="TransformAll"/>    
+ <Target Name="AfterBuild" DependsOnTargets="EnsureNode">
+   <PropertyGroup>
+      <NpmWorkingDirectory>$([System.IO.Path]::GetDirectoryName('$(NpmFile)'))</NpmWorkingDirectory>
+      <RunNpmCmd1>"$(NodePath)\npm" $(NpmCommandInstall)</RunNpmCmd1>
+      <RunNpmCmd2>"$(NodePath)\npm" $(NpmCommandBuild)</RunNpmCmd2>
+    </PropertyGroup>
+	<CallTarget Targets="TransformAll"/>
+    <Message Text="Npm Working Directory: '$(NpmWorkingDirectory)'" />
+    <Exec Command="$(RunNpmCmd1)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />
+    <Exec Command="$(RunNpmCmd2)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />	
   </Target>
   
 </Project>
