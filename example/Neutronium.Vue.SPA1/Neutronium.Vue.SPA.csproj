@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props" Condition="Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props')" />
-  <Import Project="..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.props" Condition="Exists('..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.props')" />
-  <Import Project="..\..\packages\Neutronium.JavascriptFramework.Vue.1.5.0\build\Neutronium.JavascriptFramework.Vue.props" Condition="Exists('..\packages\Neutronium.JavascriptFramework.Vue.1.5.0\build\Neutronium.JavascriptFramework.Vue.props')" />
+  <Import Project="..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props" Condition="Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props')" />
+  <Import Project="..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.props" Condition="Exists('..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.props')" />
+  <Import Project="..\..\packages\Neutronium.JavascriptFramework.Vue.1.6.0\build\Neutronium.JavascriptFramework.Vue.props" Condition="Exists('..\..\packages\Neutronium.JavascriptFramework.Vue.1.6.0\build\Neutronium.JavascriptFramework.Vue.props')" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <TargetFrameworkProfile />
@@ -24,7 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <!-- 15.0 is for VS2017, adjust if necessary -->
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -42,7 +42,7 @@
     </T4ParameterValues>
   </ItemGroup>
   <PropertyGroup>
-	<GlobalNodePath>$(NODEJS)</GlobalNodePath>
+    <GlobalNodePath>$(NODEJS)</GlobalNodePath>
     <GlobalNodeModulePath>$(HOMEDRIVE)$(HOMEPATH)\AppData\Roaming\npm</GlobalNodeModulePath>
     <LocalNodePath>
     </LocalNodePath>
@@ -74,12 +74,12 @@
     </PropertyGroup>
     <Error Condition=" '$(NodePath)' == '' " Text="$(UnknownNodePath)" />
     <Error Condition=" !Exists('$(NodePath)') " Text="$(InvalidGlobalNodePath) $(NodePath)" />
-    <Message Text="NodeJS path is: '$(NodePath)'" />
+    <Message Text="NodeJS path is: '$(NodePath)'" /> 
   </Target>
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
     <NpmCommandInstall>install --loglevel error</NpmCommandInstall>
-    <NpmCommandBuild>run build</NpmCommandBuild>
+    <NpmCommandBuild>run cached-build</NpmCommandBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -136,20 +136,18 @@
     <Reference Include="MoreCollection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MoreCollection.2.0.0\lib\net45\MoreCollection.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Neutronium.Core.1.5.0\lib\net472\Neutronium.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Neutronium.Core, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Neutronium.Core.1.5.2\lib\net472\Neutronium.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.JavascriptFramework.Vue, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Neutronium.JavascriptFramework.Vue.1.5.0\lib\net472\Neutronium.JavascriptFramework.Vue.dll</HintPath>
+    <Reference Include="Neutronium.JavascriptFramework.Vue, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Neutronium.JavascriptFramework.Vue.1.6.0\lib\net472\Neutronium.JavascriptFramework.Vue.dll</HintPath>
     </Reference>
     <Reference Include="Neutronium.MVVMComponents, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Neutronium.MVVMComponents.1.5.0\lib\net472\Neutronium.MVVMComponents.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Neutronium.WPF, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Neutronium.WPF.1.5.0\lib\net472\Neutronium.WPF.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Neutronium.WPF, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Neutronium.WPF.1.5.2\lib\net472\Neutronium.WPF.dll</HintPath>
     </Reference>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
@@ -351,33 +349,28 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Unofficial.Cef.for.Chromiumfx.x64.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Unofficial.Cef.for.Chromiumfx.x64.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x64.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Unofficial.Cef.for.Chromiumfx.x86.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Unofficial.Cef.for.Chromiumfx.x86.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x86.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Neutronium.JavascriptFramework.Vue.1.5.0\build\Neutronium.JavascriptFramework.Vue.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.JavascriptFramework.Vue.1.5.0\build\Neutronium.JavascriptFramework.Vue.props'))" />
-    <Error Condition="!Exists('..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.props'))" />
-    <Error Condition="!Exists('..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props'))" />
-    <Error Condition="!Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Neutronium.JavascriptFramework.Vue.1.6.0\build\Neutronium.JavascriptFramework.Vue.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.JavascriptFramework.Vue.1.6.0\build\Neutronium.JavascriptFramework.Vue.props'))" />
+    <Error Condition="!Exists('..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.props'))" />
+    <Error Condition="!Exists('..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.props'))" />
+    <Error Condition="!Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets'))" />
   </Target>
-  <Import Project="..\..\packages\Unofficial.Cef.for.Chromiumfx.x64.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x64.targets" Condition="Exists('..\packages\Unofficial.Cef.for.Chromiumfx.x64.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x64.targets')" />
-  <Import Project="..\..\packages\Unofficial.Cef.for.Chromiumfx.x86.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x86.targets" Condition="Exists('..\packages\Unofficial.Cef.for.Chromiumfx.x86.3.3440.1806\build\Unofficial.Cef.for.Chromiumfx.x86.targets')" />
-  <Import Project="..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.targets" Condition="Exists('..\..\packages\Unofficial.Chromiumfx.3.3440.1808\build\Unofficial.Chromiumfx.targets')" />
-  <Import Project="..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets" Condition="Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.5.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets')" />
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>-->
- <Target Name="AfterBuild" DependsOnTargets="EnsureNode">
-   <PropertyGroup>
+  <Target Name="AfterBuild" DependsOnTargets="EnsureNode">
+    <PropertyGroup>
       <NpmWorkingDirectory>$([System.IO.Path]::GetDirectoryName('$(NpmFile)'))</NpmWorkingDirectory>
       <RunNpmCmd1>"$(NodePath)\npm" $(NpmCommandInstall)</RunNpmCmd1>
       <RunNpmCmd2>"$(NodePath)\npm" $(NpmCommandBuild)</RunNpmCmd2>
     </PropertyGroup>
-	<CallTarget Targets="TransformAll"/>
+    <CallTarget Targets="TransformAll" />
     <Message Text="Npm Working Directory: '$(NpmWorkingDirectory)'" />
     <Exec Command="$(RunNpmCmd1)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />
-    <Exec Command="$(RunNpmCmd2)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />	
+    <Exec Command="$(RunNpmCmd2)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />
   </Target>
-  
+  <Import Project="..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.targets" Condition="Exists('..\..\packages\Unofficial.Chromiumfx.77.1.18.0\build\Unofficial.Chromiumfx.targets')" />
+  <Import Project="..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets" Condition="Exists('..\..\packages\Neutronium.WebBrowserEngine.ChromiumFx.1.6.0\build\Neutronium.WebBrowserEngine.ChromiumFx.targets')" />
 </Project>
