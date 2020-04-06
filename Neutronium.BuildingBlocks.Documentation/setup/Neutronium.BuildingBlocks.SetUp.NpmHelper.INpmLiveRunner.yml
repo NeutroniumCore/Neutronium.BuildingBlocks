@@ -6,7 +6,6 @@ items:
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
   children:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
   langs:
   - csharp
   - vb
@@ -21,18 +20,19 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: INpmLiveRunner
     path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/INpmLiveRunner.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
   summary: "\nNpm script runner\n"
   example: []
   syntax:
-    content: 'public interface INpmLiveRunner : IDisposable'
+    content: 'public interface INpmLiveRunner : IRunner, IDisposable'
     content.vb: >-
       Public Interface INpmLiveRunner
-          Inherits IDisposable
+          Inherits IRunner
   inheritedMembers:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
   - System.IDisposable.Dispose
   modifiers.csharp:
   - public
@@ -58,7 +58,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: GetPortAsync
     path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/INpmLiveRunner.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -75,41 +75,18 @@ items:
       description: "\nThe port where the page is served\n"
     content.vb: Function GetPortAsync(cancellationToken As CancellationToken) As Task(Of Integer)
   overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync*
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
-  id: OnMessageReceived
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
-  langs:
-  - csharp
-  - vb
-  name: OnMessageReceived
-  nameWithType: INpmLiveRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
-  type: Event
-  source:
-    remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/INpmLiveRunner.cs
-      branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: OnMessageReceived
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/INpmLiveRunner.cs
-    startLine: 23
-  assemblies:
-  - Neutronium.BuildingBlocks.SetUp
-  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  summary: "\nSent when npm console displays information\n"
-  example: []
-  syntax:
-    content: event EventHandler<MessageEventArgs> OnMessageReceived
-    return:
-      type: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
-    content.vb: Event OnMessageReceived As EventHandler(Of MessageEventArgs)
 references:
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
   commentId: N:Neutronium.BuildingBlocks.SetUp.NpmHelper
   name: Neutronium.BuildingBlocks.SetUp.NpmHelper
   nameWithType: Neutronium.BuildingBlocks.SetUp.NpmHelper
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  name: OnMessageReceived
+  nameWithType: IRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
 - uid: System.IDisposable.Dispose
   commentId: M:System.IDisposable.Dispose
   parent: System.IDisposable
@@ -141,6 +118,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: IRunner
+  nameWithType: IRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
 - uid: System.IDisposable
   commentId: T:System.IDisposable
   parent: System
@@ -261,84 +244,3 @@ references:
   name: System.Threading.Tasks
   nameWithType: System.Threading.Tasks
   fullName: System.Threading.Tasks
-- uid: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
-  commentId: T:System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
-  parent: System
-  definition: System.EventHandler`1
-  name: EventHandler<MessageEventArgs>
-  nameWithType: EventHandler<MessageEventArgs>
-  fullName: System.EventHandler<Neutronium.BuildingBlocks.SetUp.MessageEventArgs>
-  nameWithType.vb: EventHandler(Of MessageEventArgs)
-  fullName.vb: System.EventHandler(Of Neutronium.BuildingBlocks.SetUp.MessageEventArgs)
-  name.vb: EventHandler(Of MessageEventArgs)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    nameWithType: EventHandler
-    fullName: System.EventHandler
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
-    name: MessageEventArgs
-    nameWithType: MessageEventArgs
-    fullName: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    nameWithType: EventHandler
-    fullName: System.EventHandler
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
-    name: MessageEventArgs
-    nameWithType: MessageEventArgs
-    fullName: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.EventHandler`1
-  commentId: T:System.EventHandler`1
-  isExternal: true
-  name: EventHandler<TEventArgs>
-  nameWithType: EventHandler<TEventArgs>
-  fullName: System.EventHandler<TEventArgs>
-  nameWithType.vb: EventHandler(Of TEventArgs)
-  fullName.vb: System.EventHandler(Of TEventArgs)
-  name.vb: EventHandler(Of TEventArgs)
-  spec.csharp:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    nameWithType: EventHandler
-    fullName: System.EventHandler
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TEventArgs
-    nameWithType: TEventArgs
-    fullName: TEventArgs
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.EventHandler`1
-    name: EventHandler
-    nameWithType: EventHandler
-    fullName: System.EventHandler
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TEventArgs
-    nameWithType: TEventArgs
-    fullName: TEventArgs
-  - name: )
-    nameWithType: )
-    fullName: )

@@ -6,8 +6,10 @@ items:
   children:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
   langs:
@@ -30,18 +32,29 @@ references:
   name: GenericNpmRunner
   nameWithType: GenericNpmRunner
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  name: IGenericNpmRunner
-  nameWithType: IGenericNpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  name: INoResultNpmRunner
+  nameWithType: INoResultNpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
   commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
   name: INpmLiveRunner
   nameWithType: INpmLiveRunner
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: IRunner
+  nameWithType: IRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
+  name: NpmBuilder
+  nameWithType: NpmBuilder
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
   commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
   name: NpmLiveRunner

@@ -16,6 +16,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         private readonly Uri _ProductionUri;
         private readonly ApplicationMode _Default = ApplicationMode.Dev;
         private readonly INpmLiveRunner _NpmLiveRunner;
+        private readonly INoResultNpmRunner _NpmBuildRunner;
         private const int Port = 8080; 
 
         public ApplicationSetUpBuilderTests()
@@ -23,8 +24,11 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
             RegisterPackScheme();
             _ProductionUri = GetDummyUri();
             _NpmLiveRunner = Substitute.For<INpmLiveRunner>();
+            _NpmBuildRunner = Substitute.For<INoResultNpmRunner>();
             _NpmLiveRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(Port));
-            _ApplicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, _Default, _NpmLiveRunner);
+            _NpmBuildRunner.Run(Arg.Any<CancellationToken>()).Returns(Task.CompletedTask);
+
+            _ApplicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, _Default, _NpmLiveRunner, _NpmBuildRunner);
         }
 
         private void RegisterPackScheme()
@@ -96,7 +100,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         [Theory, AutoData]
         public async Task BuildFromApplicationArguments_uses_default_mode(ApplicationMode mode)
         {
-            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, _NpmLiveRunner);
+            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, _NpmLiveRunner, _NpmBuildRunner);
             var res = await applicationSetUpBuilder.BuildFromApplicationArguments(new string [] { });
             res.Mode.Should().Be(mode);
         }

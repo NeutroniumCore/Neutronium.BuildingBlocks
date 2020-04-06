@@ -71,7 +71,7 @@ namespace Neutronium.BuildingBlocks.SetUp
         /// <param name="liveScript">name of the npm live script</param>
         /// <param name="runScript">name of the npm build cached script</param>
         public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode @default = ApplicationMode.Dev,
-            string liveScript = "live", string runScript = "cached-build") :
+            string liveScript = "live", string runScript = "build:cached") :
             this(new Uri($"pack://application:,,,/{viewDirectory.Replace(@"\", "/")}/dist/index.html"),
                 @default,
                 new NpmLiveRunner(viewDirectory, liveScript),
@@ -185,7 +185,6 @@ namespace Neutronium.BuildingBlocks.SetUp
                     return new Uri($"http://localhost:{port}/index.html");
 
                 case ApplicationMode.Dev:
-                    await _NpmBuildRunner.Run(cancellationToken).ConfigureAwait(false);
                     return Uri;
 
                 default:

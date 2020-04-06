@@ -1,36 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
-  id: IGenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  id: IRunner
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
   children:
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
   langs:
   - csharp
   - vb
-  name: IGenericNpmRunner
-  nameWithType: IGenericNpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  name: IRunner
+  nameWithType: IRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
   type: Interface
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/IRunner.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: IGenericNpmRunner
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
-    startLine: 9
+    id: IRunner
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/IRunner.cs
+    startLine: 4
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  summary: "\nNpm script runner\n"
-  example: []
   syntax:
-    content: 'public interface IGenericNpmRunner : IDisposable'
+    content: 'public interface IRunner : IDisposable'
     content.vb: >-
-      Public Interface IGenericNpmRunner
+      Public Interface IRunner
           Inherits IDisposable
   inheritedMembers:
   - System.IDisposable.Dispose
@@ -40,60 +37,25 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
-  id: Run(System.Threading.CancellationToken)
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
-  langs:
-  - csharp
-  - vb
-  name: Run(CancellationToken)
-  nameWithType: IGenericNpmRunner.Run(CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
-  type: Method
-  source:
-    remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
-      branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: Run
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
-    startLine: 17
-  assemblies:
-  - Neutronium.BuildingBlocks.SetUp
-  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  summary: "\nRun script until completion\n"
-  example: []
-  syntax:
-    content: Task Run(CancellationToken cancellationToken)
-    parameters:
-    - id: cancellationToken
-      type: System.Threading.CancellationToken
-      description: ''
-    return:
-      type: System.Threading.Tasks.Task
-      description: "\n"
-    content.vb: Function Run(cancellationToken As CancellationToken) As Task
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run*
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
   id: OnMessageReceived
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
   langs:
   - csharp
   - vb
   name: OnMessageReceived
-  nameWithType: IGenericNpmRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
+  nameWithType: IRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
   type: Event
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/IRunner.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnMessageReceived
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/IGenericNpmRunner.cs
-    startLine: 22
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/IRunner.cs
+    startLine: 9
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -154,37 +116,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run
-  name: Run
-  nameWithType: IGenericNpmRunner.Run
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run
-- uid: System.Threading.CancellationToken
-  commentId: T:System.Threading.CancellationToken
-  parent: System.Threading
-  isExternal: true
-  name: CancellationToken
-  nameWithType: CancellationToken
-  fullName: System.Threading.CancellationToken
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading
-  commentId: N:System.Threading
-  isExternal: true
-  name: System.Threading
-  nameWithType: System.Threading
-  fullName: System.Threading
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
 - uid: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
   commentId: T:System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
   parent: System

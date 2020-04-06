@@ -1,40 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  id: GenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
+  id: NpmBuilder
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
   children:
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor(System.String,System.String)
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor(System.String,System.String)
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.OnMessageReceived
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
-  name: GenericNpmRunner
-  nameWithType: GenericNpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  name: NpmBuilder
+  nameWithType: NpmBuilder
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
   type: Class
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: GenericNpmRunner
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 13
+    id: NpmBuilder
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+    startLine: 6
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  summary: "\nNpm generic runner implementation\n"
-  example: []
   syntax:
-    content: 'public class GenericNpmRunner : INoResultNpmRunner, IRunner, IDisposable'
+    content: 'public class NpmBuilder : INoResultNpmRunner, IRunner, IDisposable'
     content.vb: >-
-      Public Class GenericNpmRunner
+      Public Class NpmBuilder
           Implements INoResultNpmRunner, IRunner, IDisposable
   inheritance:
   - System.Object
@@ -43,6 +39,7 @@ items:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
   - System.IDisposable
   inheritedMembers:
+  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -55,25 +52,25 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.OnMessageReceived
   id: OnMessageReceived
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
   langs:
   - csharp
   - vb
   name: OnMessageReceived
-  nameWithType: GenericNpmRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
+  nameWithType: NpmBuilder.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.OnMessageReceived
   type: Event
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnMessageReceived
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 26
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+    startLine: 10
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -88,60 +85,92 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor(System.String,System.String)
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor(System.String,System.String)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor(System.String,System.String)
   id: '#ctor(System.String,System.String)'
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
   langs:
   - csharp
   - vb
-  name: GenericNpmRunner(String, String)
-  nameWithType: GenericNpmRunner.GenericNpmRunner(String, String)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.GenericNpmRunner(System.String, System.String)
+  name: NpmBuilder(String, String)
+  nameWithType: NpmBuilder.NpmBuilder(String, String)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.NpmBuilder(System.String, System.String)
   type: Constructor
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 37
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+    startLine: 13
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
   syntax:
-    content: public GenericNpmRunner(string directory, string script)
+    content: public NpmBuilder(string directory, string script)
     parameters:
     - id: directory
       type: System.String
     - id: script
       type: System.String
     content.vb: Public Sub New(directory As String, script As String)
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor*
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose
+  id: Dispose
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: NpmBuilder.Dispose()
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Dispose
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+    startLine: 19
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run(System.Threading.CancellationToken)
   id: Run(System.Threading.CancellationToken)
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder
   langs:
   - csharp
   - vb
   name: Run(CancellationToken)
-  nameWithType: GenericNpmRunner.Run(CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
+  nameWithType: NpmBuilder.Run(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run(System.Threading.CancellationToken)
   type: Method
   source:
     remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
       branch: master
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Run
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 77
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmBuilder.cs
+    startLine: 24
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -153,112 +182,13 @@ items:
     return:
       type: System.Threading.Tasks.Task
     content.vb: Public Function Run(cancellationToken As CancellationToken) As Task
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run*
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run*
   implements:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner.Run(System.Threading.CancellationToken)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
-  id: Cancel
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  langs:
-  - csharp
-  - vb
-  name: Cancel()
-  nameWithType: GenericNpmRunner.Cancel()
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel()
-  type: Method
-  source:
-    remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-      branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: Cancel
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 102
-  assemblies:
-  - Neutronium.BuildingBlocks.SetUp
-  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  syntax:
-    content: public Task<bool> Cancel()
-    return:
-      type: System.Threading.Tasks.Task{System.Boolean}
-    content.vb: Public Function Cancel As Task(Of Boolean)
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
-  id: Dispose
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  langs:
-  - csharp
-  - vb
-  name: Dispose()
-  nameWithType: GenericNpmRunner.Dispose()
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose()
-  type: Method
-  source:
-    remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-      branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: Dispose
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 184
-  assemblies:
-  - Neutronium.BuildingBlocks.SetUp
-  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose*
-  implements:
-  - System.IDisposable.Dispose
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
-  id: ToString
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: GenericNpmRunner.ToString()
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString()
-  type: Method
-  source:
-    remote:
-      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-      branch: master
-      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
-    id: ToString
-    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/GenericNpmRunner.cs
-    startLine: 189
-  assemblies:
-  - Neutronium.BuildingBlocks.SetUp
-  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-    content.vb: Public Overrides Function ToString As String
-  overridden: System.Object.ToString
-  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
 references:
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
   commentId: N:Neutronium.BuildingBlocks.SetUp.NpmHelper
@@ -291,6 +221,37 @@ references:
   name: IDisposable
   nameWithType: IDisposable
   fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -632,11 +593,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor
-  name: GenericNpmRunner
-  nameWithType: GenericNpmRunner.GenericNpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.GenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.#ctor
+  name: NpmBuilder
+  nameWithType: NpmBuilder.NpmBuilder
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.NpmBuilder
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -644,11 +605,47 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose
+  name: Dispose
+  nameWithType: NpmBuilder.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run
   name: Run
-  nameWithType: GenericNpmRunner.Run
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run
+  nameWithType: NpmBuilder.Run
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmBuilder.Run
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner.Run(System.Threading.CancellationToken)
   commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner.Run(System.Threading.CancellationToken)
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.INoResultNpmRunner
@@ -714,163 +711,3 @@ references:
   name: System.Threading.Tasks
   nameWithType: System.Threading.Tasks
   fullName: System.Threading.Tasks
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
-  name: Cancel
-  nameWithType: GenericNpmRunner.Cancel
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
-- uid: System.Threading.Tasks.Task{System.Boolean}
-  commentId: T:System.Threading.Tasks.Task{System.Boolean}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  name: Task<Boolean>
-  nameWithType: Task<Boolean>
-  fullName: System.Threading.Tasks.Task<System.Boolean>
-  nameWithType.vb: Task(Of Boolean)
-  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
-  name.vb: Task(Of Boolean)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Threading.Tasks.Task`1
-  commentId: T:System.Threading.Tasks.Task`1
-  isExternal: true
-  name: Task<TResult>
-  nameWithType: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  nameWithType.vb: Task(Of TResult)
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
-  name: Dispose
-  nameWithType: GenericNpmRunner.Dispose
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
-- uid: System.IDisposable.Dispose
-  commentId: M:System.IDisposable.Dispose
-  parent: System.IDisposable
-  isExternal: true
-  name: Dispose()
-  nameWithType: IDisposable.Dispose()
-  fullName: System.IDisposable.Dispose()
-  spec.csharp:
-  - uid: System.IDisposable.Dispose
-    name: Dispose
-    nameWithType: IDisposable.Dispose
-    fullName: System.IDisposable.Dispose
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.IDisposable.Dispose
-    name: Dispose
-    nameWithType: IDisposable.Dispose
-    fullName: System.IDisposable.Dispose
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString*
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
-  name: ToString
-  nameWithType: GenericNpmRunner.ToString
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString

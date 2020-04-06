@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve ./src/main.js --open --port 9000",
     "build": "vue-cli-service build --entry ./src/entry.js --modern  && npm run create-hash",
-    "cached-build": "npm run check-hash || npm run build",
+    "build:cached": "npm run check-hash || npm run build",
     "lint": "vue-cli-service lint",
     "live": "vue-cli-service serve ./src/entry.js --port 8080 --mode integrated",
     "test:unit": "vue-cli-service test:unit",

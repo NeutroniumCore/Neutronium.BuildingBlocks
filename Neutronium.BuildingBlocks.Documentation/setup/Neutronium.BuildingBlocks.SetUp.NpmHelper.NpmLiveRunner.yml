@@ -32,14 +32,15 @@ items:
   summary: "\nNpm runner implementation\n"
   example: []
   syntax:
-    content: 'public class NpmLiveRunner : INpmLiveRunner, IDisposable'
+    content: 'public class NpmLiveRunner : INpmLiveRunner, IRunner, IDisposable'
     content.vb: >-
       Public Class NpmLiveRunner
-          Implements INpmLiveRunner, IDisposable
+          Implements INpmLiveRunner, IRunner, IDisposable
   inheritance:
   - System.Object
   implements:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
   - System.IDisposable
   inheritedMembers:
   - System.Object.Equals(System.Object)
@@ -82,7 +83,7 @@ items:
       type: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
     content.vb: Public Event OnMessageReceived As EventHandler(Of MessageEventArgs)
   implements:
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -277,6 +278,12 @@ references:
   name: INpmLiveRunner
   nameWithType: INpmLiveRunner
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: IRunner
+  nameWithType: IRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
 - uid: System.IDisposable
   commentId: T:System.IDisposable
   parent: System
@@ -538,12 +545,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
-  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner
   name: OnMessageReceived
-  nameWithType: INpmLiveRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  nameWithType: IRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IRunner.OnMessageReceived
 - uid: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
   commentId: T:System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
   parent: System

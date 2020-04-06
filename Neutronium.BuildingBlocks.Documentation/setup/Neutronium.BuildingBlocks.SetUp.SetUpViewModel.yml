@@ -255,7 +255,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: InitFromArgs
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 111
+    startLine: 106
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -293,7 +293,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: InitForProduction
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 117
+    startLine: 112
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -323,7 +323,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 144
+    startLine: 138
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -358,7 +358,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Dispose
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 149
+    startLine: 143
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
