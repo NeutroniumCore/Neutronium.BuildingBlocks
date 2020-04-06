@@ -8,6 +8,7 @@ items:
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.#ctor(Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder)
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Debug
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.DebugCommands
+  - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.InitForProduction
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.InitFromArgs(System.String[])
   - Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Mode
@@ -27,17 +28,21 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: SetUpViewModel
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
   summary: "\nSet-up viewModel\n"
   example: []
   syntax:
-    content: public class SetUpViewModel
-    content.vb: Public Class SetUpViewModel
+    content: 'public class SetUpViewModel : IDisposable'
+    content.vb: >-
+      Public Class SetUpViewModel
+          Implements IDisposable
   inheritance:
   - System.Object
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -69,7 +74,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Uri
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -106,7 +111,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Debug
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -143,7 +148,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Mode
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -180,7 +185,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: DebugCommands
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -217,7 +222,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -250,7 +255,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: InitFromArgs
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 99
+    startLine: 111
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -288,7 +293,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: InitForProduction
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 105
+    startLine: 117
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -318,7 +323,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: ToString
     path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
-    startLine: 131
+    startLine: 144
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -335,6 +340,38 @@ items:
   modifiers.vb:
   - Public
   - Overrides
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  id: Dispose
+  parent: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SetUpViewModel.Dispose()
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Dispose
+    path: ../Neutronium.BuildingBlocks.SetUp/SetUpViewModel.cs
+    startLine: 149
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: Neutronium.BuildingBlocks.SetUp
   commentId: N:Neutronium.BuildingBlocks.SetUp
@@ -348,6 +385,13 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -884,3 +928,39 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  name: Dispose
+  nameWithType: SetUpViewModel.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

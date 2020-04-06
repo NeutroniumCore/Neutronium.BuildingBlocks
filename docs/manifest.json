@@ -731,7 +731,7 @@
       "output": {
         ".html": {
           "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.html",
-          "hash": "iWIOsqnRgCGZjRmfIecWRg=="
+          "hash": "tegmID6WlvBglllf8fxAow=="
         }
       },
       "is_incremental": false,
@@ -775,11 +775,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.yml",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.yml",
       "output": {
         ".html": {
-          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html",
-          "hash": "0CLi+BbCkL0uvercydjX4Q=="
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html",
+          "hash": "a/1gw6pUzlwVLRxbIj5/Kg=="
         }
       },
       "is_incremental": false,
@@ -787,11 +787,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.yml",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.yml",
       "output": {
         ".html": {
-          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html",
-          "hash": "My3Bli1RvwdkLKrn60/7vA=="
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.html",
+          "hash": "BdryGlz+jUfgZ/yY2vS7CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.html",
+          "hash": "/NRa6JqNd8TwwteG+b92Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html",
+          "hash": "ZXkcKOKRcnGsvJ3a7ET3ZQ=="
         }
       },
       "is_incremental": false,
@@ -815,7 +839,7 @@
       "output": {
         ".html": {
           "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.html",
-          "hash": "YRsiIERMR8j2xjs6+2EWCw=="
+          "hash": "0H3gpnCq5fTHHGdwwuJFgg=="
         }
       },
       "is_incremental": false,
@@ -827,7 +851,7 @@
       "output": {
         ".html": {
           "relative_path": "setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.html",
-          "hash": "3ScPFd8wo0B8VWXXcWDU8g=="
+          "hash": "ZD2v0hP4JsH+UWYK5mbB+g=="
         }
       },
       "is_incremental": false,
@@ -887,7 +911,7 @@
       "output": {
         ".html": {
           "relative_path": "setup/toc.html",
-          "hash": "01mXIPblW4SlhDLfUaJA+A=="
+          "hash": "4jGNNzS5sjX+9NR0fy8Sqw=="
         }
       },
       "is_incremental": false,
@@ -1124,21 +1148,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }

@@ -15,16 +15,16 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         private readonly ApplicationSetUpBuilder _ApplicationSetUpBuilder;
         private readonly Uri _ProductionUri;
         private readonly ApplicationMode _Default = ApplicationMode.Dev;
-        private readonly INpmRunner _NpmRunner;
+        private readonly INpmLiveRunner _NpmLiveRunner;
         private const int Port = 8080; 
 
         public ApplicationSetUpBuilderTests()
         {
             RegisterPackScheme();
             _ProductionUri = GetDummyUri();
-            _NpmRunner = Substitute.For<INpmRunner>();
-            _NpmRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(Port));
-            _ApplicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, _Default, _NpmRunner);
+            _NpmLiveRunner = Substitute.For<INpmLiveRunner>();
+            _NpmLiveRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(Port));
+            _ApplicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, _Default, _NpmLiveRunner);
         }
 
         private void RegisterPackScheme()
@@ -87,7 +87,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         public async Task BuildFromApplicationArguments_uses_port_from_runner(int port)
         {
             var expected = new ApplicationSetUp(ApplicationMode.Live, GetLiveUri(port));
-            _NpmRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(port));
+            _NpmLiveRunner.GetPortAsync(Arg.Any<CancellationToken>()).Returns(Task.FromResult(port));
 
             var res = await _ApplicationSetUpBuilder.BuildFromApplicationArguments(new [] { "--mode=live"});
             res.Should().BeEquivalentTo(expected);
@@ -96,7 +96,7 @@ namespace Neutronium.BuildingBlocks.SetUp.Tests
         [Theory, AutoData]
         public async Task BuildFromApplicationArguments_uses_default_mode(ApplicationMode mode)
         {
-            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, _NpmRunner);
+            var applicationSetUpBuilder = new ApplicationSetUpBuilder(_ProductionUri, mode, _NpmLiveRunner);
             var res = await applicationSetUpBuilder.BuildFromApplicationArguments(new string [] { });
             res.Mode.Should().Be(mode);
         }

@@ -5,8 +5,10 @@ items:
   id: Neutronium.BuildingBlocks.SetUp.NpmHelper
   children:
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
   - Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
   langs:
   - csharp
@@ -23,17 +25,28 @@ references:
   name: DirectoryHelper
   nameWithType: DirectoryHelper
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  name: GenericNpmRunner
+  nameWithType: GenericNpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
   parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
-  name: INpmRunner
-  nameWithType: INpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-  name: NpmRunner
-  nameWithType: NpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
+  name: IGenericNpmRunner
+  nameWithType: IGenericNpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: INpmLiveRunner
+  nameWithType: INpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  name: NpmLiveRunner
+  nameWithType: NpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
   commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
   name: ProcessExtension

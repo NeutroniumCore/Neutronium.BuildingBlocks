@@ -18,15 +18,25 @@ namespace Neutronium.BuildingBlocks.SetUp
         public Uri Uri { get; set; }
 
         private readonly ApplicationMode _Default;
-        private readonly INpmRunner _NpmRunner;
+        private readonly INpmLiveRunner _NpmLiveRunner;
+        private readonly INoResultNpmRunner _NpmBuildRunner;
+
 
         /// <summary>
         /// Send when npm runner receives log message
         /// </summary>
         public event EventHandler<MessageEventArgs> OnRunnerMessageReceived
         {
-            add => _NpmRunner.OnMessageReceived += value;
-            remove => _NpmRunner.OnMessageReceived -= value;
+            add
+            {
+                _NpmLiveRunner.OnMessageReceived += value;
+                _NpmBuildRunner.OnMessageReceived += value;
+            }
+            remove
+            {
+                _NpmLiveRunner.OnMessageReceived -= value;
+                _NpmBuildRunner.OnMessageReceived -= value;
+            }
         }
 
         /// <summary>
@@ -58,22 +68,26 @@ namespace Neutronium.BuildingBlocks.SetUp
         /// </summary>
         /// <param name="viewDirectory"></param>
         /// <param name="default"></param>
-        /// <param name="liveScript"></param>
+        /// <param name="liveScript">name of the npm live script</param>
+        /// <param name="runScript">name of the npm build cached script</param>
         public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode @default = ApplicationMode.Dev,
-            string liveScript = "live") :
+            string liveScript = "live", string runScript = "cached-build") :
             this(new Uri($"pack://application:,,,/{viewDirectory.Replace(@"\", "/")}/dist/index.html"),
                 @default,
-                new NpmRunner(viewDirectory, liveScript))
+                new NpmLiveRunner(viewDirectory, liveScript),
+                new NpmBuilder(viewDirectory, runScript))
         {
         }
 
-        internal ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default, INpmRunner npmRunner)
+        internal ApplicationSetUpBuilder(Uri productionUri, ApplicationMode @default, INpmLiveRunner npmLiveRunner,
+            INoResultNpmRunner npmBuildRunner)
         {
             Uri = productionUri;
             _Default = @default;
-            _NpmRunner = npmRunner;
-            if (_NpmRunner == null)
-                throw new ArgumentNullException(nameof(npmRunner));
+            _NpmLiveRunner = npmLiveRunner;
+            _NpmBuildRunner = npmBuildRunner;
+            if (_NpmLiveRunner == null)
+                throw new ArgumentNullException(nameof(npmLiveRunner));
         }
 
 
@@ -89,7 +103,6 @@ namespace Neutronium.BuildingBlocks.SetUp
             var uri = await BuildUri(mode, cancellationToken, onNpmLog).ConfigureAwait(false);
             return new ApplicationSetUp(mode, uri);
         }
-
 
         /// <summary>
         /// Build set-up for production: no debug, local url
@@ -149,7 +162,7 @@ namespace Neutronium.BuildingBlocks.SetUp
 
         private async Task<Uri> BuildUri(ApplicationMode mode, CancellationToken cancellationToken, Action<string> onNpmLog = null)
         {
-            if (mode != ApplicationMode.Live)
+            if (mode == ApplicationMode.Production)
                 return Uri;
 
             void OnDataReceived(object _, MessageEventArgs dataReceived)
@@ -157,15 +170,56 @@ namespace Neutronium.BuildingBlocks.SetUp
                 onNpmLog?.Invoke(dataReceived.Message);
             }
 
-            OnRunnerMessageReceived += OnDataReceived;
-            var port = await _NpmRunner.GetPortAsync(cancellationToken).ConfigureAwait(false);
-            OnRunnerMessageReceived -= OnDataReceived;
-            return new Uri($"http://localhost:{port}/index.html");
+            using (GetMessageLogger(OnDataReceived))
+            {
+                return await RunScriptAndReturnUri(mode, cancellationToken).ConfigureAwait(false);
+            }
+        }
+
+        private async Task<Uri> RunScriptAndReturnUri(ApplicationMode mode, CancellationToken cancellationToken)
+        {
+            switch (mode)
+            {
+                case ApplicationMode.Live:
+                    var port = await _NpmLiveRunner.GetPortAsync(cancellationToken).ConfigureAwait(false);
+                    return new Uri($"http://localhost:{port}/index.html");
+
+                case ApplicationMode.Dev:
+                    await _NpmBuildRunner.Run(cancellationToken).ConfigureAwait(false);
+                    return Uri;
+
+                default:
+                    throw new NotImplementedException();
+            }
+        }
+
+        private IDisposable GetMessageLogger(EventHandler<MessageEventArgs> logger)
+        {
+            return new MessageLogger(this, logger);
+        }
+
+        private class MessageLogger : IDisposable
+        {
+            private readonly EventHandler<MessageEventArgs> _Logger;
+            private readonly ApplicationSetUpBuilder _ApplicationSetUpBuilder;
+
+            public MessageLogger(ApplicationSetUpBuilder applicationSetUpBuilder, EventHandler<MessageEventArgs> logger)
+            {
+                _Logger = logger;
+                _ApplicationSetUpBuilder = applicationSetUpBuilder;
+                _ApplicationSetUpBuilder.OnRunnerMessageReceived += _Logger;
+            }
+
+            public void Dispose()
+            {
+                _ApplicationSetUpBuilder.OnRunnerMessageReceived -= _Logger;
+            }
         }
 
         public void Dispose()
         {
-            _NpmRunner?.Dispose();
+            _NpmLiveRunner.Dispose();
+            _NpmBuildRunner?.Dispose();
         }
     }
 }

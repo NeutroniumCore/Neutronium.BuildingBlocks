@@ -2400,12 +2400,12 @@ references:
   commentId: T:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
   fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
   nameWithType: ApplicationSetUpBuilder
-- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)
-  name: ApplicationSetUpBuilder(String, ApplicationMode, String)
-  href: setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.html#Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_
-  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)
-  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.ApplicationSetUpBuilder(System.String, Neutronium.BuildingBlocks.SetUp.ApplicationMode, System.String)
-  nameWithType: ApplicationSetUpBuilder.ApplicationSetUpBuilder(String, ApplicationMode, String)
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)
+  name: ApplicationSetUpBuilder(String, ApplicationMode, String, String)
+  href: setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.html#Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.ApplicationSetUpBuilder(System.String, Neutronium.BuildingBlocks.SetUp.ApplicationMode, System.String, System.String)
+  nameWithType: ApplicationSetUpBuilder.ApplicationSetUpBuilder(String, ApplicationMode, String, String)
 - uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor*
   name: ApplicationSetUpBuilder
   href: setup/Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.html#Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_
@@ -2588,108 +2588,210 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper.GetCurrentDirectory
   nameWithType: DirectoryHelper.GetCurrentDirectory
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-  name: INpmRunner
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-  nameWithType: INpmRunner
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  name: GetPortAsync(CancellationToken)
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmRunner_GetPortAsync_System_Threading_CancellationToken_
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  nameWithType: INpmRunner.GetPortAsync(CancellationToken)
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync*
-  name: GetPortAsync
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmRunner_GetPortAsync_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  name: GenericNpmRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+  nameWithType: GenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor(System.String,System.String)
+  name: GenericNpmRunner(String, String)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner__ctor_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.GenericNpmRunner(System.String, System.String)
+  nameWithType: GenericNpmRunner.GenericNpmRunner(String, String)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor*
+  name: GenericNpmRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.#ctor
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.GetPortAsync
-  nameWithType: INpmRunner.GetPortAsync
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.OnMessageReceived
-  name: OnMessageReceived
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmRunner_OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner.OnMessageReceived
-  nameWithType: INpmRunner.OnMessageReceived
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-  name: NpmRunner
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html
-  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-  nameWithType: NpmRunner
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.#ctor(System.String,System.String)
-  name: NpmRunner(String, String)
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner__ctor_System_String_System_String_
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.#ctor(System.String,System.String)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.NpmRunner(System.String, System.String)
-  nameWithType: NpmRunner.NpmRunner(String, String)
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.#ctor*
-  name: NpmRunner
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner__ctor_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.#ctor
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.NpmRunner
-  nameWithType: NpmRunner.NpmRunner
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.GenericNpmRunner
+  nameWithType: GenericNpmRunner.GenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
   name: Cancel()
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_Cancel
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel()
-  nameWithType: NpmRunner.Cancel()
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel*
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Cancel
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel()
+  nameWithType: GenericNpmRunner.Cancel()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel*
   name: Cancel
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_Cancel_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Cancel_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Cancel
-  nameWithType: NpmRunner.Cancel
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Cancel
+  nameWithType: GenericNpmRunner.Cancel
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
   name: Dispose()
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_Dispose
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose()
-  nameWithType: NpmRunner.Dispose()
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose*
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose()
+  nameWithType: GenericNpmRunner.Dispose()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose*
   name: Dispose
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_Dispose_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Dispose_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.Dispose
-  nameWithType: NpmRunner.Dispose
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  name: GetPortAsync(CancellationToken)
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_GetPortAsync_System_Threading_CancellationToken_
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync(System.Threading.CancellationToken)
-  nameWithType: NpmRunner.GetPortAsync(CancellationToken)
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync*
-  name: GetPortAsync
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_GetPortAsync_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync
-  isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.GetPortAsync
-  nameWithType: NpmRunner.GetPortAsync
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Dispose
+  nameWithType: GenericNpmRunner.Dispose
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
   name: OnMessageReceived
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_OnMessageReceived
-  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.OnMessageReceived
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.OnMessageReceived
-  nameWithType: NpmRunner.OnMessageReceived
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString
-  name: ToString()
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_ToString
-  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString()
-  nameWithType: NpmRunner.ToString()
-- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString*
-  name: ToString
-  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmRunner_ToString_
-  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.OnMessageReceived
+  nameWithType: GenericNpmRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
+  name: Run(CancellationToken)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Run_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run(System.Threading.CancellationToken)
+  nameWithType: GenericNpmRunner.Run(CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run*
+  name: Run
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_Run_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run
   isSpec: "True"
-  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner.ToString
-  nameWithType: NpmRunner.ToString
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.Run
+  nameWithType: GenericNpmRunner.Run
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
+  name: ToString()
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_ToString
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString()
+  nameWithType: GenericNpmRunner.ToString()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString*
+  name: ToString
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_GenericNpmRunner_ToString_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner.ToString
+  nameWithType: GenericNpmRunner.ToString
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  name: IGenericNpmRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.html
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+  nameWithType: IGenericNpmRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
+  name: OnMessageReceived
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_IGenericNpmRunner_OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.OnMessageReceived
+  nameWithType: IGenericNpmRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
+  name: Run(CancellationToken)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_IGenericNpmRunner_Run_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run(System.Threading.CancellationToken)
+  nameWithType: IGenericNpmRunner.Run(CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run*
+  name: Run
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_IGenericNpmRunner_Run_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner.Run
+  nameWithType: IGenericNpmRunner.Run
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  name: INpmLiveRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.html
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  nameWithType: INpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  name: GetPortAsync(CancellationToken)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmLiveRunner_GetPortAsync_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  nameWithType: INpmLiveRunner.GetPortAsync(CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync*
+  name: GetPortAsync
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmLiveRunner_GetPortAsync_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync
+  nameWithType: INpmLiveRunner.GetPortAsync
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  name: OnMessageReceived
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_INpmLiveRunner_OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  nameWithType: INpmLiveRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  name: NpmLiveRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  nameWithType: NpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor(System.String,System.String)
+  name: NpmLiveRunner(String, String)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner__ctor_System_String_System_String_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor(System.String,System.String)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.NpmLiveRunner(System.String, System.String)
+  nameWithType: NpmLiveRunner.NpmLiveRunner(String, String)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor*
+  name: NpmLiveRunner
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.NpmLiveRunner
+  nameWithType: NpmLiveRunner.NpmLiveRunner
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  name: Cancel()
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_Cancel
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel()
+  nameWithType: NpmLiveRunner.Cancel()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel*
+  name: Cancel
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_Cancel_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  nameWithType: NpmLiveRunner.Cancel
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  name: Dispose()
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose()
+  nameWithType: NpmLiveRunner.Dispose()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose*
+  name: Dispose
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_Dispose_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  nameWithType: NpmLiveRunner.Dispose
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  name: GetPortAsync(CancellationToken)
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_GetPortAsync_System_Threading_CancellationToken_
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  nameWithType: NpmLiveRunner.GetPortAsync(CancellationToken)
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync*
+  name: GetPortAsync
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_GetPortAsync_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync
+  nameWithType: NpmLiveRunner.GetPortAsync
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  name: OnMessageReceived
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  nameWithType: NpmLiveRunner.OnMessageReceived
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  name: ToString()
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_ToString
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString()
+  nameWithType: NpmLiveRunner.ToString()
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString*
+  name: ToString
+  href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.html#Neutronium_BuildingBlocks_SetUp_NpmHelper_NpmLiveRunner_ToString_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  nameWithType: NpmLiveRunner.ToString
 - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
   name: ProcessExtension
   href: setup/Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension.html
@@ -2754,6 +2856,19 @@ references:
   isSpec: "True"
   fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.DebugCommands
   nameWithType: SetUpViewModel.DebugCommands
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  name: Dispose()
+  href: setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.html#Neutronium_BuildingBlocks_SetUp_SetUpViewModel_Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose()
+  nameWithType: SetUpViewModel.Dispose()
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose*
+  name: Dispose
+  href: setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.html#Neutronium_BuildingBlocks_SetUp_SetUpViewModel_Dispose_
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.Dispose
+  nameWithType: SetUpViewModel.Dispose
 - uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel.InitForProduction
   name: InitForProduction()
   href: setup/Neutronium.BuildingBlocks.SetUp.SetUpViewModel.html#Neutronium_BuildingBlocks_SetUp_SetUpViewModel_InitForProduction

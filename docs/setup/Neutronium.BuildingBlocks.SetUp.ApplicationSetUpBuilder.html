@@ -119,19 +119,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.%23ctor(System.String%2CNeutronium.BuildingBlocks.SetUp.ApplicationMode%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_System_String_.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.%23ctor(System.String%2CNeutronium.BuildingBlocks.SetUp.ApplicationMode%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L62">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L73">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor*"></a>
-  <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)">ApplicationSetUpBuilder(String, ApplicationMode, String)</h4>
+  <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder__ctor_System_String_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_String_System_String_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)">ApplicationSetUpBuilder(String, ApplicationMode, String, String)</h4>
   <div class="markdown level1 summary"><p>Construct a ApplicationSetUpBuilder with given view directory and default mode</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApplicationSetUpBuilder(string viewDirectory = &quot;View&quot;, ApplicationMode default = ApplicationMode.Dev, string liveScript = &quot;live&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public ApplicationSetUpBuilder(string viewDirectory = &quot;View&quot;, ApplicationMode default = ApplicationMode.Dev, string liveScript = &quot;live&quot;, string runScript = &quot;cached-build&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,7 +156,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">liveScript</span></td>
-        <td></td>
+        <td><p>name of the npm live script</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">runScript</span></td>
+        <td><p>name of the npm build cached script</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +206,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildForProduction.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildForProduction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L98">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L111">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildForProduction_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildForProduction*"></a>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildForProduction" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildForProduction">BuildForProduction()</h4>
@@ -230,7 +237,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromApplicationArguments_System_String___.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromApplicationArguments(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L108">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L121">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromApplicationArguments_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromApplicationArguments*"></a>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromApplicationArguments_System_String___" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromApplicationArguments(System.String[])">BuildFromApplicationArguments(String[])</h4>
@@ -278,7 +285,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromMode_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_Threading_CancellationToken_System_Action_System_String__.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromMode(Neutronium.BuildingBlocks.SetUp.ApplicationMode%2CSystem.Threading.CancellationToken%2CSystem.Action%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L87">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L101">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromMode_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromMode*"></a>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_BuildFromMode_Neutronium_BuildingBlocks_SetUp_ApplicationMode_System_Threading_CancellationToken_System_Action_System_String__" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromMode(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Threading.CancellationToken,System.Action{System.String})">BuildFromMode(ApplicationMode, CancellationToken, Action&lt;String&gt;)</h4>
@@ -336,7 +343,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_Dispose.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L166">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L219">View Source</a>
   </span>
   <a id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_Dispose_" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.Dispose*"></a>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_Dispose" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.Dispose">Dispose()</h4>
@@ -353,7 +360,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_OnArgumentParsingError.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.OnArgumentParsingError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L35">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L45">View Source</a>
   </span>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_OnArgumentParsingError" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.OnArgumentParsingError">OnArgumentParsingError</h4>
   <div class="markdown level1 summary"><p>Sent on command line arguments parsing error</p>
@@ -383,7 +390,7 @@
     <a href="https://github.com/NeutroniumCore/ViewModel.Tools/new/master/apiSpec/new?filename=Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_OnRunnerMessageReceived.md&amp;value=---%0Auid%3A%20Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.OnRunnerMessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L26">View Source</a>
+    <a href="https://github.com/NeutroniumCore/ViewModel.Tools/blob/master/Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs/#L28">View Source</a>
   </span>
   <h4 id="Neutronium_BuildingBlocks_SetUp_ApplicationSetUpBuilder_OnRunnerMessageReceived" data-uid="Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.OnRunnerMessageReceived">OnRunnerMessageReceived</h4>
   <div class="markdown level1 summary"><p>Send when npm runner receives log message</p>

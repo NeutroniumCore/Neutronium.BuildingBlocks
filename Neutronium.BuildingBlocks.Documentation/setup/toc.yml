@@ -19,10 +19,14 @@
   items:
   - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.DirectoryHelper
     name: DirectoryHelper
-  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmRunner
-    name: INpmRunner
-  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmRunner
-    name: NpmRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.GenericNpmRunner
+    name: GenericNpmRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.IGenericNpmRunner
+    name: IGenericNpmRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+    name: INpmLiveRunner
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+    name: NpmLiveRunner
   - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.ProcessExtension
     name: ProcessExtension
 - uid: Neutronium.BuildingBlocks.SetUp.Utils

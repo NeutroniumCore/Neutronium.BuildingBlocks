@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  id: NpmLiveRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  children:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor(System.String,System.String)
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  langs:
+  - csharp
+  - vb
+  name: NpmLiveRunner
+  nameWithType: NpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  type: Class
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: NpmLiveRunner
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 11
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  summary: "\nNpm runner implementation\n"
+  example: []
+  syntax:
+    content: 'public class NpmLiveRunner : INpmLiveRunner, IDisposable'
+    content.vb: >-
+      Public Class NpmLiveRunner
+          Implements INpmLiveRunner, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  id: OnMessageReceived
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: OnMessageReceived
+  nameWithType: NpmLiveRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.OnMessageReceived
+  type: Event
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: OnMessageReceived
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 17
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public event EventHandler<MessageEventArgs> OnMessageReceived
+    return:
+      type: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
+    content.vb: Public Event OnMessageReceived As EventHandler(Of MessageEventArgs)
+  implements:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor(System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: NpmLiveRunner(String, String)
+  nameWithType: NpmLiveRunner.NpmLiveRunner(String, String)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.NpmLiveRunner(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 19
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public NpmLiveRunner(string directory, string script)
+    parameters:
+    - id: directory
+      type: System.String
+    - id: script
+      type: System.String
+    content.vb: Public Sub New(directory As String, script As String)
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  id: GetPortAsync(System.Threading.CancellationToken)
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: GetPortAsync(CancellationToken)
+  nameWithType: NpmLiveRunner.GetPortAsync(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: GetPortAsync
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 25
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public Task<int> GetPortAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Public Function GetPortAsync(cancellationToken As CancellationToken) As Task(Of Integer)
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync*
+  implements:
+  - Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  id: Cancel
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: NpmLiveRunner.Cancel()
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Cancel
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 31
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public Task<bool> Cancel()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function Cancel As Task(Of Boolean)
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  id: Dispose
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: NpmLiveRunner.Dispose()
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: Dispose
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 58
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  id: ToString
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: NpmLiveRunner.ToString()
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: ToString
+    path: ../Neutronium.BuildingBlocks.SetUp/NpmHelper/NpmLiveRunner.cs
+    startLine: 63
+  assemblies:
+  - Neutronium.BuildingBlocks.SetUp
+  namespace: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  commentId: N:Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  nameWithType: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  commentId: T:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper
+  name: INpmLiveRunner
+  nameWithType: INpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  commentId: E:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  name: OnMessageReceived
+  nameWithType: INpmLiveRunner.OnMessageReceived
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.OnMessageReceived
+- uid: System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
+  commentId: T:System.EventHandler{Neutronium.BuildingBlocks.SetUp.MessageEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<MessageEventArgs>
+  nameWithType: EventHandler<MessageEventArgs>
+  fullName: System.EventHandler<Neutronium.BuildingBlocks.SetUp.MessageEventArgs>
+  nameWithType.vb: EventHandler(Of MessageEventArgs)
+  fullName.vb: System.EventHandler(Of Neutronium.BuildingBlocks.SetUp.MessageEventArgs)
+  name.vb: EventHandler(Of MessageEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+    name: MessageEventArgs
+    nameWithType: MessageEventArgs
+    fullName: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+    name: MessageEventArgs
+    nameWithType: MessageEventArgs
+    fullName: Neutronium.BuildingBlocks.SetUp.MessageEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.#ctor
+  name: NpmLiveRunner
+  nameWithType: NpmLiveRunner.NpmLiveRunner
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.NpmLiveRunner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync
+  name: GetPortAsync
+  nameWithType: NpmLiveRunner.GetPortAsync
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.GetPortAsync
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  parent: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner
+  isExternal: true
+  name: GetPortAsync(CancellationToken)
+  nameWithType: INpmLiveRunner.GetPortAsync(CancellationToken)
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+    name: GetPortAsync
+    nameWithType: INpmLiveRunner.GetPortAsync
+    fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync(System.Threading.CancellationToken)
+    name: GetPortAsync
+    nameWithType: INpmLiveRunner.GetPortAsync
+    fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.INpmLiveRunner.GetPortAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+  name: Cancel
+  nameWithType: NpmLiveRunner.Cancel
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Cancel
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+  name: Dispose
+  nameWithType: NpmLiveRunner.Dispose
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString*
+  commentId: Overload:Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString
+  name: ToString
+  nameWithType: NpmLiveRunner.ToString
+  fullName: Neutronium.BuildingBlocks.SetUp.NpmHelper.NpmLiveRunner.ToString

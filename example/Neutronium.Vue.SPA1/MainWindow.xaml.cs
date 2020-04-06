@@ -52,8 +52,8 @@ namespace Neutronium.Vue.SPA
 
         protected override void OnClosed(EventArgs e)
         {
-            base.OnClosed(e);
             this.HtmlView.Dispose();
+            base.OnClosed(e);
         }
     }
 }

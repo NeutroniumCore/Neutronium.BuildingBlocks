@@ -5,6 +5,8 @@ using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,7 +15,7 @@ namespace Neutronium.BuildingBlocks.SetUp
     /// <summary>
     /// Set-up viewModel
     /// </summary>
-    public class SetUpViewModel
+    public class SetUpViewModel : IDisposable
     {
         /// <summary>
         /// View uri
@@ -44,9 +46,14 @@ namespace Neutronium.BuildingBlocks.SetUp
             _Builder = builder;
         }
 
-        private async void GoLive(IWebViewComponent viewControl)
+        private async void GoLive(ICompleteWebViewComponent viewControl)
         {
-            if (Mode != ApplicationMode.Dev)
+            await ChangeMode(viewControl, ApplicationMode.Live, "to live");
+        }
+
+        private async Task ChangeMode(IWebViewComponent viewControl, ApplicationMode destination, string change)
+        {
+            if (Mode == destination)
                 return;
 
             var resourceLoader = GetResourceReader();
@@ -57,7 +64,7 @@ namespace Neutronium.BuildingBlocks.SetUp
             var token = cancellationTokenSource.Token;
 
             DebugCommands.Clear();
-            DebugCommands["Cancel to live"] = new RelayToogleCommand<ICompleteWebViewComponent>
+            DebugCommands[$"Cancel {change}"] = new RelayToogleCommand<ICompleteWebViewComponent>
             (_ =>
             {
                 cancellationTokenSource.Cancel();
@@ -66,7 +73,7 @@ namespace Neutronium.BuildingBlocks.SetUp
 
             try
             {
-                await Task.Run(() => DoGoLive(viewControl, token), token);
+                await Task.Run(() => DoChange(viewControl, destination, token), token);
             }
             catch (TaskCanceledException)
             {
@@ -78,7 +85,7 @@ namespace Neutronium.BuildingBlocks.SetUp
             await viewControl.SwitchViewAsync(Uri);
         }
 
-        private async Task DoGoLive(IWebViewComponent viewControl, CancellationToken token)
+        private async Task DoChange(IWebViewComponent viewControl, ApplicationMode destination, CancellationToken token)
         {
             var resourceLoader = GetResourceReader();
             var updateOverlay = resourceLoader.Load("update.js");
@@ -92,7 +99,7 @@ namespace Neutronium.BuildingBlocks.SetUp
                 viewControl.ExecuteJavascript(code);
             }
 
-            UpdateSetUp(await _Builder.BuildFromMode(ApplicationMode.Live, token, OnNpmLog));
+            UpdateSetUp(await _Builder.BuildFromMode(destination, token, OnNpmLog));
         }
 
         private ResourceReader GetResourceReader() => new ResourceReader("script", this);
@@ -132,6 +139,11 @@ namespace Neutronium.BuildingBlocks.SetUp
         public override string ToString()
         {
             return _ApplicationSetUp?.ToString() ?? "Not initialized";
+        }
+
+        public void Dispose()
+        {
+            _Builder.Dispose();
         }
     }
 }

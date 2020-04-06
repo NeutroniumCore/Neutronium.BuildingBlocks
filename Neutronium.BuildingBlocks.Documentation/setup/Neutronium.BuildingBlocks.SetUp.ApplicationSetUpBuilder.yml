@@ -5,7 +5,7 @@ items:
   id: ApplicationSetUpBuilder
   parent: Neutronium.BuildingBlocks.SetUp
   children:
-  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)
+  - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)
   - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildForProduction
   - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromApplicationArguments(System.String[])
   - Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.BuildFromMode(Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.Threading.CancellationToken,System.Action{System.String})
@@ -109,7 +109,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnRunnerMessageReceived
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -142,7 +142,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OnArgumentParsingError
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 34
+    startLine: 44
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -157,16 +157,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)
-  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)
-  id: '#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String)'
+- uid: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)
+  commentId: M:Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)
+  id: '#ctor(System.String,Neutronium.BuildingBlocks.SetUp.ApplicationMode,System.String,System.String)'
   parent: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder
   langs:
   - csharp
   - vb
-  name: ApplicationSetUpBuilder(String, ApplicationMode, String)
-  nameWithType: ApplicationSetUpBuilder.ApplicationSetUpBuilder(String, ApplicationMode, String)
-  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.ApplicationSetUpBuilder(System.String, Neutronium.BuildingBlocks.SetUp.ApplicationMode, System.String)
+  name: ApplicationSetUpBuilder(String, ApplicationMode, String, String)
+  nameWithType: ApplicationSetUpBuilder.ApplicationSetUpBuilder(String, ApplicationMode, String, String)
+  fullName: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.ApplicationSetUpBuilder(System.String, Neutronium.BuildingBlocks.SetUp.ApplicationMode, System.String, System.String)
   type: Constructor
   source:
     remote:
@@ -175,14 +175,14 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: .ctor
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 61
+    startLine: 72
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
   summary: "\nConstruct a ApplicationSetUpBuilder with given view directory and default mode\n"
   example: []
   syntax:
-    content: public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode default = ApplicationMode.Dev, string liveScript = "live")
+    content: public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode default = ApplicationMode.Dev, string liveScript = "live", string runScript = "cached-build")
     parameters:
     - id: viewDirectory
       type: System.String
@@ -192,8 +192,11 @@ items:
       description: ''
     - id: liveScript
       type: System.String
-      description: ''
-    content.vb: Public Sub New(viewDirectory As String = "View", default As ApplicationMode = ApplicationMode.Dev, liveScript As String = "live")
+      description: name of the npm live script
+    - id: runScript
+      type: System.String
+      description: name of the npm build cached script
+    content.vb: Public Sub New(viewDirectory As String = "View", default As ApplicationMode = ApplicationMode.Dev, liveScript As String = "live", runScript As String = "cached-build")
   overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor*
   modifiers.csharp:
   - public
@@ -217,7 +220,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: BuildFromMode
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 86
+    startLine: 100
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -265,7 +268,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: BuildForProduction
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 97
+    startLine: 110
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -300,7 +303,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: BuildFromApplicationArguments
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 107
+    startLine: 120
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
@@ -342,7 +345,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Dispose
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 165
+    startLine: 218
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
