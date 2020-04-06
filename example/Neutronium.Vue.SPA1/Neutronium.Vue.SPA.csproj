@@ -79,7 +79,7 @@
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
     <NpmCommandInstall>install --loglevel error</NpmCommandInstall>
-    <NpmCommandBuild>run cached-build</NpmCommandBuild>
+    <NpmCommandBuild>run build:cached</NpmCommandBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

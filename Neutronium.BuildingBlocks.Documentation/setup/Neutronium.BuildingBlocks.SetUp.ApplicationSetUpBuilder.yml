@@ -182,7 +182,7 @@ items:
   summary: "\nConstruct a ApplicationSetUpBuilder with given view directory and default mode\n"
   example: []
   syntax:
-    content: public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode default = ApplicationMode.Dev, string liveScript = "live", string runScript = "cached-build")
+    content: public ApplicationSetUpBuilder(string viewDirectory = "View", ApplicationMode default = ApplicationMode.Dev, string liveScript = "live", string runScript = "build:cached")
     parameters:
     - id: viewDirectory
       type: System.String
@@ -196,7 +196,7 @@ items:
     - id: runScript
       type: System.String
       description: name of the npm build cached script
-    content.vb: Public Sub New(viewDirectory As String = "View", default As ApplicationMode = ApplicationMode.Dev, liveScript As String = "live", runScript As String = "cached-build")
+    content.vb: Public Sub New(viewDirectory As String = "View", default As ApplicationMode = ApplicationMode.Dev, liveScript As String = "live", runScript As String = "build:cached")
   overload: Neutronium.BuildingBlocks.SetUp.ApplicationSetUpBuilder.#ctor*
   modifiers.csharp:
   - public
@@ -345,7 +345,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Dispose
     path: ../Neutronium.BuildingBlocks.SetUp/ApplicationSetUpBuilder.cs
-    startLine: 218
+    startLine: 217
   assemblies:
   - Neutronium.BuildingBlocks.SetUp
   namespace: Neutronium.BuildingBlocks.SetUp
