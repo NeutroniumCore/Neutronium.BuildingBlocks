@@ -57,6 +57,21 @@
             Before navigation information
             </summary>
         </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Redirect">
+            <summary>
+            Redirect route if not null
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Continue">
+            <summary>
+            Cancel navigation if false
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.To">
+            <summary>
+            Targeted ViewModel
+            </summary>
+        </member>
         <member name="M:Neutronium.BuildingBlocks.Application.Navigation.BeforeRouterResult.Cancel">
             <summary>
             Instance used to cancel navigation
@@ -77,44 +92,25 @@
             <param name="routeName"></param>
             <returns></returns>
         </member>
-        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter">
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator">
             <summary>
-            Object that build navigation based on convention
+            Manage relative navigation within ViewModel
             </summary>
         </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)">
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IConventionSubNavigator.SetChild(System.String,System.Object)">
             <summary>
-            
+            Set Child and ChildName to the corresponding
+            values.
             </summary>
-            <param name="routerBuilder"></param>
-            <param name="format">Route name using template string where {vm} is the class name without postfix,
-            {namespace} is the namespace, and {id} is the id provided in the register method
-            </param>
-            <param name="lowerPath">true to use class name in lower case</param>
-            <param name="postFix">Class name post fix to be discarded- default to "ViewModel"</param>
+            <param name="relativePath"></param>
+            <returns>
+            The created nested viewModel
+            </returns>
         </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})">
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.IExtendedConventionRouter">
             <summary>
-            Add the corresponding types to the convention
+            Convention router with sub-navigation capacity
             </summary>
-            <param name="types"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register``1(System.String)">
-            <summary>
-            Add the corresponding type to the convention, using option id
-            </summary>
-            <typeparam name="T">type to register</typeparam>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ConventionRouter.Register(System.Type,System.String)">
-            <summary>
-            Add the corresponding type to the convention, using option id
-            </summary>
-            <param name="type">type to register</param>
-            <param name="id"></param>
-            <returns></returns>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator">
             <summary>
@@ -181,7 +177,7 @@
             <param name="type">
             Type of view model to register
             </param>
-            <param name="routerName">
+            <param name="routeName">
             router name
             </param>
             <param name="defaultType">
@@ -199,7 +195,7 @@
             <typeparam name="T">
             Type of view model to register
             </typeparam>
-            <param name="routerName">
+            <param name="routeName">
             Route name
             </param>
             <param name="defaultType">
@@ -210,11 +206,15 @@
             The navigation builder instance
             </returns>
         </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition)">
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.Register(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination,System.Boolean)">
             <summary>
             Associate a viewmodel type to a given route
             </summary>
-            <param name="routeDefinition">
+            <param name="route"></param>
+            <param name="routeDestination"></param>
+            <param name="defaultType">
+            True if the type should be considered as default 
+            for the corresponding route name
             </param>
             <returns>
             The navigation builder instance
@@ -243,39 +243,105 @@
             The corresponding route
             </returns>
         </member>
-        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String)">
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(System.String,System.String)">
             <summary>
             Find the viewModel type associated with the corresponding route
+            in the given context
             </summary>
+            <param name="context">
+            null if root context
+            </param>
             <param name="route"></param>
             <returns>
             The corresponding route destination
             </returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.IRouterSolver.SolveType(Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification)">
+            <summary>
+            Find the viewModel type associated with the corresponding route
+            </summary>
+            <param name="route">
+            Route specification
+            </param>
+            <returns>
+            The corresponding route destination
+            </returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator">
+            <summary>
+            Manage relative navigation within ViewModel
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.ChildName">
+            <summary>
+            Relative Name of Child
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigator.Child">
+            <summary>
+            Child
+            </summary>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory">
             <summary>
             Manage relative navigation within ViewModel
             </summary>
         </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.ChildName">
-            <summary>
-            Relative Name of Child
-            </summary>
-        </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Child">
-            <summary>
-            Child
-            </summary>
-        </member>
         <member name="M:Neutronium.BuildingBlocks.Application.Navigation.ISubNavigatorFactory.Create(System.String)">
             <summary>
-            Navigate to a sub path and set ChildName to the corresponding
+            Create a ISubNavigator corresponding to a sub path and set ChildName to the corresponding
             relativePath.
             </summary>
             <param name="relativePath"></param>
             <returns>
             The created nested viewModel
             </returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter">
+            <summary>
+            Object that build navigation based on convention
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.String,System.Boolean,System.String)">
+            <summary>
+            Construct a template based convention router
+            </summary>
+            <param name="routerBuilder"></param>
+            <param name="format">Route name using template string where {vm} is the class name without postfix,
+            {namespace} is the namespace, and {id} is the id provided in the register method
+            </param>
+            <param name="lowerPath">true to use class name in lower case</param>
+            <param name="postFix">Class name post fix to be discarded- default to "ViewModel"</param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter.#ctor(Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder,System.Func{System.Type,System.String,System.Tuple{Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification,Neutronium.BuildingBlocks.Application.Navigation.RouteDestination}})">
+            <summary>
+            Construct convention router using a factory method
+            </summary>
+            <param name="routerBuilder"></param>
+            <param name="routeInformationGetter"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter.Register(System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Add the corresponding types to the convention
+            </summary>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter.Register``1(System.String)">
+            <summary>
+            Add the corresponding type to the convention, using option id
+            </summary>
+            <typeparam name="T">type to register</typeparam>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.Navigation.Internals.ConventionRouter.Register(System.Type,System.String)">
+            <summary>
+            Add the corresponding type to the convention, using option id
+            </summary>
+            <param name="type">type to register</param>
+            <param name="id"></param>
+            <returns></returns>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.Navigation.NavigationContext">
             <summary>
@@ -310,26 +376,6 @@
             ViewModel providing an implementing of <see cref="T:Neutronium.BuildingBlocks.Application.Navigation.INavigator"/> and binding with
             javascript routing API.
             Originally designed to work with vue-router.
-            </summary>
-        </member>
-        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition">
-            <summary>
-            Route definition
-            </summary>
-        </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Name">
-            <summary>
-            Route name
-            </summary>
-        </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.Destination">
-            <summary>
-            Route destination
-            </summary>
-        </member>
-        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteDefinition.IsDefault">
-            <summary>
-            Default type
             </summary>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteDestination">
@@ -389,6 +435,21 @@
             <param name="template"></param>
             <param name="postFix"></param>
             <returns></returns>
+        </member>
+        <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification">
+            <summary>
+            Route destination
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification.Name">
+            <summary>
+            Name of the route
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.Navigation.RouteSpecification.Context">
+            <summary>
+            Route context, null means route context
+            </summary>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.Navigation.RoutingEventArgs">
             <summary>
