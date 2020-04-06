@@ -74,7 +74,7 @@
     </PropertyGroup>
     <Error Condition=" '$(NodePath)' == '' " Text="$(UnknownNodePath)" />
     <Error Condition=" !Exists('$(NodePath)') " Text="$(InvalidGlobalNodePath) $(NodePath)" />
-    <Message Text="NodeJS path is: '$(NodePath)'" /> 
+    <Message Text="NodeJS path is: '$(NodePath)'" />
   </Target>
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
@@ -301,6 +301,10 @@
     <Content Include="View\.gitignore" />
     <Resource Include="View\src\assets\logo.png" />
     <Content Include="View\babel.config.js" />
+    <Content Include="View\build-scripts\check-hash.js" />
+    <Content Include="View\build-scripts\config.js" />
+    <Content Include="View\build-scripts\create-hash.js" />
+    <Content Include="View\build-scripts\hash-builder.js" />
     <Content Include="View\vue.config.js" />
     <Content Include="View\jest.config.js" />
     <Content Include="View\postcss.config.js" />

@@ -10,7 +10,7 @@ async function saveHash() {
     hashSource = await getSourceHash();
     hashBuild = await getBuildHash();
   }
-  catch {
+  catch(exception) {
     console.log("Problem hash file not updated");
     return;
   }
