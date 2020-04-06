@@ -14,7 +14,7 @@ catch (error) {
 const {hashSource, hashBuild} = JSON.parse(data);
 
 async function checkHashes(){
-  try{
+  try {
     const build = await getBuildHash();
     if (build!==hashBuild) {
       console.log("build");
@@ -28,7 +28,7 @@ async function checkHashes(){
     console.log("same hashes doing nothing");
     process.exit(0);
   }
-  catch {
+  catch (exception) {
     process.exit(1);
   }
 }
