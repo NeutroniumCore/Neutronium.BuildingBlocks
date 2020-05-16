@@ -594,6 +594,17 @@
             Modal ViewModel. Internally used by <see cref="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox"/> implementation
             </summary>
         </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage">
+            <summary>
+            Cancel message
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="confirmationMessage"></param>
+        </member>
         <member name="T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel">
             <summary>
             Modal ViewModel. Internally used by <see cref="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox"/> implementation

@@ -1302,6 +1302,19 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
   fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
   nameWithType: MainModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  name: MainModalViewModel(ConfirmationMessage)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel__ctor_Neutronium_BuildingBlocks_Application_WindowServices_ConfirmationMessage_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.MainModalViewModel(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  nameWithType: MainModalViewModel.MainModalViewModel(ConfirmationMessage)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor*
+  name: MainModalViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.MainModalViewModel
+  nameWithType: MainModalViewModel.MainModalViewModel
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
   name: CancelCommand
   href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MainModalViewModel_CancelCommand

@@ -122,6 +122,7 @@
   "Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window": "Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.yml",
   "Neutronium.BuildingBlocks.Application.ViewModels.Modal": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.yml",
   "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",
+  "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",
   "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",
   "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",
   "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask": "Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.yml",

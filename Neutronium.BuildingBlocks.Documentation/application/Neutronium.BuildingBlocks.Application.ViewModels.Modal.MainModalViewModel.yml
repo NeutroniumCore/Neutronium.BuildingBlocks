@@ -5,6 +5,7 @@ items:
   id: MainModalViewModel
   parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
   children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelCommand
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CancelMessage
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.CompletionTask
@@ -73,10 +74,12 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CancelMessage
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nCancel message\n"
+  example: []
   syntax:
     content: public string CancelMessage { get; }
     parameters: []
@@ -108,7 +111,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CancelCommand
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
@@ -143,7 +146,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: CompletionTask
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
@@ -172,6 +175,42 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  id: '#ctor(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)'
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: MainModalViewModel(ConfirmationMessage)
+  nameWithType: MainModalViewModel.MainModalViewModel(ConfirmationMessage)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.MainModalViewModel(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
+    startLine: 29
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public MainModalViewModel(ConfirmationMessage confirmationMessage)
+    parameters:
+    - id: confirmationMessage
+      type: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+      description: ''
+    content.vb: Public Sub New(confirmationMessage As ConfirmationMessage)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
   commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.Ok
   id: Ok
@@ -190,7 +229,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Ok
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MainModalViewModel.cs
-    startLine: 28
+    startLine: 35
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
@@ -668,6 +707,17 @@ references:
   name: System.Threading.Tasks
   nameWithType: System.Threading.Tasks
   fullName: System.Threading.Tasks
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.#ctor
+  name: MainModalViewModel
+  nameWithType: MainModalViewModel.MainModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MainModalViewModel.MainModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: ConfirmationMessage
+  nameWithType: ConfirmationMessage
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
