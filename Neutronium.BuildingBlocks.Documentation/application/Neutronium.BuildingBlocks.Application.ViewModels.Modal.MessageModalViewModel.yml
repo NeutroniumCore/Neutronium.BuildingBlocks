@@ -5,6 +5,7 @@ items:
   id: MessageModalViewModel
   parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal
   children:
+  - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   - Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkCommand
@@ -69,10 +70,12 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Title
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\ntitle\n"
+  example: []
   syntax:
     content: public string Title { get; }
     parameters: []
@@ -104,10 +107,12 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Message
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
-    startLine: 12
+    startLine: 19
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nModal message\n"
+  example: []
   syntax:
     content: public string Message { get; }
     parameters: []
@@ -139,10 +144,12 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OkMessage
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
-    startLine: 13
+    startLine: 24
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nModal Ok message\n"
+  example: []
   syntax:
     content: public string OkMessage { get; }
     parameters: []
@@ -174,7 +181,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: OkCommand
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
-    startLine: 15
+    startLine: 26
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
@@ -191,6 +198,42 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  id: '#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)'
+  parent: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
+  langs:
+  - csharp
+  - vb
+  name: MessageModalViewModel(MessageInformation)
+  nameWithType: MessageModalViewModel.MessageModalViewModel(MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.MessageModalViewModel(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
+    id: .ctor
+    path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
+    startLine: 32
+  assemblies:
+  - Neutronium.BuildingBlocks.Application
+  namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
+  summary: "\nMessageModalViewModel constructor\n"
+  example: []
+  syntax:
+    content: public MessageModalViewModel(MessageInformation messageInformation)
+    parameters:
+    - id: messageInformation
+      type: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+      description: ''
+    content.vb: Public Sub New(messageInformation As MessageInformation)
+  overload: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   id: Ok
@@ -209,7 +252,7 @@ items:
       repo: https://github.com/NeutroniumCore/ViewModel.Tools.git
     id: Ok
     path: ../Neutronium.BuildingBlocks.Application/ViewModels/Modal/MessageModalViewModel.cs
-    startLine: 26
+    startLine: 41
   assemblies:
   - Neutronium.BuildingBlocks.Application
   namespace: Neutronium.BuildingBlocks.Application.ViewModels.Modal
@@ -572,6 +615,17 @@ references:
   name: Neutronium.MVVMComponents
   nameWithType: Neutronium.MVVMComponents
   fullName: Neutronium.MVVMComponents
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor*
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor
+  name: MessageModalViewModel
+  nameWithType: MessageModalViewModel.MessageModalViewModel
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
+  parent: Neutronium.BuildingBlocks.Application.WindowServices
+  name: MessageInformation
+  nameWithType: MessageInformation
+  fullName: Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok*
   commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Ok
   name: Ok

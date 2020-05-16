@@ -532,10 +532,41 @@
             which page is currently displayed 
             </typeparam>
         </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ApplicationInformation">
+            <summary>
+            Application information
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Window">
+            <summary>
+            Window interface
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.Router">
+            <summary>
+            Router
+            </summary>
+        </member>
         <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.CurrentViewModel">
             <summary>
             Page ViewModel
             </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,`0)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="window"></param>
+            <param name="router"></param>
+            <param name="applicationInformation"></param>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,System.Func{`0})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="window"></param>
+            <param name="router"></param>
+            <param name="applicationInformationBuilder"></param>
         </member>
         <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.ShowMessage(Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage)">
             <summary>
@@ -567,6 +598,27 @@
             <summary>
             Modal ViewModel. Internally used by <see cref="T:Neutronium.BuildingBlocks.Application.WindowServices.IMessageBox"/> implementation
             </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Title">
+            <summary>
+            title
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message">
+            <summary>
+            Modal message
+            </summary>
+        </member>
+        <member name="P:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.OkMessage">
+            <summary>
+            Modal Ok message
+            </summary>
+        </member>
+        <member name="M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)">
+            <summary>
+            MessageModalViewModel constructor
+            </summary>
+            <param name="messageInformation"></param>
         </member>
         <member name="T:Neutronium.BuildingBlocks.Application.WindowServices.ConfirmationMessage">
             <summary>

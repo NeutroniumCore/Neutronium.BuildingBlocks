@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Neutronium.BuildingBlocks.Application.Navigation;
 using Neutronium.BuildingBlocks.Application.ViewModels.Modal;
 using Neutronium.BuildingBlocks.Application.WindowServices;
@@ -16,14 +17,32 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels
     /// </typeparam>
     public class ApplicationViewModel<T> : ViewModel, IMessageBox, INotificationSender
     {
-        public T ApplicationInformation { get; }
+        private readonly Lazy<T> _ApplicationInformationBuilder;
+
+        /// <summary>
+        /// Application information
+        /// </summary>
+        public T ApplicationInformation => _ApplicationInformationBuilder.Value;
+
+        /// <summary>
+        /// Window interface
+        /// </summary>
         public IWindowViewModel Window { get; }
+
+        /// <summary>
+        /// Router
+        /// </summary>
         public NavigationViewModel Router { get; }
 
+        private object _CurrentViewModel;
         /// <summary>
         /// Page ViewModel
         /// </summary>
-        public object CurrentViewModel { get; set; }
+        public object CurrentViewModel
+        {
+            get => _CurrentViewModel;
+            set => Set(ref _CurrentViewModel, value);
+        }
 
         private MessageModalViewModel _Modal;
         public MessageModalViewModel Modal
@@ -39,11 +58,30 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels
             set => Set(ref _Notification, value);
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="window"></param>
+        /// <param name="router"></param>
+        /// <param name="applicationInformation"></param>
         public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router, T applicationInformation)
         {
             Window = window;
             Router = router;
-            ApplicationInformation = applicationInformation;
+            _ApplicationInformationBuilder = new Lazy<T>(() => applicationInformation);
+        }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="window"></param>
+        /// <param name="router"></param>
+        /// <param name="applicationInformationBuilder"></param>
+        public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router, Func<T> applicationInformationBuilder)
+        {
+            Window = window;
+            Router = router;
+            _ApplicationInformationBuilder = new Lazy<T>(applicationInformationBuilder);
         }
 
         /// <summary>

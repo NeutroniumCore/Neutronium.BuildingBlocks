@@ -1119,6 +1119,15 @@ references:
   fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, T)
   nameWithType: ApplicationViewModel<T>.ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
   nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel(IWindowViewModel, NavigationViewModel, T)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,System.Func{`0})
+  name: ApplicationViewModel(IWindowViewModel, NavigationViewModel, Func<T>)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_Neutronium_MVVMComponents_IWindowViewModel_Neutronium_BuildingBlocks_Application_Navigation_NavigationViewModel_System_Func__0__
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor(Neutronium.MVVMComponents.IWindowViewModel,Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel,System.Func{`0})
+  name.vb: ApplicationViewModel(IWindowViewModel, NavigationViewModel, Func(Of T))
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>.ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, System.Func<T>)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T).ApplicationViewModel(Neutronium.MVVMComponents.IWindowViewModel, Neutronium.BuildingBlocks.Application.Navigation.NavigationViewModel, System.Func(Of T))
+  nameWithType: ApplicationViewModel<T>.ApplicationViewModel(IWindowViewModel, NavigationViewModel, Func<T>)
+  nameWithType.vb: ApplicationViewModel(Of T).ApplicationViewModel(IWindowViewModel, NavigationViewModel, Func(Of T))
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1.#ctor*
   name: ApplicationViewModel
   href: application/Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel-1.html#Neutronium_BuildingBlocks_Application_ViewModels_ApplicationViewModel_1__ctor_
@@ -1351,6 +1360,19 @@ references:
   commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
   fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel
   nameWithType: MessageModalViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  name: MessageModalViewModel(MessageInformation)
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel__ctor_Neutronium_BuildingBlocks_Application_WindowServices_MessageInformation_
+  commentId: M:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.MessageModalViewModel(Neutronium.BuildingBlocks.Application.WindowServices.MessageInformation)
+  nameWithType: MessageModalViewModel.MessageModalViewModel(MessageInformation)
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor*
+  name: MessageModalViewModel
+  href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel__ctor_
+  commentId: Overload:Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.#ctor
+  isSpec: "True"
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.MessageModalViewModel
+  nameWithType: MessageModalViewModel.MessageModalViewModel
 - uid: Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.Message
   name: Message
   href: application/Neutronium.BuildingBlocks.Application.ViewModels.Modal.MessageModalViewModel.html#Neutronium_BuildingBlocks_Application_ViewModels_Modal_MessageModalViewModel_Message
