@@ -11,6 +11,9 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal
     /// </summary>
     public class MainModalViewModel : MessageModalViewModel
     {
+        /// <summary>
+        /// Cancel message
+        /// </summary>
         public string CancelMessage { get; }
 
         public ISimpleCommand CancelCommand { get; }
@@ -20,7 +23,11 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal
 
         private readonly TaskCompletionSource<bool> _TaskCompletionSource = new TaskCompletionSource<bool>();
 
-        internal MainModalViewModel(ConfirmationMessage confirmationMessage) :base(confirmationMessage)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="confirmationMessage"></param>
+        public MainModalViewModel(ConfirmationMessage confirmationMessage) :base(confirmationMessage)
         {
             CancelMessage = confirmationMessage.CancelMessage;
             CancelCommand = new RelaySimpleCommand(Cancel);

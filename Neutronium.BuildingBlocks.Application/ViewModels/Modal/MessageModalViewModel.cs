@@ -9,13 +9,28 @@ namespace Neutronium.BuildingBlocks.Application.ViewModels.Modal
     /// </summary>
     public class MessageModalViewModel
     {
+        /// <summary>
+        /// title
+        /// </summary>
         public string Title { get; }
+
+        /// <summary>
+        /// Modal message
+        /// </summary>
         public string Message { get; }
+
+        /// <summary>
+        /// Modal Ok message
+        /// </summary>
         public string OkMessage { get; }
 
         public ISimpleCommand OkCommand { get; }
 
-        internal MessageModalViewModel(MessageInformation messageInformation)
+        /// <summary>
+        /// MessageModalViewModel constructor
+        /// </summary>
+        /// <param name="messageInformation"></param>
+        public MessageModalViewModel(MessageInformation messageInformation)
         {
             Title = messageInformation.Title;
             Message = messageInformation.Message;
